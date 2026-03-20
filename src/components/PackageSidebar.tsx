@@ -3,13 +3,11 @@
 import React from 'react';
 
 interface SidebarProps {
-  price: string;
-  originalPrice: string;
   duration: string;
   inclusions: string[];
 }
 
-export default function PackageSidebar({ price, originalPrice, duration, inclusions }: SidebarProps) {
+export default function PackageSidebar({ duration, inclusions }: SidebarProps) {
   return (
     <div className="sidebar-sticky">
       <div className="price-card">

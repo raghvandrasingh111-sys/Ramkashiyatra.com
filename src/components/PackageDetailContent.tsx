@@ -136,8 +136,6 @@ export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
         {/* Right Column: Sidebar */}
         <aside>
           <PackageSidebar 
-            price={pkg.price}
-            originalPrice={pkg.originalPrice}
             duration={pkg.duration}
             inclusions={pkg.inclusions}
           />
