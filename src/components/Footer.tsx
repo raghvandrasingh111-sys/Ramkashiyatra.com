@@ -101,20 +101,20 @@ export default function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{
-                  width: '35px',
-                  height: '35px',
+                  width: '40px',
+                  height: '40px',
                   borderRadius: '50%',
-                  backgroundColor: 'rgba(255,255,255,0.1)',
+                  backgroundColor: '#FFC219',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: 'white',
+                  color: '#1a1d21',
                   textDecoration: 'none',
-                  transition: 'all 0.3s ease'
+                  transition: 'all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
                 }}
                 className="social-icon"
               >
-                <i className={social.icon}></i>
+                <i className={social.icon} style={{ fontSize: '1.2rem' }}></i>
               </a>
             ))}
           </div>
