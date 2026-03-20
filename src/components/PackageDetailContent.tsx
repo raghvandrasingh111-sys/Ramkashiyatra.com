@@ -44,8 +44,8 @@ export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
           
           <PackageItinerary itinerary={pkg.itinerary} />
 
-          {/* Pricing Table Section */}
-          {pkg.pricingTable && (
+          {/* Pricing Table Section - Hidden by user request */}
+          {/* {pkg.pricingTable && (
             <div className="pricing-section" style={{ marginTop: '50px' }}>
               <h3 style={{ fontSize: '1.8rem', color: '#2B3036', marginBottom: '25px' }}>Pricing Details (Per Person)</h3>
               <div className="table-responsive" style={{ overflowX: 'auto' }}>
@@ -78,7 +78,7 @@ export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
               </div>
               <p style={{ marginTop: '10px', fontSize: '0.9rem', color: '#888' }}>* Rate valid from 01st April to 31st August 2026, Except Long weekends. Twin Sharing Per Person.</p>
             </div>
-          )}
+          )} */}
 
           {/* Child Policy Section */}
           <div className="policy-section" style={{ marginTop: '50px', padding: '30px', background: '#fcfcfc', borderRadius: '10px', border: '1px solid #eee' }}>
