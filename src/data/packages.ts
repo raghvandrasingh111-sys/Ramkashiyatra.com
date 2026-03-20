@@ -19,94 +19,127 @@ export interface TourPackage {
 
 export const packages: TourPackage[] = [
   {
-    slug: "varanasi-bodhgaya-spiritual-tour-3n-4d",
-    name: "Varanasi & Bodhgaya Spiritual Tour",
-    duration: "3 Nights / 4 Days",
-    location: "Varanasi | Bodhgaya",
-    price: "13,550",
-    originalPrice: "16,000",
-    description: "Witness the spectacular Ganga Aarti and explore the holy sites of Varanasi and Bodhgaya in this 4-day spiritual journey.",
+    slug: "varanasi-prayagraj-excursion-2n-3d",
+    name: "Varanasi & Prayagraj Day Excursion",
+    duration: "2 Nights / 3 Days",
+    location: "Varanasi | Prayagraj",
+    price: "Enquire for Price",
+    originalPrice: "0",
+    description: "Explore the ancient temples of Varanasi and take a sacred day excursion to the holy Triveni Sangam in Prayagraj.",
     image: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632.png.webp",
-    inclusions: ["Meet & Greet", "Hotel Accommodation", "Daily Breakfast", "AC Vehicle Transfers"],
+    inclusions: ["AC Vehicle", "Hotel Accommodation", "Breakfast", "Sightseeing", "Ganga Boating"],
     itinerary: [
-      { day: 1, title: "Arrival at Varanasi", activities: ["Airport/Station Pickup", "Evening Ganga Aarti", "Stay in Varanasi"] },
-      { day: 2, title: "Varanasi - Bodhgaya", activities: ["Dashaswamedh Ghat", "Kashi Vishvanath Temple", "Drive to Bodhgaya", "Stay in Bodhgaya"] },
-      { day: 3, title: "Gaya - Varanasi", activities: ["Vishnupad Temple (Pinda Dan)", "Mahabodhi Temple", "80ft Buddha Statue", "Drive back to Varanasi"] },
-      { day: 4, title: "Subah-e-Banaras & Departure", activities: ["Assi Ghat Sunrise", "Yoga & Music Recital", "Airport/Station Drop"] }
+      { day: 1, title: "Arrival & Varanasi Sightseeing", activities: ["Airport/Station Pickup", "Check-in at Hotel", "Kashi Vishwanath (Golden Temple)", "Sankat Mochan & Durga Temple", "Evening Ganga Aarti & Boating"] },
+      { day: 2, title: "Prayagraj Day Excursion", activities: ["Early Breakfast", "Prayagraj Fort", "Triveni Sangam", "Anand Bhavan & Swaraj Bhawan", "Return to Varanasi"] },
+      { day: 3, title: "Sarnath & Departure", activities: ["Morning Breakfast", "Check-out", "Sarnath Museum & Stupas", "Deer Park & Tibetan Temple", "Airport/Station Drop"] }
     ]
   },
   {
-    slug: "varanasi-bodhgaya-extended-tour-4n-5d",
-    name: "Varanasi & Bodhgaya Extended Tour",
-    duration: "4 Nights / 5 Days",
-    location: "Varanasi | Bodhgaya | Prayagraj",
-    price: "17,450",
-    originalPrice: "21,000",
-    description: "An extended 5-day tour covering Varanasi, Bodhgaya, and the holy Sangam in Prayagraj.",
+    slug: "varanasi-gaya-spiritual-journey-3n-4d",
+    name: "Varanasi & Gaya Spiritual Journey",
+    duration: "3 Nights / 4 Days",
+    location: "Varanasi | Gaya",
+    price: "Enquire for Price",
+    originalPrice: "0",
+    description: "A profound spiritual journey covering the ghats of Varanasi and the sacred Pind Daan rituals in Gaya and Bodhgaya.",
     image: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632-1.png.webp",
-    inclusions: ["Meet & Greet", "Standard Hotels", "Sightseeing", "Transfers"],
+    inclusions: ["AC Transport", "Hotel Stays", "Morning Breakfast", "Professional Guide Assistance"],
     itinerary: [
-      { day: 1, title: "Varanasi Arrival", activities: ["Pickup", "Evening Ganga Aarti witness", "Stay in Varanasi"] },
-      { day: 2, title: "Temples & Move to Gaya", activities: ["Ganga Holy Dip", "Kashi Vishvanath", "Drive to Bodhgaya"] },
-      { day: 3, title: "Gaya Sightseeing", activities: ["Vishnupad Temple", "Mahabodhi Temple", "Thai Monastery", "Drive to Varanasi"] },
-      { day: 4, title: "Prayagraj & Sitamarhi", activities: ["Visit Sitamarhi (11 years of Mata Sita)", "Prayagraj Sangam Visit", "Return to Varanasi"] },
-      { day: 5, title: "Subah-e-Banaras & Departure", activities: ["Assi Ghat Morning", "Sarnath (Optional/Time permits)", "Drop-off at Airport"] }
+      { day: 1, title: "Varanasi Arrival", activities: ["Pickup & Hotel Check-in", "Varanasi Temple Tour", "Evening Ganga Aarti witness", "Stay in Varanasi"] },
+      { day: 2, title: "Prayagraj Day Trip", activities: ["Breakfast at Hotel", "Drive to Prayagraj (Sangam)", "Allahabad Fort & Anand Bhavan", "Return to Varanasi"] },
+      { day: 3, title: "Move to Gaya", activities: ["Drive to Gaya", "Bodhgaya Temple Visit", "Great Buddha Statue", "Mahabodhi Temple darshan", "Night Stay at Gaya"] },
+      { day: 4, title: "Gaya to Varanasi Drop", activities: ["Morning Breakfast", "Check-out", "Drive back to Varanasi", "Drop at Airport/Station"] }
     ]
   },
   {
-    slug: "varanasi-ayodhya-prayagraj-trio-4n-5d",
-    name: "Varanasi Ayodhya Prayagraj Spiritual Trio",
+    slug: "varanasi-prayagraj-stay-tour-3n-4d",
+    name: "Varanasi & Prayagraj Stay Tour",
+    duration: "3 Nights / 4 Days",
+    location: "Varanasi | Prayagraj",
+    price: "Enquire for Price",
+    originalPrice: "0",
+    description: "Experience the spiritual depth of UP with relaxed stays in both Varanasi and the holy city of Prayagraj.",
+    image: "https://varanasiayodhya.com/wp-content/uploads/Varanasi-Prayagraj-Ayodhya-Tour-Package.webp",
+    inclusions: ["Intercity Transfers", "Breakfast Included", "Sangam Boat Ride", "Temple Darshan"],
+    itinerary: [
+      { day: 1, title: "Varanasi Arrival", activities: ["Pickup & Check-in", "Varanasi Temple Sightseeing", "Evening Ganga Aarti", "Boating on the Ganges"] },
+      { day: 2, title: "Varanasi to Prayagraj", activities: ["Drive to Prayagraj", "Sangam Visit (Holy Dip)", "Allahabad Fort", "Stay in Prayagraj"] },
+      { day: 3, title: "Prayagraj to Varanasi", activities: ["Return Drive to Varanasi", "Sarnath Sightseeing", "Museum & Stupas", "Overnight in Varanasi"] },
+      { day: 4, title: "Local Market & Departure", activities: ["Godawaliya Market", "BHU Vishwanath Temple", "Ramnagar Fort (Optional)", "Drop at Airport"] }
+    ]
+  },
+  {
+    slug: "varanasi-ayodhya-divine-tour-3n-4d",
+    name: "Varanasi & Ayodhya Divine Tour",
+    duration: "3 Nights / 4 Days",
+    location: "Varanasi | Ayodhya",
+    price: "Enquire for Price",
+    originalPrice: "0",
+    description: "Step into the stories of the Ramayana with this divine circuit connecting Varanasi and the holy Ram Janmabhoomi in Ayodhya.",
+    image: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632.png-2.webp",
+    inclusions: ["Professional Driver", "Heritage Hotel stay", "Daily Breakfast", "Saryu Riverfront witness"],
+    itinerary: [
+      { day: 1, title: "Varanasi Arrival", activities: ["Temples Tour", "Golden Temple Darshan", "Evening Aarti", "Night stay in Varanasi"] },
+      { day: 2, title: "Varanasi to Ayodhya", activities: ["Drive to Ayodhya via Prayagraj", "Sangam Visit", "Kanak Bhawan", "Saryu River Aarti", "Stay in Ayodhya"] },
+      { day: 3, title: "Ayodhya to Varanasi", activities: ["Hanuman Garhi", "Ram Mandir Visit", "Ram ki Paidi", "Return to Varanasi"] },
+      { day: 4, title: "Sarnath & Departure", activities: ["Morning Sarnath Stupa visit", "Local Market shopping", "Airport/Station Drop"] }
+    ]
+  },
+  {
+    slug: "varanasi-gaya-prayagraj-pilgrimage-4n-5d",
+    name: "Varanasi Gaya & Prayagraj Pilgrimage",
+    duration: "4 Nights / 5 Days",
+    location: "Varanasi | Gaya | Prayagraj",
+    price: "Enquire for Price",
+    originalPrice: "0",
+    description: "A comprehensive 5-day pilgrimage for those seeking spiritual solace and ancestor blessings across the most holy river cities.",
+    image: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5635.png.webp",
+    inclusions: ["Pind Daan Assistance", "Ganga Boating", "Daily Breakfast", "Premium AC Vehicle"],
+    itinerary: [
+      { day: 1, title: "Gaya Arrival", activities: ["Gaya Airport/Station Pickup", "Bodhgaya Temple Visit", "Great Buddha Statue", "Night Stay at Gaya"] },
+      { day: 2, title: "Gaya to Varanasi", activities: ["Gaya Pind Daan", "Transfer to Varanasi", "Evening Ganga Aarti witness", "Stay in Varanasi"] },
+      { day: 3, title: "Varanasi & Sarnath", activities: ["Kashi Vishwanath darshan", "Kal Bhairav Temple", "BHU Tour", "Sarnath Stupa visit"] },
+      { day: 4, title: "Varanasi to Prayagraj", activities: ["Drive to Prayagraj", "Triveni Sangam Holy Dip", "Anand Bhavan", "Overnight at Prayagraj"] },
+      { day: 5, title: "Departure", activities: ["Breakfast at Hotel", "Transfer to Varanasi", "Drop at Airport/Station"] }
+    ]
+  },
+  {
+    slug: "varanasi-ayodhya-prayagraj-essential-4n-5d",
+    name: "Varanasi Ayodhya & Prayagraj Essential",
     duration: "4 Nights / 5 Days",
     location: "Varanasi | Ayodhya | Prayagraj",
-    price: "18,400",
-    originalPrice: "22,500",
-    description: "The ultimate spiritual trio: Kashi, the city of light; Ayodhya, the birthplace of Rama; and Prayagraj, the king of confluences.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/Varanasi-Prayagraj-Ayodhya-Tour-Package.webp",
-    inclusions: ["All Transfers", "Hotel Stay", "Daily Breakfast", "Ganga Aarti Session"],
+    price: "Enquire for Price",
+    originalPrice: "0",
+    description: "Explore the 'Essential' spiritual triangle of North India with detailed sightseeing and comfortable stays.",
+    image: "/images/bihar-up.png",
+    inclusions: ["All Sightseeing in AC Car", "Daily Breakfast", "Professional Assistance", "Saryu Aarti"],
     itinerary: [
-      { day: 1, title: "Varanasi Arrival", activities: ["Meet & Greet", "Evening Ganga Aarti at Dasaswamedh", "Overnight in Varanasi"] },
-      { day: 2, title: "Varanasi & Sarnath", activities: ["Subah-e-Banaras", "Sarnath Excursion", "Kashi Vishwanath Darshan"] },
-      { day: 3, title: "Varanasi to Ayodhya", activities: ["Check-out & Drive to Ayodhya", "Ram Janam Bhumi", "Kanak Bhavan", "Saryu River Snan"] },
-      { day: 4, title: "Ayodhya to Prayagraj", activities: ["Drive to Prayagraj", "Sangam Holy Dip", "Anand Bhavan", "Hanuman Temple"] },
-      { day: 5, title: "Prayagraj to Varanasi Drop", activities: ["Morning Breakfast", "Drive to Varanasi", "Drop at Airport/Station"] }
+      { day: 1, title: "Varanasi Arrival", activities: ["Pickup & Check-in", "Varanasi Temple Tour", "Ganga Aarti witness"] },
+      { day: 2, title: "Sarnath Sightseeing", activities: ["Dhamek Stupa", "Museum & Deer Park", "Namo Ghat visit", "Night Stay at Varanasi"] },
+      { day: 3, title: "Varanasi to Prayagraj", activities: ["Drive to Prayagraj", "Check-in at Hotel", "Sangam Visit", "Khusro Bagh", "Stay in Prayagraj"] },
+      { day: 4, title: "Prayagraj to Ayodhya", activities: ["Drive to Ayodhya", "Hanuman Garhi", "Ram Mandir Darshan", "Stay in Ayodhya"] },
+      { day: 5, title: "Ayodhya to Varanasi Departure", activities: ["Check-out", "Drive back to Varanasi", "Drop at Airport/Station"] }
     ]
   },
   {
-    slug: "varanasi-ayodhya-lucknow-heritage-4n-5d",
-    name: "Varanasi Ayodhya Lucknow Heritage Tour",
-    duration: "4 Nights / 5 Days",
-    location: "Varanasi | Ayodhya | Lucknow",
-    price: "18,300",
-    originalPrice: "22,000",
-    description: "Explore the ancient charm of Varanasi, the divinity of Ayodhya, and the nawabi culture of Lucknow.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5634.png-1.webp",
-    inclusions: ["Chikankari Market Visit", "Heritage Walks", "Hotel Stays", "AC Vehicle"],
+    slug: "grand-up-chitrakoot-circuit-7n-8d",
+    name: "Grand UP & Chitrakoot Spiritual Circuit",
+    duration: "7 Nights / 8 Days",
+    location: "Varanasi | Ayodhya | Lucknow | Chitrakoot",
+    price: "Enquire for Price",
+    originalPrice: "0",
+    description: "Our most intensive tour: Covering Varanasi, Ayodhya, the nawabi charm of Lucknow, and the divine forest of Chitrakoot.",
+    image: "/images/rajasthan.png",
+    inclusions: ["Multi-city Transfers", "Breakfast in All Hotels", "Naimisharanya Visit", "Boat Rides"],
     itinerary: [
-      { day: 1, title: "Varanasi Arrival", activities: ["Pickup & Transfer", "Evening Ganga Aarti Experience"] },
-      { day: 2, title: "Varanasi Tour", activities: ["Morning Holy Dip", "Kashi Vishwanath", "Sarnath Visit", "Silk Weaving viewing"] },
-      { day: 3, title: "Varanasi - Prayag - Ayodhya", activities: ["Drive to Ayodhya via Prayagraj", "Sangam Visit", "Saryu Riverfront witness"] },
-      { day: 4, title: "Ayodhya - Lucknow", activities: ["Ram Janmabhumi", "Hanumangarhi Temple", "Drive to Lucknow", "Evening Local Market"] },
-      { day: 5, title: "Lucknow City Tour & Departure", activities: ["Bara Imambara", "Rumi Darwaza", "Chikankari Artisans visit", "Drop at Airport"] }
-    ]
-  },
-  {
-    slug: "ultimate-up-bihar-spiritual-circuit-6n-7d",
-    name: "Ultimate UP & Bihar Spiritual Circuit",
-    duration: "6 Nights / 7 Days",
-    location: "Patna | Bodhgaya | Varanasi | Lucknow",
-    price: "27,150",
-    originalPrice: "34,000",
-    description: "A comprehensive 7-day pilgrimage following the most sacred sites from Patna and Bodhgaya to Ayodhya and Lucknow.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5635.png.webp",
-    inclusions: ["Pinda Dan Assistance", "Expert Guide", "All Major Temple Entries", "Luxury Transfers"],
-    itinerary: [
-      { day: 1, title: "Patna Arrival", activities: ["Patna to Bodhgaya via Nalanda & Rajgir", "B Buddhist Learning Centre visit", "Overnight in Bodhgaya"] },
-      { day: 2, title: "Bodhgaya to Varanasi", activities: ["Gaya Teertah", "Vishnupad Temple (Pinda Dan)", "Mahabodhi Temple", "Drive to Varanasi"] },
-      { day: 3, title: "Varanasi Exploration", activities: ["Morning Ganga Dip", "Sarnath Visit", "Kashi Vishwanath Jyotirlinga Darshan"] },
-      { day: 4, title: "Varanasi to Prayag", activities: ["Sitamarhi (Valmiki Ashram)", "Prayagraj Sangam Visit", "Overnight in Prayag"] },
-      { day: 5, title: "Prayag to Ayodhya", activities: ["Drive to Ayodhya", "Ram Janmabhumi Darshan", "Kanak Bhawan", "Saryu Aarti"] },
-      { day: 6, title: "Ayodhya - Naimisaranya - Lucknow", activities: ["Naimisharanya Chakra Theerth", "Drive to Lucknow", "Local artifacts visit"] },
-      { day: 7, title: "Lucknow & Departure", activities: ["Bara Imambara", "Presidency", "Drop to Airport/Railway Station"] }
+      { day: 1, title: "Arrival at Varanasi", activities: ["Arrive & Transfer to Hotel", "Rest of day free for leisure", "Overnight stay"] },
+      { day: 2, title: "Varanasi to Ayodhya", activities: ["Drive to Ayodhya", "Ram Janambhoomi birth place", "Hanumangarhi Temple"] },
+      { day: 3, title: "Ayodhya - Lucknow", activities: ["Check-in at Lucknow", "Bara Imambara", "Bhul Bhulaiya", "Chhota imambara"] },
+      { day: 4, title: "Lucknow - Naimisharanya - Prayagraj", activities: ["Drive to Naimisharanya", "Chakra Theerth", "Transfer to Prayagraj", "Overnight stay"] },
+      { day: 5, title: "Prayagraj - Chitrakoot", activities: ["Sangam Holy Dip", "Drive to Chitrakoot", "Ram Ghat Visit"] },
+      { day: 6, title: "Chitrakoot to Varanasi", activities: ["Hanuman Dhara", "Janaki Kund", "Gupt Godavari", "Return drive to Varanasi"] },
+      { day: 7, title: "Varanasi Full Day", activities: ["Subah-e-Banaras Boat Ride", "Temple Tour (Durga, Sankat Mochan)", "Sarnath & Evening Aarti"] },
+      { day: 8, title: "Departure", activities: ["Morning Breakfast", "Check-out", "Drop at Airport/Station"] }
     ]
   }
 ];
