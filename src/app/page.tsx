@@ -315,20 +315,37 @@ export default function Home() {
           width: '100%',
           height: '100%',
           zIndex: -1,
-          pointerEvents: 'none'
+          pointerEvents: 'none',
+          backgroundColor: '#000'
         }}>
+          {/* Preload Image to hide black screen/latency */}
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundImage: 'url("https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632.png.webp")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            zIndex: 1,
+            opacity: 0.8
+          }}></div>
+
           <iframe 
-            src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=8" 
+            src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=10&showinfo=0&modestbranding=1&iv_load_policy=3&disablekb=1" 
             style={{
-              width: '100vw',
-              height: '56.25vw',
-              minHeight: '100vh',
-              minWidth: '177.77vh',
+              width: '120vw',
+              height: '67.5vw', // 16:9 of 120vw
+              minHeight: '120vh',
+              minWidth: '213.33vh',
               position: 'absolute',
               top: '50%',
               left: '50%',
-              transform: 'translate(-50%, -50%)',
-              objectFit: 'cover'
+              transform: 'translate(-50%, -50%) translateZ(0)',
+              objectFit: 'cover',
+              filter: 'brightness(0.7) contrast(1.1)',
+              zIndex: 0
             }}
             frameBorder="0"
             allow="autoplay; encrypted-media"
@@ -339,7 +356,8 @@ export default function Home() {
             left: 0,
             width: '100%',
             height: '100%',
-            backgroundColor: 'rgba(0,0,0,0.6)'
+            backgroundColor: 'rgba(0,0,0,0.4)',
+            zIndex: 2
           }}></div>
         </div>
         <div ref={addToRefs} className="fade-in-up" style={{ zIndex: 1 }}>
