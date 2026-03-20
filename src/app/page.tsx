@@ -263,23 +263,30 @@ export default function Home() {
            <h2 ref={addToRefs} className="fade-in-up" style={{ fontSize: '2.5rem' }}>Must-Know Verified Travel Tips</h2>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
-           {[
-             "lFqVxuD9YPs", // Varanasi Tip 1
-             "uF2FALuCkxE", // Varanasi Tip 2
-             "57cT58q0rPk", // Varanasi Tip 3
-             "YcrgfaIlahg"  // Varanasi Tip 4
-           ].map((videoId, index) => (
-             <div key={index} ref={addToRefs} className="fade-in-up" style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}>
+            {[
+              { id: "DCE2LNtSWpi", type: "reel" },
+              { id: "DB6STThylM9", type: "reel" },
+              { id: "DAa6baUyay_", type: "p" },
+              { id: "DREVGCcEnv3", type: "p" }
+            ].map((item, index) => (
+              <div key={index} ref={addToRefs} className="fade-in-up" style={{ 
+                borderRadius: '20px', 
+                overflow: 'hidden', 
+                boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
+                height: item.type === 'reel' ? '500px' : '400px',
+                backgroundColor: '#f8f9fa'
+              }}>
                 <iframe 
                   width="100%" 
-                  height="200" 
-                  src={`https://www.youtube.com/embed/${videoId}`} 
+                  height="100%" 
+                  src={`https://www.instagram.com/${item.type}/${item.id}/embed`} 
                   frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen
+                  scrolling="no"
+                  allowTransparency
+                  allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 ></iframe>
-             </div>
-           ))}
+              </div>
+            ))}
         </div>
       </section>
 
