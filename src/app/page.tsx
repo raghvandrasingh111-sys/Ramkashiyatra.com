@@ -8,6 +8,7 @@ import Link from 'next/link';
 import HotelCarousel from '@/components/HotelCarousel';
 import ApprovalCarousel from '@/components/ApprovalCarousel';
 import Testimonials from '@/components/Testimonials';
+import { packages as allTourPackages } from '@/data/packages';
 
 export default function Home() {
   const scrollRefs = useRef<HTMLDivElement[]>([]);
@@ -39,44 +40,13 @@ export default function Home() {
     }
   };
 
-  const packages = [
-    {
-      image: "https://varanasiayodhya.com/wp-content/uploads/2024/02/ayodhya-temple.jpg",
-      duration: "1N Ayodhya",
-      location: "Ayodhya",
-      title: "Ayodhya Tour Package (1N/2D)",
-      oldPrice: "9,000",
-      newPrice: "7,499",
-      href: "/tour-packages"
-    },
-    {
-      image: "https://varanasiayodhya.com/wp-content/uploads/2024/02/ayodhya-bangalore.jpg",
-      duration: "2N Ayodhya",
-      location: "Ayodhya",
-      title: "Ayodhya Tour ex-Bangalore (2N/3D)",
-      oldPrice: "35,000",
-      newPrice: "22,999",
-      href: "/tour-packages"
-    },
-    {
-      image: "https://varanasiayodhya.com/wp-content/uploads/2024/01/varanasi-aarti.jpg",
-      duration: "1N Varanasi | 1N Ayodhya",
-      location: "Varanasi | Ayodhya",
-      title: "Varanasi Ayodhya Tour (2N/3D)",
-      oldPrice: "12,000",
-      newPrice: "9,999",
-      href: "/tour-packages"
-    },
-    {
-      image: "https://varanasiayodhya.com/wp-content/uploads/2024/01/triveni-sangam.jpg",
-      duration: "1N Varanasi | 1N Prayagraj | 1N Ayodhya",
-      location: "Varanasi | Prayagraj | Ayodhya",
-      title: "Varanasi Prayagraj Ayodhya Tour (3N/4D)",
-      oldPrice: "16,000",
-      newPrice: "11,999",
-      href: "/tour-packages"
-    }
-  ];
+  const featuredPackages = allTourPackages.slice(0, 4).map(pkg => ({
+    image: pkg.image,
+    duration: pkg.duration,
+    location: pkg.location,
+    title: pkg.name,
+    href: `/tour-packages/${pkg.slug}`
+  }));
 
   return (
     <main>
@@ -200,19 +170,6 @@ export default function Home() {
             <h2 ref={addToRefs} className="fade-in-up" style={{ fontSize: '2.5rem', marginBottom: '10px' }}>Popular Destinations</h2>
             <p ref={addToRefs} className="fade-in-up" style={{ color: '#666' }}>Explore our Top Destinations voted by more than 1000+ Travelers</p>
           </div>
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
-            gap: '20px' 
-          }}>
-            {[
-              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632.png-1.webp", alt: "Ancient Varanasi Ghats Spiritual View" },
-              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632-1.png-2-903x1024.webp", alt: "Divine Ayodhya Ram Mandir Temple Architecture" },
-              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632-2.png-2-903x1024.webp", alt: "Prayagraj Sangam Holy River Confluence" },
-              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5634.png-1.webp", alt: "Spiritual Pilgrimage Tour in Uttar Pradesh" }
-            ].map((item, index) => (
-              <div key={index} ref={addToRefs} className="fade-in-up" style={{ 
-                height: '400px', 
                 borderRadius: '20px', 
                 overflow: 'hidden',
                 boxShadow: '0 10px 30px rgba(0,0,0,0.1)',

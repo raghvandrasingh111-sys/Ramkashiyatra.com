@@ -2,6 +2,7 @@ export interface ItineraryDay {
   day: number;
   title: string;
   activities: string[];
+  image?: string;
 }
 
 export interface PricingCategory {
@@ -23,6 +24,7 @@ export interface TourPackage {
   originalPrice: string;
   description: string;
   image: string;
+  images?: string[];
   itinerary: ItineraryDay[];
   inclusions: string[];
   pricingTable?: PricingCategory[];
@@ -37,12 +39,17 @@ export const packages: TourPackage[] = [
     price: "5,975",
     originalPrice: "7,950",
     description: "Experience the spiritual heart of India with a comprehensive tour of Varanasi's ancient temples and the sacred Sangam at Prayagraj.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/2024/01/varanasi-aarti.jpg",
+    image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200",
+    images: [
+      "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1616016149405-b7782627038e?auto=format&fit=crop&q=80&w=1200"
+    ],
     inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
     itinerary: [
-      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon for sightseeing of temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Hotel in Varanasi."] },
-      { day: 2, title: "Varanasi – Prayagraj day Excursion", activities: ["After breakfast, take a day excursion to Prayagraj, Visit Prayagraj Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan Later in the evening return back to Varanasi and overnight stay at Varanasi Hotel."] },
-      { day: 3, title: "Varanasi - Sarnath Sightseeing and Drop", activities: ["Enjoy morning breakfast at the hotel. After check out from the hotel & move to Sarnath, sightseeing includes Chukhandi Stupa, Sarnath Museum, Dhamek Stupa, Golden Temple, Deer Park, Tibetan Temple and then drop at the airport/railway station as per the departure schedule."] }
+      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon for sightseeing of temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Hotel in Varanasi."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 2, title: "Varanasi – Prayagraj day Excursion", activities: ["After breakfast, take a day excursion to Prayagraj, Visit Prayagraj Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan Later in the evening return back to Varanasi and overnight stay at Varanasi Hotel."], image: "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200" },
+      { day: 3, title: "Varanasi - Sarnath Sightseeing and Drop", activities: ["Enjoy morning breakfast at the hotel. After check out from the hotel & move to Sarnath, sightseeing includes Chukhandi Stupa, Sarnath Museum, Dhamek Stupa, Golden Temple, Deer Park, Tibetan Temple and then drop at the airport/railway station as per the departure schedule."], image: "https://images.unsplash.com/photo-1616016149405-b7782627038e?auto=format&fit=crop&q=80&w=1200" }
     ],
     pricingTable: [
       { category: "Deluxe", pax2: "7,950/-", pax4: "6,400/-", pax6: "5,975/-", pax8: "On Demand", pax10: "On Demand", pax12: "On Demand" },
@@ -57,13 +64,18 @@ export const packages: TourPackage[] = [
     price: "8,250",
     originalPrice: "12,500",
     description: "A profound spiritual journey covering the most sacred rituals in Varanasi and the enlightenment site of Bodhgaya.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/2024/02/ayodhya-temple.jpg",
+    image: "https://images.unsplash.com/photo-1544011938-34bfc6365ea9?auto=format&fit=crop&q=80&w=1200",
+    images: [
+      "https://images.unsplash.com/photo-1544011938-34bfc6365ea9?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1616016149405-b7782627038e?auto=format&fit=crop&q=80&w=1200"
+    ],
     inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
     itinerary: [
-      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon for sightseeing of temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Varanasi hotel."] },
-      { day: 2, title: "Varanasi to Prayagraj Day Excursion", activities: ["Today after breakfast at the hotel and Drive to Prayagraj. visit to Local sightseeing of Prayagraj Likes, Allahabad Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan after sightseeing return back to the Varanasi & Night Stay at Hotel Varanasi."] },
-      { day: 3, title: "Varanasi – Gaya Night", activities: ["Today, get ready to drive to Gaya. Arrive at Gaya and check in at Hotel. After Fresh-up visit to Bodhgaya Temple Gaya Pind Daan, Great Buddha Statue, Mahabodhi Temple, Bodhi Tree. Overnight stay at Gaya."] },
-      { day: 4, title: "Gaya to Varanasi drop", activities: ["After breakfast check out from the hotel and drive to Varanasi and drop at the Railway Station or Airport to continue the journey to Home."] }
+      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon for sightseeing of temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Varanasi hotel."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 2, title: "Varanasi to Prayagraj Day Excursion", activities: ["Today after breakfast at the hotel and Drive to Prayagraj. visit to Local sightseeing of Prayagraj Likes, Allahabad Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan after sightseeing return back to the Varanasi & Night Stay at Hotel Varanasi."], image: "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200" },
+      { day: 3, title: "Varanasi – Gaya Night", activities: ["Today, get ready to drive to Gaya. Arrive at Gaya and check in at Hotel. After Fresh-up visit to Bodhgaya Temple Gaya Pind Daan, Great Buddha Statue, Mahabodhi Temple, Bodhi Tree. Overnight stay at Gaya."], image: "https://images.unsplash.com/photo-1544011938-34bfc6365ea9?auto=format&fit=crop&q=80&w=1200" },
+      { day: 4, title: "Gaya to Varanasi drop", activities: ["After breakfast check out from the hotel and drive to Varanasi and drop at the Railway Station or Airport to continue the journey to Home."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" }
     ],
     pricingTable: [
       { category: "Deluxe", pax2: "12,500/-", pax4: "9,100/-", pax6: "8,250/-", pax8: "On Demand", pax10: "On Demand", pax12: "On Demand" },
@@ -79,13 +91,18 @@ export const packages: TourPackage[] = [
     price: "7,800",
     originalPrice: "11,500",
     description: "Explore the ancient cities of Varanasi and Prayagraj with comfortable overnight stays and comprehensive sightseeing.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/2024/01/triveni-sangam.jpg",
+    image: "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200",
+    images: [
+      "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1616016149405-b7782627038e?auto=format&fit=crop&q=80&w=1200"
+    ],
     inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
     itinerary: [
-      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon for sightseeing of temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Varanasi hotel."] },
-      { day: 2, title: "Varanasi to Prayagraj", activities: ["Today after breakfast at the hotel and Drive to Prayagraj. visit to Local sightseeing of Prayagraj Likes, Allahabad Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan. Overnight stay at Prayagraj."] },
-      { day: 3, title: "Prayagraj to Varanasi", activities: ["After breakfast, check out from Hotel and drive to Varanasi. On Arrival at Varanasi check in at the Hotel Varanasi. Later in the afternoon visit to Sarnath Sightseeing Likes; Chukhandi Stupa, Sarnath Museum, Dhamek Stupa, Golden Temple, Deer Park, Tibetan Temple, Zoo. Overnight stay at Hotel Varanasi."] },
-      { day: 4, title: "Varanasi Local Sightseeing and drop", activities: ["After breakfast check out from the hotel and visit the local market and then sightseeing of Varanasi, Godawaliya, Bhu Vishwanath Temple (VT). If time permits visit Ramnagar Fort and then drop at Airport or Railway station for your onward journey to home."] }
+      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon for sightseeing of temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Varanasi hotel."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 2, title: "Varanasi to Prayagraj", activities: ["Today after breakfast at the hotel and Drive to Prayagraj. visit to Local sightseeing of Prayagraj Likes, Allahabad Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan. Overnight stay at Prayagraj."], image: "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200" },
+      { day: 3, title: "Prayagraj to Varanasi", activities: ["After breakfast, check out from Hotel and drive to Varanasi. On Arrival at Varanasi check in at the Hotel Varanasi. Later in the afternoon visit to Sarnath Sightseeing Likes; Chukhandi Stupa, Sarnath Museum, Dhamek Stupa, Golden Temple, Deer Park, Tibetan Temple, Zoo. Overnight stay at Hotel Varanasi."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 4, title: "Varanasi Local Sightseeing and drop", activities: ["After breakfast check out from the hotel and visit the local market and then sightseeing of Varanasi, Godawaliya, Bhu Vishwanath Temple (VT). If time permits visit Ramnagar Fort and then drop at Airport or Railway station for your onward journey to home."], image: "https://images.unsplash.com/photo-1616016149405-b7782627038e?auto=format&fit=crop&q=80&w=1200" }
     ],
     pricingTable: [
       { category: "Deluxe", pax2: "11,500/-", pax4: "8,900/-", pax6: "7,800/-", pax8: "On Demand", pax10: "On Demand", pax12: "On Demand" },
@@ -101,13 +118,18 @@ export const packages: TourPackage[] = [
     price: "8,000",
     originalPrice: "11,700",
     description: "A divine circuit connecting the spiritual power of Kashi with the sacred birthplace of Lord Rama in Ayodhya.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/2024/02/ayodhya-temple.jpg",
+    image: "https://images.unsplash.com/photo-1707153673550-6a75a7674211?auto=format&fit=crop&q=80&w=1200",
+    images: [
+      "https://images.unsplash.com/photo-1707153673550-6a75a7674211?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200"
+    ],
     inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
     itinerary: [
-      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon processed for sightseeing, temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Varanasi hotel."] },
-      { day: 2, title: "Varanasi – Prayagraj - Ayodhya", activities: ["Morning after breakfast check out from the hotel and drive to Ayodhya via Prayagraj on arrival at Prayagraj enjoy Local sightseeing of Prayagraj like Prayagraj Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan. Later continue drive to Ayodhya and check in at the hotel and Overnight stay at the Ayodhya Hotel."] },
-      { day: 3, title: "Ayodhya to Varanasi", activities: ["Post breakfast Check out from the hotel and Visit Ayodhya Sightseeing includes Hanuman Garhi, Kanak Bhawan, Ram ki Paidi, Ram Mandir. And then return back to Varanasi and overnight stay at Varanasi."] },
-      { day: 4, title: "Varanasi to Sarnath Local Sightseeing and drop", activities: ["Morning after breakfast Check out from hotel and Visit Sarnath: Visit Chukhandi Stupa, Sarnath Museum, Dhamek Stupa, Golden Temple, Deer Park, Tibetan Temple and Local market and then drop at Airport or Railway stations."] }
+      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon processed for sightseeing, temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Varanasi hotel."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 2, title: "Varanasi – Prayagraj - Ayodhya", activities: ["Morning after breakfast check out from the hotel and drive to Ayodhya via Prayagraj on arrival at Prayagraj enjoy Local sightseeing of Prayagraj like Prayagraj Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan. Later continue drive to Ayodhya and check in at the hotel and Overnight stay at the Ayodhya Hotel."], image: "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200" },
+      { day: 3, title: "Ayodhya to Varanasi", activities: ["Post breakfast Check out from the hotel and Visit Ayodhya Sightseeing includes Hanuman Garhi, Kanak Bhawan, Ram ki Paidi, Ram Mandir. And then return back to Varanasi and overnight stay at Varanasi."], image: "https://images.unsplash.com/photo-1707153673550-6a75a7674211?auto=format&fit=crop&q=80&w=1200" },
+      { day: 4, title: "Varanasi to Sarnath Local Sightseeing and drop", activities: ["Morning after breakfast Check out from hotel and Visit Sarnath: Visit Chukhandi Stupa, Sarnath Museum, Dhamek Stupa, Golden Temple, Deer Park, Tibetan Temple and Local market and then drop at Airport or Railway stations."], image: "https://images.unsplash.com/photo-1616016149405-b7782627038e?auto=format&fit=crop&q=80&w=1200" }
     ],
     pricingTable: [
       { category: "Deluxe", pax2: "11,700/-", pax4: "8,900/-", pax6: "8,000/-", pax8: "On Demand", pax10: "On Demand", pax12: "On Demand" },
@@ -123,14 +145,19 @@ export const packages: TourPackage[] = [
     price: "9,900",
     originalPrice: "14,300",
     description: "A comprehensive spiritual circuit covering Gaya, Kashi, and Prayag for a complete religious experience.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/2024/01/varanasi-aarti.jpg",
+    image: "https://images.unsplash.com/photo-1544011938-34bfc6365ea9?auto=format&fit=crop&q=80&w=1200",
+    images: [
+      "https://images.unsplash.com/photo-1544011938-34bfc6365ea9?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200"
+    ],
     inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
     itinerary: [
-      { day: 1, title: "Arrival at Gaya and Local Sightseeing", activities: ["Upon Arrive at Gaya Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. After Fresh-up visit to Bodhgaya Temple Gaya Pind Daan, Great Buddha Statue, Mahabodhi Temple, Bodhi Tree. Overnight stay at Gaya."] },
-      { day: 2, title: "Gaya to Varanasi", activities: ["After breakfast check out from the hotel and transfer to Varanasi.Upon Arrival at Varanasi check in at the hotel. Later in the evening enjoy Ganga Boating & attend Ganga arti and then return back to Hotel and Overnight stay at the Varanasi hotel"] },
-      { day: 3, title: "Varanasi Local Sightseeing", activities: ["Visit the Kashi Vishwanath Temple - one of the famous Hindu temples and is dedicated to Lord Shiva, where at least once in life a Hindu is expected to do pilgrimage, and if possible, also pour the remains (ashes) of cremated ancestors here on the river Ganges. Visits other temples - Anpurna Temple, Kal Bhairav temple, Bharat Mata Mandir, Tulsimanas temple, BHU. After noon, take an excursion to Sarnath. Sarnath is the place where Buddha delivered his first sermon to his disciples. The attractions at Sarnath are the Buddha temples, the Dhamekha stupa, Chaukhandi stupa and the archaeological museum."] },
-      { day: 4, title: "Varanasi to Prayagraj", activities: ["Today after breakfast at the hotel and drive to Prayagraj. visit to Local sightseeing of Prayagraj Likes, Allahabad Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan. Overnight stay at Prayagraj."] },
-      { day: 5, title: "Prayagraj to Varanasi drop", activities: ["After breakfast check out from Hotel and drive to Varanasi for your departure."] }
+      { day: 1, title: "Arrival at Gaya and Local Sightseeing", activities: ["Upon Arrive at Gaya Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. After Fresh-up visit to Bodhgaya Temple Gaya Pind Daan, Great Buddha Statue, Mahabodhi Temple, Bodhi Tree. Overnight stay at Gaya."], image: "https://images.unsplash.com/photo-1544011938-34bfc6365ea9?auto=format&fit=crop&q=80&w=1200" },
+      { day: 2, title: "Gaya to Varanasi", activities: ["After breakfast check out from the hotel and transfer to Varanasi.Upon Arrival at Varanasi check in at the hotel. Later in the evening enjoy Ganga Boating & attend Ganga arti and then return back to Hotel and Overnight stay at the Varanasi hotel"], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 3, title: "Varanasi Local Sightseeing", activities: ["Visit the Kashi Vishwanath Temple - one of the famous Hindu temples and is dedicated to Lord Shiva, where at least once in life a Hindu is expected to do pilgrimage, and if possible, also pour the remains (ashes) of cremated ancestors here on the river Ganges. Visits other temples - Anpurna Temple, Kal Bhairav temple, Bharat Mata Mandir, Tulsimanas temple, BHU. After noon, take an excursion to Sarnath. Sarnath is the place where Buddha delivered his first sermon to his disciples. The attractions at Sarnath are the Buddha temples, the Dhamekha stupa, Chaukhandi stupa and the archaeological museum."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 4, title: "Varanasi to Prayagraj", activities: ["Today after breakfast at the hotel and drive to Prayagraj. visit to Local sightseeing of Prayagraj Likes, Allahabad Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan. Overnight stay at Prayagraj."], image: "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200" },
+      { day: 5, title: "Prayagraj to Varanasi drop", activities: ["After breakfast check out from Hotel and drive to Varanasi for your departure."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" }
     ],
     pricingTable: [
       { category: "Deluxe", pax2: "14,300/-", pax4: "11,100/-", pax6: "9,900/-", pax8: "On Demand", pax10: "On Demand", pax12: "On Demand" },
@@ -146,14 +173,19 @@ export const packages: TourPackage[] = [
     price: "10,300",
     originalPrice: "15,250",
     description: "The ultimate spiritual triangle of Uttar Pradesh, visiting the holiest cities with expert local insights.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/2024/02/ayodhya-temple.jpg",
+    image: "https://images.unsplash.com/photo-1707153673550-6a75a7674211?auto=format&fit=crop&q=80&w=1200",
+    images: [
+      "https://images.unsplash.com/photo-1707153673550-6a75a7674211?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200"
+    ],
     inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
     itinerary: [
-      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon processed for sightseeing, temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Hotel in Varanasi."] },
-      { day: 2, title: "Varanasi - Sarnath Sightseeing", activities: ["Post breakfast visit to Sarnath Sightseeing Includes: Chukhandi Stupa, Sarnath Museum, Dhamek Stupa, Golden Temple, Deer Park, Tibetan Temple, Namo Ghat. After sightseeing, return back to the hotel and Overnight stay at Varanasi."] },
-      { day: 3, title: "Varanasi to Prayagraj", activities: ["After breakfast check out from Hotel & Drive to Prayagraj. After Arrive at Prayagraj Check in At Hotel, After Fresh up visit to Local sightseeing of Prayagraj Likes: Allahabad Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan After Sightseeing Back to the Hotel & Night Stay at Hotel Prayagraj."] },
-      { day: 4, title: "Prayagraj to Ayodhya", activities: ["After breakfast, check out from Hotel and drive to Ayodhya. After Arrival at Ayodhya Check in at Hotel and then after Fresh Up Visit to Sightseeing like, Hanuman Garhi, Kanak Bhawan, Ram ki Paidi, Ram Mandir. Overnight stay at Ayodhya Hotel."] },
-      { day: 5, title: "Ayodhya to Varanasi drop", activities: ["After breakfast check out from the hotel and drive to Varanasi, after reaching Varanasi drop at Airport or Railway stations for your onward journey to home."] }
+      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon processed for sightseeing, temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Hotel in Varanasi."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 2, title: "Varanasi - Sarnath Sightseeing", activities: ["Post breakfast visit to Sarnath Sightseeing Includes: Chukhandi Stupa, Sarnath Museum, Dhamek Stupa, Golden Temple, Deer Park, Tibetan Temple, Namo Ghat. After sightseeing, return back to the hotel and Overnight stay at Varanasi."], image: "https://images.unsplash.com/photo-1616016149405-b7782627038e?auto=format&fit=crop&q=80&w=1200" },
+      { day: 3, title: "Varanasi to Prayagraj", activities: ["After breakfast check out from Hotel & Drive to Prayagraj. After Arrive at Prayagraj Check in At Hotel, After Fresh up visit to Local sightseeing of Prayagraj Likes: Allahabad Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan After Sightseeing Back to the Hotel & Night Stay at Hotel Prayagraj."], image: "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200" },
+      { day: 4, title: "Prayagraj to Ayodhya", activities: ["After breakfast, check out from Hotel and drive to Ayodhya. After Arrival at Ayodhya Check in at Hotel and then after Fresh Up Visit to Sightseeing like, Hanuman Garhi, Kanak Bhawan, Ram ki Paidi, Ram Mandir. Overnight stay at Ayodhya Hotel."], image: "https://images.unsplash.com/photo-1707153673550-6a75a7674211?auto=format&fit=crop&q=80&w=1200" },
+      { day: 5, title: "Ayodhya to Varanasi drop", activities: ["After breakfast check out from the hotel and drive to Varanasi, after reaching Varanasi drop at Airport or Railway stations for your onward journey to home."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" }
     ],
     pricingTable: [
       { category: "Deluxe", pax2: "15,250/-", pax4: "11,400/-", pax6: "10,300/-", pax8: "On Demand", pax10: "On Demand", pax12: "On Demand" },
@@ -169,17 +201,23 @@ export const packages: TourPackage[] = [
     price: "11,100",
     originalPrice: "25,250",
     description: "The most comprehensive spiritual tour covering Varanasi, Ayodhya, Lucknow, Naimisharanya, Prayagraj, and Chitrakoot.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/2024/01/triveni-sangam.jpg",
+    image: "https://images.unsplash.com/photo-1582239634234-fcba8a0cd983?auto=format&fit=crop&q=80&w=1200",
+    images: [
+      "https://images.unsplash.com/photo-1582239634234-fcba8a0cd983?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1707153673550-6a75a7674211?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1624388856860-24750a221f57?auto=format&fit=crop&q=80&w=1200"
+    ],
     inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
     itinerary: [
-      { day: 1, title: "Arrive Varanasi", activities: ["On arrival meet & assistance at Varanasi airport/ Railway station. Proceed to Varanasi check-in to the hotel. Overnight stay at the hotel."] },
-      { day: 2, title: "Varanasi – Ayodhya", activities: ["After breakfast Proceed to Ayodhya. Arrive at Ayodhya & visit Ram Janambhoomi – the birthplace of lord Rama and other temples. It’s one of the seven most sacred cities of ancient India. Nageshnath temple. Hanumangarhi, Ram Ki Padi."] },
-      { day: 3, title: "Ayodhya - Lucknow - City Tour", activities: ["After breakfast, proceed for Lucknow and check-in to the hotel. Later Proceed for Lucknow city tour and visit Bara Imambara, Bhul Bhulaiya, Chhota imambara, Clock tower, Kaiserbagh Palace, & Shah Najaf Imambara. Later return to the hotel evening free at leisure & Overnight stay at hotel."] },
-      { day: 4, title: "Lucknow – Naimisharanya - Prayagraj", activities: ["Morning after breakfast drive to Naimisharanya. Upon arrival, sites are visited over there. Naimisharanya, it is the holy place and renowned since the time of Satya Yuga or Treta Yug, the most ancient times. It is believed that after visiting this sacred place, people can get rid of their sins. After visiting Naimisharanya, people attain Moksha (liberation) and attain immense powers. These all things and their importance are described in various ancient scriptures of India. Naimisharanya is also popularly known as Naimish or Neemsar or Neemshaar. Naimisharanya is the birthplace of many puranas and this place is the abode of all of the holy places on the earth and to visit only this place equals visiting all holy places at once. This evidence is found in The Mahaabhaarat. Also the renowned sant Goswami Tulasi Das described the prominence of Naimisharanya in Ram Charith Maanas. Later start drive to Prayagraj check-in to the hotel .Overnight stay."] },
-      { day: 5, title: "Prayagraj – Chitrakoot", activities: ["Early this morning, proceed to Sangam & enjoy boat ride(Optional) and have a sacred bath in Triveni Sangam is the confluence of three of the holiest rivers in Hindu mythology – Ganga, Yamuna and the mythical Saraswati. At the Sangam, the waters of the Ganges and the Yamuna can be distinctly seen to merge into one. Later visit Hanuman Temple. Later Come back to the hotel to have breakfast & check-out. Later they started to drive to Chitrakoot - According to Hindu Mythology Lord Rama, Sita and Lakshman spent eleven and half years of their fourteen years of exile. Later in the evening visit Ram Ghat situated at the bank of River Mandakini."] },
-      { day: 6, title: "Chitrakoot - Varanasi", activities: ["Today after breakfast you will proceed for a city tour of Chitrakoot and visit Hanuman Dhara, Janaki kund, Kamadgiri temple, Sati Anusuya, sphatik shila & Gupt Godavari. Later check-out from the hotel and drive to Varanasi. Up-on arrival check-in to the hotel."] },
-      { day: 7, title: "Varanasi – Full day city tour", activities: ["Early this morning, we will be taken for a boat ride on the Ganges. It is a mystical and spiritual experience as you watch people offering water to the Sun God and devotees taking holy dip in the Ganges. Experience the different ghats of Varanasi. Each ghats has its own history and Hinduism value. Later come back to the hotel for breakfast & proceed for a half day temple tour of Varanasi visiting Bharat Mata (Mother India) Mandir, Durga, Tulsi Manas, Sankat Mochan Temple and the new Vishwanath Temple. Later Afternoon Visit Sarnath and Evening Ganga Aarti at Dashashwamedh Ghat."] },
-      { day: 8, title: "Departure", activities: ["Today on time transfer to Airport/ Railway station for an onward journey with beautiful memories of your holiday."] }
+      { day: 1, title: "Arrive Varanasi", activities: ["On arrival meet & assistance at Varanasi airport/ Railway station. Proceed to Varanasi check-in to the hotel. Overnight stay at the hotel."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 2, title: "Varanasi – Ayodhya", activities: ["After breakfast Proceed to Ayodhya. Arrive at Ayodhya & visit Ram Janambhoomi – the birthplace of lord Rama and other temples. It’s one of the seven most sacred cities of ancient India. Nageshnath temple. Hanumangarhi, Ram Ki Padi."], image: "https://images.unsplash.com/photo-1707153673550-6a75a7674211?auto=format&fit=crop&q=80&w=1200" },
+      { day: 3, title: "Ayodhya - Lucknow - City Tour", activities: ["After breakfast, proceed for Lucknow and check-in to the hotel. Later Proceed for Lucknow city tour and visit Bara Imambara, Bhul Bhulaiya, Chhota imambara, Clock tower, Kaiserbagh Palace, & Shah Najaf Imambara. Later return to the hotel evening free at leisure & Overnight stay at hotel."], image: "https://images.unsplash.com/photo-1582239634234-fcba8a0cd983?auto=format&fit=crop&q=80&w=1200" },
+      { day: 4, title: "Lucknow – Naimisharanya - Prayagraj", activities: ["Morning after breakfast drive to Naimisharanya. Upon arrival, sites are visited over there. Naimisharanya, it is the holy place and renowned since the time of Satya Yuga or Treta Yug, the most ancient times. It is believed that after visiting this sacred place, people can get rid of their sins. After visiting Naimisharanya, people attain Moksha (liberation) and attain immense powers. These all things and their importance are described in various ancient scriptures of India. Naimisharanya is also popularly known as Naimish or Neemsar or Neemshaar. Naimisharanya is the birthplace of many puranas and this place is the abode of all of the holy places on the earth and to visit only this place equals visiting all holy places at once. This evidence is found in The Mahaabhaarat. Also the renowned sant Goswami Tulasi Das described the prominence of Naimisharanya in Ram Charith Maanas. Later start drive to Prayagraj check-in to the hotel .Overnight stay."], image: "https://images.unsplash.com/photo-1590733856230-67e98a53164a?auto=format&fit=crop&q=80&w=1200" },
+      { day: 5, title: "Prayagraj – Chitrakoot", activities: ["Early this morning, proceed to Sangam & enjoy boat ride(Optional) and have a sacred bath in Triveni Sangam is the confluence of three of the holiest rivers in Hindu mythology – Ganga, Yamuna and the mythical Saraswati. At the Sangam, the waters of the Ganges and the Yamuna can be distinctly seen to merge into one. Later visit Hanuman Temple. Later Come back to the hotel to have breakfast & check-out. Later they started to drive to Chitrakoot - According to Hindu Mythology Lord Rama, Sita and Lakshman spent eleven and half years of their fourteen years of exile. Later in the evening visit Ram Ghat situated at the bank of River Mandakini."], image: "https://images.unsplash.com/photo-1624388856860-24750a221f57?auto=format&fit=crop&q=80&w=1200" },
+      { day: 6, title: "Chitrakoot - Varanasi", activities: ["Today after breakfast you will proceed for a city tour of Chitrakoot and visit Hanuman Dhara, Janaki kund, Kamadgiri temple, Sati Anusuya, sphatik shila & Gupt Godavari. Later check-out from the hotel and drive to Varanasi. Up-on arrival check-in to the hotel."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 7, title: "Varanasi – Full day city tour", activities: ["Early this morning, we will be taken for a boat ride on the Ganges. It is a mystical and spiritual experience as you watch people offering water to the Sun God and devotees taking holy dip in the Ganges. Experience the different ghats of Varanasi. Each ghats has its own history and Hinduism value. Later come back to the hotel for breakfast & proceed for a half day temple tour of Varanasi visiting Bharat Mata (Mother India) Mandir, Durga, Tulsi Manas, Sankat Mochan Temple and the new Vishwanath Temple. Later Afternoon Visit Sarnath and Evening Ganga Aarti at Dashashwamedh Ghat."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" },
+      { day: 8, title: "Departure", activities: ["Today on time transfer to Airport/ Railway station for an onward journey with beautiful memories of your holiday."], image: "https://images.unsplash.com/photo-1561359313-0639aad49ca6?auto=format&fit=crop&q=80&w=1200" }
     ],
     pricingTable: [
       { category: "Deluxe", pax2: "25,250/-", pax4: "16,800/-", pax6: "11,100/-", pax8: "On Demand", pax10: "On Demand", pax12: "On Demand" },

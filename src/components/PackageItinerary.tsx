@@ -31,6 +31,11 @@ export default function PackageItinerary({ itinerary }: ItineraryProps) {
             </button>
             <div className="itinerary-content">
               <div className="itinerary-inner">
+                {day.image && (
+                  <div className="day-image-container">
+                    <img src={day.image} alt={day.title} />
+                  </div>
+                )}
                 <ul>
                   {day.activities.map((activity, idx) => (
                     <li key={idx}>{activity}</li>
@@ -130,6 +135,26 @@ export default function PackageItinerary({ itinerary }: ItineraryProps) {
           left: 0;
           color: #FF8C00;
           font-weight: bold;
+        }
+        .day-image-container {
+          margin-bottom: 20px;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .day-image-container img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          display: block;
+        }
+        @media (max-width: 768px) {
+          .itinerary-inner {
+            padding: 0 20px 20px 20px;
+          }
+           .day-image-container img {
+            height: 200px;
+          }
         }
       `}</style>
     </div>
