@@ -118,13 +118,20 @@ export default function EnquireNow() {
             <div style={{ marginBottom: '20px' }}>
               <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600' }}>Interested In</label>
               <select name="package" value={formData.package} onChange={handleChange} style={{ width: '100%', padding: '12px', borderRadius: '5px', border: '1px solid #ddd' }}>
-                 <option>Varanasi & Prayagraj Day Excursion (2N/3D)</option>
-                 <option>Varanasi & Gaya Spiritual Journey (3N/4D)</option>
+                 <option>Varanasi & Prayagraj Tour (2N/3D)</option>
+                 <option>Varanasi & Gaya Spiritual Tour (3N/4D)</option>
                  <option>Varanasi & Prayagraj Stay Tour (3N/4D)</option>
                  <option>Varanasi & Ayodhya Divine Tour (3N/4D)</option>
-                 <option>Varanasi Gaya & Prayagraj Pilgrimage (4N/5D)</option>
-                 <option>Varanasi Ayodhya & Prayagraj Essential (4N/5D)</option>
-                 <option>Grand UP & Chitrakoot Spiritual Circuit (7N/8D)</option>
+                 <option>Gaya Varanasi & Prayagraj Tour (4N/5D)</option>
+                 <option>Varanasi Sarnath Prayagraj & Ayodhya (4N/5D)</option>
+                 <option>Prayagraj Sacred Tour (2N/3D)</option>
+                 <option>Lucknow & Ayodhya Heritage Tour (2N/3D)</option>
+                 <option>Ayodhya Ram Janmabhoomi Special (2N/3D)</option>
+                 <option>Grand North India Spiritual Circuit (5N/6D)</option>
+                 <option>Spiritual Triangle & Taj Mahal Grand Tour (6N/7D)</option>
+                 <option>Ultimate Spiritual Heritage Circuit (6N/7D)</option>
+                 <option>Divine Brij to Kashi Mahayatra (8N/9D)</option>
+                 <option>Brij to Ayodhya Heritage Trail (5N/6D)</option>
                  <option>Customized Tour Plan</option>
               </select>
             </div>
