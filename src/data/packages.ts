@@ -209,8 +209,8 @@ export const packages: TourPackage[] = [
     inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
     itinerary: [
       { day: 1, title: "Arrival at Prayagraj", activities: ["Meet and assist at the Airport/Railway Station and transfer to the hotel. Rest of the day at leisure. Dinner and overnight stay at Prayagraj."], image: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200" },
-      { day: 2, title: "Prayagraj Sightseeing", activities: ["After breakfast, drive to Triveni Sangam (confluence of Ganga, Yamuna & Saraswati). Later visit Anand Bhawan, Swaraj Bhawan, and the reclining Hanuman Temple. Overnight stay at Prayagraj."], image: "https://images.unsplash.com/photo-1704872833406-1536a3d3e613?auto=format&fit=crop&q=80&w=1200" },
-      { day: 3, title: "Departure from Prayagraj", activities: ["After breakfast, check out from the hotel and get assisted for transfer to the Airport or Railway Station for your onward journey."], image: "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?auto=format&fit=crop&q=80&w=1200" }
+      { day: 2, title: "Prayagraj Sightseeing", activities: ["After breakfast, drive to Triveni Sangam (confluence of Ganga, Yamuna & Saraswati). Later visit Anand Bhawan, Swaraj Bhawan, and the reclining Hanuman Temple. Overnight stay at Prayagraj."], image: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200" },
+      { day: 3, title: "Departure from Prayagraj", activities: ["After breakfast, check out from the hotel and get assisted for transfer to the Airport or Railway Station for your onward journey."], image: "https://images.unsplash.com/photo-1541013445585-5df7ca741270?auto=format&fit=crop&q=80&w=1200" }
     ]
   },
   {
@@ -250,7 +250,7 @@ export const packages: TourPackage[] = [
     itinerary: [
       { day: 1, title: "Ayodhya Arrival", activities: ["Pickup from Lucknow/Ayodhya and transfer to the hotel. Evening visit to the local markets and Saryu River on foot. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1710429814573-7f07a792cba2?auto=format&fit=crop&q=80&w=1200" },
       { day: 2, title: "Ayodhya Full Day Sightseeing", activities: ["After breakfast, explore the divine Ayodhya: Ram Janmabhoomi, Kanak Bhawan, Hanuman Garhi, Nageshwarnath Temple, and Gulab Bari. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200" },
-      { day: 3, title: "Ayodhya Departure", activities: ["Check out from the hotel and get assisted for transfer to Lucknow Railway Station/Airport for your onward journey."], image: "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?auto=format&fit=crop&q=80&w=1200" }
+      { day: 3, title: "Ayodhya Departure", activities: ["Check out from the hotel and get assisted for transfer to Lucknow Railway Station/Airport for your onward journey."], image: "https://images.unsplash.com/photo-1541013445585-5df7ca741270?auto=format&fit=crop&q=80&w=1200" }
     ]
   },
   {
@@ -261,7 +261,7 @@ export const packages: TourPackage[] = [
     price: "Enquire",
     originalPrice: "Enquire",
     description: "An extensive spiritual odyssey through the holiest cities of Uttar Pradesh, from the secrets of Naimisharanya to the ghats of Kashi.",
-    image: "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1582510003544-2d095665039b?auto=format&fit=crop&q=80&w=1200",
     images: [
       "https://images.unsplash.com/photo-1702888636184-e4070a2f7c0a?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200",
@@ -270,11 +270,11 @@ export const packages: TourPackage[] = [
     inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
     itinerary: [
       { day: 1, title: "Lucknow Arrival", activities: ["Arrive at Lucknow and transfer to the hotel. Visit Bara Imambara, Bhool bhulaiya, Clock tower, and Chota Imambara. Overnight stay at Lucknow."], image: "https://images.unsplash.com/photo-1702888636184-e4070a2f7c0a?auto=format&fit=crop&q=80&w=1200" },
-      { day: 2, title: "Lucknow - Naimisharanya - Ayodhya", activities: ["Visit Neemsaar Tirth, Chakrathirth, Hanuman Garhi, and Sita Kund in Naimisharanya. Drive to Ayodhya. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200" },
+      { day: 2, title: "Lucknow - Naimisharanya - Ayodhya", activities: ["Visit Neemsaar Tirth, Chakrathirth, Hanuman Garhi, and Sita Kund in Naimisharanya. Drive to Ayodhya. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1582510003544-2d095665039b?auto=format&fit=crop&q=80&w=1200" },
       { day: 3, title: "Ayodhya - Prayagraj", activities: ["Visit Saryu River, Hanuman Garhi, Ram Janmabhoomi, and Kanak Bhawan. Evening drive to Prayagraj. Overnight stay at Prayagraj."], image: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200" },
       { day: 4, title: "Prayagraj - Varanasi", activities: ["Visit Triveni Sangam, Hanuman Temple, and Anand Bhawan. Drive to Varanasi. Overnight stay at Varanasi."], image: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200" },
       { day: 5, title: "Varanasi Local Sightseeing", activities: ["Sunrise boat ride at Dashashwamedh Ghat. Visit Kashi Vishwanath Temple, Annapurna Temple, and Sarnath. Evening Ganga Aarti. Overnight stay at Varanasi."], image: "https://images.unsplash.com/photo-1763186534213-a3ce3ec7e9b3?auto=format&fit=crop&q=80&w=1200" },
-      { day: 6, title: "Varanasi Departure", activities: ["Drop at Varanasi Airport/Railway station according to your flight/train schedule."], image: "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?auto=format&fit=crop&q=80&w=1200" }
+      { day: 6, title: "Varanasi Departure", activities: ["Drop at Varanasi Airport/Railway station according to your flight/train schedule."], image: "https://images.unsplash.com/photo-1541013445585-5df7ca741270?auto=format&fit=crop&q=80&w=1200" }
     ]
   },
   {
@@ -297,7 +297,7 @@ export const packages: TourPackage[] = [
       { day: 2, title: "Varanasi Sightseeing", activities: ["Sunrise boat ride, Kashi Vishwanath temple visit, and explore the ancient city. Later visit Sarnath and return for overnight stay."], image: "https://images.unsplash.com/photo-1704872833406-1536a3d3e613?auto=format&fit=crop&q=80&w=1200" },
       { day: 3, title: "Varanasi to Prayagraj", activities: ["Drive to Prayagraj. Visit Triveni Sangam, Hanuman Temple, and Anand Bhawan. Overnight stay at Prayagraj."], image: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200" },
       { day: 4, title: "Prayagraj to Ayodhya", activities: ["Drive to Ayodhya. Visit Ramjanam Bhoomi, Kanak Bhawan, Hanuman Garhi, and the Saryu River. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200" },
-      { day: 5, title: "Ayodhya to Lucknow", activities: ["En-route visit Naimishrayna (Chakra Tirth). Transfer to Lucknow and visit the evening markets. Overnight stay at Lucknow."], image: "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200" },
+      { day: 5, title: "Ayodhya to Lucknow", activities: ["En-route visit Naimishrayna (Chakra Tirth). Transfer to Lucknow and visit the evening markets. Overnight stay at Lucknow."], image: "https://images.unsplash.com/photo-1582510003544-2d095665039b?auto=format&fit=crop&q=80&w=1200" },
       { day: 6, title: "Lucknow to Agra", activities: ["Morning Lucknow sightseeing (Bara Imambara, Zoo). Late afternoon drive to Agra via Express Way. Overnight stay at Agra."], image: "https://images.unsplash.com/photo-1702888636184-e4070a2f7c0a?auto=format&fit=crop&q=80&w=1200" },
       { day: 7, title: "Agra Sightseeing and Drop", activities: ["Visit the magnificent Taj Mahal and Agra Fort. Drop at Agra Railway Station or Airport for departure."], image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1200" }
     ]
@@ -323,7 +323,7 @@ export const packages: TourPackage[] = [
       { day: 3, title: "Varanasi - Bodhgaya", activities: ["Drive to Gaya. Visit Vishnupad temple and Phalgu river for Pinda Dann. Move to Bodhgaya and visit Mahabodhi temple and the Great Buddha statue. Overnight stay at Bodhgaya."], image: "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200" },
       { day: 4, title: "Bodhgaya - Prayagraj", activities: ["Drive to Prayagraj. Visit Triveni Sangam, Hanuman Temple, and Anand Bhawan. Overnight stay at Prayagraj."], image: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200" },
       { day: 5, title: "Prayagraj - Ayodhya", activities: ["Drive to Ayodhya. Visit Ram Janmabhoomi, Kanak Bhawan, Hanuman Garhi, and Saryu River. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200" },
-      { day: 6, title: "Ayodhya to Lucknow", activities: ["En-route visit Naimishrayna. Transfer to Lucknow and visit Bara Imambara and Chhota Imambara. Overnight stay at Lucknow."], image: "https://images.unsplash.com/photo-1702888636184-e4070a2f7c0a?auto=format&fit=crop&q=80&w=1200" },
+      { day: 6, title: "Ayodhya to Lucknow", activities: ["En-route visit Naimishrayna. Transfer to Lucknow and visit Bara Imambara and Chhota Imambara. Overnight stay at Lucknow."], image: "https://images.unsplash.com/photo-1582510003544-2d095665039b?auto=format&fit=crop&q=80&w=1200" },
       { day: 7, title: "Lucknow Departure", activities: ["Morning at leisure. Drop at Lucknow Airport/Railway station according to your departure schedule."], image: "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?auto=format&fit=crop&q=80&w=1200" }
     ]
   },
@@ -347,11 +347,11 @@ export const packages: TourPackage[] = [
       { day: 2, title: "Mathura & Vrindavan Sightseeing", activities: ["Visit Sri Krishna Janmabhoomi, Banke Bihari Temple, Dwarkadhish Temple, and ISKCON Vrindavan. Overnight stay at Vrindavan."], image: "https://images.unsplash.com/photo-1725514681285-b8271101859c?auto=format&fit=crop&q=80&w=1200" },
       { day: 3, title: "Brij Bhoomi Excursion", activities: ["Explore Goverdhan, Gokul, and Barsana. Experience the spiritual vibes of Brij Bhoomi. Overnight stay at Vrindavan."], image: "https://images.unsplash.com/photo-1725514681285-b8271101859c?auto=format&fit=crop&q=80&w=1200" },
       { day: 4, title: "Vrindavan - Agra - Lucknow", activities: ["Early morning drive to Agra. Visit the Taj Mahal and Agra Fort. Continue drive to Lucknow via Expressway. Overnight stay at Lucknow."], image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1200" },
-      { day: 5, title: "Lucknow - Naimisharanya - Ayodhya", activities: ["Visit the holy Naimisharanya (Chakra Tirth). Drive to Ayodhya and visit Saryu River in the evening. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200" },
+      { day: 5, title: "Lucknow - Naimisharanya - Ayodhya", activities: ["Visit the holy Naimisharanya (Chakra Tirth). Drive to Ayodhya and visit Saryu River in the evening. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1582510003544-2d095665039b?auto=format&fit=crop&q=80&w=1200" },
       { day: 6, title: "Ayodhya to Prayagraj", activities: ["Ayodhya sightseeing (Ram Janmabhoomi, Hanuman Garhi). Afternoon drive to Prayagraj. Overnight stay at Prayagraj."], image: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200" },
       { day: 7, title: "Prayagraj to Varanasi", activities: ["Morning visit to Triveni Sangam, Hanuman Temple, and Anand Bhawan. Drive to Varanasi. Overnight stay at Varanasi."], image: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200" },
       { day: 8, title: "Varanasi Local Sightseeing", activities: ["Sunrise boat ride, Kashi Vishwanath temple, and temple tour. Visit Sarnath in the afternoon. Evening Ganga Aarti. Overnight stay at Varanasi."], image: "https://images.unsplash.com/photo-1763186534213-a3ce3ec7e9b3?auto=format&fit=crop&q=80&w=1200" },
-      { day: 9, title: "Varanasi Departure", activities: ["Final departure from Varanasi. Transfer to Airport/Railway station."], image: "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?auto=format&fit=crop&q=80&w=1200" }
+      { day: 9, title: "Varanasi Departure", activities: ["Final departure from Varanasi. Transfer to Airport/Railway station."], image: "https://images.unsplash.com/photo-1541013445585-5df7ca741270?auto=format&fit=crop&q=80&w=1200" }
     ]
   },
   {
@@ -373,9 +373,9 @@ export const packages: TourPackage[] = [
       { day: 1, title: "Mathura Arrival", activities: ["Pickup and transfer to hotel in Vrindavan/Mathura. Evening visit to local Vrindavan temples. Overnight stay."], image: "https://images.unsplash.com/photo-1725514681285-b8271101859c?auto=format&fit=crop&q=80&w=1200" },
       { day: 2, title: "Mathura/Vrindavan Sightseeing", activities: ["Full day visit to Sri Krishna Janmabhoomi, Banke Bihari, and ISKCON temple. Overnight stay at Vrindavan."], image: "https://images.unsplash.com/photo-1725514681285-b8271101859c?auto=format&fit=crop&q=80&w=1200" },
       { day: 3, title: "Vrindavan - Agra - Lucknow", activities: ["Morning visit to Taj Mahal and Agra Fort. Drive to Lucknow via expressway. Overnight stay at Lucknow."], image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1200" },
-      { day: 4, title: "Lucknow - Naimisharanya - Ayodhya", activities: ["Visit the holy Naimisharanya (Chakra Tirth). Drive to Ayodhya. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200" },
+      { day: 4, title: "Lucknow - Naimisharanya - Ayodhya", activities: ["Visit the holy Naimisharanya (Chakra Tirth). Drive to Ayodhya. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1582510003544-2d095665039b?auto=format&fit=crop&q=80&w=1200" },
       { day: 5, title: "Ayodhya Full Day Sightseeing", activities: ["Visit Ram Janmabhoomi, Kanak Bhawan, Hanuman Garhi, and Saryu River Aarti. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200" },
-      { day: 6, title: "Ayodhya/Lucknow Departure", activities: ["Check out and drop at Ayodhya/Lucknow Airport or Railway station for departure."], image: "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?auto=format&fit=crop&q=80&w=1200" }
+      { day: 6, title: "Ayodhya/Lucknow Departure", activities: ["Check out and drop at Ayodhya/Lucknow Airport or Railway station for departure."], image: "https://images.unsplash.com/photo-1541013445585-5df7ca741270?auto=format&fit=crop&q=80&w=1200" }
     ]
   }
 ];
