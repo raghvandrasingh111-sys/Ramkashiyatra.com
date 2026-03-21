@@ -8,6 +8,7 @@ interface PackageCardProps {
   location: string;
   title: string;
   href: string;
+  imageAlt?: string;
 }
 
 export default function PackageCard({
@@ -15,7 +16,8 @@ export default function PackageCard({
   duration,
   location,
   title,
-  href
+  href,
+  imageAlt
 }: PackageCardProps) {
   return (
     <div className="package-card" style={{
@@ -29,7 +31,7 @@ export default function PackageCard({
       <div style={{ position: 'relative', height: '280px', overflow: 'hidden' }}>
         <img 
           src={image} 
-          alt={title} 
+          alt={imageAlt || title} 
           style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s ease' }} 
           className="card-image"
         />

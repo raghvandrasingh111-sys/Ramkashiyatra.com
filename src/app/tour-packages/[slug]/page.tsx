@@ -20,13 +20,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!pkg) return {};
 
   return {
-    title: `${pkg.name} | ${pkg.duration} Spiritual Tour`,
-    description: pkg.description,
+    title: `${pkg.name} | ${pkg.duration} Varanasi Ayodhya Package 2024-25`,
+    description: `${pkg.description} Book this ${pkg.duration} spiritual journey to ${pkg.location} with Luxury Trip India. Includes RAM Mandir Darshan and Kashi Vishwanath services.`,
     alternates: {
       canonical: `https://varanasiayodhya.com/tour-packages/${slug}`,
     },
     openGraph: {
-      title: pkg.name,
+      title: `${pkg.name} - ${pkg.duration} Tour Package`,
       description: pkg.description,
       url: `https://varanasiayodhya.com/tour-packages/${slug}`,
       images: [{ url: pkg.image }],
@@ -42,22 +42,30 @@ export default async function PackageDetailPage({ params }: Props) {
     notFound();
   }
 
-  const jsonLd = {
+  const tourTripLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "TouristTrip",
     "name": pkg.name,
-    "image": pkg.image,
     "description": pkg.description,
-    "brand": {
-      "@type": "Brand",
-      "name": "Luxury Trip India"
-    },
+    "image": pkg.image,
+    "touristType": "Pilgrims, Spiritual Seekers",
     "offers": {
       "@type": "Offer",
       "url": `https://varanasiayodhya.com/tour-packages/${slug}`,
       "priceCurrency": "INR",
-      "availability": "https://schema.org/InStock"
-    }
+      "availability": "https://schema.org/InStock",
+      "offeredBy": {
+        "@type": "TravelAgency",
+        "name": "Luxury Trip India",
+        "url": "https://varanasiayodhya.com"
+      }
+    },
+    "itinerary": pkg.itinerary.map(item => ({
+      "@type": "ListItem",
+      "position": item.day,
+      "name": item.title,
+      "description": item.activities.join(", ")
+    }))
   };
 
   const breadcrumbLd = {
@@ -89,7 +97,7 @@ export default async function PackageDetailPage({ params }: Props) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tourTripLd) }}
       />
       <script
         type="application/ld+json"

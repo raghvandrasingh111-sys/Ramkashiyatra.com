@@ -33,7 +33,7 @@ export default function PackageItinerary({ itinerary }: ItineraryProps) {
               <div className="itinerary-inner">
                 {day.image && (
                   <div className="day-image-container">
-                    <img src={day.image} alt={day.title} />
+                    <img src={day.image} alt={day.imageAlt || day.title} />
                   </div>
                 )}
                 <ul>

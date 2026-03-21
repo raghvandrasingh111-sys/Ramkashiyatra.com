@@ -4,17 +4,28 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://varanasiayodhya.com"),
   title: {
-    default: "Luxury Trip India | Best Ayodhya Varanasi Tour Packages 2026",
+    default: "Luxury Trip India | Best Varanasi & Ayodhya Tour Packages 2024-2025",
     template: "%s | Luxury Trip India"
   },
-  description: "Book customized Ayodhya Varanasi Tour Packages for 2026. Specialized in Ram Mandir Darshan, Kashi Vishwanath Spiritual Tours, and Prayagraj Sangam trips at best prices.",
-  keywords: ["Ayodhya Varanasi tour packages", "Varanasi Ayodhya tour package 2026", "Ram Mandir darshan tour", "Kashi Vishwanath temple tour", "Prayagraj Sangam tour", "Spiritual tours Uttar Pradesh"],
+  description: "Book customized Varanasi Ayodhya Tour Packages for 2024-2025. Specializing in Ram Mandir Darshan tours, Kashi Vishwanath spiritual journeys, and Prayagraj Sangam trips with premium AC vehicles and expert guides.",
+  keywords: [
+    "Varanasi Ayodhya tour package 2025", 
+    "Ayodhya tour packages from Delhi", 
+    "Ram Mandir Ayodhya tour package", 
+    "Kashi Vishwanath temple tour", 
+    "Varanasi tour packages for family", 
+    "Prayagraj Sangam tour package",
+    "Best travel agency for Varanasi Ayodhya",
+    "Spiritual tours Uttar Pradesh",
+    "Luxury Trip India",
+    "Varanasi Ayodhya Prayagraj itinerary"
+  ],
   alternates: {
     canonical: "./",
   },
   openGraph: {
-    title: "Luxury Trip India | Best Ayodhya Varanasi Tour Packages 2026",
-    description: "Experience the spiritual essence of UP with our curated Ayodhya and Varanasi tour packages. 24/7 support and customized itineraries.",
+    title: "Luxury Trip India | Premium Varanasi & Ayodhya Tour Packages",
+    description: "Experience the ultimate spiritual journey with our 2024-2025 tour packages. Customized itineraries for Ayodhya, Varanasi, Prayagraj, and more.",
     url: "https://varanasiayodhya.com/",
     siteName: "Luxury Trip India",
     images: [
@@ -31,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Luxury Trip India | Ayodhya Varanasi Tour Packages",
-    description: "Book your spiritual journey to Ayodhya and Varanasi with expert guides and premium comfort.",
+    description: "Book your specialized spiritual journey to Ayodhya and Varanasi with expert guides and premium comfort.",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -63,17 +74,35 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
+              "@type": "TravelAgency",
               "name": "Luxury Trip India",
               "url": "https://varanasiayodhya.com",
               "logo": "https://luxurytripindia.com/img/logo-luxury.png",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+91-9999995475",
-                "contactType": "customer service",
-                "areaServed": "IN",
-                "availableLanguage": ["en", "Hindi"]
+              "image": "https://varanasiayodhya.com/og-image.jpg",
+              "description": "Leading travel agency for spiritual and cultural tours in North India, specializing in Varanasi, Ayodhya, Prayagraj, and Lucknow tour packages.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "F2/30, Imlok -02 M Near Taj, Nadesar",
+                "addressLocality": "Varanasi",
+                "addressRegion": "Uttar Pradesh",
+                "postalCode": "221002",
+                "addressCountry": "IN"
               },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "25.3331",
+                "longitude": "82.9772"
+              },
+              "telephone": "+91-9999995475",
+              "priceRange": "$$",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                  "opens": "08:00",
+                  "closes": "20:00"
+                }
+              ],
               "sameAs": [
                 "https://www.facebook.com/profile.php?id=61564188934197",
                 "https://www.instagram.com/luxurytripindia"

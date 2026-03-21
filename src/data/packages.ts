@@ -3,6 +3,7 @@ export interface ItineraryDay {
   title: string;
   activities: string[];
   image?: string;
+  imageAlt?: string;
 }
 
 export interface PricingCategory {
@@ -24,6 +25,7 @@ export interface TourPackage {
   originalPrice: string;
   description: string;
   image: string;
+  imageAlt?: string;
   images?: string[];
   itinerary: ItineraryDay[];
   inclusions: string[];
@@ -40,6 +42,7 @@ export const packages: TourPackage[] = [
     originalPrice: "7,950",
     description: "Experience the spiritual heart of India with a comprehensive tour of Varanasi's ancient temples and the sacred Sangam at Prayagraj.",
     image: "https://images.unsplash.com/photo-1763186534213-a3ce3ec7e9b3?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Varanasi Ghats and Ganges River Spiritual Tour Package",
     images: [
       "https://images.unsplash.com/photo-1763186534213-a3ce3ec7e9b3?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200",
@@ -47,7 +50,7 @@ export const packages: TourPackage[] = [
     ],
     inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
     itinerary: [
-      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon for sightseeing of temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Hotel in Varanasi."], image: "https://images.unsplash.com/photo-1763186534213-a3ce3ec7e9b3?auto=format&fit=crop&q=80&w=1200" },
+      { day: 1, title: "Arrival at Varanasi and Local Sightseeing", activities: ["Upon Arrive at Varanasi Airport or Railway Station and drive to the hotel, on arrival check in at the hotel. Later in the afternoon for sightseeing of temples visit Kashi Vishwanath Temple (also known as The Golden Temple), Sankat Mochan Temple, Durga Temple, Bhu Vishwanath Temple (VT) and Tulsi Manas temple. Later in the evening enjoy Ganga Boating & attend Ganga aarti and then return back to Hotel and Overnight stay at the Hotel in Varanasi."], image: "https://images.unsplash.com/photo-1763186534213-a3ce3ec7e9b3?auto=format&fit=crop&q=80&w=1200", imageAlt: "Kashi Vishwanath Temple Darshan Varanasi" },
       { day: 2, title: "Varanasi – Prayagraj day Excursion", activities: ["After breakfast, take a day excursion to Prayagraj, Visit Prayagraj Fort, Khusro Bagh, Triveni Sangam, Anand Bhavan, Swaraj Bhawan Later in the evening return back to Varanasi and overnight stay at Varanasi Hotel."], image: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200" },
       { day: 3, title: "Varanasi - Sarnath Sightseeing and Drop", activities: ["Enjoy morning breakfast at the hotel. After check out from the hotel & move to Sarnath, sightseeing includes Chukhandi Stupa, Sarnath Museum, Dhamek Stupa, Golden Temple, Deer Park, Tibetan Temple and then drop at the airport/railway station as per the departure schedule."], image: "https://images.unsplash.com/photo-1704872833406-1536a3d3e613?auto=format&fit=crop&q=80&w=1200" }
     ],
@@ -65,6 +68,7 @@ export const packages: TourPackage[] = [
     originalPrice: "12,500",
     description: "A profound spiritual journey covering the most sacred rituals in Varanasi and the enlightenment site of Bodhgaya.",
     image: "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Bodhgaya Mahabodhi Temple Enlightenment Tour",
     images: [
       "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1736568763844-2063f7761462?auto=format&fit=crop&q=80&w=1200",
@@ -90,8 +94,9 @@ export const packages: TourPackage[] = [
     location: "Varanasi - 2N, Prayagraj - 1N",
     price: "7,800",
     originalPrice: "11,500",
-    description: "Explore the ancient cities of Varanasi and Prayagraj with comfortable overnight stays and comprehensive sightseeing.",
+    description: "Explore the ancient cities of Varanasi and Prayagraj with comfortable overnight stays and comprehensive spiritual sightseeing including the Holy Triveni Sangam.",
     image: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Triveni Sangam Prayagraj Holy Confluence Spiritual View",
     images: [
       "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?auto=format&fit=crop&q=80&w=1200",
@@ -117,8 +122,9 @@ export const packages: TourPackage[] = [
     location: "Varanasi - 2N, Ayodhya - 1N",
     price: "8,000",
     originalPrice: "11,700",
-    description: "A divine circuit connecting the spiritual power of Kashi with the sacred birthplace of Lord Rama in Ayodhya.",
+    description: "A divine circuit connecting the spiritual power of Kashi with the sacred birthplace of Lord Rama in Ayodhya. Includes RAM Mandir Darshan 2025.",
     image: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Ayodhya RAM Mandir Temple Entrance Spiritual Journey",
     images: [
       "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1710429814573-7f07a792cba2?auto=format&fit=crop&q=80&w=1200",
@@ -144,8 +150,9 @@ export const packages: TourPackage[] = [
     location: "Varanasi - 2N, Gaya - 1N, Prayagraj - 1N",
     price: "9,900",
     originalPrice: "14,300",
-    description: "A comprehensive spiritual circuit covering Gaya, Kashi, and Prayag for a complete religious experience.",
+    description: "A comprehensive spiritual circuit covering Gaya, Kashi Vishwanath, and Prayag Sangam for a complete religious experience in 2025.",
     image: "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Varanasi Ganga Aarti Spiritual Sightseeing Ghats",
     images: [
       "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200",
@@ -172,8 +179,9 @@ export const packages: TourPackage[] = [
     location: "Varanasi - 2N, Ayodhya - 1N, Prayagraj - 1N",
     price: "10,300",
     originalPrice: "15,250",
-    description: "The ultimate spiritual triangle of Uttar Pradesh, visiting the holiest cities with expert local insights.",
+    description: "The ultimate spiritual triangle of Uttar Pradesh, visiting the holiest cities with expert local insights and RAM Mandir Darshan 2025.",
     image: "https://images.unsplash.com/photo-1704872833406-1536a3d3e613?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Varanasi Sarnath Buddhist Temple Peace and Spirituality",
     images: [
       "https://images.unsplash.com/photo-1704872833406-1536a3d3e613?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200",
@@ -200,8 +208,9 @@ export const packages: TourPackage[] = [
     location: "Prayagraj",
     price: "Enquire",
     originalPrice: "Enquire",
-    description: "Discover the sacred confluence of the three holiest rivers and the historic landmarks of Prayagraj.",
+    description: "Discover the sacred confluence of the three holiest rivers and the historic landmarks of Prayagraj on this specialized 2024 tour.",
     image: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Prayagraj Triveni Sangam Boat Ride Spiritual Journey",
     images: [
       "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1704872833406-1536a3d3e613?auto=format&fit=crop&q=80&w=1200"
@@ -220,8 +229,9 @@ export const packages: TourPackage[] = [
     location: "Lucknow - Ayodhya",
     price: "Enquire",
     originalPrice: "Enquire",
-    description: "Explore the Nawabi grandeur of Lucknow and the divine spiritual heritage of Ayodhya in this compact tour.",
+    description: "Explore the Nawabi grandeur of Lucknow and the divine spiritual heritage of Ayodhya in this compact 2025 tour.",
     image: "https://images.unsplash.com/photo-1583504491264-3a905f593981?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Lucknow Bara Imambara Historical Nawabi Architecture",
     images: [
       "https://images.unsplash.com/photo-1583504491264-3a905f593981?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1549225480-ce72840aa6c8?auto=format&fit=crop&q=80&w=1200"
@@ -260,8 +270,9 @@ export const packages: TourPackage[] = [
     location: "Lucknow - Naimishranya - Ayodhya - Prayagraj - Varanasi",
     price: "Enquire",
     originalPrice: "Enquire",
-    description: "An extensive spiritual odyssey through the holiest cities of Uttar Pradesh, from the secrets of Naimisharanya to the ghats of Kashi.",
+    description: "An extensive spiritual odyssey through the holiest cities of UP, from the secrets of Naimisharanya to the ghats of Kashi.",
     image: "https://images.unsplash.com/photo-1730020933441-27eaf52e7754?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Naimisharanya Chakra Tirth Holy Spiritual Pond",
     images: [
       "https://images.unsplash.com/photo-1583504491264-3a905f593981?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200",
@@ -284,8 +295,9 @@ export const packages: TourPackage[] = [
     location: "Varanasi - Prayagraj - Ayodhya - Lucknow - Agra",
     price: "Enquire",
     originalPrice: "Enquire",
-    description: "A majestic journey from the oldest living city of Varanasi to the eternal monument of love, the Taj Mahal.",
+    description: "A majestic journey from the oldest living city of Varanasi to the eternal monument of love, the Taj Mahal, on a 7-day luxury circuit.",
     image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Agra Taj Mahal Eternal Monument of Love Spiritual Sightseeing",
     images: [
       "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1763186534213-a3ce3ec7e9b3?auto=format&fit=crop&q=80&w=1200",
@@ -309,8 +321,9 @@ export const packages: TourPackage[] = [
     location: "Varanasi - Bodhgaya - Prayagraj - Ayodhya - Lucknow",
     price: "Enquire",
     originalPrice: "Enquire",
-    description: "The complete spiritual trail covering enlightenment, ancient rituals, and Nawabi history across four iconic cities.",
+    description: "The complete spiritual trail covering enlightenment, ancient rituals, and Nawabi history across iconic cities of North India.",
     image: "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Bodhgaya Mahabodhi Temple Enlightenment Spiritual View",
     images: [
       "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1763186534213-a3ce3ec7e9b3?auto=format&fit=crop&q=80&w=1200",
@@ -334,8 +347,9 @@ export const packages: TourPackage[] = [
     location: "Mathura - Vrindavan - Agra - Lucknow - Ayodhya - Prayagraj - Varanasi",
     price: "Enquire",
     originalPrice: "Enquire",
-    description: "The ultimate North Indian pilgrimage connecting the playground of Krishna, the glory of Rama, and the city of Shiva.",
+    description: "The ultimate North Indian pilgrimage connecting the playground of Krishna, the glory of Rama, and the holy city of Shiva, Varanasi.",
     image: "https://images.unsplash.com/photo-1662376107358-21296a9234f1?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Vrindavan Prem Mandir Temple Night Lighting",
     images: [
       "https://images.unsplash.com/photo-1662376107358-21296a9234f1?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1200",
@@ -361,8 +375,9 @@ export const packages: TourPackage[] = [
     location: "Mathura - Vrindavan - Agra - Lucknow - Ayodhya",
     price: "Enquire",
     originalPrice: "Enquire",
-    description: "A specialized tour connecting the sacred lands of Brij and the divine birthplace of Lord Rama.",
+    description: "A specialized 2025 tour connecting sacred lands of Brij and the divine birthplace of Lord Rama with luxury comfort.",
     image: "https://images.unsplash.com/photo-1662376107358-21296a9234f1?auto=format&fit=crop&q=80&w=1200",
+    imageAlt: "Mathura Krishna Janmabhoomi Temple Spiritual View",
     images: [
       "https://images.unsplash.com/photo-1662376107358-21296a9234f1?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1200",

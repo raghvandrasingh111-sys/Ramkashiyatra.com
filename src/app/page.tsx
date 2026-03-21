@@ -50,6 +50,41 @@ export default function Home() {
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the best time to visit Varanasi and Ayodhya?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The best time to visit Varanasi and Ayodhya is from October to March when the weather is pleasant for spiritual sightseeing and attending the outdoor Ganga Aarti."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide customized Ayodhya Varanasi tour packages?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Luxury Trip India specializes in tailoring itineraries based on your budget and preferences. We offer various customized Varanasi Ayodhya tour packages."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How many days are enough for a trip to Varanasi, Prayagraj, and Ayodhya?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A 4-5 day tour is ideal to cover the major spiritual landmarks across Varanasi, Prayagraj, and Ayodhya at a comfortable pace."
+                }
+              }
+            ]
+          })
+        }}
+      />
       <Navbar />
       
       {/* Hero Section with Video Background */}
