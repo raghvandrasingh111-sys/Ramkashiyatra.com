@@ -3,8 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { blogs } from '@/data/blogs';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Spiritual Travel Blog: Kashi, Ayodhya & Beyond | Luxury Trip India',
@@ -14,7 +12,6 @@ export const metadata: Metadata = {
 const BlogIndex = () => {
   return (
     <>
-      <Navbar />
       <main style={{ paddingTop: '120px' }}>
         <div className="container" style={{ padding: '0 5%' }}>
           <header style={{ marginBottom: '60px', textAlign: 'center' }}>
@@ -74,7 +71,6 @@ const BlogIndex = () => {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

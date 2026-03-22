@@ -1,8 +1,6 @@
 "use client";
 
 import { packages } from '@/data/packages';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import PackageCard from '@/components/PackageCard';
 
 export default function TourPackages() {
@@ -16,7 +14,6 @@ export default function TourPackages() {
 
   return (
     <main>
-      <Navbar />
       
       {/* Banner */}
       <section style={{
@@ -51,7 +48,6 @@ export default function TourPackages() {
         </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

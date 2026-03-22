@@ -3,8 +3,6 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { blogs } from '@/data/blogs';
 import { packages } from '@/data/packages';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PackageCard from '@/components/PackageCard';
 
@@ -39,7 +37,6 @@ const BlogPostPage = async ({ params }: Props) => {
 
   return (
     <>
-      <Navbar />
       <main style={{ paddingTop: '120px' }}>
         <article className="container" style={{ padding: '0 5%', maxWidth: '900px', margin: '0 auto' }}>
           <Breadcrumbs 
@@ -148,7 +145,6 @@ const BlogPostPage = async ({ params }: Props) => {
           </div>
         </article>
       </main>
-      <Footer />
     </>
   );
 };

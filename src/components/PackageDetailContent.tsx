@@ -4,13 +4,10 @@ import React from 'react';
 import { TourPackage, CHILD_POLICY, GENERAL_EXCLUSIONS, GENERAL_INCLUSIONS, CANCELLATION_POLICY, HOTEL_REFERENCE } from '@/data/packages';
 import PackageItinerary from '@/components/PackageItinerary';
 import PackageSidebar from '@/components/PackageSidebar';
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
 
 export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
   return (
     <>
-      <Navbar />
 
       {/* Detail Hero */}
       <section className="detail-hero" style={{
@@ -213,7 +210,6 @@ export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
 
       </div>
 
-      <Footer />
 
       <style jsx>{`
         .detail-hero { min-height: 50vh; display: flex; align-items: center; }

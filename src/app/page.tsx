@@ -1,8 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import PackageCard from '@/components/PackageCard';
 import Link from 'next/link';
 import HotelCarousel from '@/components/HotelCarousel';
@@ -85,7 +83,6 @@ export default function Home() {
           })
         }}
       />
-      <Navbar />
       
       {/* Hero Section with Video Background */}
       <section className="hero" style={{
@@ -474,7 +471,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer />
     </main>
   );
 }

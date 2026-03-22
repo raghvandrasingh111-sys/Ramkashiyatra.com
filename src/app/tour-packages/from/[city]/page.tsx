@@ -2,8 +2,6 @@ import React from 'react';
 import { Metadata } from 'next';
 import { packages } from '@/data/packages';
 import PackageCard from '@/components/PackageCard';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 type Props = {
@@ -34,7 +32,6 @@ const CityPackagesPage = async ({ params }: Props) => {
 
   return (
     <>
-      <Navbar />
       <main style={{ paddingTop: '120px' }}>
         <div className="container" style={{ padding: '0 5%' }}>
           <Breadcrumbs 
@@ -107,7 +104,6 @@ const CityPackagesPage = async ({ params }: Props) => {
           </section>
         </div>
       </main>
-      <Footer />
     </>
   );
 };

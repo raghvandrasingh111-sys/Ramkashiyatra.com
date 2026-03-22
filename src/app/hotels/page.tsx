@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import CityHotelCarousel from '@/components/CityHotelCarousel';
 
 export default function Hotels() {
@@ -59,7 +57,6 @@ export default function Hotels() {
 
   return (
     <main style={{ backgroundColor: '#fff' }}>
-      <Navbar />
 
       {/* Hero Slideshow */}
       <section style={{ height: '90vh', position: 'relative', overflow: 'hidden' }}>
@@ -272,7 +269,6 @@ export default function Hotels() {
       <CityHotelCarousel title="Popular Hotels in Lucknow" hotels={lucknowHotels} />
       <CityHotelCarousel title="Popular Hotels in Prayagraj" hotels={prayagrajHotels} />
 
-      <Footer />
 
       <style jsx>{`
         @keyframes marquee {

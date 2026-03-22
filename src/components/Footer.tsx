@@ -145,6 +145,7 @@ export default function Footer() {
 
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: '60px', paddingTop: '30px', textAlign: 'center', color: 'rgba(255,255,255,0.4)', fontSize: '0.85rem' }}>
         <p>© 2026 Luxury Trip India. All Rights Reserved.</p>
+        <p style={{ marginTop: '5px', fontSize: '0.8rem', opacity: 0.8 }}>Made by Raghavendra Singh</p>
         <div style={{ marginTop: '15px' }}>
           <Link href="/privacy-policy" style={{ color: 'inherit', textDecoration: 'none', margin: '0 15px' }} className="footer-link">Privacy Policy</Link>
           <Link href="/terms-conditions" style={{ color: 'inherit', textDecoration: 'none', margin: '0 15px' }} className="footer-link">Terms and Conditions</Link>

@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 export default function EnquireNow() {
   const [formData, setFormData] = useState({
@@ -51,7 +49,6 @@ export default function EnquireNow() {
 
   return (
     <main>
-      <Navbar />
       
       <section style={{
         height: '40vh',
@@ -163,7 +160,6 @@ export default function EnquireNow() {
         </div>
       </section>
 
-      <Footer />
     </main>
   );
 }
