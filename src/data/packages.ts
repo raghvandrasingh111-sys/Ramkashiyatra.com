@@ -183,7 +183,7 @@ export const packages: TourPackage[] = [
     location: "Varanasi - 2N, Ayodhya - 1N",
     price: "8,000",
     originalPrice: "11,700",
-    description: "A divine circuit connecting the spiritual power of Kashi with the sacred birthplace of Lord Rama in Ayodhya. Includes RAM Mandir Darshan 2025.",
+    description: "A divine circuit connecting the spiritual power of Kashi with the sacred birthplace of Lord Rama in Ayodhya. Includes RAM Mandir Darshan 2026.",
     image: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200",
     imageAlt: "Ayodhya RAM Mandir Temple Entrance Spiritual Journey",
     images: [
@@ -213,7 +213,7 @@ export const packages: TourPackage[] = [
       { q: "What is the distance between Varanasi and Ayodhya?", a: "The distance is approximately 200 km, which takes about 4-5 hours by road via the Purvanchal Expressway or the NH-730. Our luxury AC vehicles make this journey very comfortable." }
     ],
     seoContent: `
-      <p>Our <strong>Varanasi & Ayodhya Divine Tour</strong> is the quintessential North India pilgrimage for 2024-2025. This 4-day tour connects Kashi, the city of liberation, with Ayodhya, the city of Dharma. It is a journey through the epic landscapes of the Ramayana and the Puranas, designed for the modern devotee who values both tradition and comfort.</p>
+      <p>Our <strong>Varanasi & Ayodhya Divine Tour</strong> is the quintessential North India pilgrimage for 2026. This 4-day tour connects Kashi, the city of liberation, with Ayodhya, the city of Dharma. It is a journey through the epic landscapes of the Ramayana and the Puranas, designed for the modern devotee who values both tradition and comfort.</p>
       
       <h3>Ayodhya: A New Era of Spirituality</h3>
       <p>With the grand opening of the Ram Mandir, Ayodhya has become a global destination for spiritual seekers. Our tour takes you to <strong>Hanuman Garhi</strong>, the <strong>Sarayu Ghat</strong> for the evening Aarti, and the <strong>Shri Ram Janmabhoomi</strong>. We provide deep historical context to the recent developments, making your visit enlightening and emotionally resonant.</p>
@@ -226,7 +226,7 @@ export const packages: TourPackage[] = [
     location: "Varanasi - 2N, Gaya - 1N, Prayagraj - 1N",
     price: "9,900",
     originalPrice: "14,300",
-    description: "A comprehensive spiritual circuit covering Gaya, Kashi Vishwanath, and Prayag Sangam for a complete religious experience in 2025.",
+    description: "A comprehensive spiritual circuit covering Gaya, Kashi Vishwanath, and Prayag Sangam for a complete religious experience in 2026.",
     image: "https://images.unsplash.com/photo-1701619878991-716d8fbb319f?auto=format&fit=crop&q=80&w=1200",
     imageAlt: "Varanasi Ganga Aarti Spiritual Sightseeing Ghats",
     images: [
@@ -255,7 +255,7 @@ export const packages: TourPackage[] = [
     location: "Varanasi - 2N, Ayodhya - 1N, Prayagraj - 1N",
     price: "10,300",
     originalPrice: "15,250",
-    description: "The ultimate spiritual triangle of Uttar Pradesh, visiting the holiest cities with expert local insights and RAM Mandir Darshan 2025.",
+    description: "The ultimate spiritual triangle of Uttar Pradesh, visiting the holiest cities with expert local insights and RAM Mandir Darshan 2026.",
     image: "https://images.unsplash.com/photo-1704872833406-1536a3d3e613?auto=format&fit=crop&q=80&w=1200",
     imageAlt: "Varanasi Sarnath Buddhist Temple Peace and Spirituality",
     images: [
@@ -284,7 +284,7 @@ export const packages: TourPackage[] = [
     location: "Prayagraj",
     price: "Enquire",
     originalPrice: "Enquire",
-    description: "Discover the sacred confluence of the three holiest rivers and the historic landmarks of Prayagraj on this specialized 2024 tour.",
+    description: "Discover the sacred confluence of the three holiest rivers and the historic landmarks of Prayagraj on this specialized 2026 tour.",
     image: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=1200",
     imageAlt: "Prayagraj Triveni Sangam Boat Ride Spiritual Journey",
     images: [
@@ -305,7 +305,7 @@ export const packages: TourPackage[] = [
     location: "Lucknow - Ayodhya",
     price: "Enquire",
     originalPrice: "Enquire",
-    description: "Explore the Nawabi grandeur of Lucknow and the divine spiritual heritage of Ayodhya in this compact 2025 tour.",
+    description: "Explore the Nawabi grandeur of Lucknow and the divine spiritual heritage of Ayodhya in this compact 2026 tour.",
     image: "https://images.unsplash.com/photo-1583504491264-3a905f593981?auto=format&fit=crop&q=80&w=1200",
     imageAlt: "Lucknow Bara Imambara Historical Nawabi Architecture",
     images: [
@@ -451,7 +451,7 @@ export const packages: TourPackage[] = [
     location: "Mathura - Vrindavan - Agra - Lucknow - Ayodhya",
     price: "Enquire",
     originalPrice: "Enquire",
-    description: "A specialized 2025 tour connecting sacred lands of Brij and the divine birthplace of Lord Rama with luxury comfort.",
+    description: "A specialized 2026 tour connecting sacred lands of Brij and the divine birthplace of Lord Rama with luxury comfort.",
     image: "https://images.unsplash.com/photo-1662376107358-21296a9234f1?auto=format&fit=crop&q=80&w=1200",
     imageAlt: "Mathura Krishna Janmabhoomi Temple Spiritual View",
     images: [

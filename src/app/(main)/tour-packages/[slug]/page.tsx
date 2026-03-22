@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!pkg) return {};
 
   return {
-    title: `${pkg.name} | ${pkg.duration} Varanasi Ayodhya Package 2024-25`,
+    title: `${pkg.name} | ${pkg.duration} Varanasi Ayodhya Package 2026`,
     description: `${pkg.description} Book this ${pkg.duration} spiritual journey to ${pkg.location} with Luxury Trip India. Includes RAM Mandir Darshan and Kashi Vishwanath services.`,
     alternates: {
       canonical: `https://varanasiayodhya.com/tour-packages/${slug}`,

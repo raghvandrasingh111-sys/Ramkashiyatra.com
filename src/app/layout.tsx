@@ -7,16 +7,16 @@ import FloatingContact from "@/components/FloatingContact";
 export const metadata: Metadata = {
   metadataBase: new URL("https://varanasiayodhya.com"),
   title: {
-    default: "Luxury Trip India | Best Varanasi & Ayodhya Tour Packages 2024-2025",
+    default: "Luxury Trip India | Best Varanasi & Ayodhya Tour Packages 2026",
     template: "%s | Luxury Trip India"
   },
-  description: "Book customized Varanasi Ayodhya Tour Packages for 2024-2025. Specializing in Ram Mandir Darshan tours, Kashi Vishwanath spiritual journeys, and Prayagraj Sangam trips with premium AC vehicles and expert guides.",
+  description: "Book customized Varanasi Ayodhya Tour Packages for 2026. Specializing in Ram Mandir Darshan tours, Kashi Vishwanath spiritual journeys, and Prayagraj Sangam trips with premium AC vehicles and expert guides.",
   keywords: [
-    "Varanasi Ayodhya tour package 2025", 
-    "Ayodhya tour packages from Delhi", 
-    "Ram Mandir Ayodhya tour package", 
-    "Kashi Vishwanath temple tour", 
-    "Varanasi tour packages for family", 
+    "Varanasi Ayodhya tour package 2026",
+    "Ayodhya tour packages from Delhi",
+    "Ram Mandir Ayodhya tour package",
+    "Kashi Vishwanath temple tour",
+    "Varanasi tour packages for family",
     "Prayagraj Sangam tour package",
     "Best travel agency for Varanasi Ayodhya",
     "Spiritual tours Uttar Pradesh",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Luxury Trip India | Premium Varanasi & Ayodhya Tour Packages",
-    description: "Experience the ultimate spiritual journey with our 2024-2025 tour packages. Customized itineraries for Ayodhya, Varanasi, Prayagraj, and more.",
+    description: "Experience the ultimate spiritual journey with our 2026 tour packages. Customized itineraries for Ayodhya, Varanasi, Prayagraj, and more.",
     url: "https://varanasiayodhya.com/",
     siteName: "Luxury Trip India",
     images: [
@@ -63,12 +63,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link 
-          rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-          crossOrigin="anonymous" 
-          referrerPolicy="no-referrer" 
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
       </head>
       <body>

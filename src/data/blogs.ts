@@ -14,7 +14,7 @@ export interface BlogPost {
 export const blogs: BlogPost[] = [
   {
     slug: 'best-time-to-visit-kashi-and-ayodhya',
-    title: 'Best Time to Visit Kashi and Ayodhya: A 2025 Seasonal Guide',
+    title: 'Best Time to Visit Kashi and Ayodhya: A 2026 Seasonal Guide',
     excerpt: 'Plan your spiritual journey with our comprehensive guide on weather, festivals, and the best months to experience the divinity of Varanasi and Ayodhya.',
     date: 'March 22, 2026',
     author: 'Luxury Trip India Editorial',
@@ -39,7 +39,7 @@ export const blogs: BlogPost[] = [
   },
   {
     slug: 'vip-darshan-kashi-vishwanath-complete-guide',
-    title: 'VIP Darshan in Kashi Vishwanath: Complete 2024 Booking & Entry Guide',
+    title: 'VIP Darshan in Kashi Vishwanath: Complete 2026 Booking & Entry Guide',
     excerpt: 'Navigating the crowds at Kashi Vishwanath can be daunting. Learn how to book VIP Suprabhatam Aarti and Sugam Darshan for a seamless spiritual experience.',
     date: 'March 20, 2026',
     author: 'Spiritual Guide Team',
@@ -65,10 +65,10 @@ export const blogs: BlogPost[] = [
     author: 'Ayodhya Expert',
     image: 'https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200',
     category: 'Spiritual News',
-    tags: ['Ram Mandir', 'Ayodhya', 'Guide', '2025'],
+    tags: ['Ram Mandir', 'Ayodhya', 'Guide', '2026'],
     relatedPackages: ['ayodhya-ram-janmabhoomi-tour-package-2n-3d', 'lucknow-ayodhya-tour-package-2n-3d'],
     content: `
-      <p>The Shri Ram Janmabhoomi Mandir has transformed <strong>Ayodhya</strong> into a global spiritual beacon. Planning a visit in 2025 requires an understanding of the new site layout and security protocols.</p>
+      <p>The Shri Ram Janmabhoomi Mandir has transformed <strong>Ayodhya</strong> into a global spiritual beacon. Planning a visit in 2026 requires an understanding of the new site layout and security protocols.</p>
       
       <h3>Darshan Timings and Slots</h3>
       <p>General Darshan is open from 6:30 AM to 9:30 PM. We recommend reaching the entry point by 7:00 AM for the smoothest experience. Electronic items, including mobile phones, are strictly prohibited inside the main complex but secure lockers are provided.</p>

@@ -1,6 +1,7 @@
-import React from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
 import { blogs } from '@/data/blogs';
 import { packages } from '@/data/packages';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -65,12 +66,16 @@ const BlogPostPage = async ({ params }: Props) => {
             borderRadius: '25px', 
             overflow: 'hidden', 
             marginBottom: '60px',
-            boxShadow: '0 20px 50px rgba(0,0,0,0.1)'
+            boxShadow: '0 20px 50px rgba(0,0,0,0.1)',
+            position: 'relative',
+            aspectRatio: '16/9'
           }}>
-            <img 
+            <Image 
               src={post.image} 
               alt={post.title} 
-              style={{ width: '100%', height: 'auto', display: 'block' }}
+              fill
+              priority
+              style={{ objectFit: 'cover' }}
             />
           </div>
 
@@ -122,7 +127,7 @@ const BlogPostPage = async ({ params }: Props) => {
               Experience the divinity of Kashi and Ayodhya with our expert-led luxury tours.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
-              <a href="/tour-packages" style={{
+              <Link href="/tour-packages" style={{
                 background: '#FF8C00',
                 color: '#fff',
                 padding: '18px 40px',
@@ -130,8 +135,8 @@ const BlogPostPage = async ({ params }: Props) => {
                 textDecoration: 'none',
                 fontWeight: 'bold',
                 fontSize: '1.1rem'
-              }}>Explore All Packages</a>
-              <a href="https://wa.me/919999995475" style={{
+              }}>Explore All Packages</Link>
+              <a href="https://wa.me/919999995475" target="_blank" rel="noopener noreferrer" style={{
                 background: 'transparent',
                 color: '#fff',
                 padding: '18px 40px',
