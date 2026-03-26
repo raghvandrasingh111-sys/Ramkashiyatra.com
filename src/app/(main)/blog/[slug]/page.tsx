@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { blogs } from '@/data/blogs';
-import { packages } from '@/data/packages';
+import { blogs, BlogPost } from '@/data/blogs';
+import { packages, TourPackage } from '@/data/packages';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PackageCard from '@/components/PackageCard';
 
@@ -12,14 +12,14 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  return blogs.map((post) => ({
+  return blogs.map((post: BlogPost) => ({
     slug: post.slug,
   }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = (await params).slug;
-  const post = blogs.find((p) => p.slug === slug);
+  const post = blogs.find((p: BlogPost) => p.slug === slug);
   
   if (!post) return { title: 'Post Not Found' };
   
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const BlogPostPage = async ({ params }: Props) => {
   const slug = (await params).slug;
-  const post = blogs.find((p) => p.slug === slug);
+  const post = blogs.find((p: BlogPost) => p.slug === slug);
 
   if (!post) notFound();
 
@@ -154,8 +154,8 @@ const BlogPostPage = async ({ params }: Props) => {
                 gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
                 gap: '30px' 
               }}>
-                {post.relatedPackages.map(slug => {
-                  const pkg = packages.find(p => p.slug === slug);
+                {post.relatedPackages.map((slug: string) => {
+                  const pkg = packages.find((p: TourPackage) => p.slug === slug);
                   if (!pkg) return null;
                   return (
                     <PackageCard 

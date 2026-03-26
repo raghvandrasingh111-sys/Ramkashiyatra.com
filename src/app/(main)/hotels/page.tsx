@@ -6,8 +6,8 @@ import CityHotelCarousel from '@/components/CityHotelCarousel';
 export default function Hotels() {
   const [heroIndex, setHeroIndex] = useState(0);
   const heroImages = [
-    "https://varanasiayodhya.com/wp-content/uploads/image-3.png-scaled.webp",
-    "https://varanasiayodhya.com/wp-content/uploads/Hero-1-scaled.webp"
+    "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1200",
+    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200"
   ];
 
   useEffect(() => {
@@ -18,41 +18,41 @@ export default function Hotels() {
   }, []);
 
   const ayodhyaHotels = [
-    { name: "Park Inn by Radisson Ayodhya", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hotels-in-varanasi-ayodhya1-qnblej0cgo06ljsy94pcdme2p4wt0jit0aje5j22xk.webp" },
-    { name: "The Ramayana Hotel", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hotels-in-varanasi-ayodhya3-qnbleltv1641kdousnx833oghaiwnmu00ohulcxwew.webp" },
-    { name: "Tent City Ayodhya Suryu", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Tent-City-Ayodhya-Suryu-qnbpamub5nst54ai4oxf19liaqcecdqgxr6vcbbjh4.jpg" },
-    { name: "Clarks Inn Express", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hotels-in-varanasi-ayodhya4-qnblekw0uc2r8rq7y5ililwzvwnjfxq9ojud42zal4.webp" },
-    { name: "Ayodhya Haat Luxury Cottage", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hotels-in-varanasi-ayodhya2-qnblejy6ni1gx5rl3n3yy45jais688mjcf6vmt0orc.webp" },
-    { name: "Royal Heritage Hotel & Resort", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hotels-in-varanasi-ayodhya5-qnblenpjeu6m7lm4hoqh837do29n311goxstjwv42g.webp" }
+    { name: "Park Inn by Radisson Ayodhya", image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800" },
+    { name: "The Ramayana Hotel", image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800" },
+    { name: "Tent City Ayodhya Suryu", image: "https://images.unsplash.com/photo-1544124499-58912cbddadf?auto=format&fit=crop&q=80&w=800" },
+    { name: "Clarks Inn Express", image: "https://images.unsplash.com/photo-1596386402129-579c62985dd3?auto=format&fit=crop&q=80&w=800" },
+    { name: "Ayodhya Haat Luxury Cottage", image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800" },
+    { name: "Royal Heritage Hotel & Resort", image: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=800" }
   ];
 
   const varanasiHotels = [
-    { name: "Taj Nadesar Palace", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Varanasi-hotel2-qnbln8yfvbxybb4xbweqif613txefg55jgfkfy4l7c.webp" },
-    { name: "Taj Ganges Varanasi", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Varanasi-hotel1-qnbln9wa25z8mx3k6etd2wxhp7srn58vvl31x83714.webp" },
-    { name: "Double Tree by Hilton", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Varanasi-hotel5-qnblnbryfu1ta50tvfmm7wgevzji2jgcjue0vs0eoo.webp" },
-    { name: "Ramada By Whyndham", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Ramada-Plaza-JHU-qnbo7pcy3oiaaiu8gd4o9l98l884jo6ol2hwsr1j6g.jpg" },
-    { name: "Brijrama Palace", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/251112110-qnbo7r8mhckuxqri5dxxeks5rzyuz2e59bsvrayqu0.jpg" },
-    { name: "The Clarks Varanasi", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/The-Clarks-Varanasi-qnbodiyyfqh87kdrgdqh7md125iz86atpvz6tgeqmw.jpg" },
-    { name: "Tree Of Life Resort and Hotels", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Tree-Of-Life-Resort-and-Hotel-qnboh8g1e7jy06zvszfi1oohev93l70pk8m4yqwu3c.jpg" },
-    { name: "Om Vilas", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Om-Vilas-qnbojosv8mwwbjfjh1mfk2dt935loqrh8dxs2r9tug.jpg" }
+    { name: "Taj Nadesar Palace", image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=800" },
+    { name: "Taj Ganges Varanasi", image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=800" },
+    { name: "Double Tree by Hilton", image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800" },
+    { name: "Ramada By Whyndham", image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=800" },
+    { name: "Brijrama Palace", image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=800" },
+    { name: "The Clarks Varanasi", image: "https://images.unsplash.com/photo-1590490360182-c33d59735340?auto=format&fit=crop&q=80&w=800" },
+    { name: "Tree Of Life Resort and Hotels", image: "https://images.unsplash.com/photo-1551882547-ff43c638f511?auto=format&fit=crop&q=80&w=800" },
+    { name: "Om Vilas", image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800" }
   ];
 
   const lucknowHotels = [
-    { name: "Hotel Taj Mahal", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hotel-Taj-Mahal-qnbon6r8ofpbjacl1k2fu6lkupwsc6nidpcudu32oo.jpg" },
-    { name: "Hyatt Regency", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hyatt-Regency-qnbooq7pvnt8ka411q1ffalrwgbfybro9buhp5suhk.jpg" },
-    { name: "The Centrum", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/The-Centrum-qnboqfb87w4vixna4yg6fd6qihyauni85q91w5a994.jpg" },
-    { name: "Novotel", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Novotel-qnbostsdonf9725o3ztusrd55y42it1j5m9q1lq1co.jpg" },
-    { name: "Fairfeild By Marriot", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Fairfeild-by-marriot-qnbowowhs4poxcjljnyn1s9d2z2e60dt0qtl2jzrrs.jpg" },
-    { name: "Hilton Garden Inn", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hilton-Garden-Inn-qnbp2xjx5j9805ha3v2h3pkj22b49o5njmqmroqogo.jpg" },
-    { name: "Ramada Plaza", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Ramada-Plaza-qnbp5dwqzym6bhwxrx9em39uwa7md7wf7s29vp3o7s.jpg" }
+    { name: "Hotel Taj Mahal", image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=800" },
+    { name: "Hyatt Regency", image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=800" },
+    { name: "The Centrum", image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800" },
+    { name: "Novotel", image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=800" },
+    { name: "Fairfeild By Marriot", image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=800" },
+    { name: "Hilton Garden Inn", image: "https://images.unsplash.com/photo-1590490360182-c33d59735340?auto=format&fit=crop&q=80&w=800" },
+    { name: "Ramada Plaza", image: "https://images.unsplash.com/photo-1551882547-ff43c638f511?auto=format&fit=crop&q=80&w=800" }
   ];
 
   const prayagrajHotels = [
-    { name: "The legend inn", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/The-legend-inn-qnbpkoq68vk7azoufjcs789z02spnun4nict3ueyxk.jpg" },
-    { name: "Badi Kothi by Welcome heritage", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Badi-Kothi-qnbplv0wsf63tfzekjmztflpqf08a8b1tbpnpao95k.jpg" },
-    { name: "Hotel Kanha Shyam", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hotel-kanha-shyam-qnbpp2n251kdhhbgtfm3u4fest6dl02197ydqbwtw8.jpg" },
-    { name: "Hotel Shree Kanha Residency", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hotel-Shree-kanha-residency-qnbpryz57nj7a73ww6pp0w3kqkw4bek8nkda01m4pk.jpg" },
-    { name: "Hotel Millenium Inn", image: "https://varanasiayodhya.com/wp-content/uploads/elementor/thumbs/Hotel-Millenium-Inn-qnbpu6vfckkkp1vuxn8zetxr8bybhodfajtjskbo0o.jpg" }
+    { name: "The legend inn", image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=800" },
+    { name: "Badi Kothi by Welcome heritage", image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=800" },
+    { name: "Hotel Kanha Shyam", image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800" },
+    { name: "Hotel Shree Kanha Residency", image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=800" },
+    { name: "Hotel Millenium Inn", image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=800" }
   ];
 
   return (
@@ -120,9 +120,9 @@ export default function Hotels() {
       {/* Partners Info Image */}
       <section style={{ padding: '0' }}>
         <img 
-          src="https://varanasiayodhya.com/wp-content/uploads/Info-scaled.webp" 
-          alt="Info" 
-          style={{ width: '100%', height: 'auto' }} 
+          src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1200" 
+          alt="Luxury Trip India Hotel Partners" 
+          style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} 
         />
       </section>
 
@@ -208,7 +208,9 @@ export default function Hotels() {
               ))}
             </div>
             <div style={{ marginTop: '40px', display: 'flex', alignItems: 'center', gap: '20px' }}>
-                <img src="https://varanasiayodhya.com/wp-content/uploads/Group-10586.png" alt="Reviews" style={{ height: '50px' }} />
+                <div style={{ display: 'flex', color: '#FFC219', fontSize: '1.5rem', gap: '5px' }}>
+                  {[1,2,3,4,5].map(i => <i key={i} className="fas fa-star"></i>)}
+                </div>
                 <div>
                     <h3 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 'bold' }}>4.8 Rated</h3>
                     <p style={{ margin: 0, color: '#888' }}>Around The Globe</p>
@@ -221,7 +223,7 @@ export default function Hotels() {
             padding: '40px', 
             borderRadius: '20px', 
             color: 'white',
-            backgroundImage: 'url("https://varanasiayodhya.com/wp-content/uploads/2024/02/booking-bg.jpg")', // Placeholder bg
+            backgroundImage: 'url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200")', // Premium hotel bg
             backgroundSize: 'cover',
             position: 'relative',
             zIndex: 1

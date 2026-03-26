@@ -216,10 +216,10 @@ export default function Home() {
             gap: '20px' 
           }}>
             {[
-              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632.png-1.webp", alt: "Ancient Varanasi Ghats Spiritual View" },
-              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632-1.png-2-903x1024.webp", alt: "Divine Ayodhya Ram Mandir Temple Architecture" },
-              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632-2.png-2-903x1024.webp", alt: "Prayagraj Sangam Holy River Confluence" },
-              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5634.png-1.webp", alt: "Spiritual Pilgrimage Tour in Uttar Pradesh" }
+              { img: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&q=80&w=800", alt: "Ancient Varanasi Ghats Spiritual View" },
+              { img: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=800", alt: "Divine Ayodhya Ram Mandir Temple Architecture" },
+              { img: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=800", alt: "Prayagraj Sangam Holy River Confluence" },
+              { img: "https://images.unsplash.com/photo-1763186534213-a3ce3ec7e9b3?auto=format&fit=crop&q=80&w=800", alt: "Spiritual Pilgrimage Tour in Uttar Pradesh" }
             ].map((item, index) => (
               <div key={index} ref={addToRefs} className="fade-in-up" style={{ 
                 height: '400px', 
@@ -435,7 +435,7 @@ export default function Home() {
             left: 0,
             width: '100%',
             height: '100%',
-            backgroundImage: 'url("https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632.png.webp")',
+            backgroundImage: 'url("https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&q=80&w=1200")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             zIndex: 1,

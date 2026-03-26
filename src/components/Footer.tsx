@@ -29,9 +29,9 @@ export default function Footer() {
           </p>
           <div style={{ marginBottom: '30px' }}>
             <img 
-              src="https://www.ramkashiyatra.com/wp-content/uploads/UP-Tourism-wh.webp" 
-              alt="UP Tourism" 
-              style={{ width: '150px', height: 'auto' }} 
+              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=150" 
+              alt="UP Tourism Approved" 
+              style={{ width: '150px', height: 'auto', borderRadius: '8px' }} 
             />
           </div>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontStyle: 'italic', fontSize: '0.85rem' }}>

@@ -27,7 +27,7 @@ export default function EnquireNow() {
     e.preventDefault();
     
     // Construct WhatsApp message
-    const message = `Hello Varanasi Ayodhya, I would like to enquire about a trip:
+    const message = `Hello Ram Kashi Yatra, I would like to enquire about a trip:
     
 - Full Name: ${formData.fullName}
 - Email: ${formData.email}
@@ -52,7 +52,7 @@ export default function EnquireNow() {
       
       <section style={{
         height: '40vh',
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://varanasiayodhya.com/wp-content/uploads/2024/02/ayodhya-temple.jpg")',
+        backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
