@@ -20,9 +20,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = city.charAt(0).toUpperCase() + city.slice(1);
   
   return {
-    title: `Varanasi Ayodhya Tour Package from ${cityName} 2026 | Luxury Trip India`,
-    description: `Book the best Varanasi and Ayodhya tour packages from ${cityName}. 3 to 9 day spiritual itineraries including Ram Mandir Darshan, Kashi Vishwanath VIP access, and luxury stay.`,
-    keywords: [`Varanasi tour from ${cityName}`, `Ayodhya package from ${cityName}`, `Kashi Yatra from ${cityName}`, `Ram Mandir tour from ${city}`],
+    title: `Kashi Yatra Package from ${cityName} | Ram Mandir Ayodhya Tour | Ram Kashi Yatra`,
+    description: `Book the best Kashi Yatra and Ayodhya Ram Mandir tour packages from ${cityName}. 3 to 9 day spiritual itineraries including Kashi Vishwanath VIP access and luxury stay.`,
+    keywords: [`Kashi Yatra from ${cityName}`, `Ayodhya tour from ${cityName}`, `Varanasi tour package from ${cityName}`, `Ram Mandir tour from ${cityName}`],
   };
 }
 

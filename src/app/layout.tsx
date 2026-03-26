@@ -5,32 +5,32 @@ import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://varanasiayodhya.com"),
+  metadataBase: new URL("https://www.ramkashiyatra.com"),
   title: {
-    default: "Luxury Trip India | Best Varanasi & Ayodhya Tour Packages 2026",
-    template: "%s | Luxury Trip India"
+    default: "Kashi Ayodhya Tour Packages 2026 | Ram Kashi Yatra",
+    template: "%s | Ram Kashi Yatra"
   },
-  description: "Book customized Varanasi Ayodhya Tour Packages for 2026. Specializing in Ram Mandir Darshan tours, Kashi Vishwanath spiritual journeys, and Prayagraj Sangam trips with premium AC vehicles and expert guides.",
+  description: "Book affordable Kashi Yatra & Ayodhya tour packages with Ram Kashi Yatra. मंदिर दर्शन, hotel, travel included. Best prices for 2026 spiritual journeys.",
   keywords: [
-    "Varanasi Ayodhya tour package 2026",
-    "Ayodhya tour packages from Delhi",
-    "Ram Mandir Ayodhya tour package",
-    "Kashi Vishwanath temple tour",
-    "Varanasi tour packages for family",
-    "Prayagraj Sangam tour package",
-    "Best travel agency for Varanasi Ayodhya",
-    "Spiritual tours Uttar Pradesh",
-    "Luxury Trip India",
-    "Varanasi Ayodhya Prayagraj itinerary"
+    "kashi yatra package",
+    "ayodhya tour package",
+    "varanasi tour packages",
+    "kashi ayodhya tour package",
+    "kashi yatra package from delhi",
+    "ayodhya ram mandir tour package price",
+    "3 days varanasi itinerary",
+    "kashi darshan package cost",
+    "varanasi ayodhya tour package 2026",
+    "Ram Kashi Yatra"
   ],
   alternates: {
     canonical: "./",
   },
   openGraph: {
-    title: "Luxury Trip India | Premium Varanasi & Ayodhya Tour Packages",
-    description: "Experience the ultimate spiritual journey with our 2026 tour packages. Customized itineraries for Ayodhya, Varanasi, Prayagraj, and more.",
-    url: "https://varanasiayodhya.com/",
-    siteName: "Luxury Trip India",
+    title: "Ram Kashi Yatra | Premium Varanasi & Ayodhya Tour Packages",
+    description: "Experience the ultimate spiritual journey with our 2026 tour packages. Affordable Kashi Yatra, Ayodhya, and Prayagraj itineraries.",
+    url: "https://www.ramkashiyatra.com/",
+    siteName: "Ram Kashi Yatra",
     images: [
       {
         url: "/og-image.jpg",
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Luxury Trip India | Ayodhya Varanasi Tour Packages",
-    description: "Book your specialized spiritual journey to Ayodhya and Varanasi with expert guides and premium comfort.",
+    title: "Ram Kashi Yatra | Ayodhya Varanasi Tour Packages",
+    description: "Book your specialized spiritual journey to Ayodhya and Varanasi with expert guides and affordable comfort.",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -79,10 +79,10 @@ export default function RootLayout({
               {
                 "@context": "https://schema.org",
                 "@type": "TravelAgency",
-                "name": "Luxury Trip India",
-                "url": "https://varanasiayodhya.com",
-                "logo": "https://luxurytripindia.com/img/logo-luxury.png",
-                "image": "https://varanasiayodhya.com/og-image.jpg",
+                "name": "Ram Kashi Yatra",
+                "url": "https://www.ramkashiyatra.com",
+                "logo": "https://www.ramkashiyatra.com/favicon.png",
+                "image": "https://www.ramkashiyatra.com/og-image.jpg",
                 "description": "Leading travel agency for spiritual and cultural tours in North India, specializing in Varanasi, Ayodhya, Prayagraj, and Lucknow tour packages.",
                 "foundingDate": "2015",
                 "areaServed": ["Varanasi", "Ayodhya", "Prayagraj", "Lucknow", "Gaya"],
@@ -117,11 +117,11 @@ export default function RootLayout({
               {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
-                "url": "https://varanasiayodhya.com",
-                "name": "Luxury Trip India",
+                "url": "https://www.ramkashiyatra.com",
+                "name": "Ram Kashi Yatra",
                 "potentialAction": {
                   "@type": "SearchAction",
-                  "target": "https://varanasiayodhya.com/tour-packages?q={search_term_string}",
+                  "target": "https://www.ramkashiyatra.com/tour-packages?q={search_term_string}",
                   "query-input": "required name=search_term_string"
                 }
               }

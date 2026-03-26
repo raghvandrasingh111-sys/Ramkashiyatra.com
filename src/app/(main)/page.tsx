@@ -137,7 +137,7 @@ export default function Home() {
         <div ref={addToRefs} className="fade-in-up" style={{ zIndex: 1 }}>
            <p className="dancing-script" style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Ayodhya • Varanasi • Prayagraj • Chitrakoot</p>
            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '20px', lineHeight: 1.2 }}>
-             Plan your Customized Ayodhya <br/> Varanasi Tour Packages with us
+             Kashi Ayodhya Tour Packages
            </h1>
            <p style={{ fontSize: '1.2rem', marginBottom: '30px', maxWidth: '800px' }}>
              Embark on a transformative pilgrimage to Varanasi Ayodhya Prayagraj <br/> & immerse yourself into these timeless divine cities
@@ -231,7 +231,7 @@ export default function Home() {
       <section className="section-padding" style={{ padding: '80px 5%', backgroundColor: '#fff' }}>
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-            <h2 ref={addToRefs} className="fade-in-up" style={{ fontSize: '2.5rem', marginBottom: '10px' }}>Our Featured Packages</h2>
+            <h2 ref={addToRefs} className="fade-in-up" style={{ fontSize: '2.5rem', marginBottom: '10px' }}>Kashi Yatra Packages</h2>
             <p ref={addToRefs} className="fade-in-up" style={{ color: '#666' }}>Curated spiritual journeys designed for comfort and elevation</p>
           </div>
           <div style={{ 

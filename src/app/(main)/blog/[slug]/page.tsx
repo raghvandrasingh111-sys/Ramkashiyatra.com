@@ -57,7 +57,7 @@ const BlogPostPage = async ({ params }: Props) => {
     "datePublished": new Date(post.date).toISOString().split('T')[0],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://varanasiayodhya.com/blog/${post.slug}`
+      "@id": `https://www.ramkashiyatra.com/blog/${post.slug}`
     }
   };
 
@@ -69,19 +69,19 @@ const BlogPostPage = async ({ params }: Props) => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://varanasiayodhya.com/"
+        "item": "https://www.ramkashiyatra.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://varanasiayodhya.com/blog"
+        "item": "https://www.ramkashiyatra.com/blog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://varanasiayodhya.com/blog/${post.slug}`
+        "item": `https://www.ramkashiyatra.com/blog/${post.slug}`
       }
     ]
   };

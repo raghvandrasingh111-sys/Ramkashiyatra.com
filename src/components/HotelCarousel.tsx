@@ -3,14 +3,14 @@
 import React from 'react';
 
 const logos = [
-  "https://varanasiayodhya.com/wp-content/uploads/HotelLogos-01.png",
-  "https://varanasiayodhya.com/wp-content/uploads/HotelLogos-03.png",
-  "https://varanasiayodhya.com/wp-content/uploads/HotelLogos-04.png",
-  "https://varanasiayodhya.com/wp-content/uploads/Clip-path-group.png",
-  "https://varanasiayodhya.com/wp-content/uploads/HotelLogos-10.png",
-  "https://varanasiayodhya.com/wp-content/uploads/HotelLogos-09.png",
-  "https://varanasiayodhya.com/wp-content/uploads/HotelLogos-07.png",
-  "https://varanasiayodhya.com/wp-content/uploads/HotelLogos-06.png"
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-01.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-03.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-04.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/Clip-path-group.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-10.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-09.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-07.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-06.png"
 ];
 
 export default function HotelCarousel() {

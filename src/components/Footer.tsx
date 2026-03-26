@@ -29,7 +29,7 @@ export default function Footer() {
           </p>
           <div style={{ marginBottom: '30px' }}>
             <img 
-              src="https://varanasiayodhya.com/wp-content/uploads/UP-Tourism-wh.webp" 
+              src="https://www.ramkashiyatra.com/wp-content/uploads/UP-Tourism-wh.webp" 
               alt="UP Tourism" 
               style={{ width: '150px', height: 'auto' }} 
             />

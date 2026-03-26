@@ -18,7 +18,7 @@ export default function TourPackages() {
       {/* Banner */}
       <section style={{
         height: '45vh',
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632.png.webp")',
+        backgroundImage: 'linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("https://www.ramkashiyatra.com/wp-content/uploads/Rectangle-5632.png.webp")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { packages } from '@/data/packages';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://varanasiayodhya.com';
+  const baseUrl = 'https://www.ramkashiyatra.com';
 
   const tourEntries: MetadataRoute.Sitemap = packages.map((pkg) => ({
     url: `${baseUrl}/tour-packages/${pkg.slug}`,

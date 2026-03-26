@@ -7,31 +7,31 @@ const testimonials = [
     name: "Nivedita Yadav",
     location: "Khalilabad, Uttar Pradesh",
     text: "VaranasiAyodhya made our dream vacation a reality! Impeccable service, seamless logistics, and memories that will last a lifetime.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/Testimonials_-nivi-300x291-1.jpeg"
+    image: "https://www.ramkashiyatra.com/wp-content/uploads/Testimonials_-nivi-300x291-1.jpeg"
   },
   {
     name: "Priyanka Sharma",
     location: "New Delhi",
     text: "VaranasiAyodhya.com exceeded expectations! Comfortable accommodations, convenient transportation, and exciting activities. Can't wait to book another tour!",
-    image: "https://varanasiayodhya.com/wp-content/uploads/priyanka-sharma-646.jpeg"
+    image: "https://www.ramkashiyatra.com/wp-content/uploads/priyanka-sharma-646.jpeg"
   },
   {
     name: "Mark Walz",
     location: "USA",
     text: "VaranasiAyodhya immersed us in vibrant culture. Exceptional guides, seamless experience, once-in-a-lifetime adventure. Highly professional team.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/mark-walz-144.png"
+    image: "https://www.ramkashiyatra.com/wp-content/uploads/mark-walz-144.png"
   },
   {
     name: "Murugran Swami",
     location: "Tamil Nadu",
     text: "VaranasiAyodhya made our trip unforgettable! Professional team, knowledgeable guides, and luxurious accommodations. Highly recommended for spiritual tours!",
-    image: "https://varanasiayodhya.com/wp-content/uploads/RajasthanX-Murugran-Swami-.webp"
+    image: "https://www.ramkashiyatra.com/wp-content/uploads/RajasthanX-Murugran-Swami-.webp"
   },
   {
     name: "Sanjay Kapoor",
     location: "Mumbai",
     text: "VaranasiAyodhya exceeded expectations! Magical forts, friendly guides, and seamless experience. Perfect blend of comfort and spiritual charm.",
-    image: "https://varanasiayodhya.com/wp-content/uploads/SK.jpg"
+    image: "https://www.ramkashiyatra.com/wp-content/uploads/SK.jpg"
   }
 ];
 
