@@ -23,12 +23,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${pkg.name} | ${pkg.duration} Varanasi Ayodhya Package 2026`,
     description: `${pkg.description} Book this ${pkg.duration} spiritual journey to ${pkg.location} with Luxury Trip India. Includes RAM Mandir Darshan and Kashi Vishwanath services.`,
     alternates: {
-      canonical: `https://ramkashiyatra.com/tour-packages/${slug}`,
+      canonical: `https://varanasiayodhya.com/tour-packages/${slug}`,
     },
     openGraph: {
       title: `${pkg.name} - ${pkg.duration} Tour Package`,
       description: pkg.description,
-      url: `https://ramkashiyatra.com/tour-packages/${slug}`,
+      url: `https://varanasiayodhya.com/tour-packages/${slug}`,
       images: [{ url: pkg.image }],
     }
   };
@@ -51,13 +51,13 @@ export default async function PackageDetailPage({ params }: Props) {
     "touristType": "Pilgrims, Spiritual Seekers",
     "offers": {
       "@type": "Offer",
-      "url": `https://ramkashiyatra.com/tour-packages/${slug}`,
+      "url": `https://varanasiayodhya.com/tour-packages/${slug}`,
       "priceCurrency": "INR",
       "availability": "https://schema.org/InStock",
       "offeredBy": {
         "@type": "TravelAgency",
         "name": "Luxury Trip India",
-        "url": "https://ramkashiyatra.com"
+        "url": "https://varanasiayodhya.com"
       }
     },
     "itinerary": pkg.itinerary.map(item => ({
@@ -76,19 +76,19 @@ export default async function PackageDetailPage({ params }: Props) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://ramkashiyatra.com/"
+        "item": "https://varanasiayodhya.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Tour Packages",
-        "item": "https://ramkashiyatra.com/tour-packages"
+        "item": "https://varanasiayodhya.com/tour-packages"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": pkg.name,
-        "item": `https://ramkashiyatra.com/tour-packages/${slug}`
+        "item": `https://varanasiayodhya.com/tour-packages/${slug}`
       }
     ]
   };

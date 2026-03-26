@@ -83,7 +83,7 @@ export default function Home() {
           })
         }}
       />
-      
+
       {/* Hero Section with Video Background */}
       <section className="hero" style={{
         position: 'relative',
@@ -108,8 +108,8 @@ export default function Home() {
           zIndex: -1,
           pointerEvents: 'none'
         }}>
-          <iframe 
-            src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=10" 
+          <iframe
+            src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=10"
             style={{
               width: '100vw',
               height: '56.25vw', // 16:9 Aspect Ratio
@@ -135,14 +135,14 @@ export default function Home() {
         </div>
 
         <div ref={addToRefs} className="fade-in-up" style={{ zIndex: 1 }}>
-           <p className="dancing-script" style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Ayodhya • Varanasi • Prayagraj • Chitrakoot</p>
-           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '20px', lineHeight: 1.2 }}>
-             Kashi Ayodhya Tour Packages
-           </h1>
-           <p style={{ fontSize: '1.2rem', marginBottom: '30px', maxWidth: '800px' }}>
-             Embark on a transformative pilgrimage to Varanasi Ayodhya Prayagraj <br/> & immerse yourself into these timeless divine cities
-           </p>
-           <Link href="/enquire-now" className="btn-primary" style={{ fontSize: '1.2rem', padding: '15px 40px' }}>Book Now</Link>
+          <p className="dancing-script" style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Ayodhya • Varanasi • Prayagraj • Chitrakoot</p>
+          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '20px', lineHeight: 1.2 }}>
+            Kashi Ayodhya Tour Packages
+          </h1>
+          <p style={{ fontSize: '1.2rem', marginBottom: '30px', maxWidth: '800px' }}>
+            Embark on a transformative pilgrimage to Varanasi Ayodhya Prayagraj <br /> & immerse yourself into these timeless divine cities
+          </p>
+          <Link href="/enquire-now" className="btn-primary" style={{ fontSize: '1.2rem', padding: '15px 40px' }}>Book Now</Link>
         </div>
       </section>
 
@@ -150,15 +150,15 @@ export default function Home() {
       <HotelCarousel />
 
       {/* Intro Quote Section */}
-      <section style={{ 
-        padding: '100px 5%', 
+      <section style={{
+        padding: '100px 5%',
         background: 'linear-gradient(90deg, #FFC219 0%, #F0A731 100%)',
         textAlign: 'center'
       }}>
         <div ref={addToRefs} className="fade-in-up container">
-           <h2 style={{ fontSize: '2.4rem', fontWeight: '800', lineHeight: 1.3, color: 'var(--dark-text)' }}>
-             Where the Ganges whispers and legends reside, Varanasi, Ayodhya unveils the essence of ancient heritage, intertwining the spiritual tapestries of two sacred cities.
-           </h2>
+          <h2 style={{ fontSize: '2.4rem', fontWeight: '800', lineHeight: 1.3, color: 'var(--dark-text)' }}>
+            Where the Ganges whispers and legends reside, Varanasi, Ayodhya unveils the essence of ancient heritage, intertwining the spiritual tapestries of two sacred cities.
+          </h2>
         </div>
       </section>
 
@@ -168,7 +168,7 @@ export default function Home() {
           <p style={{ color: 'var(--primary-orange)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px' }}>Welcome To Ram Kashi Yatra</p>
           <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>Your Gateway to Spiritual Kashi & Divine Ayodhya</h2>
           <p style={{ maxWidth: '800px', margin: '0 auto', color: '#666', lineHeight: '1.8' }}>
-            Welcome to **Ram Kashi Yatra**, your trusted partner for spiritual journeys. We offer the best **Kashi Ayodhya Tour Packages** designed for comfort, affordability, and divine experience. 
+            Welcome to **Ram Kashi Yatra**, your trusted partner for spiritual journeys. We offer the best **Kashi Ayodhya Tour Packages** designed for comfort, affordability, and divine experience.
           </p>
           <p style={{ maxWidth: '800px', margin: '20px auto 0', color: '#666', lineHeight: '1.8' }}>
             Our packages cover all major destinations including **Kashi Vishwanath Temple**, **Ganga Aarti** in Varanasi, and **Shri Ram Mandir** in Ayodhya. We handle everything from hotel booking to local transport so you can focus on your spiritual यात्रा.
@@ -210,20 +210,20 @@ export default function Home() {
             <h2 ref={addToRefs} className="fade-in-up" style={{ fontSize: '2.5rem', marginBottom: '10px' }}>Popular Destinations</h2>
             <p ref={addToRefs} className="fade-in-up" style={{ color: '#666' }}>Explore our Top Destinations voted by more than 1000+ Travelers</p>
           </div>
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
-            gap: '20px' 
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '20px'
           }}>
             {[
-              { img: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&q=80&w=800", alt: "Ancient Varanasi Ghats Spiritual View" },
-              { img: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=800", alt: "Divine Ayodhya Ram Mandir Temple Architecture" },
-              { img: "https://images.unsplash.com/photo-1675788462399-bcde574140b0?auto=format&fit=crop&q=80&w=800", alt: "Prayagraj Sangam Holy River Confluence" },
-              { img: "https://images.unsplash.com/photo-1763186534213-a3ce3ec7e9b3?auto=format&fit=crop&q=80&w=800", alt: "Spiritual Pilgrimage Tour in Uttar Pradesh" }
+              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632.png-1.webp", alt: "Ancient Varanasi Ghats Spiritual View" },
+              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632-1.png-2-903x1024.webp", alt: "Divine Ayodhya Ram Mandir Temple Architecture" },
+              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632-2.png-2-903x1024.webp", alt: "Prayagraj Sangam Holy River Confluence" },
+              { img: "https://varanasiayodhya.com/wp-content/uploads/Rectangle-5634.png-1.webp", alt: "Spiritual Pilgrimage Tour in Uttar Pradesh" }
             ].map((item, index) => (
-              <div key={index} ref={addToRefs} className="fade-in-up" style={{ 
-                height: '400px', 
-                borderRadius: '20px', 
+              <div key={index} ref={addToRefs} className="fade-in-up" style={{
+                height: '400px',
+                borderRadius: '20px',
                 overflow: 'hidden',
                 boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
                 transitionDelay: `${index * 0.1}s`
@@ -242,10 +242,10 @@ export default function Home() {
             <h2 ref={addToRefs} className="fade-in-up" style={{ fontSize: '2.5rem', marginBottom: '10px' }}>Kashi Yatra Packages</h2>
             <p ref={addToRefs} className="fade-in-up" style={{ color: '#666' }}>Curated spiritual journeys designed for comfort and elevation</p>
           </div>
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
-            gap: '40px' 
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gap: '40px'
           }}>
             {featuredPackages.map((pkg, index) => (
               <div key={index} ref={addToRefs} className="fade-in-up" style={{ transitionDelay: `${index * 0.1}s` }}>
@@ -269,13 +269,13 @@ export default function Home() {
               { title: 'Customer Care 24/7', desc: 'Round-the-clock support ensuring your peace of mind.' }
             ].map((item, index) => (
               <div key={index} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
-                <div style={{ 
-                  backgroundColor: '#FFC219', 
-                  width: '50px', 
-                  height: '50px', 
-                  borderRadius: '50%', 
-                  display: 'flex', 
-                  alignItems: 'center', 
+                <div style={{
+                  backgroundColor: '#FFC219',
+                  width: '50px',
+                  height: '50px',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
                   justifyContent: 'center',
                   flexShrink: 0
                 }}>
@@ -294,33 +294,33 @@ export default function Home() {
       {/* Travel Tips Videos */}
       <section className="section-padding container" style={{ backgroundColor: '#fff' }}>
         <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-           <h2 ref={addToRefs} className="fade-in-up" style={{ fontSize: '2.5rem' }}>Must-Know Verified Travel Tips</h2>
+          <h2 ref={addToRefs} className="fade-in-up" style={{ fontSize: '2.5rem' }}>Must-Know Verified Travel Tips</h2>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
-            {[
-              { id: "DCE2LNtSWpi", type: "reel" },
-              { id: "DB6STThylM9", type: "reel" },
-              { id: "DAa6baUyay_", type: "p" },
-              { id: "DREVGCcEnv3", type: "p" }
-            ].map((item, index) => (
-              <div key={index} ref={addToRefs} className="fade-in-up" style={{ 
-                borderRadius: '20px', 
-                overflow: 'hidden', 
-                boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
-                height: item.type === 'reel' ? '500px' : '400px',
-                backgroundColor: '#f8f9fa'
-              }}>
-                <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src={`https://www.instagram.com/${item.type}/${item.id}/embed`} 
-                  frameBorder="0" 
-                  scrolling="no"
-                  allowTransparency
-                  allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                ></iframe>
-              </div>
-            ))}
+          {[
+            { id: "DCE2LNtSWpi", type: "reel" },
+            { id: "DB6STThylM9", type: "reel" },
+            { id: "DAa6baUyay_", type: "p" },
+            { id: "DREVGCcEnv3", type: "p" }
+          ].map((item, index) => (
+            <div key={index} ref={addToRefs} className="fade-in-up" style={{
+              borderRadius: '20px',
+              overflow: 'hidden',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
+              height: item.type === 'reel' ? '500px' : '400px',
+              backgroundColor: '#f8f9fa'
+            }}>
+              <iframe
+                width="100%"
+                height="100%"
+                src={`https://www.instagram.com/${item.type}/${item.id}/embed`}
+                frameBorder="0"
+                scrolling="no"
+                allowTransparency
+                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              ></iframe>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -331,7 +331,7 @@ export default function Home() {
             <div ref={addToRefs} className="fade-in-up">
               <h2 style={{ fontSize: '2.5rem', marginBottom: '25px', color: '#1a1a1a' }}>Why Choose Ram Kashi Yatra?</h2>
               <p style={{ fontSize: '1.1rem', color: '#4b5563', lineHeight: '1.8', marginBottom: '20px' }}>
-                We don't just provide tours; we create life-changing spiritual experiences. Our **Kashi Ayodhya Tour Packages** are designed by locals who know every corner of these sacred lands. 
+                We don't just provide tours; we create life-changing spiritual experiences. Our **Kashi Ayodhya Tour Packages** are designed by locals who know every corner of these sacred lands.
               </p>
               <p style={{ fontSize: '1.1rem', color: '#4b5563', lineHeight: '1.8', marginBottom: '20px' }}>
                 Your journey with us includes **VIP Kashi Vishwanath Darshan**, reserved seating at the **Ganga Aarti**, premium AC transportation, and stays in handpicked luxury hotels. Whether it's your first pilgrimage or a family tradition, we ensure a seamless, divine connection with the gods.
@@ -372,20 +372,20 @@ export default function Home() {
           <h2 ref={addToRefs} className="fade-in-up" style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '50px' }}>Frequently Asked Questions</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             {[
-              { 
-                q: "What is the best time to visit Varanasi and Ayodhya?", 
+              {
+                q: "What is the best time to visit Varanasi and Ayodhya?",
                 a: <>The best time is from October to March when the weather is pleasant for sightseeing and attending the outdoor Ganga Aarti. Check our <Link href="/tour-packages" style={{ color: 'var(--primary-orange)', textDecoration: 'underline' }}>Tour Packages</Link> for seasonal offers.</>
               },
-              { 
-                q: "Do you provide customized Ayodhya Varanasi tour packages?", 
+              {
+                q: "Do you provide customized Ayodhya Varanasi tour packages?",
                 a: <>Yes, we specialize in tailoring your itinerary based on your preferences, budget, and time constraints. Simply fill out our <Link href="/enquire-now" style={{ color: 'var(--primary-orange)', textDecoration: 'underline' }}>Enquiry form</Link>.</>
               },
-              { 
-                q: "Is Ayodhya safe for senior citizens?", 
+              {
+                q: "Is Ayodhya safe for senior citizens?",
                 a: <>Absolutely. We provide dedicated support and comfortable transportation to ensure senior citizens have a hassle-free and divine experience. Visit our <Link href="/hotels" style={{ color: 'var(--primary-orange)', textDecoration: 'underline' }}>hotels</Link> section for elderly-friendly stays.</>
               },
-              { 
-                q: "How many days are enough for a trip to Varanasi, Prayagraj, and Ayodhya?", 
+              {
+                q: "How many days are enough for a trip to Varanasi, Prayagraj, and Ayodhya?",
                 a: <>A 4-5 day tour is ideal to cover the major spiritual landmarks across these three holy cities at a comfortable pace. See our <Link href="/tour-packages" style={{ color: 'var(--primary-orange)', textDecoration: 'underline' }}>Essential UP tour</Link> for details.</>
               }
             ].map((faq, index) => (
@@ -435,15 +435,15 @@ export default function Home() {
             left: 0,
             width: '100%',
             height: '100%',
-            backgroundImage: 'url("https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&q=80&w=1200")',
+            backgroundImage: 'url("https://varanasiayodhya.com/wp-content/uploads/Rectangle-5632.png.webp")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             zIndex: 1,
             opacity: 0.8
           }}></div>
 
-          <iframe 
-            src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=10&showinfo=0&modestbranding=1&iv_load_policy=3&disablekb=1" 
+          <iframe
+            src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=10&showinfo=0&modestbranding=1&iv_load_policy=3&disablekb=1"
             style={{
               width: '120vw',
               height: '67.5vw', // 16:9 of 120vw
@@ -471,12 +471,12 @@ export default function Home() {
           }}></div>
         </div>
         <div ref={addToRefs} className="fade-in-up" style={{ zIndex: 1 }}>
-           <h2 style={{ fontSize: '2rem', marginBottom: '10px' }}>Om Namah Shivay</h2>
-           <h3 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>Discover the Timeless Charm of Varanasi</h3>
-           <p style={{ maxWidth: '800px', margin: '0 auto' }}>
-             Nestled along the banks of the sacred river Ganges, Varanasi is a city that embodies the rich tapestry of Indian culture, spirituality and history.
-           </p>
-           <Link href="/enquire-now" className="btn-primary" style={{ marginTop: '30px' }}>Plan your Trip</Link>
+          <h2 style={{ fontSize: '2rem', marginBottom: '10px' }}>Om Namah Shivay</h2>
+          <h3 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>Discover the Timeless Charm of Varanasi</h3>
+          <p style={{ maxWidth: '800px', margin: '0 auto' }}>
+            Nestled along the banks of the sacred river Ganges, Varanasi is a city that embodies the rich tapestry of Indian culture, spirituality and history.
+          </p>
+          <Link href="/enquire-now" className="btn-primary" style={{ marginTop: '30px' }}>Plan your Trip</Link>
         </div>
       </section>
 

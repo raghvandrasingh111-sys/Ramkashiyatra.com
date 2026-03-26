@@ -25,9 +25,9 @@ export default function EnquireNow() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Construct WhatsApp message
-    const message = `Hello Ram Kashi Yatra, I would like to enquire about a trip:
+    const message = `Hello Varanasi Ayodhya, I would like to enquire about a trip:
     
 - Full Name: ${formData.fullName}
 - Email: ${formData.email}
@@ -43,16 +43,16 @@ export default function EnquireNow() {
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/919999995475?text=${encodedMessage}`;
-    
+
     window.open(whatsappUrl, '_blank');
   };
 
   return (
     <main>
-      
+
       <section style={{
         height: '40vh',
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200")',
+        backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://varanasiayodhya.com/wp-content/uploads/2024/02/ayodhya-temple.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
@@ -84,7 +84,7 @@ export default function EnquireNow() {
         }}>
           <form onSubmit={handleSubmit}>
             <h3 style={{ marginBottom: '25px', color: 'var(--primary-orange)' }}>Plan Your Trip</h3>
-            
+
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '20px' }}>
               <div>
                 <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600' }}>Tour Start Date</label>
@@ -115,33 +115,33 @@ export default function EnquireNow() {
             <div style={{ marginBottom: '20px' }}>
               <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600' }}>Interested In</label>
               <select name="package" value={formData.package} onChange={handleChange} style={{ width: '100%', padding: '12px', borderRadius: '5px', border: '1px solid #ddd' }}>
-                 <option>Varanasi & Prayagraj Tour (2N/3D)</option>
-                 <option>Varanasi & Gaya Spiritual Tour (3N/4D)</option>
-                 <option>Varanasi & Prayagraj Stay Tour (3N/4D)</option>
-                 <option>Varanasi & Ayodhya Divine Tour (3N/4D)</option>
-                 <option>Gaya Varanasi & Prayagraj Tour (4N/5D)</option>
-                 <option>Varanasi Sarnath Prayagraj & Ayodhya (4N/5D)</option>
-                 <option>Prayagraj Sacred Tour (2N/3D)</option>
-                 <option>Lucknow & Ayodhya Heritage Tour (2N/3D)</option>
-                 <option>Ayodhya Ram Janmabhoomi Special (2N/3D)</option>
-                 <option>Grand North India Spiritual Circuit (5N/6D)</option>
-                 <option>Spiritual Triangle & Taj Mahal Grand Tour (6N/7D)</option>
-                 <option>Ultimate Spiritual Heritage Circuit (6N/7D)</option>
-                 <option>Divine Brij to Kashi Mahayatra (8N/9D)</option>
-                 <option>Brij to Ayodhya Heritage Trail (5N/6D)</option>
-                 <option>Customized Tour Plan</option>
+                <option>Varanasi & Prayagraj Tour (2N/3D)</option>
+                <option>Varanasi & Gaya Spiritual Tour (3N/4D)</option>
+                <option>Varanasi & Prayagraj Stay Tour (3N/4D)</option>
+                <option>Varanasi & Ayodhya Divine Tour (3N/4D)</option>
+                <option>Gaya Varanasi & Prayagraj Tour (4N/5D)</option>
+                <option>Varanasi Sarnath Prayagraj & Ayodhya (4N/5D)</option>
+                <option>Prayagraj Sacred Tour (2N/3D)</option>
+                <option>Lucknow & Ayodhya Heritage Tour (2N/3D)</option>
+                <option>Ayodhya Ram Janmabhoomi Special (2N/3D)</option>
+                <option>Grand North India Spiritual Circuit (5N/6D)</option>
+                <option>Spiritual Triangle & Taj Mahal Grand Tour (6N/7D)</option>
+                <option>Ultimate Spiritual Heritage Circuit (6N/7D)</option>
+                <option>Divine Brij to Kashi Mahayatra (8N/9D)</option>
+                <option>Brij to Ayodhya Heritage Trail (5N/6D)</option>
+                <option>Customized Tour Plan</option>
               </select>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '20px', marginBottom: '30px' }}>
-               <div>
-                 <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600' }}>Full Name</label>
-                 <input type="text" name="fullName" required placeholder="Enter Your Name" value={formData.fullName} onChange={handleChange} style={{ width: '100%', padding: '12px', borderRadius: '5px', border: '1px solid #ddd' }} />
-               </div>
-               <div>
-                 <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600' }}>WhatsApp Number</label>
-                 <input type="tel" name="whatsappNumber" required placeholder="Enter Your Number" value={formData.whatsappNumber} onChange={handleChange} style={{ width: '100%', padding: '12px', borderRadius: '5px', border: '1px solid #ddd' }} />
-               </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600' }}>Full Name</label>
+                <input type="text" name="fullName" required placeholder="Enter Your Name" value={formData.fullName} onChange={handleChange} style={{ width: '100%', padding: '12px', borderRadius: '5px', border: '1px solid #ddd' }} />
+              </div>
+              <div>
+                <label style={{ display: 'block', marginBottom: '8px', fontWeight: '600' }}>WhatsApp Number</label>
+                <input type="tel" name="whatsappNumber" required placeholder="Enter Your Number" value={formData.whatsappNumber} onChange={handleChange} style={{ width: '100%', padding: '12px', borderRadius: '5px', border: '1px solid #ddd' }} />
+              </div>
             </div>
 
             <button type="submit" style={{

@@ -3,11 +3,11 @@
 import React from 'react';
 
 const approvalLogos = [
-  { src: "https://images.unsplash.com/photo-1590490360182-c33d59735340?auto=format&fit=crop&q=80&w=300", alt: "Ministry of Tourism India" },
-  { src: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=300", alt: "Bihar Tourism" },
-  { src: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=300", alt: "Uttar Pradesh Tourism" },
-  { src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=300", alt: "Incredible India Approved" },
-  { src: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=300", alt: "Travel Board Certified" }
+  { src: "/images/ministry-of-tourism.png", alt: "Ministry of Tourism India" },
+  { src: "/images/bihar-tourism.png", alt: "Bihar Tourism" },
+  { src: "/images/up-tourism.png", alt: "Uttar Pradesh Tourism" },
+  { src: "/images/city-1.png", alt: "Jaipur Tourism Board" },
+  { src: "/images/city-2.png", alt: "Second City Tourism" }
 ];
 
 export default function ApprovalCarousel() {

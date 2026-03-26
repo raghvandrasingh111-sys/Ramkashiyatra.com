@@ -3,14 +3,14 @@
 import React from 'react';
 
 const logos = [
-  "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=200",
-  "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=200",
-  "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=200",
-  "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=200",
-  "https://images.unsplash.com/photo-1596386402129-579c62985dd3?auto=format&fit=crop&q=80&w=200",
-  "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=200",
-  "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=80&w=200",
-  "https://images.unsplash.com/photo-1551882547-ff43c638f511?auto=format&fit=crop&q=80&w=200"
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-01.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-03.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-04.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/Clip-path-group.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-10.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-09.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-07.png",
+  "https://www.ramkashiyatra.com/wp-content/uploads/HotelLogos-06.png"
 ];
 
 export default function HotelCarousel() {

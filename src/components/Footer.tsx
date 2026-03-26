@@ -18,20 +18,20 @@ export default function Footer() {
       }}>
         <div className="footer-col">
           <div style={{ marginBottom: '30px' }}>
-            <img 
-              src="/logo-luxury.png" 
-              alt="Luxury Trip India" 
-              style={{ width: '220px', height: 'auto' }} 
+            <img
+              src="/logo-luxury.png"
+              alt="Luxury Trip India"
+              style={{ width: '220px', height: 'auto' }}
             />
           </div>
           <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '30px' }}>
             At Luxury Trip India, we deliver unforgettable travel experiences with seamless planning, unmatched service, and 24x7 support for journeys across India's most captivating destinations.
           </p>
           <div style={{ marginBottom: '30px' }}>
-            <img 
-              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=150" 
-              alt="UP Tourism Approved" 
-              style={{ width: '150px', height: 'auto', borderRadius: '8px' }} 
+            <img
+              src="https://www.ramkashiyatra.com/wp-content/uploads/UP-Tourism-wh.webp"
+              alt="UP Tourism"
+              style={{ width: '150px', height: 'auto' }}
             />
           </div>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontStyle: 'italic', fontSize: '0.85rem' }}>
@@ -40,23 +40,23 @@ export default function Footer() {
         </div>
 
 
-          
+
         <div className="footer-col">
           <h3 style={{ color: 'white', marginBottom: '25px', fontSize: '1.2rem', fontWeight: '600' }}>Our Location</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>
             <p style={{ margin: 0 }}>
               <i className="fas fa-map-marker-alt" style={{ color: 'var(--primary-orange)', marginRight: '8px' }}></i>
-              <strong style={{ color: 'white' }}>Varanasi Office:</strong><br/>
+              <strong style={{ color: 'white' }}>Varanasi Office:</strong><br />
               F2/30, Imlok -02 M Near Taj , Nadesar , varanasi
             </p>
             <p style={{ margin: 0 }}>
               <i className="fas fa-map-marker-alt" style={{ color: 'var(--primary-orange)', marginRight: '8px' }}></i>
-              <strong style={{ color: 'white' }}>Haryana Office:</strong><br/>
+              <strong style={{ color: 'white' }}>Haryana Office:</strong><br />
               FF-105, Rodeo Drive Mall, Kundil, Delhi - NCR, Haryana - 131028
             </p>
             <p style={{ margin: 0 }}>
               <i className="fas fa-location-crosshairs" style={{ color: 'var(--primary-orange)', marginRight: '8px' }}></i>
-              <strong style={{ color: 'white' }}>Bodhgaya Office:</strong><br/>
+              <strong style={{ color: 'white' }}>Bodhgaya Office:</strong><br />
               Sujata Bypass Road near Hotel star, Bodhgaya - 824231 Bihar
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function Footer() {
             <li style={{ marginBottom: '8px' }}>Mon - Sat - <span style={{ color: 'white' }}>08:00 AM - 08:00 PM</span></li>
             <li>Sunday - <span style={{ color: 'white' }}>Closed</span></li>
           </ul>
-          
+
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <p style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '10px' }}>
               <i className="fas fa-phone-volume" style={{ color: 'var(--primary-orange)' }}></i>
@@ -117,10 +117,10 @@ export default function Footer() {
               { icon: 'fab fa-linkedin', color: '#0A66C2', href: '#' },
               { icon: 'fab fa-whatsapp', color: '#25D366', href: 'https://wa.me/919999995475' }
             ].map((social, i) => (
-              <a 
-                key={i} 
-                href={social.href} 
-                target="_blank" 
+              <a
+                key={i}
+                href={social.href}
+                target="_blank"
                 rel="noopener noreferrer"
                 style={{
                   width: '40px',
