@@ -4,7 +4,7 @@ import React from 'react';
 
 const approvalLogos = [
   { src: "/images/ministry-of-tourism.png", alt: "Ministry of Tourism India" },
-  { src: "/images/bihar-tourism.png", alt: "Bihar Tourism" },
+  { src: "/images/blissful-bihar.png", alt: "Bihar Tourism" },
   { src: "/images/up-tourism.png", alt: "Uttar Pradesh Tourism" },
   { src: "/images/city-1.png", alt: "Jaipur Tourism Board" },
   { src: "/images/city-2.png", alt: "Second City Tourism" }
