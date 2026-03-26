@@ -4,9 +4,9 @@ import PackageCard from '@/components/PackageCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Varanasi Tour Package 2026 | Kashi Vishwanath Darshan | Ram Kashi Yatra',
-  description: 'Book your Varanasi tour package for 2026. Experience Ganga Aarti, Kashi Vishwanath VIP Darshan, and Sarnath tours with premium stay and transport.',
-  keywords: ['varanasi tour package', 'kashi darshan package cost', 'varanasi itinerary'],
+  title: 'Varanasi Tour Package Cost 2026 | 3 Days Kashi Itinerary | Ram Kashi Yatra',
+  description: 'Varanasi tour package cost for 2026 spiritual journeys. Detailed 3 days Kashi itinerary including Ganga Aarti and Vishwanath Darshan.',
+  keywords: ['varanasi tour package cost', 'varanasi 3 days itinerary', 'kashi trip cost per person'],
 };
 
 export default function VaranasiTourLanding() {
@@ -29,7 +29,7 @@ export default function VaranasiTourLanding() {
         color: 'white',
         textAlign: 'center'
       }}>
-        <h1 style={{ fontSize: '3.5rem', marginBottom: '10px' }}>Varanasi Tour Packages</h1>
+        <h1 style={{ fontSize: '3.5rem', marginBottom: '10px' }}>Varanasi Tour Package Cost 2026</h1>
         <p style={{ fontSize: '1.2rem' }}>Discover the spiritual heart of India along the sacred Ganges</p>
       </section>
 

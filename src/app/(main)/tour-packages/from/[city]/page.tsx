@@ -8,10 +8,10 @@ type Props = {
   params: Promise<{ city: string }>;
 };
 
-export async function generateStaticParams() {
-  const cities = ['delhi', 'mumbai', 'bangalore', 'chennai', 'hyderabad', 'kolkata', 'pune', 'ahmedabad', 'lucknow', 'jaipur'];
+export function generateStaticParams() {
+  const cities = ['delhi', 'mumbai', 'bangalore', 'chennai', 'hyderabad', 'kolkata', 'pune', 'ahmedabad', 'lucknow', 'jaipur', 'punjab', 'gujarat'];
   return cities.map((city) => ({
-    city: city,
+    city,
   }));
 }
 
@@ -20,9 +20,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = city.charAt(0).toUpperCase() + city.slice(1);
   
   return {
-    title: `Kashi Yatra Package from ${cityName} | Ram Mandir Ayodhya Tour | Ram Kashi Yatra`,
-    description: `Book the best Kashi Yatra and Ayodhya Ram Mandir tour packages from ${cityName}. 3 to 9 day spiritual itineraries including Kashi Vishwanath VIP access and luxury stay.`,
-    keywords: [`Kashi Yatra from ${cityName}`, `Ayodhya tour from ${cityName}`, `Varanasi tour package from ${cityName}`, `Ram Mandir tour from ${cityName}`],
+    title: `Kashi Yatra Package from ${cityName} Price | Ram Mandir Ayodhya Tour Booking`,
+    description: `Get the best price for Kashi Yatra and Ayodhya Ram Mandir tour packages from ${cityName}. 2026 spiritual booking including Kashi Vishwanath VIP access and stay.`,
+    keywords: [`Kashi Yatra from ${cityName} price`, `Ayodhya tour from ${cityName} booking`, `Varanasi tour package from ${cityName} cost`],
   };
 }
 

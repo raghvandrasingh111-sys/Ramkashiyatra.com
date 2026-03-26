@@ -4,9 +4,9 @@ import PackageCard from '@/components/PackageCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Kashi Yatra Package 2026 | Varanasi Tour Booking | Ram Kashi Yatra',
-  description: 'Book the best Kashi Yatra package for 2026. Explore Varanasi spiritual ghats, Kashi Vishwanath temple, and Sarnath with our expert-led tour packages.',
-  keywords: ['kashi yatra package', 'varanasi tour packages', 'kashi darshan package cost'],
+  title: 'Kashi Yatra Package Price 2026 | Varanasi Tour Booking | Ram Kashi Yatra',
+  description: 'Check out the best Kashi Yatra package price for 2026. Affordable Varanasi tour booking including Kashi Vishwanath Darshan, hotel, and travel.',
+  keywords: ['kashi yatra package price', 'kashi yatra package booking', 'varanasi tour package cost'],
 };
 
 export default function KashiYatraLanding() {
@@ -30,7 +30,7 @@ export default function KashiYatraLanding() {
         color: 'white',
         textAlign: 'center'
       }}>
-        <h1 style={{ fontSize: '3.5rem', marginBottom: '10px' }}>Kashi Yatra Packages</h1>
+        <h1 style={{ fontSize: '3.5rem', marginBottom: '10px' }}>Kashi Yatra Package Price & Booking 2026</h1>
         <p style={{ fontSize: '1.2rem' }}>Experience the eternal divinity of the world's oldest living city</p>
       </section>
 

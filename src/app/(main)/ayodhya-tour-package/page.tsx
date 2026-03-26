@@ -4,9 +4,9 @@ import PackageCard from '@/components/PackageCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
-  title: 'Ayodhya Tour Package 2026 | Ram Mandir Darshan Booking | Ram Kashi Yatra',
-  description: 'Book your Ayodhya tour package for 2026. Specialized Ram Mandir Darshan, Hanuman Garhi, and Saryu Aarti tours with premium stay and transport.',
-  keywords: ['ayodhya tour package', 'ayodhya ram mandir tour package price', 'kashi ayodhya tour package'],
+  title: 'Ayodhya Tour Package Booking 2026 | Ram Mandir Darshan Price | Ram Kashi Yatra',
+  description: 'Affordable Ayodhya tour package booking for 2026. Get best price for Ram Mandir Darshan, Hanuman Garhi, and Saryu Aarti with expert guides.',
+  keywords: ['ayodhya tour package booking', 'ayodhya tour package price', 'ayodhya ram mandir tour package price'],
 };
 
 export default function AyodhyaTourLanding() {
@@ -29,7 +29,7 @@ export default function AyodhyaTourLanding() {
         color: 'white',
         textAlign: 'center'
       }}>
-        <h1 style={{ fontSize: '3.5rem', marginBottom: '10px' }}>Ayodhya Tour Packages</h1>
+        <h1 style={{ fontSize: '3.5rem', marginBottom: '10px' }}>Ayodhya Tour Package Booking 2026</h1>
         <p style={{ fontSize: '1.2rem' }}>Pilgrimage to the divine birthplace of Lord Rama</p>
       </section>
 
