@@ -16,16 +16,16 @@ export default function Footer() {
         gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
         gap: '30px'
       }}>
-        <div className="footer-col">
+        <div className="footer-col" style={{ gridColumn: 'span 2' }}>
           <div style={{ marginBottom: '30px' }}>
             <img
               src="/logo-luxury.png"
-              alt="Luxury Trip India"
+              alt="Ram Kashi Yatra"
               style={{ width: '220px', height: 'auto' }}
             />
           </div>
-          <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '30px' }}>
-            At Luxury Trip India, we deliver unforgettable travel experiences with seamless planning, unmatched service, and 24x7 support for journeys across India's most captivating destinations.
+          <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '30px', maxWidth: '400px' }}>
+            At Ram Kashi Yatra, we deliver unforgettable spiritual travel experiences with seamless planning, unmatched service, and 24x7 support for journeys across Varanasi, Ayodhya, and India's holy sites.
           </p>
           <div style={{ marginBottom: '30px' }}>
             <img
@@ -35,7 +35,7 @@ export default function Footer() {
             />
           </div>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontStyle: 'italic', fontSize: '0.85rem' }}>
-            Live an Unforgettable Experience with Luxury Trip India: The Perfect Destination for your vacation
+            Live an Unforgettable Spiritual Experience with Ram Kashi Yatra: The Perfect Destination for your Kashi Ayodhya Yatra.
           </p>
         </div>
 
@@ -113,8 +113,9 @@ export default function Footer() {
             {[
               { icon: 'fab fa-facebook', color: '#1877F2', href: 'https://www.facebook.com/profile.php?id=61564188934197' },
               { icon: 'fab fa-instagram', color: '#E4405F', href: 'https://www.instagram.com/luxurytripindia' },
-              { icon: 'fab fa-twitter', color: '#1DA1F2', href: '#' },
-              { icon: 'fab fa-linkedin', color: '#0A66C2', href: '#' },
+              { icon: 'fab fa-youtube', color: '#FF0000', href: 'https://www.youtube.com/@ramkashiyatra' },
+              { icon: 'fab fa-twitter', color: '#1DA1F2', href: 'https://twitter.com/ramkashiyatra' },
+              { icon: 'fab fa-linkedin', color: '#0A66C2', href: 'https://www.linkedin.com/company/ramkashiyatra' },
               { icon: 'fab fa-whatsapp', color: '#25D366', href: 'https://wa.me/919999995475' }
             ].map((social, i) => (
               <a

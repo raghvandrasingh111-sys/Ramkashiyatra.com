@@ -433,20 +433,20 @@ export default function Home() {
           <iframe
             src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=10&showinfo=0&modestbranding=1&iv_load_policy=3&disablekb=1"
             style={{
-              width: '120vw',
-              height: '67.5vw', // 16:9 of 120vw
-              minHeight: '120vh',
-              minWidth: '213.33vh',
+              width: '100%',
+              height: '100%',
               position: 'absolute',
               top: '50%',
               left: '50%',
-              transform: 'translate(-50%, -50%) translateZ(0)',
+              transform: 'translate(-50%, -50%)',
               objectFit: 'cover',
               filter: 'brightness(0.7) contrast(1.1)',
               zIndex: 0
             }}
             frameBorder="0"
             allow="autoplay; encrypted-media"
+            loading="lazy"
+            title="Varanasi Spiritual Video"
           ></iframe>
           <div style={{
             position: 'absolute',

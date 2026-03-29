@@ -3,11 +3,18 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
+import type { Viewport } from 'next';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ramkashiyatra.com"),
   title: {
-    default: "Kashi Ayodhya Tour Package 2026 | Best Price Kashi Yatra Packages",
+    default: "Kashi Ayodhya Tour Packages 2026 | Best Price Kashi Yatra",
     template: "%s | Ram Kashi Yatra"
   },
   description: "Book Kashi Ayodhya tour packages at best price. मंदिर दर्शन, hotel, travel included. Affordable & customizable packages. Call now!",
@@ -24,7 +31,10 @@ export const metadata: Metadata = {
     "Ram Kashi Yatra"
   ],
   alternates: {
-    canonical: "./",
+    canonical: "https://www.ramkashiyatra.com",
+    languages: {
+      'en-IN': 'https://www.ramkashiyatra.com',
+    },
   },
   openGraph: {
     title: "Ram Kashi Yatra | Premium Varanasi & Ayodhya Tour Packages",
@@ -39,7 +49,7 @@ export const metadata: Metadata = {
         alt: "Varanasi Ayodhya Spiritual Tour",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
@@ -47,6 +57,7 @@ export const metadata: Metadata = {
     title: "Ram Kashi Yatra | Ayodhya Varanasi Tour Packages",
     description: "Book your specialized spiritual journey to Ayodhya and Varanasi with expert guides and affordable comfort.",
     images: ["/og-image.jpg"],
+    site: "@ramkashiyatra",
   },
   icons: {
     icon: "/favicon.png",
@@ -111,7 +122,10 @@ export default function RootLayout({
                 ],
                 "sameAs": [
                   "https://www.facebook.com/profile.php?id=61564188934197",
-                  "https://www.instagram.com/luxurytripindia"
+                  "https://www.instagram.com/luxurytripindia",
+                  "https://www.youtube.com/@ramkashiyatra",
+                  "https://twitter.com/ramkashiyatra",
+                  "https://www.linkedin.com/company/ramkashiyatra"
                 ]
               },
               {
