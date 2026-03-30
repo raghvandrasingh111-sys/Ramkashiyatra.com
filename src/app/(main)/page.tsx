@@ -137,7 +137,7 @@ export default function Home() {
         <div ref={addToRefs} className="fade-in-up" style={{ zIndex: 1 }}>
           <p className="dancing-script" style={{ fontSize: '1.5rem', marginBottom: '10px' }}>Ayodhya • Varanasi • Prayagraj • Chitrakoot</p>
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '20px', lineHeight: 1.2 }}>
-            Kashi Ayodhya Tour Packages
+            Best Kashi Ayodhya & Varanasi Tour Packages 2026
           </h1>
           <p style={{ fontSize: '1.2rem', marginBottom: '30px', maxWidth: '800px' }}>
             Embark on a transformative pilgrimage to Varanasi Ayodhya Prayagraj <br /> & immerse yourself into these timeless divine cities

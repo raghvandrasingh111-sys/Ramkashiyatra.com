@@ -95,7 +95,7 @@ export default function Hotels() {
           padding: '0 5%'
         }}>
           <h1 style={{ fontSize: '4rem', fontWeight: 'bold', marginBottom: '20px', lineHeight: '1.2' }}>
-            Find Your Perfect Stay<br />Book Hotels Hassle-Free!
+            Book Best Hotels in Varanasi & Ayodhya
           </h1>
           <a
             href="#book"

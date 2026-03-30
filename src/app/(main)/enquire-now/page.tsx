@@ -64,7 +64,7 @@ export default function EnquireNow() {
         textAlign: 'center'
       }}>
         <p className="dancing-script" style={{ fontSize: '1.5rem' }}>Ayodhya • Varanasi • Prayagraj • Chitrakoot</p>
-        <h1 style={{ fontSize: '3rem' }}>Book a Trip Now</h1>
+        <h1 style={{ fontSize: '3rem' }}>Enquire for Kashi Ayodhya Tour Packages</h1>
       </section>
 
       <section className="section-padding container">

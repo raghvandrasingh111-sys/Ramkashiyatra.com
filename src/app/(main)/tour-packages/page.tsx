@@ -29,7 +29,7 @@ export default function TourPackages() {
         paddingTop: '80px',
         textAlign: 'center'
       }}>
-        <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', marginBottom: '10px' }}>Tour Packages</h1>
+        <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', marginBottom: '10px' }}>Best Kashi Ayodhya & Varanasi Tour Packages 2026 - Book Now</h1>
         <h2 style={{ fontSize: '1.5rem', fontWeight: 'normal', opacity: '0.9' }}>Explore the Spiritual Essence of Uttar Pradesh</h2>
       </section>
 
