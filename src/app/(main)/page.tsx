@@ -139,7 +139,7 @@ export default function Home() {
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '20px', lineHeight: 1.2 }}>
             Best Kashi Ayodhya & Varanasi Tour Packages 2026
           </h1>
-          <p style={{ fontSize: '1.2rem', marginBottom: '30px', maxWidth: '800px' }}>
+          <p style={{ fontSize: '1.2rem', marginBottom: '30px', maxWidth: '800px', margin: '0 auto 30px', textAlign: 'center' }}>
             Embark on a transformative pilgrimage to Varanasi Ayodhya Prayagraj <br /> & immerse yourself into these timeless divine cities
           </p>
           <Link href="/enquire-now" className="btn-primary" style={{ fontSize: '1.2rem', padding: '15px 40px' }}>Book Now</Link>
