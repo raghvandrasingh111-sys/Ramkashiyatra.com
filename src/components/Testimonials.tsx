@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 const testimonials = [
   {
@@ -37,13 +37,42 @@ const testimonials = [
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [animKey, setAnimKey] = useState(0);
+
+  const goTo = useCallback((index: number) => {
+    setActiveIndex(index);
+    setAnimKey(k => k + 1);
+  }, []);
+
+  const goNext = useCallback(() => {
+    goTo((activeIndex + 1) % testimonials.length);
+  }, [activeIndex, goTo]);
+
+  const goPrev = useCallback(() => {
+    goTo((activeIndex - 1 + testimonials.length) % testimonials.length);
+  }, [activeIndex, goTo]);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((current) => (current + 1) % testimonials.length);
-    }, 5000);
+    const interval = setInterval(goNext, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [goNext]);
+
+  // Touch swipe support
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStart === null) return;
+    const diff = touchStart - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) goNext();
+      else goPrev();
+    }
+    setTouchStart(null);
+  };
 
   return (
     <section style={{ padding: '100px 5%', backgroundColor: '#fff' }}>
@@ -59,21 +88,45 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div style={{ position: 'relative', maxWidth: '800px', margin: '0 auto' }}>
-          <div style={{
-            backgroundColor: '#f9f9f9',
-            padding: '50px',
-            borderRadius: '30px',
-            boxShadow: '0 20px 40px rgba(0,0,0,0.05)',
-            textAlign: 'center',
-            position: 'relative'
-          }}>
+        <div
+          style={{ position: 'relative', maxWidth: '800px', margin: '0 auto' }}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
+          {/* Navigation arrows */}
+          <button
+            onClick={goPrev}
+            className="testimonial-arrow testimonial-arrow-left"
+            aria-label="Previous testimonial"
+          >
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          <button
+            onClick={goNext}
+            className="testimonial-arrow testimonial-arrow-right"
+            aria-label="Next testimonial"
+          >
+            <i className="fas fa-chevron-right"></i>
+          </button>
+
+          <div
+            key={animKey}
+            className="crossfade-enter"
+            style={{
+              backgroundColor: '#f9f9f9',
+              padding: '50px',
+              borderRadius: '30px',
+              boxShadow: '0 20px 40px rgba(0,0,0,0.05)',
+              textAlign: 'center',
+              position: 'relative'
+            }}
+          >
             <div style={{ position: 'absolute', top: '20px', left: '20px', fontSize: '3rem', color: '#eee' }}>
               <i className="fas fa-quote-left"></i>
             </div>
 
             <p style={{ fontSize: '1.25rem', lineHeight: '1.8', color: '#444', fontStyle: 'italic', marginBottom: '30px' }}>
-              "{testimonials[activeIndex].text}"
+              &ldquo;{testimonials[activeIndex].text}&rdquo;
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -91,7 +144,7 @@ export default function Testimonials() {
             {testimonials.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setActiveIndex(index)}
+                onClick={() => goTo(index)}
                 style={{
                   width: activeIndex === index ? '30px' : '10px',
                   height: '10px',
@@ -101,11 +154,49 @@ export default function Testimonials() {
                   cursor: 'pointer',
                   transition: 'all 0.3s ease'
                 }}
+                aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .testimonial-arrow {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 10;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background: #fff;
+          border: 1px solid #eee;
+          color: #2B3036;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .testimonial-arrow:hover {
+          background: var(--primary-orange);
+          color: #fff;
+          border-color: var(--primary-orange);
+          transform: translateY(-50%) scale(1.1);
+          box-shadow: 0 6px 20px rgba(255, 140, 0, 0.3);
+        }
+        .testimonial-arrow-left { left: -22px; }
+        .testimonial-arrow-right { right: -22px; }
+        @media (max-width: 900px) {
+          .testimonial-arrow-left { left: -10px; }
+          .testimonial-arrow-right { right: -10px; }
+        }
+        @media (max-width: 480px) {
+          .testimonial-arrow { display: none; }
+        }
+      `}</style>
     </section>
   );
 }

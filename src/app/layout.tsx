@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
+import ScrollToTop from "@/components/ScrollToTop";
 import type { Viewport } from 'next';
 
 export const viewport: Viewport = {
@@ -145,6 +146,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <FloatingContact />
+        <ScrollToTop />
         <Footer />
       </body>
     </html>

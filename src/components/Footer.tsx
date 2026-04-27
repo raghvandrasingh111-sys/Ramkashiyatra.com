@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -11,35 +12,32 @@ export default function Footer() {
       fontSize: '0.95rem',
       lineHeight: '1.6'
     }}>
-      <div className="container" style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-        gap: '30px'
-      }}>
-        <div className="footer-col" style={{ gridColumn: 'span 2' }}>
+      <div className="container footer-grid">
+        <div className="footer-col footer-brand">
           <div style={{ marginBottom: '30px' }}>
-            <img
+            <Image
               src="/logo-luxury.png"
               alt="Ram Kashi Yatra"
+              width={220}
+              height={76}
               style={{ width: '220px', height: 'auto' }}
             />
           </div>
           <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '30px', maxWidth: '400px' }}>
-            At Ram Kashi Yatra, we deliver unforgettable spiritual travel experiences with seamless planning, unmatched service, and 24x7 support for journeys across Varanasi, Ayodhya, and India's holy sites.
+            At Ram Kashi Yatra, we deliver unforgettable spiritual travel experiences with seamless planning, unmatched service, and 24x7 support for journeys across Varanasi, Ayodhya, and India&apos;s holy sites.
           </p>
           <div style={{ marginBottom: '30px' }}>
             <img
               src="https://www.ramkashiyatra.com/wp-content/uploads/UP-Tourism-wh.webp"
               alt="UP Tourism"
               style={{ width: '150px', height: 'auto' }}
+              loading="lazy"
             />
           </div>
           <p style={{ color: 'rgba(255,255,255,0.8)', fontStyle: 'italic', fontSize: '0.85rem' }}>
             Live an Unforgettable Spiritual Experience with Ram Kashi Yatra: The Perfect Destination for your Kashi Ayodhya Yatra.
           </p>
         </div>
-
-
 
         <div className="footer-col">
           <h3 style={{ color: 'white', marginBottom: '25px', fontSize: '1.2rem', fontWeight: '600' }}>Our Location</h3>
@@ -109,14 +107,14 @@ export default function Footer() {
 
         <div className="footer-col">
           <h3 style={{ color: 'white', marginBottom: '25px', fontSize: '1.2rem', fontWeight: '600' }}>Connect With Us:</h3>
-          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginBottom: '30px' }}>
             {[
-              { icon: 'fab fa-facebook', color: '#1877F2', href: 'https://www.facebook.com/profile.php?id=61564188934197' },
-              { icon: 'fab fa-instagram', color: '#E4405F', href: 'https://www.instagram.com/luxurytripindia' },
-              { icon: 'fab fa-youtube', color: '#FF0000', href: 'https://www.youtube.com/@ramkashiyatra' },
-              { icon: 'fab fa-twitter', color: '#1DA1F2', href: 'https://twitter.com/ramkashiyatra' },
-              { icon: 'fab fa-linkedin', color: '#0A66C2', href: 'https://www.linkedin.com/company/ramkashiyatra' },
-              { icon: 'fab fa-whatsapp', color: '#25D366', href: 'https://wa.me/919999995475' }
+              { icon: 'fab fa-facebook', href: 'https://www.facebook.com/profile.php?id=61564188934197' },
+              { icon: 'fab fa-instagram', href: 'https://www.instagram.com/luxurytripindia' },
+              { icon: 'fab fa-youtube', href: 'https://www.youtube.com/@ramkashiyatra' },
+              { icon: 'fab fa-twitter', href: 'https://twitter.com/ramkashiyatra' },
+              { icon: 'fab fa-linkedin', href: 'https://www.linkedin.com/company/ramkashiyatra' },
+              { icon: 'fab fa-whatsapp', href: 'https://wa.me/919999995475' }
             ].map((social, i) => (
               <a
                 key={i}
@@ -141,6 +139,49 @@ export default function Footer() {
               </a>
             ))}
           </div>
+
+          {/* Newsletter Signup */}
+          <div>
+            <h4 style={{ color: 'white', marginBottom: '12px', fontSize: '1rem', fontWeight: '600' }}>Get Travel Updates</h4>
+            <form onSubmit={(e) => e.preventDefault()} style={{
+              display: 'flex',
+              gap: '0',
+              borderRadius: '8px',
+              overflow: 'hidden',
+              border: '1px solid rgba(255,255,255,0.15)'
+            }}>
+              <input
+                type="email"
+                placeholder="Your email"
+                style={{
+                  flex: 1,
+                  padding: '10px 14px',
+                  border: 'none',
+                  background: 'rgba(255,255,255,0.08)',
+                  color: 'white',
+                  fontSize: '0.85rem',
+                  outline: 'none',
+                  minWidth: 0
+                }}
+              />
+              <button
+                type="submit"
+                style={{
+                  padding: '10px 16px',
+                  border: 'none',
+                  background: 'var(--primary-orange)',
+                  color: '#fff',
+                  fontWeight: '700',
+                  cursor: 'pointer',
+                  transition: 'background 0.3s',
+                  fontSize: '0.85rem',
+                  whiteSpace: 'nowrap'
+                }}
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -154,6 +195,11 @@ export default function Footer() {
       </div>
 
       <style jsx>{`
+        .footer-grid {
+          display: grid;
+          grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+          gap: 30px;
+        }
         .footer-link:hover {
           color: white !important;
           text-decoration: underline !important;
@@ -161,6 +207,30 @@ export default function Footer() {
         .social-icon:hover {
           background-color: var(--primary-orange) !important;
           transform: translateY(-3px);
+        }
+        @media (max-width: 1024px) {
+          .footer-grid {
+            grid-template-columns: repeat(3, 1fr);
+          }
+          .footer-brand {
+            grid-column: span 3;
+          }
+        }
+        @media (max-width: 768px) {
+          .footer-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+          .footer-brand {
+            grid-column: span 2;
+          }
+        }
+        @media (max-width: 480px) {
+          .footer-grid {
+            grid-template-columns: 1fr;
+          }
+          .footer-brand {
+            grid-column: span 1;
+          }
         }
       `}</style>
     </footer>
