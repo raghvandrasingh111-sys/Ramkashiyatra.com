@@ -52,7 +52,7 @@ export default function EnquireNow() {
 
       <section style={{
         height: '40vh',
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://varanasiayodhya.com/wp-content/uploads/2024/02/ayodhya-temple.jpg")',
+        backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/destinations/ayodhya.webp")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',

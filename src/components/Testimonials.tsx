@@ -7,31 +7,31 @@ const testimonials = [
     name: "Nivedita Yadav",
     location: "Khalilabad, Uttar Pradesh",
     text: "VaranasiAyodhya made our dream vacation a reality! Impeccable service, seamless logistics, and memories that will last a lifetime.",
-    image: "/images/testimonials/nivedita.jpg"
+    image: "https://ui-avatars.com/api/?name=Nivedita+Yadav&size=160&background=FF8C00&color=fff&bold=true"
   },
   {
     name: "Priyanka Sharma",
     location: "New Delhi",
     text: "VaranasiAyodhya.com exceeded expectations! Comfortable accommodations, convenient transportation, and exciting activities. Can't wait to book another tour!",
-    image: "/images/testimonials/priyanka.jpg"
+    image: "https://ui-avatars.com/api/?name=Priyanka+Sharma&size=160&background=FFC219&color=fff&bold=true"
   },
   {
     name: "Mark Walz",
     location: "USA",
     text: "VaranasiAyodhya immersed us in vibrant culture. Exceptional guides, seamless experience, once-in-a-lifetime adventure. Highly professional team.",
-    image: "/images/testimonials/mark.jpg"
+    image: "https://ui-avatars.com/api/?name=Mark+Walz&size=160&background=2563eb&color=fff&bold=true"
   },
   {
     name: "Murugran Swami",
     location: "Tamil Nadu",
     text: "VaranasiAyodhya made our trip unforgettable! Professional team, knowledgeable guides, and luxurious accommodations. Highly recommended for spiritual tours!",
-    image: "/images/testimonials/murugran.jpg"
+    image: "https://ui-avatars.com/api/?name=Murugran+Swami&size=160&background=22c55e&color=fff&bold=true"
   },
   {
     name: "Sanjay Kapoor",
     location: "Mumbai",
     text: "VaranasiAyodhya exceeded expectations! Magical forts, friendly guides, and seamless experience. Perfect blend of comfort and spiritual charm.",
-    image: "/images/testimonials/sanjay.jpg"
+    image: "https://ui-avatars.com/api/?name=Sanjay+Kapoor&size=160&background=e94545&color=fff&bold=true"
   }
 ];
 

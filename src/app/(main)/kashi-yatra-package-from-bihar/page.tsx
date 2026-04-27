@@ -18,7 +18,7 @@ export default function BiharLocationLanding() {
     <main style={{ paddingTop: '100px' }}>
       <section style={{
         height: '40vh',
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://www.ramkashiyatra.com/wp-content/uploads/Rectangle-5632-1.png-2-903x1024.webp")',
+        backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/destinations/ayodhya.webp")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',

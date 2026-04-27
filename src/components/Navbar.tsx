@@ -66,7 +66,7 @@ export default function Navbar() {
               alt="Ram Kashi Yatra - Luxury Trip India"
               width={180}
               height={70}
-              style={{ height: '70px', width: 'auto', display: 'block' }}
+              style={{ display: 'block' }}
               priority
             />
           </Link>
