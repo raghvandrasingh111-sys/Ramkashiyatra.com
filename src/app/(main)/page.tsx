@@ -220,7 +220,7 @@ export default function Home() {
           </div>
 
           <iframe
-            src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=10&enablejsapi=1"
+            src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=10"
             style={{
               width: '100vw',
               height: '56.25vw',
@@ -229,12 +229,12 @@ export default function Home() {
               position: 'absolute',
               top: '50%', left: '50%',
               transform: 'translate(-50%, -50%)',
-              objectFit: 'cover',
+              border: 'none',
               zIndex: 2,
-              opacity: 0.8 // Slight transparency for the poster to show through until fully opaque
+              opacity: 0.9
             }}
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowFullScreen
             title="Varanasi Spiritual Background Video"
           ></iframe>
           
