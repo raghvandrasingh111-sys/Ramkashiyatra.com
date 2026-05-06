@@ -79,3 +79,4 @@ export const blogs: BlogPost[] = [
     `
   }
 ];
+#en
