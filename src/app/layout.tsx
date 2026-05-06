@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     siteName: "Ram Kashi Yatra",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo-luxury.png",
         width: 1200,
         height: 630,
         alt: "Varanasi Ayodhya Spiritual Tour",
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ram Kashi Yatra | Ayodhya Varanasi Tour Packages",
     description: "Book your specialized spiritual journey to Ayodhya and Varanasi with expert guides and affordable comfort.",
-    images: ["/og-image.jpg"],
+    images: ["/logo-luxury.png"],
     site: "@ramkashiyatra",
   },
   icons: {
@@ -117,7 +117,7 @@ export default function RootLayout({
                 "name": "Ram Kashi Yatra",
                 "url": "https://www.ramkashiyatra.com",
                 "logo": "https://www.ramkashiyatra.com/favicon.png",
-                "image": "https://www.ramkashiyatra.com/og-image.jpg",
+                "image": "https://www.ramkashiyatra.com/logo-luxury.png",
                 "description": "Leading travel agency for spiritual and cultural tours in North India, specializing in Varanasi, Ayodhya, Prayagraj, and Lucknow tour packages.",
                 "foundingDate": "2015",
                 "areaServed": ["Varanasi", "Ayodhya", "Prayagraj", "Lucknow", "Gaya"],

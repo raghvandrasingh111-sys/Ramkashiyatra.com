@@ -51,7 +51,7 @@ const BlogPostPage = async ({ params }: Props) => {
       "name": "Ram Kashi Yatra",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://luxurytripindia.com/img/logo-luxury.png"
+        "url": "https://www.ramkashiyatra.com/logo-luxury.png"
       }
     },
     "datePublished": new Date(post.date).toISOString().split('T')[0],
