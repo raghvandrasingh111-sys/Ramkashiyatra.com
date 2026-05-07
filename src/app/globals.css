@@ -525,3 +525,91 @@ a {
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+/* Banaras/Kashi/Ayodhya keyword guide page */
+.travel-guide-page {
+  background: var(--bg-cream, #faf8f5);
+}
+
+.tg-hero {
+  background: linear-gradient(
+    135deg,
+    var(--brand-ink, #0e1424) 0%,
+    rgba(178, 58, 72, 0.88) 50%,
+    var(--brand-ink, #0e1424) 100%
+  );
+  color: #fff;
+}
+
+.travel-guide-page .keyword-guide-article {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.travel-guide-page .kg-header h1 {
+  font-family: var(--font-poppins, system-ui);
+  font-size: clamp(1.75rem, 3.2vw, 2.35rem);
+  color: var(--brand-ink, #0e1424);
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.travel-guide-page .kg-eyebrow {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--brand-saffron, #e8842b);
+  margin-bottom: 12px;
+}
+
+.travel-guide-page .kg-lead {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: var(--text-secondary, #4b5563);
+  margin: 0;
+}
+
+.travel-guide-page .keyword-guide-article section {
+  margin-top: 44px;
+}
+
+.travel-guide-page .keyword-guide-article h2 {
+  font-family: var(--font-poppins, system-ui);
+  font-size: clamp(1.35rem, 2.2vw, 1.65rem);
+  color: var(--brand-ink, #0e1424);
+  margin: 0 0 16px;
+  padding-left: 14px;
+  border-left: 4px solid var(--brand-saffron, #e8842b);
+}
+
+.travel-guide-page .keyword-guide-article p {
+  font-size: 1.02rem;
+  line-height: 1.88;
+  color: var(--text-secondary, #4b5563);
+  margin: 0 0 16px;
+}
+
+.travel-guide-page .keyword-guide-article a {
+  color: var(--brand-saffron, #e8842b);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.travel-guide-page .kg-cta-wrap {
+  background: #fff;
+  border: 1px solid var(--border-light, #e8e4df);
+  border-radius: var(--radius-lg, 16px);
+  padding: 32px 28px;
+  margin-top: 56px;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-md, 0 8px 30px rgba(0, 0, 0, 0.06));
+}
+
+.travel-guide-page .kg-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
+}
