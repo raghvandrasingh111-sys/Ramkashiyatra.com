@@ -1,94 +1,180 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React, { useState, useEffect } from "react";
 
 const FloatingContact: React.FC = () => {
+  const [open, setOpen] = useState(false);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setShow(window.scrollY > 240);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <>
-      <div className="floating-contact-container" style={{
-        position: 'fixed',
-        bottom: '30px',
-        right: '30px',
-        zIndex: 1000,
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '15px'
-      }}>
-        {/* WhatsApp Button */}
+    <div className={`fc-wrap ${show ? "show" : ""}`}>
+      <div className={`fc-stack ${open ? "open" : ""}`}>
         <a
-          href="https://wa.me/919999995475"
+          href="https://wa.me/919999995475?text=Hi%2C+I%27d+like+to+enquire+about+a+yatra"
           target="_blank"
           rel="noopener noreferrer"
-          className="whatsapp-float pulse-ring"
-          style={{
-            width: '60px',
-            height: '60px',
-            backgroundColor: '#25d366',
-            color: '#FFF',
-            borderRadius: '50px',
-            textAlign: 'center',
-            boxShadow: '2px 2px 10px rgba(0,0,0,0.2)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: 'all 0.3s ease',
-            textDecoration: 'none',
-            position: 'relative',
-            zIndex: 1
-          }}
-          title="Chat on WhatsApp"
+          className="fc-btn fc-whatsapp"
+          aria-label="Chat on WhatsApp"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.061 3.978l-1.127 4.114 4.212-1.105c1.164.635 2.478.969 3.813.969h.004c4.368 0 7.926-3.558 7.93-7.927a7.868 7.868 0 0 0-2.311-5.611zM7.998 14.511c-1.189 0-2.352-.313-3.376-.906l-.243-.141-2.508.658.67-2.441-.155-.246a6.568 6.568 0 0 1-1.006-3.52c0-3.633 2.964-6.597 6.6-6.597 1.762 0 3.419.686 4.665 1.932 1.246 1.246 1.932 2.903 1.932 4.665.002 3.635-2.964 6.598-6.601 6.598zm3.628-4.881c-.199-.099-1.178-.581-1.36-.647-.182-.066-.314-.099-.446.099-.132.198-.511.647-.626.776-.115.13-.231.146-.43.047-.199-.099-.843-.311-1.607-.991-.595-.53-.996-1.185-1.112-1.385-.116-.2-.012-.308.087-.407.089-.089.199-.232.299-.347.101-.115.134-.197.199-.329.066-.132.033-.248-.016-.347-.049-.099-.446-1.076-.611-1.474-.16-.388-.323-.335-.446-.341-.114-.007-.245-.008-.376-.008-.13 0-.342.049-.522.245-.18.198-.686.671-.686 1.638 0 .967.703 1.901.802 2.033.099.132 1.383 2.112 3.352 2.961.468.202.833.323 1.118.413.47.15.897.129 1.235.078.377-.058 1.178-.481 1.345-.944.167-.464.167-.861.117-.944-.05-.084-.182-.132-.381-.231z"/>
-          </svg>
+          <i className="fab fa-whatsapp" />
+          <span className="fc-label">WhatsApp</span>
         </a>
-
-        {/* Call Button */}
         <a
           href="tel:+919999995475"
-          className="phone-float"
-          style={{
-            width: '60px',
-            height: '60px',
-            backgroundColor: '#FF8C00',
-            color: '#FFF',
-            borderRadius: '50px',
-            textAlign: 'center',
-            boxShadow: '2px 2px 10px rgba(0,0,0,0.2)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: 'all 0.3s ease',
-            textDecoration: 'none'
-          }}
-          title="Call Us Now"
+          className="fc-btn fc-call"
+          aria-label="Call us now"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-          </svg>
+          <i className="fas fa-phone" />
+          <span className="fc-label">Call</span>
+        </a>
+        <a
+          href="mailto:info@ramkashiyatra.com"
+          className="fc-btn fc-mail"
+          aria-label="Email us"
+        >
+          <i className="fas fa-envelope" />
+          <span className="fc-label">Email</span>
         </a>
       </div>
 
+      <button
+        className={`fc-toggle ${open ? "open" : ""}`}
+        onClick={() => setOpen(!open)}
+        aria-label="Toggle quick contact"
+      >
+        <span className="fc-toggle-icon">
+          <i className={open ? "fas fa-times" : "fas fa-headset"} />
+        </span>
+        <span className="fc-toggle-pulse" />
+      </button>
+
       <style jsx>{`
-        .whatsapp-float:hover,
-        .phone-float:hover {
-          transform: scale(1.12);
-          box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        .fc-wrap {
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          z-index: 1000;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 12px;
+          opacity: 0;
+          transform: translateY(20px);
+          pointer-events: none;
+          transition: all 0.5s var(--ease-out-expo);
         }
-        @media (max-width: 768px) {
-          .floating-contact-container {
-            bottom: 20px !important;
-            right: 15px !important;
-            gap: 10px !important;
+        .fc-wrap.show {
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: auto;
+        }
+
+        .fc-stack {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: flex-end;
+          opacity: 0;
+          transform: translateY(20px) scale(0.9);
+          pointer-events: none;
+          transition: all 0.4s var(--ease-out-expo);
+        }
+        .fc-stack.open {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+          pointer-events: auto;
+        }
+
+        .fc-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 11px 16px 11px 14px;
+          background: #fff;
+          color: var(--brand-ink);
+          border-radius: var(--radius-pill);
+          text-decoration: none;
+          font-family: var(--font-poppins);
+          font-weight: 700;
+          font-size: 0.85rem;
+          box-shadow: var(--shadow-lg);
+          transition: all 0.35s var(--ease-out-expo);
+          white-space: nowrap;
+        }
+        .fc-btn i {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-size: 0.85rem;
+        }
+        .fc-whatsapp i { background: #25d366; }
+        .fc-call i { background: var(--brand-saffron); }
+        .fc-mail i { background: var(--brand-rose); }
+        .fc-btn:hover {
+          transform: translateY(-3px) translateX(-4px);
+          box-shadow: var(--shadow-xl);
+        }
+
+        .fc-toggle {
+          position: relative;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: var(--gradient-saffron);
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          font-size: 1.4rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: var(--shadow-saffron);
+          transition: transform 0.4s var(--ease-bounce),
+            background 0.4s ease;
+        }
+        .fc-toggle:hover {
+          transform: scale(1.06);
+        }
+        .fc-toggle.open {
+          background: var(--brand-ink);
+          box-shadow: 0 12px 28px rgba(14, 20, 36, 0.4);
+        }
+        .fc-toggle-icon {
+          position: relative;
+          z-index: 1;
+        }
+        .fc-toggle-pulse {
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          background: rgba(var(--brand-saffron-rgb), 0.5);
+          animation: pulseRing 2.2s ease-out infinite;
+          z-index: 0;
+        }
+        .fc-toggle.open .fc-toggle-pulse { display: none; }
+
+        @media (max-width: 640px) {
+          .fc-wrap {
+            bottom: 18px;
+            right: 18px;
           }
-          .whatsapp-float,
-          .phone-float {
-            width: 52px !important;
-            height: 52px !important;
-          }
+          .fc-toggle { width: 56px; height: 56px; font-size: 1.2rem; }
+          .fc-btn { padding: 9px 14px 9px 12px; font-size: 0.78rem; }
+          .fc-btn i { width: 24px; height: 24px; font-size: 0.75rem; }
         }
       `}</style>
-    </>
+    </div>
   );
 };
 

@@ -1,233 +1,531 @@
 "use client";
 
-import React from 'react';
-import { TourPackage, CHILD_POLICY, GENERAL_EXCLUSIONS, GENERAL_INCLUSIONS, CANCELLATION_POLICY, HOTEL_REFERENCE } from '@/data/packages';
-import PackageItinerary from '@/app/components/PackageItinerary';
-import PackageSidebar from '@/app/components/PackageSidebar';
+import React from "react";
+import {
+  TourPackage,
+  CHILD_POLICY,
+  GENERAL_EXCLUSIONS,
+  GENERAL_INCLUSIONS,
+  CANCELLATION_POLICY,
+  HOTEL_REFERENCE,
+} from "@/data/packages";
+import PackageItinerary from "@/app/components/PackageItinerary";
+import PackageSidebar from "@/app/components/PackageSidebar";
+import Image from "next/image";
+import Breadcrumbs from "@/app/components/Breadcrumbs";
 
 export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
   return (
     <>
-
-      {/* Detail Hero */}
-      <section className="detail-hero" style={{
-        padding: '160px 5% 100px',
-        background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url(${pkg.image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: '#fff'
-      }}>
-        <div className="container">
-          <div className="badge" style={{ background: '#FF8C00', display: 'inline-block', padding: '5px 15px', borderRadius: '5px', marginBottom: '20px', fontWeight: 'bold' }}>
-            {pkg.location} Tours
+      {/* ─── Detail Hero ─── */}
+      <section className="detail-hero">
+        <Image
+          src={pkg.image}
+          alt={pkg.imageAlt || pkg.name}
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: "cover" }}
+        />
+        <div className="hero-overlay" />
+        <div className="container hero-content">
+          <span className="hero-badge">
+            <i className="fas fa-map-marker-alt" /> {pkg.location}
+          </span>
+          <h1>{pkg.name}</h1>
+          <div className="hero-meta">
+            <span><i className="far fa-clock" /> {pkg.duration}</span>
+            <span><i className="fas fa-bed" /> Hotel · Cab · Meals</span>
+            <span><i className="fas fa-shield-halved" /> Govt. Approved</span>
           </div>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginBottom: '15px' }}>{pkg.name}</h1>
-          <p style={{ fontSize: '1.2rem', opacity: '0.9', maxWidth: '800px' }}>{pkg.description}</p>
+          <p className="hero-desc">{pkg.description}</p>
         </div>
       </section>
 
-      {/* Main Content Area */}
-      <div className="container main-layout-grid">
+      {/* ─── Main Layout ─── */}
+      <div className="container detail-layout">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Tour Packages", href: "/tour-packages" },
+            { label: pkg.name, href: `/tour-packages/${pkg.slug}` },
+          ]}
+        />
 
-        {/* Left Column: Itinerary & Details */}
-        <div className="main-content">
-          <div className="intro-text">
-            <h2 style={{ fontSize: '2.2rem', color: '#2B3036' }}>Experience {pkg.name}</h2>
-            <p style={{ fontSize: '1.1rem', color: '#666', marginTop: '15px', lineHeight: '1.8' }}>
-              This carefully curated {pkg.duration} tour is designed to immerse you in the spiritual atmosphere and cultural richness of {pkg.location}.
-              From exploring ancient temples to experiencing the divine Sarayu Aarti, every moment is planned for your comfort and enlightenment.
-            </p>
-          </div>
+        <div className="main-grid">
+          {/* ── Left ── */}
+          <div className="main-content">
+            <section className="content-block">
+              <h2>Experience the {pkg.name}</h2>
+              <p>
+                This carefully curated <strong>{pkg.duration}</strong>{" "}
+                spiritual journey is designed to immerse you in the
+                devotional richness of <strong>{pkg.location}</strong>. From
+                ancient temple rituals to evening Aartis on the holy ghats,
+                every moment is choreographed for comfort and divine
+                connection.
+              </p>
+            </section>
 
-          <PackageItinerary itinerary={pkg.itinerary} />
+            <PackageItinerary itinerary={pkg.itinerary} />
 
-          {/* Why Choose Us Section */}
-          {pkg.whyChooseUs && (
-            <div className="seo-section" style={{ marginTop: '50px' }}>
-              <h2 style={{ fontSize: '2.2rem', color: '#2B3036', marginBottom: '25px' }}>Why Choose Our {pkg.name}?</h2>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
-                {pkg.whyChooseUs.map((point, index) => (
-                  <div key={index} style={{ padding: '20px', background: '#fff', border: '1px solid #eee', borderRadius: '12px', display: 'flex', gap: '15px' }}>
-                    <div style={{ color: '#FF8C00', fontSize: '1.2rem', fontWeight: 'bold' }}>0{index + 1}.</div>
-                    <div style={{ color: '#555', lineHeight: '1.6' }}>{point}</div>
+            {pkg.whyChooseUs && (
+              <section className="content-block">
+                <h2>Why book this package with us?</h2>
+                <div className="why-grid">
+                  {pkg.whyChooseUs.map((point, index) => (
+                    <div key={index} className="why-card">
+                      <span className="why-num">0{index + 1}</span>
+                      <p>{point}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {pkg.seoContent && (
+              <section className="content-block">
+                <h2>About this divine journey</h2>
+                <div
+                  className="seo-prose"
+                  dangerouslySetInnerHTML={{ __html: pkg.seoContent }}
+                />
+              </section>
+            )}
+
+            {pkg.faqs && (
+              <section className="content-block">
+                <h2>Frequently asked questions</h2>
+                <div className="faq-list">
+                  {pkg.faqs.map((faq, index) => (
+                    <details key={index} className="faq-item">
+                      <summary>
+                        <span><strong>Q.</strong> {faq.q}</span>
+                        <i className="fas fa-chevron-down" />
+                      </summary>
+                      <p>{faq.a}</p>
+                    </details>
+                  ))}
+                </div>
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "FAQPage",
+                      mainEntity: pkg.faqs.map((faq) => ({
+                        "@type": "Question",
+                        name: faq.q,
+                        acceptedAnswer: {
+                          "@type": "Answer",
+                          text: faq.a,
+                        },
+                      })),
+                    }),
+                  }}
+                />
+              </section>
+            )}
+
+            <section className="content-block policy-card">
+              <h3>Child Policy</h3>
+              <ul className="check-list">
+                {CHILD_POLICY.map((p, i) => (
+                  <li key={i}>
+                    <i className="fas fa-check-circle" /> {p}
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section className="content-block">
+              <h3>Cancellation Policy</h3>
+              <div className="cancel-grid">
+                {CANCELLATION_POLICY.map((item, i) => (
+                  <div key={i} className="cancel-tile">
+                    <div className="cancel-duration">{item.duration}</div>
+                    <div className="cancel-refund">{item.refund}</div>
+                    <div className="cancel-label">Refund</div>
                   </div>
                 ))}
               </div>
-            </div>
-          )}
+            </section>
 
-          {/* Long SEO Content Section */}
-          {pkg.seoContent && (
-            <div className="seo-section" style={{ marginTop: '50px', lineHeight: '1.8', color: '#444' }}>
-              <h2 style={{ fontSize: '2.2rem', color: '#2B3036', marginBottom: '20px' }}>Experience Divine Spirituality: A Complete Guide</h2>
-              <div dangerouslySetInnerHTML={{ __html: pkg.seoContent }} className="long-description-content" />
-            </div>
-          )}
-
-          {/* FAQ Section */}
-          {pkg.faqs && (
-            <div className="faq-section" style={{ marginTop: '50px' }}>
-              <h2 style={{ fontSize: '2.2rem', color: '#2B3036', marginBottom: '25px' }}>Frequently Asked Questions (FAQs)</h2>
-              <div className="faq-list" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                {pkg.faqs.map((faq, index) => (
-                  <details key={index} style={{ border: '1px solid #eee', borderRadius: '10px', padding: '15px 25px', cursor: 'pointer' }}>
-                    <summary style={{ fontWeight: '600', color: '#2B3036', fontSize: '1.1rem' }}>{faq.q}</summary>
-                    <div style={{ marginTop: '10px', color: '#666', paddingLeft: '20px', borderLeft: '2px solid #FF8C00' }}>{faq.a}</div>
-                  </details>
-                ))}
-              </div>
-              {/* Structured Data for FAQ */}
-              <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                  __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "FAQPage",
-                    "mainEntity": pkg.faqs.map(faq => ({
-                      "@type": "Question",
-                      "name": faq.q,
-                      "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": faq.a
-                      }
-                    }))
-                  })
-                }}
-              />
-            </div>
-          )}
-          {/* Pricing Table Section - Hidden by user request */}
-          {/* {pkg.pricingTable && (
-            <div className="pricing-section" style={{ marginTop: '50px' }}>
-              <h3 style={{ fontSize: '1.8rem', color: '#2B3036', marginBottom: '25px' }}>Pricing Details (Per Person)</h3>
-              <div className="table-responsive" style={{ overflowX: 'auto' }}>
-                <table className="pricing-table" style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #ddd' }}>
+            <section className="content-block">
+              <h3>Recommended Hotels</h3>
+              <div className="table-wrap">
+                <table className="hotel-table">
                   <thead>
-                    <tr style={{ background: '#f8f9fa' }}>
-                      <th style={{ padding: '12px', textAlign: 'left', border: '1px solid #ddd' }}>Category</th>
-                      <th style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>02 Pax</th>
-                      <th style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>04 Pax</th>
-                      <th style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>06 Pax</th>
-                      <th style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>08 Pax</th>
-                      <th style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>10 Pax</th>
-                      <th style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>12 Pax</th>
+                    <tr>
+                      <th>City</th>
+                      <th>Deluxe</th>
+                      <th>Luxury</th>
+                      <th>Premium</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {pkg.pricingTable.map((row, idx) => (
+                    {HOTEL_REFERENCE.map((row, idx) => (
                       <tr key={idx}>
-                        <td style={{ padding: '12px', fontWeight: 'bold', border: '1px solid #ddd' }}>{row.category}</td>
-                        <td style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>{row.pax2}</td>
-                        <td style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>{row.pax4}</td>
-                        <td style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>{row.pax6}</td>
-                        <td style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>{row.pax8}</td>
-                        <td style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>{row.pax10}</td>
-                        <td style={{ padding: '12px', textAlign: 'center', border: '1px solid #ddd' }}>{row.pax12}</td>
+                        <td>
+                          <i className="fas fa-map-pin" /> {row.city}
+                        </td>
+                        <td>{row.deluxe}</td>
+                        <td>{row.luxury}</td>
+                        <td>{row.premium}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
-              <p style={{ marginTop: '10px', fontSize: '0.9rem', color: '#888' }}>* Rate valid from 01st April to 31st August 2026, Except Long weekends. Twin Sharing Per Person.</p>
-            </div>
-          )} */}
-
-          {/* Child Policy Section */}
-          <div className="policy-section" style={{ marginTop: '50px', padding: '30px', background: '#fcfcfc', borderRadius: '10px', border: '1px solid #eee' }}>
-            <h3 style={{ fontSize: '1.6rem', color: '#2B3036', marginBottom: '20px' }}>Child Policy</h3>
-            <ul style={{ listStyle: 'none', padding: 0 }}>
-              {CHILD_POLICY.map((p, i) => (
-                <li key={i} style={{ marginBottom: '10px', color: '#555', paddingLeft: '25px', position: 'relative' }}>
-                  <span style={{ position: 'absolute', left: 0, color: '#FF8C00' }}>•</span> {p}
-                </li>
-              ))}
-            </ul>
+            </section>
           </div>
 
-          {/* Cancellation Policy Section */}
-          <div className="policy-section" style={{ marginTop: '40px' }}>
-            <h3 style={{ fontSize: '1.6rem', color: '#2B3036', marginBottom: '20px' }}>Cancellation Policy</h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '15px' }}>
-              {CANCELLATION_POLICY.map((item, i) => (
-                <div key={i} style={{ padding: '15px', background: '#fff', border: '1px solid #eee', borderRadius: '8px', textAlign: 'center' }}>
-                  <div style={{ fontWeight: 'bold', color: '#2B3036' }}>{item.duration}</div>
-                  <div style={{ color: '#FF4D4D', marginTop: '5px' }}>{item.refund} Refund</div>
-                </div>
-              ))}
+          {/* ── Right ── */}
+          <aside className="sidebar">
+            <PackageSidebar duration={pkg.duration} inclusions={pkg.inclusions} />
+            <div className="incl-card">
+              <h4>What&apos;s Included</h4>
+              <ul className="incl-list">
+                {GENERAL_INCLUSIONS.map((item, i) => (
+                  <li key={i}>
+                    <i className="fas fa-check-circle" /> {item}
+                  </li>
+                ))}
+              </ul>
+              <h4>What&apos;s Not Included</h4>
+              <ul className="excl-list">
+                {GENERAL_EXCLUSIONS.map((item, i) => (
+                  <li key={i}>
+                    <i className="fas fa-times-circle" /> {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-
-          {/* Hotel Reference Section */}
-          <div className="hotel-reference-section" style={{ marginTop: '50px' }}>
-            <h3 style={{ fontSize: '1.8rem', color: '#2B3036', marginBottom: '25px' }}>Recommended Hotels</h3>
-            <div className="table-responsive" style={{ overflowX: 'auto' }}>
-              <table className="hotel-table" style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #eee', fontSize: '0.95rem' }}>
-                <thead>
-                  <tr style={{ background: '#f8f9fa' }}>
-                    <th style={{ padding: '12px', textAlign: 'left', border: '1px solid #eee' }}>City</th>
-                    <th style={{ padding: '12px', textAlign: 'left', border: '1px solid #eee' }}>Deluxe</th>
-                    <th style={{ padding: '12px', textAlign: 'left', border: '1px solid #eee' }}>Luxury</th>
-                    <th style={{ padding: '12px', textAlign: 'left', border: '1px solid #eee' }}>Premium</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {HOTEL_REFERENCE.map((row, idx) => (
-                    <tr key={idx}>
-                      <td style={{ padding: '12px', fontWeight: 'bold', border: '1px solid #eee' }}>{row.city}</td>
-                      <td style={{ padding: '12px', border: '1px solid #eee' }}>{row.deluxe}</td>
-                      <td style={{ padding: '12px', border: '1px solid #eee' }}>{row.luxury}</td>
-                      <td style={{ padding: '12px', border: '1px solid #eee' }}>{row.premium}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
+          </aside>
         </div>
-
-        {/* Right Column: Sidebar */}
-        <aside>
-          <PackageSidebar
-            duration={pkg.duration}
-            inclusions={pkg.inclusions}
-          />
-
-          <div className="detailed-costing" style={{ marginTop: '30px', padding: '25px', background: '#f8f9fa', borderRadius: '15px' }}>
-            <h4 style={{ marginBottom: '15px', color: '#2B3036' }}>Cost Inclusions</h4>
-            <ul style={{ listStyle: 'none', padding: 0, fontSize: '0.95rem' }}>
-              {GENERAL_INCLUSIONS.map((item, i) => (
-                <li key={i} style={{ marginBottom: '8px', color: '#666' }}>✓ {item}</li>
-              ))}
-            </ul>
-            <h4 style={{ margin: '20px 0 15px', color: '#2B3036' }}>Cost Exclusions</h4>
-            <ul style={{ listStyle: 'none', padding: 0, fontSize: '0.95rem' }}>
-              {GENERAL_EXCLUSIONS.map((item, i) => (
-                <li key={i} style={{ marginBottom: '8px', color: '#999' }}>✕ {item}</li>
-              ))}
-            </ul>
-          </div>
-        </aside>
-
       </div>
 
-
       <style jsx>{`
-        .detail-hero { min-height: 50vh; display: flex; align-items: center; }
-        .main-layout-grid {
-          padding: 80px 5%;
+        .detail-hero {
+          position: relative;
+          min-height: 56vh;
+          padding: 130px 5% 80px;
+          color: #fff;
+          display: flex;
+          align-items: flex-end;
+          background: var(--brand-ink);
+          overflow: hidden;
+        }
+        .detail-hero :global(img) {
+          animation: kenburns 18s ease-in-out infinite alternate;
+        }
+        .hero-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            180deg,
+            rgba(14, 20, 36, 0.55) 0%,
+            rgba(14, 20, 36, 0.4) 40%,
+            rgba(14, 20, 36, 0.95) 100%
+          );
+        }
+        .hero-content {
+          position: relative;
+          z-index: 2;
+          max-width: 900px;
+        }
+        .hero-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: var(--gradient-saffron);
+          color: #fff;
+          padding: 6px 14px;
+          border-radius: var(--radius-pill);
+          font-size: 0.78rem;
+          font-weight: 700;
+          letter-spacing: 0.6px;
+          text-transform: uppercase;
+          margin-bottom: 18px;
+          box-shadow: var(--shadow-saffron);
+        }
+        .hero-content h1 {
+          color: #fff;
+          font-size: clamp(1.8rem, 3.6vw, 3rem);
+          margin-bottom: 16px;
+          line-height: 1.15;
+        }
+        .hero-meta {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 18px;
+          color: rgba(255, 255, 255, 0.86);
+          font-size: 0.92rem;
+          margin-bottom: 14px;
+        }
+        .hero-meta i {
+          color: var(--brand-gold-light);
+          margin-right: 6px;
+        }
+        .hero-desc {
+          color: rgba(255, 255, 255, 0.86);
+          font-size: 1.02rem;
+          max-width: 800px;
+          line-height: 1.7;
+        }
+
+        .detail-layout { padding: 40px 0 80px; }
+        .main-grid {
           display: grid;
           grid-template-columns: 1fr 380px;
           gap: 50px;
+          margin-top: 8px;
         }
-        .pricing-table th, .pricing-table td {
-          transition: background 0.2s;
+
+        .content-block {
+          margin-bottom: 50px;
         }
-        .pricing-table tr:hover td {
-          background: #fafafa;
+        .content-block h2 {
+          font-size: clamp(1.5rem, 2.4vw, 2rem);
+          color: var(--brand-ink);
+          margin-bottom: 18px;
+          padding-bottom: 12px;
+          border-bottom: 2px solid transparent;
+          background: linear-gradient(90deg, var(--brand-saffron), transparent) bottom / 80px 2px no-repeat;
         }
+        .content-block h3 {
+          font-size: 1.4rem;
+          color: var(--brand-ink);
+          margin-bottom: 18px;
+        }
+        .content-block p {
+          color: var(--text-secondary);
+          line-height: 1.8;
+        }
+
+        .why-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 16px;
+        }
+        .why-card {
+          display: flex;
+          gap: 16px;
+          padding: 22px;
+          background: #fff;
+          border: 1px solid var(--border-light);
+          border-radius: var(--radius-md);
+          box-shadow: var(--shadow-sm);
+          transition: all 0.4s var(--ease-out-expo);
+        }
+        .why-card:hover {
+          transform: translateY(-4px);
+          box-shadow: var(--shadow-md);
+          border-color: rgba(var(--brand-saffron-rgb), 0.4);
+        }
+        .why-num {
+          font-family: var(--font-poppins);
+          font-size: 1.3rem;
+          font-weight: 800;
+          background: var(--gradient-saffron);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          flex-shrink: 0;
+        }
+        .why-card p {
+          color: var(--text-secondary);
+          line-height: 1.6;
+          font-size: 0.95rem;
+        }
+
+        .seo-prose :global(h3) {
+          font-size: 1.25rem;
+          color: var(--brand-ink);
+          margin: 24px 0 12px;
+        }
+        .seo-prose :global(p) {
+          color: var(--text-secondary);
+          line-height: 1.8;
+          margin-bottom: 14px;
+        }
+        .seo-prose :global(strong) { color: var(--brand-ink); }
+
+        .faq-list {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .faq-item {
+          background: #fff;
+          border: 1px solid var(--border-light);
+          border-radius: var(--radius-md);
+          padding: 16px 22px;
+          transition: all 0.3s ease;
+        }
+        .faq-item[open] {
+          border-color: var(--brand-saffron);
+          box-shadow: var(--shadow-md);
+        }
+        .faq-item summary {
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 12px;
+          color: var(--brand-ink);
+          font-weight: 600;
+          font-size: 1rem;
+          list-style: none;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary i {
+          color: var(--brand-saffron);
+          font-size: 0.8rem;
+          transition: transform 0.3s ease;
+        }
+        .faq-item[open] summary i { transform: rotate(180deg); }
+        .faq-item p {
+          color: var(--text-secondary);
+          line-height: 1.7;
+          margin-top: 12px;
+          padding-left: 20px;
+          border-left: 2px solid var(--brand-saffron);
+        }
+
+        .policy-card {
+          padding: 30px;
+          background: #fff;
+          border-radius: var(--radius-lg);
+          border: 1px solid var(--border-light);
+        }
+        .check-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: grid;
+          gap: 10px;
+        }
+        .check-list li {
+          color: var(--text-secondary);
+          display: flex;
+          gap: 12px;
+          align-items: flex-start;
+        }
+        .check-list i {
+          color: var(--brand-saffron);
+          margin-top: 4px;
+        }
+
+        .cancel-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 12px;
+        }
+        .cancel-tile {
+          padding: 18px 20px;
+          background: #fff;
+          border: 1px solid var(--border-light);
+          border-radius: var(--radius-md);
+          text-align: center;
+          transition: all 0.3s ease;
+        }
+        .cancel-tile:hover {
+          border-color: var(--brand-saffron);
+          transform: translateY(-2px);
+        }
+        .cancel-duration {
+          font-weight: 700;
+          color: var(--brand-ink);
+          font-family: var(--font-poppins);
+          font-size: 0.92rem;
+        }
+        .cancel-refund {
+          color: var(--brand-rose);
+          font-size: 1.4rem;
+          font-weight: 800;
+          margin: 8px 0 4px;
+          font-family: var(--font-poppins);
+        }
+        .cancel-label {
+          font-size: 0.7rem;
+          color: var(--text-muted);
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+        .table-wrap {
+          overflow-x: auto;
+          border-radius: var(--radius-md);
+          border: 1px solid var(--border-light);
+        }
+        .hotel-table {
+          width: 100%;
+          border-collapse: collapse;
+          font-size: 0.92rem;
+        }
+        .hotel-table th {
+          padding: 14px 16px;
+          background: var(--brand-ink);
+          color: #fff;
+          text-align: left;
+          font-weight: 700;
+          font-family: var(--font-poppins);
+          font-size: 0.82rem;
+          letter-spacing: 0.6px;
+          text-transform: uppercase;
+        }
+        .hotel-table td {
+          padding: 14px 16px;
+          border-top: 1px solid var(--border-light);
+          color: var(--text-secondary);
+        }
+        .hotel-table td:first-child {
+          font-weight: 700;
+          color: var(--brand-ink);
+        }
+        .hotel-table td i {
+          color: var(--brand-saffron);
+          margin-right: 6px;
+        }
+        .hotel-table tr:hover td { background: var(--bg-cream); }
+
+        .sidebar { display: flex; flex-direction: column; gap: 24px; }
+        .incl-card {
+          padding: 28px;
+          background: #fff;
+          border: 1px solid var(--border-light);
+          border-radius: var(--radius-lg);
+          box-shadow: var(--shadow-sm);
+        }
+        .incl-card h4 {
+          font-size: 1.05rem;
+          color: var(--brand-ink);
+          margin: 0 0 14px;
+        }
+        .incl-card h4:not(:first-child) { margin-top: 22px; }
+        .incl-list,
+        .excl-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: grid;
+          gap: 8px;
+        }
+        .incl-list li,
+        .excl-list li {
+          font-size: 0.88rem;
+          line-height: 1.5;
+          display: flex;
+          gap: 10px;
+          color: var(--text-secondary);
+        }
+        .incl-list i { color: var(--brand-saffron); margin-top: 4px; }
+        .excl-list i { color: var(--text-light); margin-top: 4px; }
+
         @media (max-width: 1024px) {
-          .main-layout-grid { grid-template-columns: 1fr !important; }
-          aside { order: 2; }
+          .main-grid { grid-template-columns: 1fr; gap: 30px; }
+          .sidebar { order: 2; }
           .main-content { order: 1; }
         }
       `}</style>

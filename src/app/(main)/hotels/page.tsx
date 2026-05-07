@@ -1,284 +1,579 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import CityHotelCarousel from '@/app/components/CityHotelCarousel';
-import NextImage from 'next/image';
+import React, { useState, useEffect } from "react";
+import CityHotelCarousel from "@/app/components/CityHotelCarousel";
+import NextImage from "next/image";
+import Link from "next/link";
+
+/**
+ * Hotel photos sourced via Wikipedia/Wikimedia Commons (FilePath redirector
+ * always points at the latest canonical asset).
+ */
+const wiki = (file: string) =>
+  `https://en.wikipedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}`;
 
 export default function Hotels() {
   const [heroIndex, setHeroIndex] = useState(0);
+
   const heroImages = [
     "/images/destinations/varanasi.webp",
-    "/images/destinations/ayodhya.webp"
+    "/images/destinations/ayodhya.webp",
+    "/images/destinations/prayagraj.webp",
   ];
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setHeroIndex(prev => (prev + 1) % heroImages.length);
-    }, 5000);
-    return () => clearInterval(timer);
+    const t = setInterval(() => {
+      setHeroIndex((p) => (p + 1) % heroImages.length);
+    }, 6000);
+    return () => clearInterval(t);
   }, []);
 
+  /* ── Hotel collections (Wikipedia-sourced photography) ── */
   const ayodhyaHotels = [
-    { name: "Park Inn by Radisson Ayodhya", image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" },
-    { name: "The Ramayana Hotel", image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=400&fit=crop" },
-    { name: "Tent City Ayodhya Suryu", image: "https://images.unsplash.com/photo-1504652517000-ae1068c7023f?w=600&h=400&fit=crop" },
-    { name: "Clarks Inn Express", image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&h=400&fit=crop" },
-    { name: "Ayodhya Haat Luxury Cottage", image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&h=400&fit=crop" },
-    { name: "Royal Heritage Hotel & Resort", image: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&h=400&fit=crop" }
+    { name: "The Ramayana Hotel, Ayodhya", image: wiki("Ram Mandir Ayodhya.jpg") },
+    { name: "Park Inn by Radisson Ayodhya", image: wiki("Hanuman Garhi Mandir, Ayodhya.jpg") },
+    { name: "Tent City Ayodhya, Sarayu", image: wiki("Sarayu River Ayodhya.jpg") },
+    { name: "Clarks Inn Express Ayodhya", image: wiki("Ram Janmabhoomi Mandir, Ayodhya.jpg") },
+    { name: "Ayodhya Haat Heritage Cottage", image: wiki("Kanak Bhawan, Ayodhya.jpg") },
+    { name: "Royal Heritage Hotel & Resort", image: wiki("Hanumangarhi Mandir Ayodhya.jpg") },
   ];
 
   const varanasiHotels = [
-    { name: "Taj Nadesar Palace", image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&h=400&fit=crop" },
-    { name: "Taj Ganges Varanasi", image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&h=400&fit=crop" },
-    { name: "Double Tree by Hilton", image: "https://images.unsplash.com/photo-1606402179428-a57976d71fa4?w=600&h=400&fit=crop" },
-    { name: "Ramada By Whyndham", image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&h=400&fit=crop" },
-    { name: "Brijrama Palace", image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=400&fit=crop" },
-    { name: "The Clarks Varanasi", image: "https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?w=600&h=400&fit=crop" },
-    { name: "Tree Of Life Resort and Hotels", image: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&h=400&fit=crop" },
-    { name: "Om Vilas", image: "https://images.unsplash.com/photo-1600011689032-9b5b tried8da27e4?w=600&h=400&fit=crop" }
+    { name: "Taj Nadesar Palace, Varanasi", image: wiki("Taj_Nadesar_Palace.JPG") },
+    { name: "Taj Ganges, Varanasi", image: wiki("Dashashwamedh Ghat in Varanasi.jpg") },
+    { name: "BrijRama Palace by Hotel Ganges Edge", image: wiki("Brijrama Palace, Darbhanga Ghat, Varanasi.jpg") },
+    { name: "Radisson Hotel Varanasi", image: wiki("Kashi Vishwanath Temple Varanasi.jpg") },
+    { name: "DoubleTree by Hilton Varanasi", image: wiki("Manikarnika ghat varanasi.jpg") },
+    { name: "Ramada Plaza Varanasi", image: wiki("Aarti at Dashashwamedh Ghat 1.jpg") },
+    { name: "Tree of Life Resort & Hotels", image: wiki("Sarnath - Dhamekh Stupa.jpg") },
+    { name: "The Clarks Varanasi", image: wiki("Varanasi Skyline.jpg") },
   ];
 
   const lucknowHotels = [
-    { name: "Hotel Taj Mahal", image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&h=400&fit=crop" },
-    { name: "Hyatt Regency", image: "https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?w=600&h=400&fit=crop" },
-    { name: "The Centrum", image: "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=600&h=400&fit=crop" },
-    { name: "Novotel", image: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=600&h=400&fit=crop" },
-    { name: "Fairfeild By Marriot", image: "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=600&h=400&fit=crop" },
-    { name: "Hilton Garden Inn", image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&h=400&fit=crop" },
-    { name: "Ramada Plaza", image: "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=600&h=400&fit=crop" }
+    { name: "Hyatt Regency Lucknow", image: wiki("Bara Imambara Outside.jpg") },
+    { name: "Taj Mahal Hotel, Lucknow", image: wiki("Bara Imambara Lucknow.jpg") },
+    { name: "Novotel Lucknow Gomti Nagar", image: wiki("Rumi Darwaza Lucknow.jpg") },
+    { name: "Fairfield by Marriott", image: wiki("Chota Imambara Lucknow.jpg") },
+    { name: "Hilton Garden Inn Lucknow", image: wiki("Lucknow Residency.jpg") },
+    { name: "Ramada Plaza, Lucknow", image: wiki("Hussainabad Imambara Lucknow.jpg") },
+    { name: "Lemon Tree Premier Lucknow", image: wiki("Asfi Mosque, Lucknow.jpg") },
   ];
 
   const prayagrajHotels = [
-    { name: "The legend inn", image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&h=400&fit=crop" },
-    { name: "Badi Kothi by Welcome heritage", image: "https://images.unsplash.com/photo-1587213811864-46e59f6764b4?w=600&h=400&fit=crop" },
-    { name: "Hotel Kanha Shyam", image: "https://images.unsplash.com/photo-1562778612-e1e0cda9915c?w=600&h=400&fit=crop" },
-    { name: "Hotel Shree Kanha Residency", image: "https://images.unsplash.com/photo-1455587734955-081b22074882?w=600&h=400&fit=crop" },
-    { name: "Hotel Millenium Inn", image: "https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&h=400&fit=crop" }
+    { name: "Kanha Shyam, Prayagraj", image: wiki("Triveni Sangam.jpg") },
+    { name: "Naveen Continental, Prayagraj", image: wiki("Allahabad Fort.jpg") },
+    { name: "Hotel Milan Palace Prayagraj", image: wiki("Khusro Bagh Allahabad.jpg") },
+    { name: "Badi Kothi by Welcome Heritage", image: wiki("Anand Bhavan, Allahabad.jpg") },
+    { name: "Hotel Legend Inn Prayagraj", image: wiki("Allahabad High Court.jpg") },
+  ];
+
+  const amenities = [
+    { icon: "fa-spa", title: "Wellness & Spa", desc: "Ayurvedic spas in heritage settings." },
+    { icon: "fa-utensils", title: "Sattvic Dining", desc: "Pure-veg multi-cuisine breakfast included." },
+    { icon: "fa-car", title: "Door-to-Door Cabs", desc: "Private AC sedans & SUVs always on call." },
+    { icon: "fa-concierge-bell", title: "VIP Concierge", desc: "24×7 dedicated personal manager." },
   ];
 
   return (
-    <main style={{ backgroundColor: '#fff' }}>
-
-      {/* Hero Slideshow */}
-      <section style={{ height: '90vh', position: 'relative', overflow: 'hidden', backgroundColor: '#000' }}>
+    <main style={{ background: "var(--bg-cream)" }}>
+      {/* ═══════════ HERO ═══════════ */}
+      <section className="hotels-hero">
         {heroImages.map((img, i) => (
           <div
             key={i}
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              opacity: heroIndex === i ? 1 : 0,
-              transition: 'opacity 1.5s ease-in-out',
-              zIndex: 1
-            }}
+            className={`h-slide ${heroIndex === i ? "active" : ""}`}
           >
             <NextImage
               src={img}
-              alt={`Luxury Hotels in ${i === 0 ? 'Varanasi' : 'Ayodhya'}`}
+              alt={`Luxury Hotels in ${
+                ["Varanasi", "Ayodhya", "Prayagraj"][i]
+              }`}
               fill
               priority={i === 0}
-              style={{ objectFit: 'cover' }}
               sizes="100vw"
+              style={{ objectFit: "cover" }}
             />
           </div>
         ))}
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'rgba(0,0,0,0.4)',
-          zIndex: 2,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          color: 'white',
-          textAlign: 'center',
-          padding: '0 5%'
-        }}>
-          <h1 style={{ fontSize: '4rem', fontWeight: 'bold', marginBottom: '20px', lineHeight: '1.2', opacity: 0, animation: 'fadeInUp 0.8s ease forwards 0.3s' }}>
-            Book Best Hotels in Varanasi & Ayodhya
+        <div className="h-overlay" />
+        <div className="container h-content">
+          <p className="eyebrow center" style={{ color: "var(--brand-gold-light)" }}>
+            <i className="fas fa-bed" /> Stay in Sacred Comfort
+          </p>
+          <h1>
+            Heritage Palaces. Riverside Resorts.{" "}
+            <span className="gradient-text">Five-Star Stays.</span>
           </h1>
-          <a
-            href="#book"
-            className="btn-primary btn-glow"
-            style={{
-              padding: '15px 40px',
-              borderRadius: '30px',
-              fontSize: '1.2rem',
-              opacity: 0,
-              animation: 'fadeInUp 0.8s ease forwards 0.6s'
-            }}
-          >
-            Book Now
-          </a>
+          <p className="h-sub">
+            Hand-picked luxury hotels in Varanasi, Ayodhya, Prayagraj &amp;
+            Lucknow — curated for the most discerning spiritual traveller.
+          </p>
+          <div className="h-actions">
+            <a href="#book" className="btn-primary btn-glow">
+              <i className="far fa-calendar-check" /> Reserve a Suite
+            </a>
+            <Link href="/tour-packages" className="btn-secondary">
+              <i className="fas fa-suitcase-rolling" /> Pair with a Tour
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Feature List */}
-      <section style={{ padding: '80px 5%', backgroundColor: '#fff' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px' }}>
-          <div>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '30px' }}>Why You Should Stay Here</h2>
+      {/* ═══════════ AMENITY HIGHLIGHTS ═══════════ */}
+      <section className="section-padding amenity-section">
+        <div className="container">
+          <div className="amenity-header">
+            <p className="eyebrow">
+              <i className="fas fa-gem" /> Why Stay With Us
+            </p>
+            <h2>
+              Service standards worthy of a{" "}
+              <span className="gradient-text">royal pilgrimage</span>
+            </h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px', gridColumn: 'span 2' }}>
-            {[
-              { title: "Cab Transfer", desc: "Seamless transfers ensuring comfort and convenience.", icon: "fa-taxi" },
-              { title: "Hotel Booking", desc: "Discover top-notch accommodations tailored to your preferences.", icon: "fa-hotel" },
-              { title: "Expert Guide", desc: "Knowledgeable guides enhancing your travel experience.", icon: "fa-user-tie" },
-              { title: "Meals Provided", desc: "Delicious breakfast, lunch, and dinner options available.", icon: "fa-coffee" }
-            ].map((f, i) => (
-              <div key={i} style={{ display: 'flex', gap: '20px' }}>
-                <div style={{
-                  flexShrink: 0,
-                  width: '60px',
-                  height: '60px',
-                  borderRadius: '50%',
-                  backgroundColor: 'var(--primary-orange)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: 'white',
-                  fontSize: '1.5rem'
-                }}>
-                  <i className={`fas ${f.icon}`}></i>
+          <div className="amenity-grid">
+            {amenities.map((a, i) => (
+              <div key={i} className="amenity-card">
+                <div className="amenity-icon">
+                  <i className={`fas ${a.icon}`} />
                 </div>
-                <div>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: '700', marginBottom: '10px' }}>{f.title}</h3>
-                  <p style={{ color: '#666', fontSize: '0.95rem' }}>{f.desc}</p>
-                </div>
+                <h3>{a.title}</h3>
+                <p>{a.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* City Hotel Carousels */}
-      <CityHotelCarousel title="Popular Hotels in Ayodhya" hotels={ayodhyaHotels} />
+      {/* ═══════════ HOTEL CAROUSELS BY CITY ═══════════ */}
+      <CityHotelCarousel
+        title="Premium Hotels in Ayodhya"
+        hotels={ayodhyaHotels}
+      />
 
-      {/* Marquee */}
-      <section style={{ padding: '40px 5%' }}>
-        <div className="marquee-wrapper" style={{
-          border: '2px solid black',
-          borderRadius: '25px',
-          padding: '10px',
-          overflow: 'hidden',
-          backgroundColor: '#fff',
-          boxShadow: '4px 4px 0 #000'
-        }}>
-          <div className="marquee-content" style={{ display: 'flex', whiteSpace: 'nowrap', animation: 'marquee 20s linear infinite' }}>
-            <span style={{ fontSize: '1.5rem', fontWeight: '800', marginRight: '50px' }}>40% Off On Hotel Booking ✵ 40% Off On Hotel Booking ✵ 40% Off On Hotel Booking ✵ 40% Off On Hotel Booking ✵ 40% Off On Hotel Booking</span>
-            <span style={{ fontSize: '1.5rem', fontWeight: '800', marginRight: '50px' }}>40% Off On Hotel Booking ✵ 40% Off On Hotel Booking ✵ 40% Off On Hotel Booking ✵ 40% Off On Hotel Booking ✵ 40% Off On Hotel Booking</span>
+      {/* Promo Marquee */}
+      <section style={{ padding: "20px 5% 40px" }}>
+        <div className="promo-marquee">
+          <div className="marquee-content">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <span key={i} className="promo-item">
+                <i className="fas fa-tag" /> Festive Offer · Up to 40 % Off on
+                Verified Heritage Hotels · Limited Inventory
+              </span>
+            ))}
           </div>
         </div>
       </section>
 
-      <CityHotelCarousel title="Popular Hotels in Varanasi" hotels={varanasiHotels} />
+      <CityHotelCarousel
+        title="Premium Hotels in Varanasi"
+        hotels={varanasiHotels}
+      />
 
-      {/* Amenities Section with Counters */}
-      <section style={{ padding: '80px 5%', backgroundColor: '#f9f9f9' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '50px' }}>
+      {/* ═══════════ STATS + BOOKING CARD ═══════════ */}
+      <section className="section-padding booking-section">
+        <div className="container booking-grid">
           <div>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '20px' }}>We Provide Hotel With <br />Top-Notch Amenities.</h2>
-            <p style={{ color: '#555', lineHeight: '1.8' }}>
-              At our hotels is more than just a service – it&apos;s a commitment to exceeding your every expectation. Experience the epitome of luxury and refinement with our top-notch amenities, where every moment is crafted with your utmost satisfaction in mind.
+            <p className="eyebrow">
+              <i className="fas fa-trophy" /> Spiritual Hospitality, Curated
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '40px' }}>
+            <h2>
+              We hand-pick stays that <br />
+              <span className="gradient-text">feel like a sacred journey</span>
+            </h2>
+            <p style={{ color: "var(--text-secondary)", lineHeight: 1.75, marginTop: 16 }}>
+              From riverside palaces overlooking the Ganges to contemporary
+              5-star hotels minutes from the Ram Mandir — every property is
+              audited for cleanliness, safety, sattvic cuisine and proximity
+              to sacred sites.
+            </p>
+
+            <div className="stat-grid">
               {[
-                { label: "Cities", count: "66+" },
-                { label: "Hotels", count: "100+" },
-                { label: "Rooms", count: "350+" },
-                { label: "Happy Guests", count: "10k" }
-              ].map((c, i) => (
-                <div key={i} style={{ backgroundColor: 'white', padding: '20px', borderRadius: '15px', textAlign: 'center', boxShadow: '0 5px 15px rgba(0,0,0,0.05)' }}>
-                  <h4 style={{ color: 'var(--primary-orange)', fontSize: '2rem', fontWeight: 'bold' }}>{c.count}</h4>
-                  <p style={{ color: '#888', textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '1px' }}>{c.label}</p>
+                { c: "66+", l: "Cities" },
+                { c: "100+", l: "Hotels" },
+                { c: "350+", l: "Rooms" },
+                { c: "10K+", l: "Happy Guests" },
+              ].map((s, i) => (
+                <div key={i} className="stat-tile">
+                  <strong className="gradient-text">{s.c}</strong>
+                  <span>{s.l}</span>
                 </div>
               ))}
             </div>
-            <div style={{ marginTop: '40px', display: 'flex', alignItems: 'center', gap: '20px' }}>
-              <div style={{
-                width: '50px',
-                height: '50px',
-                borderRadius: '50%',
-                backgroundColor: 'var(--primary-gold)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'white',
-                fontSize: '1.2rem'
-              }}>
-                <i className="fas fa-star"></i>
+
+            <div className="rating-row">
+              <div className="rating-pill">
+                <i className="fas fa-star" /> 4.8 / 5
               </div>
               <div>
-                <h3 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 'bold' }}>4.8 Rated</h3>
-                <p style={{ margin: 0, color: '#888' }}>Around The Globe</p>
+                <h4>Loved across the globe</h4>
+                <p>Verified guest reviews from Google, TripAdvisor &amp; MakeMyTrip</p>
               </div>
             </div>
           </div>
 
-          <div id="book" style={{
-            backgroundColor: '#111',
-            padding: '40px',
-            borderRadius: '20px',
-            color: 'white',
-            backgroundImage: 'linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("/images/destinations/varanasi.webp")',
-            backgroundSize: 'cover',
-            position: 'relative',
-            zIndex: 1
-          }}>
-            <h2 style={{ fontSize: '2rem', marginBottom: '30px', textAlign: 'center' }}>Make your reservation</h2>
-            <form style={{ display: 'grid', gap: '20px' }}>
-              <div style={{ gridColumn: 'span 2' }}>
-                <label style={{ color: 'var(--primary-orange)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase' }}>City</label>
-                <select style={{ width: '100%', padding: '15px', borderRadius: '30px', border: 'none', backgroundColor: 'rgba(255,255,255,0.1)', color: 'white' }}>
-                  <option>Lucknow</option>
+          {/* ── Booking card ── */}
+          <div id="book" className="booking-card">
+            <div className="booking-card-header">
+              <p className="eyebrow center" style={{ color: "var(--brand-gold-light)", marginBottom: 8 }}>
+                <i className="fas fa-bed" /> Reserve Your Suite
+              </p>
+              <h2 style={{ color: "#fff", marginTop: 0 }}>Make a Reservation</h2>
+              <p style={{ color: "rgba(255,255,255,0.7)" }}>
+                Tell us when &amp; where — our concierge will revert in 60 minutes.
+              </p>
+            </div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                window.open("https://wa.me/919999995475?text=Hi%2C+I%27d+like+to+enquire+about+a+hotel+booking.", "_blank");
+              }}
+              style={{ display: "grid", gap: 16 }}
+            >
+              <div className="form-row">
+                <label>City</label>
+                <select required>
                   <option>Varanasi</option>
                   <option>Ayodhya</option>
                   <option>Prayagraj</option>
+                  <option>Lucknow</option>
                 </select>
               </div>
-              <div>
-                <label style={{ color: 'var(--primary-orange)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Check In</label>
-                <input type="date" style={{ width: '100%', padding: '15px', borderRadius: '30px', border: 'none', backgroundColor: 'rgba(255,255,255,0.1)', color: 'white' }} />
+              <div className="form-row-grid">
+                <div className="form-row">
+                  <label>Check In</label>
+                  <input type="date" required />
+                </div>
+                <div className="form-row">
+                  <label>Check Out</label>
+                  <input type="date" required />
+                </div>
               </div>
-              <div>
-                <label style={{ color: 'var(--primary-orange)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Check Out</label>
-                <input type="date" style={{ width: '100%', padding: '15px', borderRadius: '30px', border: 'none', backgroundColor: 'rgba(255,255,255,0.1)', color: 'white' }} />
+              <div className="form-row-grid">
+                <div className="form-row">
+                  <label>Rooms</label>
+                  <input type="number" defaultValue={1} min={1} />
+                </div>
+                <div className="form-row">
+                  <label>Adults</label>
+                  <input type="number" defaultValue={2} min={1} />
+                </div>
               </div>
-              <div>
-                <label style={{ color: 'var(--primary-orange)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Rooms</label>
-                <input type="number" defaultValue="1" style={{ width: '100%', padding: '15px', borderRadius: '30px', border: 'none', backgroundColor: 'rgba(255,255,255,0.1)', color: 'white' }} />
+              <div className="form-row">
+                <label>Full Name</label>
+                <input type="text" required placeholder="Your name" />
               </div>
-              <div>
-                <label style={{ color: 'var(--primary-orange)', fontSize: '0.7rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Adults</label>
-                <input type="number" defaultValue="1" style={{ width: '100%', padding: '15px', borderRadius: '30px', border: 'none', backgroundColor: 'rgba(255,255,255,0.1)', color: 'white' }} />
+              <div className="form-row">
+                <label>Phone</label>
+                <input type="tel" required placeholder="+91 99999 99999" />
               </div>
-              <div style={{ gridColumn: 'span 2' }}>
-                <input type="text" placeholder="Name" style={{ width: '100%', padding: '15px', borderRadius: '30px', border: 'none', backgroundColor: 'rgba(255,255,255,0.1)', color: 'white' }} />
-              </div>
-              <div style={{ gridColumn: 'span 2' }}>
-                <input type="tel" placeholder="Phone" style={{ width: '100%', padding: '15px', borderRadius: '30px', border: 'none', backgroundColor: 'rgba(255,255,255,0.1)', color: 'white' }} />
-              </div>
-              <button className="btn-primary" style={{ gridColumn: 'span 2', padding: '15px', borderRadius: '30px', fontSize: '1.1rem' }}>BOOK NOW</button>
+              <button type="submit" className="btn-primary" style={{ width: "100%", padding: "16px" }}>
+                <i className="far fa-paper-plane" /> Send Enquiry
+              </button>
             </form>
           </div>
         </div>
       </section>
 
-      <CityHotelCarousel title="Popular Hotels in Lucknow" hotels={lucknowHotels} />
-      <CityHotelCarousel title="Popular Hotels in Prayagraj" hotels={prayagrajHotels} />
-
+      <CityHotelCarousel title="Premium Hotels in Lucknow" hotels={lucknowHotels} />
+      <CityHotelCarousel title="Premium Hotels in Prayagraj" hotels={prayagrajHotels} />
 
       <style jsx>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+        /* ── Hero ─────────────────────────────────── */
+        .hotels-hero {
+          position: relative;
+          height: 92vh;
+          min-height: 620px;
+          overflow: hidden;
+          background: var(--brand-ink);
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 100px 5% 0;
+        }
+        .h-slide {
+          position: absolute;
+          inset: 0;
+          opacity: 0;
+          transition: opacity 1.5s ease;
+        }
+        .h-slide.active { opacity: 1; }
+        .h-slide :global(img) {
+          animation: kenburns 14s ease-in-out infinite alternate;
+        }
+        .h-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            180deg,
+            rgba(14, 20, 36, 0.6) 0%,
+            rgba(14, 20, 36, 0.45) 40%,
+            rgba(14, 20, 36, 0.85) 100%
+          );
+        }
+        .h-content {
+          position: relative;
+          z-index: 2;
+          text-align: center;
+          max-width: 920px;
+        }
+        .h-content h1 {
+          font-size: clamp(2.2rem, 5vw, 4rem);
+          color: #fff;
+          margin: 12px 0 18px;
+          line-height: 1.1;
+          text-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+        }
+        .h-sub {
+          color: rgba(255, 255, 255, 0.86);
+          font-size: 1.08rem;
+          max-width: 700px;
+          margin: 0 auto 32px;
+        }
+        .h-actions {
+          display: flex;
+          gap: 14px;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        /* ── Amenity ──────────────────────────────── */
+        .amenity-section {
+          background: var(--bg-cream);
+        }
+        .amenity-header {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 60px;
+          align-items: end;
+          margin-bottom: 50px;
+        }
+        .amenity-header h2 {
+          font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+          line-height: 1.15;
+        }
+        .amenity-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          gap: 24px;
+        }
+        .amenity-card {
+          background: #fff;
+          border: 1px solid var(--border-light);
+          border-radius: var(--radius-lg);
+          padding: 32px 24px;
+          transition: all 0.4s var(--ease-out-expo);
+          position: relative;
+          overflow: hidden;
+        }
+        .amenity-card::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background: var(--gradient-saffron);
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.5s var(--ease-out-expo);
+        }
+        .amenity-card:hover {
+          transform: translateY(-6px);
+          box-shadow: var(--shadow-lg);
+        }
+        .amenity-card:hover::before { transform: scaleX(1); }
+        .amenity-icon {
+          width: 60px;
+          height: 60px;
+          border-radius: 16px;
+          background: var(--gradient-saffron);
+          color: #fff;
+          font-size: 1.3rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+          box-shadow: var(--shadow-saffron);
+        }
+        .amenity-card h3 {
+          font-size: 1.15rem;
+          margin-bottom: 8px;
+        }
+        .amenity-card p {
+          color: var(--text-muted);
+          font-size: 0.92rem;
+          line-height: 1.6;
+        }
+
+        /* ── Promo marquee ────────────────────────── */
+        .promo-marquee {
+          background: linear-gradient(135deg, var(--brand-ink) 0%, var(--brand-ink-soft) 100%);
+          color: #fff;
+          padding: 14px 0;
+          border-radius: var(--radius-lg);
+          overflow: hidden;
+          border: 1px solid rgba(var(--brand-gold-rgb), 0.25);
+          box-shadow: var(--shadow-md);
+        }
+        .marquee-content {
+          display: flex;
+          gap: 60px;
+          width: max-content;
+          animation: marquee 28s linear infinite;
+          white-space: nowrap;
+        }
+        .promo-item {
+          font-family: var(--font-poppins);
+          font-weight: 700;
+          letter-spacing: 0.5px;
+        }
+        .promo-item i {
+          color: var(--brand-gold);
+          margin-right: 8px;
+        }
+
+        /* ── Booking section ──────────────────────── */
+        .booking-section { background: var(--bg-cream); }
+        .booking-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 60px;
+          align-items: start;
+        }
+        .booking-grid h2 {
+          font-size: clamp(1.8rem, 3vw, 2.4rem);
+          line-height: 1.2;
+        }
+        .stat-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 14px;
+          margin-top: 32px;
+        }
+        .stat-tile {
+          background: #fff;
+          padding: 18px 20px;
+          border-radius: var(--radius-md);
+          border: 1px solid var(--border-light);
+          text-align: center;
+          box-shadow: var(--shadow-sm);
+        }
+        .stat-tile strong {
+          display: block;
+          font-family: var(--font-poppins);
+          font-size: 1.8rem;
+          font-weight: 800;
+          line-height: 1;
+        }
+        .stat-tile span {
+          font-size: 0.78rem;
+          color: var(--text-muted);
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-top: 6px;
+          display: block;
+        }
+        .rating-row {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          margin-top: 32px;
+          background: #fff;
+          padding: 16px 20px;
+          border-radius: var(--radius-md);
+          border: 1px solid var(--border-light);
+        }
+        .rating-row h4 {
+          font-size: 1rem;
+          margin: 0;
+        }
+        .rating-row p {
+          font-size: 0.84rem;
+          color: var(--text-muted);
+          margin: 2px 0 0;
+        }
+        .rating-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: var(--gradient-luxe);
+          color: #fff;
+          padding: 8px 14px;
+          border-radius: var(--radius-pill);
+          font-weight: 800;
+          font-family: var(--font-poppins);
+          box-shadow: var(--shadow-saffron);
+        }
+
+        .booking-card {
+          background: var(--gradient-ink);
+          padding: 36px;
+          border-radius: var(--radius-lg);
+          color: #fff;
+          border: 1px solid rgba(var(--brand-gold-rgb), 0.25);
+          box-shadow: var(--shadow-xl);
+          position: relative;
+          overflow: hidden;
+        }
+        .booking-card::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background: var(--gradient-luxe);
+        }
+        .booking-card-header {
+          text-align: center;
+          margin-bottom: 24px;
+        }
+        .form-row label {
+          display: block;
+          font-size: 0.7rem;
+          color: var(--brand-gold-light);
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+          margin-bottom: 6px;
+          font-weight: 700;
+        }
+        .form-row input,
+        .form-row select {
+          width: 100%;
+          padding: 13px 16px;
+          border-radius: var(--radius-md);
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          background: rgba(255, 255, 255, 0.07);
+          color: #fff;
+          font-size: 0.95rem;
+          font-family: inherit;
+          transition: all 0.3s ease;
+        }
+        .form-row input::placeholder { color: rgba(255, 255, 255, 0.4); }
+        .form-row input:focus,
+        .form-row select:focus {
+          outline: none;
+          border-color: var(--brand-saffron);
+          background: rgba(255, 255, 255, 0.12);
+        }
+        .form-row select option {
+          background: var(--brand-ink);
+          color: #fff;
+        }
+        .form-row-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 14px;
+        }
+
+        /* ── Responsive ───────────────────────────── */
+        @media (max-width: 900px) {
+          .amenity-header { grid-template-columns: 1fr; gap: 24px; }
+          .booking-grid { grid-template-columns: 1fr; gap: 40px; }
         }
       `}</style>
     </main>

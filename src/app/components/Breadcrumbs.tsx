@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 interface BreadcrumbItem {
   label: string;
@@ -14,37 +14,61 @@ interface BreadcrumbsProps {
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
   return (
-    <nav aria-label="Breadcrumb" style={{ marginBottom: '20px' }}>
-      <ol style={{ 
-        display: 'flex', 
-        listStyle: 'none', 
-        padding: 0, 
-        margin: 0, 
-        fontSize: '0.9rem',
-        color: '#666'
-      }}>
+    <nav aria-label="Breadcrumb" className="bc-nav">
+      <ol>
         {items.map((item, index) => (
-          <li key={index} style={{ display: 'flex', alignItems: 'center' }}>
+          <li key={index}>
             {index < items.length - 1 ? (
               <>
-                <Link href={item.href} style={{ 
-                  color: 'inherit', 
-                  textDecoration: 'none',
-                  transition: 'color 0.2s ease'
-                }}
-                onMouseOver={(e) => e.currentTarget.style.color = '#FF8C00'}
-                onMouseOut={(e) => e.currentTarget.style.color = 'inherit'}
-                >
+                <Link href={item.href} className="bc-link">
+                  {index === 0 && (
+                    <i className="fas fa-home" style={{ marginRight: 6 }} />
+                  )}
                   {item.label}
                 </Link>
-                <span style={{ margin: '0 10px', opacity: 0.5 }}>/</span>
+                <i className="fas fa-chevron-right bc-sep" />
               </>
             ) : (
-              <span style={{ color: '#2B3036', fontWeight: '500' }}>{item.label}</span>
+              <span className="bc-current">{item.label}</span>
             )}
           </li>
         ))}
       </ol>
+
+      <style jsx>{`
+        .bc-nav { margin-bottom: 24px; }
+        ol {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 4px 8px;
+          list-style: none;
+          padding: 8px 16px;
+          margin: 0;
+          background: rgba(255, 255, 255, 0.6);
+          border: 1px solid var(--border-light);
+          border-radius: var(--radius-pill);
+          font-size: 0.85rem;
+          width: fit-content;
+          backdrop-filter: blur(8px);
+        }
+        li { display: flex; align-items: center; gap: 8px; }
+        .bc-link {
+          color: var(--text-muted);
+          text-decoration: none;
+          transition: color 0.25s ease;
+          font-weight: 500;
+        }
+        .bc-link:hover { color: var(--brand-saffron); }
+        .bc-sep {
+          font-size: 0.65rem;
+          color: var(--text-light);
+        }
+        .bc-current {
+          color: var(--brand-ink);
+          font-weight: 700;
+        }
+      `}</style>
     </nav>
   );
 };
