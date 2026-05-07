@@ -35,7 +35,7 @@ const FloatingContact: React.FC = () => {
           <span className="fc-label">Call</span>
         </a>
         <a
-          href="mailto:info@ramkashiyatra.com"
+          href="mailto:info@luxurytripindia.com"
           className="fc-btn fc-mail"
           aria-label="Email us"
         >

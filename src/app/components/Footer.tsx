@@ -127,8 +127,8 @@ export default function Footer() {
               <i className="fas fa-envelope" />
               <div>
                 <span>Email</span>
-                <a href="mailto:info@ramkashiyatra.com">
-                  info@ramkashiyatra.com
+                <a href="mailto:info@luxurytripindia.com">
+                  info@luxurytripindia.com
                 </a>
               </div>
             </li>

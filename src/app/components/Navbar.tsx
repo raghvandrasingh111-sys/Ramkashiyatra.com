@@ -39,8 +39,8 @@ export default function Navbar() {
               <i className="fas fa-phone-volume" /> +91 99999 95475
             </a>
             <span className="dot">•</span>
-            <a href="mailto:info@ramkashiyatra.com" className="top-link">
-              <i className="fas fa-envelope" /> info@ramkashiyatra.com
+            <a href="mailto:info@luxurytripindia.com" className="top-link">
+              <i className="fas fa-envelope" /> info@luxurytripindia.com
             </a>
           </div>
           <div className="top-bar-right">
