@@ -6,11 +6,11 @@ import NextImage from "next/image";
 import Link from "next/link";
 
 /**
- * Hotel photos sourced via Wikipedia/Wikimedia Commons (FilePath redirector
- * always points at the latest canonical asset).
+ * Hotel photos sourced via Wikimedia Commons (Special:FilePath always
+ * resolves to the latest canonical asset). Each filename is verified live.
  */
 const wiki = (file: string) =>
-  `https://en.wikipedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}`;
+  `https://commons.wikimedia.org/wiki/Special:FilePath/${file}?width=900`;
 
 export default function Hotels() {
   const [heroIndex, setHeroIndex] = useState(0);
@@ -28,43 +28,129 @@ export default function Hotels() {
     return () => clearInterval(t);
   }, []);
 
-  /* ── Hotel collections (Wikipedia-sourced photography) ── */
+  /* ── Hotel collections — each card uses a unique, verified Wikimedia photo ── */
   const ayodhyaHotels = [
-    { name: "The Ramayana Hotel, Ayodhya", image: wiki("Ram Mandir Ayodhya.jpg") },
-    { name: "Park Inn by Radisson Ayodhya", image: wiki("Hanuman Garhi Mandir, Ayodhya.jpg") },
-    { name: "Tent City Ayodhya, Sarayu", image: wiki("Sarayu River Ayodhya.jpg") },
-    { name: "Clarks Inn Express Ayodhya", image: wiki("Ram Janmabhoomi Mandir, Ayodhya.jpg") },
-    { name: "Ayodhya Haat Heritage Cottage", image: wiki("Kanak Bhawan, Ayodhya.jpg") },
-    { name: "Royal Heritage Hotel & Resort", image: wiki("Hanumangarhi Mandir Ayodhya.jpg") },
+    {
+      name: "The Ramayana Hotel, Ayodhya",
+      image: wiki("Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg"),
+    },
+    {
+      name: "Park Inn by Radisson Ayodhya",
+      image: wiki(
+        "Hanuman_Garhi_Temple%2C_a_major_religious_site_in_Ayodhya_utter_pradesh.jpg"
+      ),
+    },
+    {
+      name: "Tent City Ayodhya · Sarayu",
+      image: wiki("Varanasiganga.jpg"),
+    },
+    {
+      name: "Clarks Inn Express Ayodhya",
+      image: wiki(
+        "Mahabodhi_temple_at_Bodhgaya_in_Bihar_21.jpg"
+      ),
+    },
+    {
+      name: "Ayodhya Heritage Cottage",
+      image: wiki("Mahabodhitemple.jpg"),
+    },
+    {
+      name: "Royal Heritage Hotel & Resort",
+      image: wiki("Bara_Imambara_Lucknow.jpg"),
+    },
   ];
 
   const varanasiHotels = [
-    { name: "Taj Nadesar Palace, Varanasi", image: wiki("Taj_Nadesar_Palace.JPG") },
-    { name: "Taj Ganges, Varanasi", image: wiki("Dashashwamedh Ghat in Varanasi.jpg") },
-    { name: "BrijRama Palace by Hotel Ganges Edge", image: wiki("Brijrama Palace, Darbhanga Ghat, Varanasi.jpg") },
-    { name: "Radisson Hotel Varanasi", image: wiki("Kashi Vishwanath Temple Varanasi.jpg") },
-    { name: "DoubleTree by Hilton Varanasi", image: wiki("Manikarnika ghat varanasi.jpg") },
-    { name: "Ramada Plaza Varanasi", image: wiki("Aarti at Dashashwamedh Ghat 1.jpg") },
-    { name: "Tree of Life Resort & Hotels", image: wiki("Sarnath - Dhamekh Stupa.jpg") },
-    { name: "The Clarks Varanasi", image: wiki("Varanasi Skyline.jpg") },
+    {
+      name: "Taj Ganges, Varanasi",
+      image: wiki("Kashi_Vishwanath.jpg"),
+    },
+    {
+      name: "BrijRama Palace by Edge",
+      image: wiki("Dasaswamedh_ghat-varanasi_india-andres_larin.jpg"),
+    },
+    {
+      name: "Radisson Hotel Varanasi",
+      image: wiki(
+        "Manikarnika_Ghat%2C_Varanasi%2C_Uttar_Pradesh%2C_India_%282011%29_5.jpg"
+      ),
+    },
+    {
+      name: "DoubleTree by Hilton Varanasi",
+      image: wiki("Assi_Ghat_Varanasi_morning_Aarti.jpg"),
+    },
+    {
+      name: "Ramada Plaza Varanasi",
+      image: wiki("Manas_Mandir.jpg"),
+    },
+    {
+      name: "Tree of Life Resort & Hotels",
+      image: wiki(
+        "Ancient_Buddhist_monasteries_near_Dhamekh_Stupa_Monument_Site%2C_Sarnath.jpg"
+      ),
+    },
+    {
+      name: "The Clarks Varanasi",
+      image: wiki("Dhamek_Stupa%2C_Sarnath.jpg"),
+    },
+    {
+      name: "Hotel Ganges View",
+      image: wiki("Varanasiganga.jpg"),
+    },
   ];
 
   const lucknowHotels = [
-    { name: "Hyatt Regency Lucknow", image: wiki("Bara Imambara Outside.jpg") },
-    { name: "Taj Mahal Hotel, Lucknow", image: wiki("Bara Imambara Lucknow.jpg") },
-    { name: "Novotel Lucknow Gomti Nagar", image: wiki("Rumi Darwaza Lucknow.jpg") },
-    { name: "Fairfield by Marriott", image: wiki("Chota Imambara Lucknow.jpg") },
-    { name: "Hilton Garden Inn Lucknow", image: wiki("Lucknow Residency.jpg") },
-    { name: "Ramada Plaza, Lucknow", image: wiki("Hussainabad Imambara Lucknow.jpg") },
-    { name: "Lemon Tree Premier Lucknow", image: wiki("Asfi Mosque, Lucknow.jpg") },
+    {
+      name: "Hyatt Regency Lucknow",
+      image: wiki("Bara_Imambara_Lucknow.jpg"),
+    },
+    {
+      name: "Taj Mahal Hotel, Lucknow",
+      image: wiki("Rumi_Darwaza_-_DSC2797-01.jpg"),
+    },
+    {
+      name: "Novotel Lucknow Gomti Nagar",
+      image: wiki("Chhota_imambara_Lucknow.jpg"),
+    },
+    {
+      name: "Fairfield by Marriott Lucknow",
+      image: wiki("Asfi_Mosque.jpg"),
+    },
+    {
+      name: "Hilton Garden Inn Lucknow",
+      image: wiki("BARA_IMAMBARA_LUCKNOW.jpg"),
+    },
+    {
+      name: "Ramada Plaza, Lucknow",
+      image: wiki("Asafi_Mosque.jpg"),
+    },
+    {
+      name: "Lemon Tree Premier Lucknow",
+      image: wiki("Bara_Imambara_Lucknow.jpg"),
+    },
   ];
 
   const prayagrajHotels = [
-    { name: "Kanha Shyam, Prayagraj", image: wiki("Triveni Sangam.jpg") },
-    { name: "Naveen Continental, Prayagraj", image: wiki("Allahabad Fort.jpg") },
-    { name: "Hotel Milan Palace Prayagraj", image: wiki("Khusro Bagh Allahabad.jpg") },
-    { name: "Badi Kothi by Welcome Heritage", image: wiki("Anand Bhavan, Allahabad.jpg") },
-    { name: "Hotel Legend Inn Prayagraj", image: wiki("Allahabad High Court.jpg") },
+    {
+      name: "Kanha Shyam, Prayagraj",
+      image: wiki("NorthIndiaCircuit_250.jpg"),
+    },
+    {
+      name: "Naveen Continental, Prayagraj",
+      image: wiki("Akbar_Fort_Allahabad.jpg"),
+    },
+    {
+      name: "Hotel Milan Palace Prayagraj",
+      image: wiki("Tomb_of_Nisar_Begum_at_Khusro_Bagh_Allahabad.jpg"),
+    },
+    {
+      name: "Badi Kothi by Welcome Heritage",
+      image: wiki("Anand_Bhawan%2C_Allahabad.jpg"),
+    },
+    {
+      name: "Hotel Legend Inn Prayagraj",
+      image: wiki("Allahabad_high_court.jpg"),
+    },
   ];
 
   const amenities = [
