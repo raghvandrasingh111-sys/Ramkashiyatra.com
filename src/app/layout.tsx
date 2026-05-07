@@ -10,21 +10,21 @@ import ScrollToTop from "@/app/components/ScrollToTop";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "600", "700"],
   variable: "--font-poppins",
   display: "swap",
 });
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "600"],
   variable: "--font-jakarta",
   display: "swap",
 });
 
 const dancingScript = Dancing_Script({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["600"],
   variable: "--font-dancing",
   display: "swap",
 });

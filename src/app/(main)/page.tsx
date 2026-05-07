@@ -340,6 +340,7 @@ export default function Home() {
               alt={slide.title}
               fill
               priority={i === 0}
+              fetchPriority={i === 0 ? "high" : "auto"}
               sizes="100vw"
               style={{ objectFit: "cover" }}
             />
@@ -1403,16 +1404,14 @@ export default function Home() {
           font-size: clamp(1.2rem, 2vw, 1.6rem);
           color: var(--brand-gold-light);
           margin-bottom: 18px;
-          opacity: 0;
-          animation: fadeInUp 0.45s var(--ease-out-expo) 0.04s forwards;
+          opacity: 1;
         }
         .hero-title {
           font-size: clamp(2.4rem, 5.5vw, 4.4rem);
           line-height: 1.08;
           color: #fff;
           margin-bottom: 18px;
-          opacity: 0;
-          animation: fadeInUp 0.45s var(--ease-out-expo) 0.08s forwards;
+          opacity: 1;
           text-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
         }
         .hero-sub {
@@ -1420,16 +1419,14 @@ export default function Home() {
           color: rgba(255, 255, 255, 0.92);
           max-width: 700px;
           margin: 0 auto 36px;
-          opacity: 0;
-          animation: fadeInUp 0.45s var(--ease-out-expo) 0.12s forwards;
+          opacity: 1;
         }
         .hero-actions {
           display: flex;
           gap: 16px;
           justify-content: center;
           flex-wrap: wrap;
-          opacity: 0;
-          animation: fadeInUp 0.45s var(--ease-out-expo) 0.16s forwards;
+          opacity: 1;
         }
         .hero-trust {
           margin-top: 60px;
@@ -1437,8 +1434,7 @@ export default function Home() {
           gap: 28px;
           justify-content: center;
           flex-wrap: wrap;
-          opacity: 0;
-          animation: fadeInUp 0.45s var(--ease-out-expo) 0.2s forwards;
+          opacity: 1;
         }
         .trust-item {
           display: flex;
