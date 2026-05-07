@@ -1042,6 +1042,295 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ═══════════════════════════════════════════════
+           MASTER SEO CONTENT PLAN (ADDITIONAL)
+         ═══════════════════════════════════════════════ */}
+      <section className="seo-pillar master-seo-pillar">
+        <div className="container">
+          <div className="section-header" ref={addToRefs}>
+            <p className="eyebrow center">
+              <i className="fas fa-layer-group" /> Master SEO Content Plan
+            </p>
+            <h2>
+              Best Varanasi Tour &amp; Banaras Tour Packages —{" "}
+              <span className="gradient-text">Ram Kashi Yatra</span>
+            </h2>
+            <p className="section-sub">
+              Book the ultimate Varanasi tour with Ram Kashi Yatra. We offer
+              customized Banaras tour packages, sacred Kashi Yatra experiences,
+              and VIP Darshan.
+            </p>
+          </div>
+
+          <div ref={addToRefs} className="fade-in-up seo-prose">
+            <h3>
+              Welcome to Ram Kashi Yatra – Your Gateway to the Spiritual
+              Capital of India
+            </h3>
+            <p>
+              Are you searching for a life-changing spiritual journey? Welcome
+              to Ram Kashi Yatra, the leading local travel agency dedicated to
+              providing the most authentic and enriching Varanasi tour
+              experiences. As the oldest living city in the world, Banaras
+              (Kashi) calls millions of pilgrims and travelers every year.
+              Whether you are looking for a sacred Kashi Yatra, an immersive
+              cultural exploration, or comprehensive Banaras tour packages, we
+              are your trusted local partners.
+            </p>
+
+            <h3>Discover Our Exclusive Banaras Tour Packages</h3>
+            <p>
+              At Ram Kashi Yatra, we believe every traveler&apos;s journey is
+              unique. We have meticulously crafted a wide range of Banaras tour
+              packages to suit families, solo travelers, corporate groups, and
+              spiritual seekers.
+            </p>
+
+            <h3>1. The Complete Kashi Yatra Package (2 Nights / 3 Days)</h3>
+            <p>
+              Experience the ultimate spiritual cleansing with our signature
+              Kashi Yatra package. This itinerary is designed for devotees who
+              wish to complete the traditional rituals of Kashi.
+            </p>
+            <ul className="seo-list">
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Inclusions:</strong> Airport/Railway Station pickup,
+                  comfortable hotel stay, VIP Kashi Vishwanath Darshan, visits
+                  to Kaal Bhairav Temple, Sankat Mochan Hanuman Temple, and
+                  Tulsi Manas Mandir.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Experience:</strong> Participate in special poojas,
+                  enjoy a serene Varanasi boat ride at dawn, and witness the
+                  mesmerizing Evening Ganga Aarti at Dashashwamedh Ghat.
+                </span>
+              </li>
+            </ul>
+
+            <h3>2. Varanasi Sightseeing &amp; Heritage Tour</h3>
+            <p>
+              If you want to experience the rich history and culture of the
+              city, this Varanasi tour is perfect for you.
+            </p>
+            <ul className="seo-list">
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Inclusions:</strong> Guided walk through the ancient
+                  narrow alleys (Galies) of Banaras, exploring BHU, Bharat Kala
+                  Bhavan museum, and Ramnagar Fort.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Experience:</strong> Taste famous Banarasi street
+                  food, visit local silk weavers, and immerse yourself in the
+                  city&apos;s artistic heritage.
+                </span>
+              </li>
+            </ul>
+
+            <h3>3. Buddhist Pilgrimage: Sarnath &amp; Varanasi Tour</h3>
+            <p>
+              Combine your Kashi Yatra with a peaceful excursion to Sarnath,
+              located just 10 kilometers from Varanasi.
+            </p>
+            <ul className="seo-list">
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Inclusions:</strong> Guided tour of Dhamek Stupa,
+                  Chaukhandi Stupa, Ashoka Pillar, and Sarnath Archaeological
+                  Museum.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Experience:</strong> Walk in the footsteps of Lord
+                  Buddha where he gave his first sermon.
+                </span>
+              </li>
+            </ul>
+
+            <h3>Why Choose Ram Kashi Yatra for Your Varanasi Trip?</h3>
+            <ul className="seo-list">
+              <li>
+                <i className="fas fa-star" />
+                <span>
+                  <strong>Local Varanasi Experts:</strong> Born and raised in
+                  Kashi, our guides know every ghat, temple, and hidden gem.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-star" />
+                <span>
+                  <strong>Customized Itineraries:</strong> Every Kashi Yatra is
+                  tailored to your budget, preferences, and time.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-star" />
+                <span>
+                  <strong>24/7 Support &amp; Safety:</strong> Safe and
+                  stress-free assistance from arrival to departure.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-star" />
+                <span>
+                  <strong>Transparent Pricing:</strong> No hidden fees, best
+                  value packages.
+                </span>
+              </li>
+            </ul>
+
+            <h3>The Significance of the Kashi Yatra</h3>
+            <p>
+              The Kashi Yatra is considered one of the most important
+              pilgrimages in Hinduism. It is believed that visiting Kashi
+              (Varanasi), bathing in the holy Ganges, and seeking the blessings
+              of Lord Shiva at Kashi Vishwanath Temple liberates a soul from
+              the cycle of rebirth (Moksha). At Ram Kashi Yatra, we facilitate
+              this sacred journey with absolute devotion and respect.
+            </p>
+
+            <h3>Essential Temples to Visit on Your Kashi Yatra</h3>
+            <ol>
+              <li>
+                <strong>Shri Kashi Vishwanath Temple (The Golden Temple):</strong>{" "}
+                One of the twelve Jyotirlingas with smooth darshan support.
+              </li>
+              <li>
+                <strong>Kaal Bhairav Temple:</strong> Kotwal of Kashi; a
+                spiritually significant stop.
+              </li>
+              <li>
+                <strong>Maa Annapurna Temple:</strong> Dedicated to the Goddess
+                of Nourishment near Vishwanath Temple.
+              </li>
+              <li>
+                <strong>Sankat Mochan Hanuman Temple:</strong> A peaceful temple
+                established by Tulsidas.
+              </li>
+            </ol>
+
+            <h3>The Magic of the Varanasi Boat Ride &amp; Ganga Aarti</h3>
+            <p>
+              No Varanasi tour is complete without time on the sacred river.
+              The Morning Boat Ride (Subah-e-Banaras) reveals living rituals at
+              sunrise, while the Evening Ganga Aarti at Dashashwamedh Ghat
+              offers synchronized chanting, lamps, and pure devotional energy.
+            </p>
+
+            <h3>Top Places for Varanasi Sightseeing</h3>
+            <ul className="seo-list">
+              <li>
+                <i className="fas fa-map-marker-alt" />
+                <span>
+                  <strong>84 Ghats of Kashi:</strong> Assi Ghat, Dashashwamedh
+                  Ghat, Manikarnika Ghat, Harishchandra Ghat, Chet Singh Ghat,
+                  and Darbhanga Ghat.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-map-marker-alt" />
+                <span>
+                  <strong>BHU &amp; New Vishwanath Temple:</strong> Massive
+                  campus with peaceful temple surroundings.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-map-marker-alt" />
+                <span>
+                  <strong>Ramnagar Fort:</strong> Historic architecture and a
+                  fascinating museum collection.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-map-marker-alt" />
+                <span>
+                  <strong>Weavers&apos; Village:</strong> Live demonstration of
+                  authentic Banarasi silk weaving craft.
+                </span>
+              </li>
+            </ul>
+
+            <h3>Traveler&apos;s Guide to Varanasi</h3>
+            <p>
+              The best time to book your Varanasi tour is from October to
+              March. Dev Deepawali (November) and Maha Shivaratri (Feb/March)
+              are peak spiritual windows. Varanasi is connected by air via VNS,
+              by rail via BSB/BSBS, and by national highways for easy road
+              access.
+            </p>
+
+            <h3>Frequently Asked Questions</h3>
+            <ul className="seo-list">
+              <li>
+                <i className="fas fa-question-circle" />
+                <span>
+                  <strong>
+                    Q1: How many days are required for a complete Varanasi tour?
+                  </strong>{" "}
+                  A: Minimum 2N/3D is ideal; we offer 1-day to 5-day packages.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-question-circle" />
+                <span>
+                  <strong>
+                    Q2: Is Kashi Vishwanath VIP Darshan included in packages?
+                  </strong>{" "}
+                  A: Yes, most premium plans include VIP Sugam Darshan.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-question-circle" />
+                <span>
+                  <strong>Q3: What is the cost of a Kashi Yatra package?</strong>{" "}
+                  A: It varies by duration, hotel category, and inclusions;
+                  custom quotes available.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-question-circle" />
+                <span>
+                  <strong>Q4: Is Varanasi safe for solo female travelers?</strong>{" "}
+                  A: Yes, with normal caution; our verified support improves
+                  safety and comfort.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-question-circle" />
+                <span>
+                  <strong>
+                    Q5: What should I wear during my Kashi Yatra?
+                  </strong>{" "}
+                  A: Modest traditional-friendly attire is recommended.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-question-circle" />
+                <span>
+                  <strong>
+                    Q6: Can you customize a package for senior citizens?
+                  </strong>{" "}
+                  A: Absolutely, with minimal walking routes and comfort-first
+                  transport.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ═════════════════════════════════════════════
            SCOPED STYLES
          ═════════════════════════════════════════════ */}
