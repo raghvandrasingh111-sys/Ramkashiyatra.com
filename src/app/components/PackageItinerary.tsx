@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { ItineraryDay } from '../data/packages';
+import { ItineraryDay } from '@/data/packages';
 
 interface ItineraryProps {
   itinerary: ItineraryDay[];
