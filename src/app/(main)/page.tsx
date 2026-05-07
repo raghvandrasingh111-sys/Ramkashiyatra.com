@@ -212,7 +212,15 @@ export default function Home() {
       { threshold: 0.12 }
     );
     const refs = scrollRefs.current;
-    refs.forEach((ref) => ref && observer.observe(ref));
+    refs.forEach((ref) => {
+      if (!ref) return;
+      const rect = ref.getBoundingClientRect();
+      // Prevent initial above-the-fold blank state on slower devices.
+      if (rect.top < window.innerHeight * 0.95) {
+        ref.classList.add("visible");
+      }
+      observer.observe(ref);
+    });
     return () => refs.forEach((ref) => ref && observer.unobserve(ref));
   }, []);
 
