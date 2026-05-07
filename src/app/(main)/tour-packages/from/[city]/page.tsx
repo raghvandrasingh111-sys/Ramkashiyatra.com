@@ -1,8 +1,8 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { packages } from '@/data/packages';
-import PackageCard from '@/components/PackageCard';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import PackageCard from '@/app/components/PackageCard';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 type Props = {
   params: Promise<{ city: string }>;

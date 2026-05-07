@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { packages } from '@/data/packages';
-import PackageCard from '@/components/PackageCard';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import PackageCard from '@/app/components/PackageCard';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Kashi Yatra Package from Bihar | Best Tour Packages | Ram Kashi Yatra',

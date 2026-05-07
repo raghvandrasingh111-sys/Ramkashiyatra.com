@@ -4,8 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { blogs, BlogPost } from '@/data/blogs';
 import { packages, TourPackage } from '@/data/packages';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import PackageCard from '@/components/PackageCard';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
+import PackageCard from '@/app/components/PackageCard';
 
 type Props = {
   params: Promise<{ slug: string }>;

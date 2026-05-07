@@ -23,10 +23,10 @@ const dancingScript = Dancing_Script({
 });
 
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import FloatingContact from "@/components/FloatingContact";
-import ScrollToTop from "@/components/ScrollToTop";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import FloatingContact from "@/app/components/FloatingContact";
+import ScrollToTop from "@/app/components/ScrollToTop";
 import type { Viewport } from 'next';
 
 export const viewport: Viewport = {

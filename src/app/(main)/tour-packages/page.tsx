@@ -1,7 +1,7 @@
 "use client";
 
 import { packages } from '@/data/packages';
-import PackageCard from '@/components/PackageCard';
+import PackageCard from '@/app/components/PackageCard';
 
 export default function TourPackages() {
   const allPackages = packages.map(pkg => ({

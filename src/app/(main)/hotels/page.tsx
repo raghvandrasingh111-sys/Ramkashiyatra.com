@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import CityHotelCarousel from '@/components/CityHotelCarousel';
+import CityHotelCarousel from '@/app/components/CityHotelCarousel';
 import NextImage from 'next/image';
 
 export default function Hotels() {

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { packages } from '@/data/packages';
-import PackageCard from '@/components/PackageCard';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import PackageCard from '@/app/components/PackageCard';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Kashi Ayodhya Tour Package 3 Days | Best Price Pilgrimage Tour',

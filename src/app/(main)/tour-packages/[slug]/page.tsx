@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import PackageDetailContent from '@/components/PackageDetailContent';
+import PackageDetailContent from '@/app/components/PackageDetailContent';
 import { packages } from '@/data/packages';
 
 interface Props {

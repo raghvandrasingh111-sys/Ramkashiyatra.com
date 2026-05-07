@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { packages } from '@/data/packages';
-import PackageCard from '@/components/PackageCard';
-import Breadcrumbs from '@/components/Breadcrumbs';
+import PackageCard from '@/app/components/PackageCard';
+import Breadcrumbs from '@/app/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Varanasi Tour Package Cost 2026 | 3 Days Kashi Itinerary | Ram Kashi Yatra',

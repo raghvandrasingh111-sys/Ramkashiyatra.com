@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { TourPackage, CHILD_POLICY, GENERAL_EXCLUSIONS, GENERAL_INCLUSIONS, CANCELLATION_POLICY, HOTEL_REFERENCE } from '@/data/packages';
-import PackageItinerary from '@/components/PackageItinerary';
-import PackageSidebar from '@/components/PackageSidebar';
+import PackageItinerary from '@/app/components/PackageItinerary';
+import PackageSidebar from '@/app/components/PackageSidebar';
 
 export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
   return (
