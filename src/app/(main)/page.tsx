@@ -1,13 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from 'react';
-import PackageCard from '@/components/PackageCard';
+import PackageCard from '@/app/components/PackageCard';
 import Link from 'next/link';
 import NextImage from 'next/image';
-import HotelCarousel from '@/components/HotelCarousel';
-import ApprovalCarousel from '@/components/ApprovalCarousel';
-import Testimonials from '@/components/Testimonials';
-import LiteInstagram from '@/components/LiteInstagram';
+import HotelCarousel from '@/app/components/HotelCarousel';
+import ApprovalCarousel from '@/app/components/ApprovalCarousel';
+import Testimonials from '@/app/components/Testimonials';
+import LiteInstagram from '@/app/components/LiteInstagram';
 import { packages as allTourPackages } from '@/data/packages';
 
 /* ── Animated Counter Component ──────────────────── */

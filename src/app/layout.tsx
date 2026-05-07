@@ -84,9 +84,9 @@ export const metadata: Metadata = {
     site: "@ramkashiyatra",
   },
   icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png",
-    shortcut: "/favicon.png",
+    icon: "/logo-luxury.png",
+    apple: "/logo-luxury.png",
+    shortcut: "/logo-luxury.png",
   }
 };
 
@@ -116,7 +116,7 @@ export default function RootLayout({
                 "@type": "TravelAgency",
                 "name": "Ram Kashi Yatra",
                 "url": "https://www.ramkashiyatra.com",
-                "logo": "https://www.ramkashiyatra.com/favicon.png",
+                "logo": "https://www.ramkashiyatra.com/logo-luxury.png",
                 "image": "https://www.ramkashiyatra.com/logo-luxury.png",
                 "description": "Leading travel agency for spiritual and cultural tours in North India, specializing in Varanasi, Ayodhya, Prayagraj, and Lucknow tour packages.",
                 "foundingDate": "2015",
