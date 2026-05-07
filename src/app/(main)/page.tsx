@@ -105,6 +105,8 @@ function FAQItem({ q, a, isOpen, onClick }: { q: string; a: React.ReactNode; isO
 export default function Home() {
   const scrollRefs = useRef<HTMLDivElement[]>([]);
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const youtubeVideoId = "rDsOi3MByCI";
+  const youtubeEmbedUrl = `https://www.youtube-nocookie.com/embed/${youtubeVideoId}?autoplay=1&mute=1&playsinline=1&loop=1&playlist=${youtubeVideoId}&controls=0&rel=0&start=10`;
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -220,7 +222,7 @@ export default function Home() {
           </div>
 
           <iframe
-            src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=10"
+            src={youtubeEmbedUrl}
             style={{
               width: '100vw',
               height: '56.25vw',
@@ -233,7 +235,8 @@ export default function Home() {
               zIndex: 2,
               opacity: 0.9
             }}
-            allow="autoplay; encrypted-media; picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             title="Varanasi Spiritual Background Video"
           ></iframe>
@@ -640,7 +643,7 @@ export default function Home() {
           backgroundColor: '#000'
         }}>
           <iframe
-            src="https://www.youtube.com/embed/rDsOi3MByCI?controls=0&rel=0&playsinline=1&autoplay=1&mute=1&loop=1&playlist=rDsOi3MByCI&start=10&showinfo=0&modestbranding=1&iv_load_policy=3&disablekb=1"
+            src={youtubeEmbedUrl}
             style={{
               width: '100%',
               height: '100%',
@@ -652,7 +655,8 @@ export default function Home() {
               zIndex: 0
             }}
             frameBorder="0"
-            allow="autoplay; encrypted-media"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
             loading="lazy"
             title="Varanasi Spiritual Video"
           ></iframe>
