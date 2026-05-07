@@ -201,7 +201,7 @@ export default function Home() {
           position: 'absolute',
           top: 0, left: 0,
           width: '100%', height: '100%',
-          zIndex: -1,
+          zIndex: 0,
           pointerEvents: 'none'
         }}>
           {/* LCP Poster Image - Shows until video loads */}
@@ -638,7 +638,7 @@ export default function Home() {
           position: 'absolute',
           top: 0, left: 0,
           width: '100%', height: '100%',
-          zIndex: -1,
+          zIndex: 0,
           pointerEvents: 'none',
           backgroundColor: '#000'
         }}>
