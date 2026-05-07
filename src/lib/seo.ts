@@ -19,6 +19,11 @@ export const SHARED_KEYWORDS = [
   "spiritual tour packages india",
   "ram kashi yatra",
   "luxury trip india",
+  "banaras tour package",
+  "banaras travel package",
+  "hotels in banaras",
+  "book banaras package online",
+  "banaras and ayodhya package",
 ];
 
 export interface PageSeoInput {

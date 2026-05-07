@@ -1010,6 +1010,20 @@ export default function Home() {
               package that respects your budget, schedule and devotion.
             </p>
 
+            <h3>Banaras · Ayodhya · Kashi keyword atlas (500+ search phrases)</h3>
+            <p>
+              If you landed from queries like <strong>book Banaras package online</strong>,{" "}
+              <strong>cheap Banaras trip</strong>, <strong>Ayodhya trip cost</strong>,{" "}
+              <strong>hotels in Banaras near ghats</strong>,{" "}
+              <strong>Kashi Vishwanath VIP darshan package</strong> or{" "}
+              <strong>Varanasi family package</strong>, our editorial team mapped every major
+              cluster into one citability-friendly guide —{" "}
+              <Link href="/banaras-kashi-ayodhya-travel-guide">
+                open the 2026 Banaras · Kashi · Ayodhya travel keyword guide
+              </Link>{" "}
+              for long-tail coverage, hotel intent and booking phrases in plain language.
+            </p>
+
             <div className="seo-cta">
               <Link href="/enquire-now" className="btn-primary btn-glow">
                 <i className="fas fa-calendar-check" /> Plan My Kashi Ayodhya

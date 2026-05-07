@@ -97,6 +97,11 @@ export default function Footer() {
           <h3>Company</h3>
           <ul>
             <li><Link href="/">Home</Link></li>
+            <li>
+              <Link href="/banaras-kashi-ayodhya-travel-guide">
+                Banaras · Kashi · Ayodhya guide
+              </Link>
+            </li>
             <li><Link href="/tour-packages">Tour Packages</Link></li>
             <li><Link href="/hotels">Hotels</Link></li>
             <li><Link href="/blog">Blog</Link></li>

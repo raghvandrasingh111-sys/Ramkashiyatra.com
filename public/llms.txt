@@ -43,6 +43,7 @@ Ram Kashi Yatra crafts end-to-end luxury pilgrimages to India's holiest cities:
 ## Destination hub pages
 
 - [All Tour Packages](https://www.ramkashiyatra.com/tour-packages)
+- [Banaras · Kashi · Ayodhya keyword atlas](https://www.ramkashiyatra.com/banaras-kashi-ayodhya-travel-guide) — long-form guide mapping 500+ Banaras/Varanasi/Ayodhya/Kashi travel & hotel search phrases
 - [Ayodhya Tour Package](https://www.ramkashiyatra.com/ayodhya-tour-package)
 - [Varanasi Tour Package](https://www.ramkashiyatra.com/varanasi-tour-package)
 - [Kashi Yatra Package](https://www.ramkashiyatra.com/kashi-yatra-package)
