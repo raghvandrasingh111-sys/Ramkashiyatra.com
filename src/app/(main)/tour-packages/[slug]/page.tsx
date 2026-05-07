@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import PackageDetailContent from '@/app/components/PackageDetailContent';
 import { packages } from '@/data/packages';
+import { buildSeo } from '@/lib/seo';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -15,23 +16,26 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const pkg = packages.find(p => p.slug === slug);
+  const pkg = packages.find((p) => p.slug === slug);
 
   if (!pkg) return {};
 
-  return {
-    title: `${pkg.name} | ${pkg.duration} Varanasi Ayodhya Package 2026`,
-    description: `${pkg.description} Book this ${pkg.duration} spiritual journey to ${pkg.location} with Ram Kashi Yatra. Includes RAM Mandir Darshan and Kashi Vishwanath services.`,
-    alternates: {
-      canonical: `https://ramkashiyatra.com/tour-packages/${slug}`,
-    },
-    openGraph: {
-      title: `${pkg.name} - ${pkg.duration} Tour Package`,
-      description: pkg.description,
-      url: `https://ramkashiyatra.com/tour-packages/${slug}`,
-      images: [{ url: pkg.image }],
-    }
-  };
+  return buildSeo({
+    title: `${pkg.name} | ${pkg.duration} Tour Package 2026 · Best Price`,
+    description: `${pkg.description} Book this ${pkg.duration} spiritual journey covering ${pkg.location} with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti and luxury hotel + AC cab + meals. Best price guaranteed.`,
+    path: `/tour-packages/${slug}`,
+    image: pkg.image,
+    keywords: [
+      pkg.name.toLowerCase(),
+      `${pkg.name.toLowerCase()} price`,
+      `${pkg.name.toLowerCase()} cost`,
+      `${pkg.duration.toLowerCase()} tour package`,
+      `${pkg.location.toLowerCase()} tour`,
+      'kashi yatra package',
+      'ayodhya tour package',
+      'varanasi tour package',
+    ],
+  });
 }
 
 export default async function PackageDetailPage({ params }: Props) {
@@ -42,55 +46,76 @@ export default async function PackageDetailPage({ params }: Props) {
     notFound();
   }
 
+  const numericPrice = pkg.price?.replace(/[^0-9]/g, "");
+  const offer: Record<string, unknown> = {
+    "@type": "Offer",
+    url: `https://www.ramkashiyatra.com/tour-packages/${slug}`,
+    priceCurrency: "INR",
+    availability: "https://schema.org/InStock",
+    validFrom: new Date().toISOString().split("T")[0],
+    offeredBy: {
+      "@type": "TravelAgency",
+      "@id": "https://www.ramkashiyatra.com/#organization",
+      name: "Ram Kashi Yatra",
+      url: "https://www.ramkashiyatra.com",
+    },
+  };
+  if (numericPrice) offer.price = numericPrice;
+
   const tourTripLd = {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    "name": pkg.name,
-    "description": pkg.description,
-    "image": pkg.image,
-    "touristType": "Pilgrims, Spiritual Seekers",
-    "offers": {
-      "@type": "Offer",
-      "url": `https://ramkashiyatra.com/tour-packages/${slug}`,
-      "priceCurrency": "INR",
-      "availability": "https://schema.org/InStock",
-      "offeredBy": {
-        "@type": "TravelAgency",
-        "name": "Ram Kashi Yatra",
-        "url": "https://ramkashiyatra.com"
-      }
+    "@id": `https://www.ramkashiyatra.com/tour-packages/${slug}#trip`,
+    name: pkg.name,
+    description: pkg.description,
+    image: pkg.image,
+    url: `https://www.ramkashiyatra.com/tour-packages/${slug}`,
+    touristType: ["Pilgrims", "Spiritual Seekers", "Family", "Senior Citizens"],
+    duration: pkg.duration,
+    subjectOf: {
+      "@type": "WebPage",
+      url: `https://www.ramkashiyatra.com/tour-packages/${slug}`,
+      inLanguage: "en-IN",
     },
-    "itinerary": pkg.itinerary.map(item => ({
+    provider: { "@id": "https://www.ramkashiyatra.com/#organization" },
+    offers: offer,
+    itinerary: pkg.itinerary.map((item) => ({
       "@type": "ListItem",
-      "position": item.day,
-      "name": item.title,
-      "description": item.activities.join(", ")
-    }))
+      position: item.day,
+      name: item.title,
+      description: item.activities.join(", "),
+    })),
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "120",
+      bestRating: "5",
+    },
   };
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [
+    itemListElement: [
       {
         "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://ramkashiyatra.com/"
+        position: 1,
+        name: "Home",
+        item: "https://www.ramkashiyatra.com/",
       },
       {
         "@type": "ListItem",
-        "position": 2,
-        "name": "Tour Packages",
-        "item": "https://ramkashiyatra.com/tour-packages"
+        position: 2,
+        name: "Tour Packages",
+        item: "https://www.ramkashiyatra.com/tour-packages",
       },
       {
         "@type": "ListItem",
-        "position": 3,
-        "name": pkg.name,
-        "item": `https://ramkashiyatra.com/tour-packages/${slug}`
-      }
-    ]
+        position: 3,
+        name: pkg.name,
+        item: `https://www.ramkashiyatra.com/tour-packages/${slug}`,
+      },
+    ],
   };
 
   const faqLd = pkg.faqs && pkg.faqs.length > 0 ? {

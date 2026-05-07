@@ -2,12 +2,24 @@ import { Metadata } from 'next';
 import { packages } from '@/data/packages';
 import PackageCard from '@/app/components/PackageCard';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
+import { buildSeo } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Kashi Ayodhya Tour Package 3 Days | Best Price Pilgrimage Tour',
-  description: 'Our Kashi Ayodhya Tour Package combines two of the most sacred destinations in India. Perfect for devotees who want a complete spiritual journey.',
-  keywords: ['kashi ayodhya tour package', 'kashi ayodhya tour package 3 days', 'spiritual tour india'],
-};
+export const metadata: Metadata = buildSeo({
+  title: 'Kashi Ayodhya Tour Package 2026 | 3-5 Day Spiritual Pilgrimage · Best Price',
+  description: 'Book the best Kashi Ayodhya tour package 2026 — 3 to 5 day combined Varanasi + Ayodhya itineraries with Shri Ram Mandir darshan, Kashi Vishwanath VIP Sugam Darshan, Ganga Aarti and luxury hotels. Perfect for families, seniors and group travel. Best price guaranteed.',
+  path: '/kashi-ayodhya-tour-package',
+  keywords: [
+    'kashi ayodhya tour package',
+    'kashi ayodhya tour package 3 days',
+    'kashi ayodhya tour package 4 days',
+    'kashi ayodhya tour package 5 days',
+    'varanasi ayodhya tour package',
+    'kashi ayodhya prayagraj tour package',
+    'spiritual tour india kashi ayodhya',
+    'best kashi ayodhya tour operator',
+    'luxury kashi ayodhya pilgrimage',
+  ],
+});
 
 export default function KashiAyodhyaLanding() {
   const combinedPackages = packages.filter(p => 

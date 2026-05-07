@@ -2,12 +2,23 @@ import { Metadata } from 'next';
 import { packages } from '@/data/packages';
 import PackageCard from '@/app/components/PackageCard';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
+import { buildSeo } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Kashi Yatra Package from Delhi | Best Tour Packages | Ram Kashi Yatra',
-  description: 'Book the best Kashi Yatra Package from Delhi. Complete travel arrangements from Delhi to Varanasi and Ayodhya including hotel and guided darshan.',
-  keywords: ['kashi yatra package from delhi', 'ayodhya tour package from delhi', 'varanasi tour package from delhi'],
-};
+export const metadata: Metadata = buildSeo({
+  title: 'Kashi Yatra Package from Delhi 2026 | Delhi to Varanasi Ayodhya Tour',
+  description: 'Best Kashi Yatra Package from Delhi 2026 — Delhi to Varanasi & Ayodhya with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti and Triveni Sangam Snan. Door-to-door pickup, train + flight options, hotel + cab + meals included. Best price guaranteed.',
+  path: '/kashi-yatra-package-from-delhi',
+  keywords: [
+    'kashi yatra package from delhi',
+    'ayodhya tour package from delhi',
+    'varanasi tour package from delhi',
+    'delhi to varanasi tour package',
+    'delhi to ayodhya tour package',
+    'kashi ayodhya tour package from delhi',
+    'delhi to kashi vishwanath tour',
+    'spiritual tour from delhi',
+  ],
+});
 
 export default function DelhiLocationLanding() {
   const localPackages = packages.filter(p => 

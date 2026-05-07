@@ -2,12 +2,25 @@ import { Metadata } from 'next';
 import { packages } from '@/data/packages';
 import PackageCard from '@/app/components/PackageCard';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
+import { buildSeo } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Kashi Yatra Package from Bihar | Best Tour Packages | Ram Kashi Yatra',
-  description: 'Book your Kashi Yatra Package from Bihar. Easy travel arrangements from Patna and other cities to Kashi and Ayodhya with guided darshan.',
-  keywords: ['kashi yatra package from bihar', 'varanasi tour from bihar', 'ayodhya tour package from bihar'],
-};
+export const metadata: Metadata = buildSeo({
+  title: 'Kashi Yatra Package from Bihar 2026 | Patna Gaya Bodhgaya to Varanasi Ayodhya Tour',
+  description: 'Best Kashi Yatra Package from Bihar 2026 — Patna, Gaya, Bodhgaya to Varanasi & Ayodhya with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti, Pind Daan in Gaya and Mahabodhi Temple Bodhgaya. Hotel + AC cab + meals + spiritual guide.',
+  path: '/kashi-yatra-package-from-bihar',
+  keywords: [
+    'kashi yatra package from bihar',
+    'kashi yatra package from patna',
+    'kashi yatra package from gaya',
+    'kashi yatra package from bodhgaya',
+    'ayodhya tour package from bihar',
+    'varanasi tour package from bihar',
+    'bihar to varanasi tour package',
+    'bihar to ayodhya tour package',
+    'pind daan gaya tour package',
+    'bodhgaya kashi tour package',
+  ],
+});
 
 export default function BiharLocationLanding() {
   const localPackages = packages.filter(p => 

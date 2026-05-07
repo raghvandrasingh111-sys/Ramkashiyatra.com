@@ -2,12 +2,23 @@ import { Metadata } from 'next';
 import { packages } from '@/data/packages';
 import PackageCard from '@/app/components/PackageCard';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
+import { buildSeo } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Kashi Yatra Package from Punjab | Best Tour Packages | Ram Kashi Yatra',
-  description: 'Looking for a Kashi Yatra Package from Punjab? We provide complete travel arrangements from Punjab to Varanasi and Ayodhya. Best price guaranteed.',
-  keywords: ['kashi yatra package from punjab', 'varanasi tour from punjab', 'ayodhya tour package from punjab'],
-};
+export const metadata: Metadata = buildSeo({
+  title: 'Kashi Yatra Package from Punjab 2026 | Amritsar Ludhiana Chandigarh to Varanasi Ayodhya',
+  description: 'Premium Kashi Yatra Package from Punjab 2026 — Amritsar, Ludhiana, Chandigarh, Jalandhar to Varanasi & Ayodhya with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan and Ganga Aarti. Train + flight options, hotel + cab + sattvic meals. Best price guaranteed.',
+  path: '/kashi-yatra-package-from-punjab',
+  keywords: [
+    'kashi yatra package from punjab',
+    'kashi yatra package from amritsar',
+    'kashi yatra package from ludhiana',
+    'kashi yatra package from chandigarh',
+    'ayodhya tour package from punjab',
+    'varanasi tour package from punjab',
+    'punjab to varanasi spiritual tour',
+    'punjab to ayodhya tour package',
+  ],
+});
 
 export default function PunjabLocationLanding() {
   const localPackages = packages.filter(p => 

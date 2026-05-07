@@ -3,11 +3,25 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { blogs } from '@/data/blogs';
+import { buildSeo } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Spiritual Travel Blog: Kashi, Ayodhya & Beyond | Ram Kashi Yatra',
-  description: 'Expert guides, travel tips, and spiritual insights into the holiest cities of India. Learn about Kashi Vishwanath VIP Darshan, Ram Mandir timings, and more.',
-};
+export const metadata: Metadata = buildSeo({
+  title: 'Spiritual Travel Blog | Kashi, Ayodhya, Varanasi Tour Guides 2026',
+  description: 'Expert spiritual travel guides, Kashi Yatra tips, Ayodhya Ram Mandir Darshan timings, Varanasi Ganga Aarti schedule, Triveni Sangam Snan dates, Pind Daan information and 2026 itineraries from Ram Kashi Yatra — India\u2019s premium luxury pilgrimage agency.',
+  path: '/blog',
+  keywords: [
+    'kashi yatra travel guide',
+    'ayodhya travel guide 2026',
+    'varanasi travel guide',
+    'ram mandir darshan timings',
+    'kashi vishwanath darshan timings',
+    'ganga aarti varanasi timings',
+    'best time to visit varanasi',
+    'best time to visit ayodhya',
+    'kashi yatra tips',
+    'pind daan in gaya guide',
+  ],
+});
 
 const BlogIndex = () => {
   return (

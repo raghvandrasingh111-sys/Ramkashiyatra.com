@@ -2,12 +2,25 @@ import { Metadata } from 'next';
 import { packages } from '@/data/packages';
 import PackageCard from '@/app/components/PackageCard';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
+import { buildSeo } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Varanasi Tour Package Cost 2026 | 3 Days Kashi Itinerary | Ram Kashi Yatra',
-  description: 'Varanasi tour package cost for 2026 spiritual journeys. Detailed 3 days Kashi itinerary including Ganga Aarti and Vishwanath Darshan.',
-  keywords: ['varanasi tour package cost', 'varanasi 3 days itinerary', 'kashi trip cost per person'],
-};
+export const metadata: Metadata = buildSeo({
+  title: 'Varanasi Tour Package 2026 | 3 Days Kashi Itinerary · Best Price',
+  description: 'Book Varanasi tour package 2026 from ₹5,975 onwards. 2N/3D and 3N/4D Kashi itineraries with Kashi Vishwanath VIP darshan, evening Ganga Aarti, Sarnath, Manikarnika & Dashashwamedh Ghats. Premium hotel + AC cab + breakfast + spiritual guide. Best price guaranteed.',
+  path: '/varanasi-tour-package',
+  keywords: [
+    'varanasi tour package',
+    'varanasi tour package cost',
+    'varanasi tour package 2026',
+    'varanasi 3 days itinerary',
+    'kashi tour package price',
+    'kashi trip cost per person',
+    '2 nights 3 days varanasi tour',
+    'varanasi sarnath tour package',
+    'varanasi prayagraj tour package',
+    'varanasi ayodhya tour package',
+  ],
+});
 
 export default function VaranasiTourLanding() {
   const varanasiPackages = packages.filter(p => 

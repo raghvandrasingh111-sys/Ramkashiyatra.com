@@ -1,95 +1,58 @@
-import { MetadataRoute } from 'next';
-import { packages } from '@/data/packages';
+import { MetadataRoute } from "next";
+import { packages } from "@/data/packages";
+import { blogs } from "@/data/blogs";
+
+const baseUrl = "https://www.ramkashiyatra.com";
+
+type ChangeFreq = MetadataRoute.Sitemap[number]["changeFrequency"];
+
+const make = (
+  path: string,
+  priority = 0.7,
+  changeFrequency: ChangeFreq = "weekly"
+): MetadataRoute.Sitemap[number] => ({
+  url: `${baseUrl}${path}`,
+  lastModified: new Date(),
+  changeFrequency,
+  priority,
+});
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.ramkashiyatra.com';
+  const tourPackages = packages.map((pkg) =>
+    make(`/tour-packages/${pkg.slug}`, 0.85, "weekly")
+  );
 
-  const tourEntries: MetadataRoute.Sitemap = packages.map((pkg) => ({
-    url: `${baseUrl}/tour-packages/${pkg.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.8,
-  }));
+  const blogPosts = blogs.map((post) =>
+    make(`/blog/${post.slug}`, 0.7, "weekly")
+  );
 
   return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/tour-packages`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/hotels`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/enquire-now`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/kashi-yatra-package-from-punjab`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/kashi-yatra-package-from-delhi`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/kashi-yatra-package-from-mumbai`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/kashi-yatra-package-from-gujarat`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/kashi-yatra-package-from-bihar`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/kashi-yatra-package`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/ayodhya-tour-package`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/varanasi-tour-package`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/kashi-ayodhya-tour-package`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    ...tourEntries,
+    /* Hub pages */
+    make("/", 1.0, "daily"),
+    make("/tour-packages", 0.95, "daily"),
+    make("/hotels", 0.85, "weekly"),
+    make("/blog", 0.8, "weekly"),
+    make("/enquire-now", 0.8, "monthly"),
+
+    /* Destination keyword hub pages */
+    make("/kashi-yatra-package", 0.95, "weekly"),
+    make("/ayodhya-tour-package", 0.95, "weekly"),
+    make("/varanasi-tour-package", 0.95, "weekly"),
+    make("/kashi-ayodhya-tour-package", 0.95, "weekly"),
+
+    /* From-city packages (programmatic SEO) */
+    make("/kashi-yatra-package-from-delhi", 0.85, "weekly"),
+    make("/kashi-yatra-package-from-mumbai", 0.85, "weekly"),
+    make("/kashi-yatra-package-from-gujarat", 0.85, "weekly"),
+    make("/kashi-yatra-package-from-punjab", 0.85, "weekly"),
+    make("/kashi-yatra-package-from-bihar", 0.85, "weekly"),
+
+    /* Legal */
+    make("/privacy-policy", 0.3, "yearly"),
+    make("/terms-conditions", 0.3, "yearly"),
+
+    /* Dynamic */
+    ...tourPackages,
+    ...blogPosts,
   ];
 }

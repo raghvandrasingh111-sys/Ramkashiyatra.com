@@ -2,12 +2,25 @@ import { Metadata } from 'next';
 import { packages } from '@/data/packages';
 import PackageCard from '@/app/components/PackageCard';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
+import { buildSeo } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Ayodhya Tour Package | Ram Mandir Darshan Package 2026',
-  description: 'Visit the sacred birthplace of Lord Ram with our Ayodhya Tour Package. Covered: Ram Mandir, Hanuman Garhi, and Saryu Aarti with expert guides.',
-  keywords: ['ayodhya tour package', 'ram mandir darshan package', 'ayodhya ram mandir tour package price'],
-};
+export const metadata: Metadata = buildSeo({
+  title: 'Ayodhya Tour Package 2026 | Shri Ram Mandir Darshan Package · Best Price',
+  description: 'Best Ayodhya Tour Package 2026 with priority Shri Ram Janmabhoomi Mandir darshan, Hanuman Garhi, Kanak Bhawan and evening Sarayu Aarti. Hotel + cab + meals + expert spiritual guide. Book Ayodhya Ram Mandir tour from Lucknow, Varanasi or any city in India.',
+  path: '/ayodhya-tour-package',
+  keywords: [
+    'ayodhya tour package',
+    'ayodhya tour package 2026',
+    'ayodhya ram mandir tour package price',
+    'ram mandir darshan tour package',
+    'ayodhya ram janmabhoomi tour',
+    'ayodhya tour package from lucknow',
+    'ayodhya tour package from delhi',
+    'ayodhya tour package from varanasi',
+    '2 nights 3 days ayodhya tour package',
+    'ayodhya tour package with ram mandir darshan',
+  ],
+});
 
 export default function AyodhyaTourLanding() {
   const ayodhyaPackages = packages.filter(p => 

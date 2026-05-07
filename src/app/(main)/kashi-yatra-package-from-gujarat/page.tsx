@@ -2,12 +2,24 @@ import { Metadata } from 'next';
 import { packages } from '@/data/packages';
 import PackageCard from '@/app/components/PackageCard';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
+import { buildSeo } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Kashi Yatra Package from Gujarat | Best Tour Packages | Ram Kashi Yatra',
-  description: 'Book your Kashi Yatra Package from Gujarat. Complete travel arrangements from Ahmedabad, Surat, and Vadodara to Varanasi and Ayodhya.',
-  keywords: ['kashi yatra package from gujarat', 'varanasi tour from gujarat', 'ayodhya tour package from gujarat'],
-};
+export const metadata: Metadata = buildSeo({
+  title: 'Kashi Yatra Package from Gujarat 2026 | Ahmedabad Surat Vadodara to Varanasi Ayodhya',
+  description: 'Best Kashi Yatra Package from Gujarat 2026 — Ahmedabad, Surat, Vadodara, Rajkot to Varanasi & Ayodhya with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti and Triveni Sangam Snan. Sattvic meals, hotel + AC cab + spiritual guide included.',
+  path: '/kashi-yatra-package-from-gujarat',
+  keywords: [
+    'kashi yatra package from gujarat',
+    'kashi yatra package from ahmedabad',
+    'kashi yatra package from surat',
+    'kashi yatra package from vadodara',
+    'kashi yatra package from rajkot',
+    'ayodhya tour package from gujarat',
+    'varanasi tour package from gujarat',
+    'gujarat to varanasi spiritual tour',
+    'gujarat to ayodhya tour package',
+  ],
+});
 
 export default function GujaratLocationLanding() {
   const localPackages = packages.filter(p => 

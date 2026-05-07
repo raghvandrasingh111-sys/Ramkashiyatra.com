@@ -857,6 +857,177 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ═══════════════════════════════════════════════
+            SEO LONG-FORM CONTENT — keyword-rich pillar
+         ═══════════════════════════════════════════════ */}
+      <section className="seo-pillar">
+        <div className="container">
+          <div className="section-header" ref={addToRefs}>
+            <p className="eyebrow center">
+              <i className="fas fa-book-open" /> Complete 2026 Guide
+            </p>
+            <h2>
+              Kashi Yatra · Ayodhya · Varanasi —{" "}
+              <span className="gradient-text">The Definitive Pilgrimage</span>
+            </h2>
+          </div>
+
+          <div ref={addToRefs} className="fade-in-up seo-prose">
+            <h3>Why book a Kashi Yatra Package with Ram Kashi Yatra?</h3>
+            <p>
+              The <strong>Kashi Yatra package</strong> is one of the most
+              sought-after spiritual journeys in India. At Ram Kashi Yatra, we
+              have crafted hundreds of luxury <strong>Varanasi tour packages</strong>{" "}
+              and <strong>Ayodhya tour packages</strong> for pilgrims travelling from
+              <strong> Delhi, Mumbai, Gujarat, Punjab, Bihar, Lucknow </strong>
+              and across India. Every <strong>kashi yatra package</strong> is
+              backed by 12+ years of experience, government approvals from{" "}
+              <strong>UP Tourism</strong>, <strong>Bihar Tourism</strong> and
+              the <strong>Ministry of Tourism (Government of India)</strong>,
+              and a 4.9★ rating from over 1,000+ happy pilgrims.
+            </p>
+
+            <h3>What does our Kashi Ayodhya tour package include?</h3>
+            <ul className="seo-list">
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>VIP Sugam Darshan at Kashi Vishwanath Temple</strong>{" "}
+                  — skip-the-queue access to one of the twelve sacred Jyotirlingas, plus optional Mangala Aarti booking.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Priority Shri Ram Mandir Darshan in Ayodhya</strong>{" "}
+                  — coordinated entry to the Ram Janmabhoomi Mandir, Hanuman Garhi and Kanak Bhawan.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Reserved boat for the evening Ganga Aarti</strong> at Dashashwamedh Ghat — the most cinematic ritual in Varanasi.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Private boat for the holy Triveni Sangam Snan</strong>{" "}
+                  in Prayagraj where the Ganga, Yamuna and Saraswati meet.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Heritage stays &amp; 5-star hotels</strong> — Taj, Hyatt, Hilton, Marriott, Radisson, Novotel, ITC and BrijRama Palace properties hand-picked for cleanliness and proximity to sacred sites.
+                </span>
+              </li>
+              <li>
+                <i className="fas fa-check-circle" />
+                <span>
+                  <strong>Private AC vehicle</strong>, sattvic meals, English/Hindi spiritual guide and 24×7 concierge throughout the yatra.
+                </span>
+              </li>
+            </ul>
+
+            <h3>Most popular Varanasi Ayodhya tour packages 2026</h3>
+            <p>
+              Our most-booked itineraries combine{" "}
+              <strong>Varanasi · Ayodhya · Prayagraj</strong> — the holy
+              triangle of Uttar Pradesh. The{" "}
+              <Link href="/tour-packages/varanasi-ayodhya-divine-3n-4d">
+                Varanasi &amp; Ayodhya Divine Tour 3N/4D
+              </Link>{" "}
+              is the perfect 4-day weekend escape, while the{" "}
+              <Link href="/tour-packages/mathura-vrindavan-ayodhya-prayagraj-varanasi-9d">
+                Brij to Kashi Mahayatra 8N/9D
+              </Link>{" "}
+              extends the journey into Mathura and Vrindavan for Krishna devotees. For Bodhgaya pilgrims, the{" "}
+              <Link href="/tour-packages/varanasi-gaya-spiritual-tour-3n-4d">
+                Varanasi &amp; Gaya Spiritual Tour 3N/4D
+              </Link>{" "}
+              connects Pind Daan rituals at Vishnupad with the eternal flame of Kashi Vishwanath.
+            </p>
+
+            <h3>Kashi Yatra package from Delhi, Mumbai, Gujarat &amp; more</h3>
+            <p>
+              We pick you up wherever you are. Choose a{" "}
+              <Link href="/kashi-yatra-package-from-delhi">
+                Kashi Yatra package from Delhi
+              </Link>
+              ,{" "}
+              <Link href="/kashi-yatra-package-from-mumbai">
+                from Mumbai
+              </Link>
+              ,{" "}
+              <Link href="/kashi-yatra-package-from-gujarat">
+                from Gujarat
+              </Link>
+              ,{" "}
+              <Link href="/kashi-yatra-package-from-punjab">
+                from Punjab
+              </Link>{" "}
+              or{" "}
+              <Link href="/kashi-yatra-package-from-bihar">
+                from Bihar (Patna · Gaya · Bodhgaya)
+              </Link>{" "}
+              — each package bundles flights or train, transfers, hotels and the full darshan circuit.
+            </p>
+
+            <h3>Best time for Varanasi Ayodhya tour</h3>
+            <p>
+              The ideal window is <strong>October to March</strong>. Winter
+              brings pleasant weather, comfortable boat rides on the Ganges
+              and the spectacular <em>Dev Deepawali</em> festival when every
+              ghat in Varanasi is lit with millions of diyas. Spring (March)
+              is auspicious for <em>Ram Navami</em> in Ayodhya, while
+              <em> Mahashivratri</em> at Kashi Vishwanath draws devotees
+              worldwide. Monsoon offers a quieter, meditative pilgrimage with
+              fewer crowds.
+            </p>
+
+            <h3>How many days are enough for Kashi Ayodhya Prayagraj?</h3>
+            <p>
+              For first-time pilgrims, <strong>4–5 days</strong> is the sweet
+              spot. Day 1: Varanasi — Kashi Vishwanath, Ganga Aarti. Day 2:
+              Sarnath &amp; Manikarnika Ghat. Day 3: Drive to Prayagraj for
+              Triveni Sangam, Akshayavat and Anand Bhawan. Day 4: Continue to
+              Ayodhya for Ram Mandir, Hanuman Garhi and Sarayu Aarti. Day 5:
+              Optional Lucknow extension or return.
+            </p>
+
+            <h3>Why Ram Kashi Yatra is the most trusted spiritual travel agency</h3>
+            <p>
+              We are not a generic OTA. We are a{" "}
+              <strong>specialised spiritual travel agency</strong> with offices
+              in <strong>Varanasi, Haryana (Delhi NCR) and Bodhgaya</strong>{" "}
+              and on-ground partnerships with temple trusts, Vedic priests and
+              the finest heritage hotels of Uttar Pradesh. Every itinerary is
+              hand-crafted by people who have walked these ghats, attended
+              these aartis and bowed at these sanctums. Whether you are
+              planning a private family yatra, a senior-citizen pilgrimage or
+              a corporate spiritual retreat, our concierge will tailor a
+              package that respects your budget, schedule and devotion.
+            </p>
+
+            <div className="seo-cta">
+              <Link href="/enquire-now" className="btn-primary btn-glow">
+                <i className="fas fa-calendar-check" /> Plan My Kashi Ayodhya
+                Yatra
+              </Link>
+              <a
+                href="https://wa.me/919999995475"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost"
+              >
+                <i className="fab fa-whatsapp" /> WhatsApp Concierge
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ═════════════════════════════════════════════
            SCOPED STYLES
          ═════════════════════════════════════════════ */}
@@ -1461,6 +1632,75 @@ export default function Home() {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
           gap: 24px;
+        }
+
+        /* ── SEO PILLAR ─────────────────────────────── */
+        .seo-pillar {
+          padding: clamp(60px, 8vw, 100px) 5%;
+          background: linear-gradient(180deg, #fff 0%, var(--bg-cream) 100%);
+        }
+        .seo-prose {
+          max-width: 900px;
+          margin: 0 auto;
+          color: var(--text-secondary);
+          font-size: 1.02rem;
+          line-height: 1.85;
+        }
+        .seo-prose h3 {
+          font-size: clamp(1.3rem, 2vw, 1.6rem);
+          color: var(--brand-ink);
+          margin: 36px 0 14px;
+          font-family: var(--font-poppins);
+          font-weight: 700;
+          padding-left: 16px;
+          border-left: 4px solid var(--brand-saffron);
+        }
+        .seo-prose h3:first-child { margin-top: 0; }
+        .seo-prose p { margin-bottom: 16px; }
+        .seo-prose strong { color: var(--brand-ink); font-weight: 700; }
+        .seo-prose a {
+          color: var(--brand-saffron);
+          text-decoration: underline;
+          text-decoration-color: rgba(var(--brand-saffron-rgb), 0.4);
+          text-underline-offset: 3px;
+          transition: all 0.2s ease;
+        }
+        .seo-prose a:hover {
+          text-decoration-color: var(--brand-saffron);
+          color: var(--brand-saffron-dark);
+        }
+        .seo-list {
+          list-style: none;
+          padding: 0;
+          margin: 14px 0 22px;
+          display: grid;
+          gap: 14px;
+        }
+        .seo-list li {
+          display: flex;
+          gap: 12px;
+          align-items: flex-start;
+          padding: 16px 18px;
+          background: #fff;
+          border: 1px solid var(--border-light);
+          border-radius: var(--radius-md);
+          box-shadow: var(--shadow-sm);
+          transition: all 0.3s ease;
+        }
+        .seo-list li:hover {
+          border-color: rgba(var(--brand-saffron-rgb), 0.3);
+          transform: translateX(4px);
+        }
+        .seo-list i {
+          color: var(--brand-saffron);
+          margin-top: 4px;
+          flex-shrink: 0;
+        }
+        .seo-cta {
+          margin-top: 36px;
+          display: flex;
+          gap: 14px;
+          flex-wrap: wrap;
         }
 
         /* ── RESPONSIVE ─────────────────────────────── */

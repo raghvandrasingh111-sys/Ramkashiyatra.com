@@ -2,12 +2,25 @@ import { Metadata } from 'next';
 import { packages } from '@/data/packages';
 import PackageCard from '@/app/components/PackageCard';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
+import { buildSeo } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Kashi Yatra Package | Varanasi Tour Package with Ganga Aarti',
-  description: 'Book the best Kashi Yatra package. Includes Kashi Vishwanath Temple darshan, Ganga Aarti, boat ride, and expert guided tours in Varanasi.',
-  keywords: ['kashi yatra package', 'varanasi tour package', 'kashi darshan package cost'],
-};
+export const metadata: Metadata = buildSeo({
+  title: 'Kashi Yatra Package 2026 | Varanasi Tour Package with VIP Ganga Aarti & Sugam Darshan',
+  description: 'Book the best Kashi Yatra package 2026 at lowest price. Includes Kashi Vishwanath VIP Sugam Darshan, evening Ganga Aarti at Dashashwamedh Ghat, boat ride, Sarnath sightseeing, hotel + cab + meals. 1000+ pilgrims served · 4.9★ rating · Govt. approved.',
+  path: '/kashi-yatra-package',
+  keywords: [
+    'kashi yatra package',
+    'kashi yatra package price',
+    'kashi yatra package cost',
+    'kashi vishwanath darshan package',
+    'kashi vishwanath vip darshan',
+    'sugam darshan kashi vishwanath',
+    'kashi darshan package cost',
+    'varanasi tour package with ganga aarti',
+    '3 days kashi tour package',
+    'kashi sarnath tour package',
+  ],
+});
 
 export default function KashiYatraLanding() {
   const kashiPackages = packages.filter(p => 

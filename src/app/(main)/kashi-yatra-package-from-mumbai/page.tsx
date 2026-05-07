@@ -2,12 +2,23 @@ import { Metadata } from 'next';
 import { packages } from '@/data/packages';
 import PackageCard from '@/app/components/PackageCard';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
+import { buildSeo } from '@/lib/seo';
 
-export const metadata: Metadata = {
-  title: 'Kashi Yatra Package from Mumbai | Best Tour Packages | Ram Kashi Yatra',
-  description: 'Looking for a Kashi Yatra Package from Mumbai? Complete travel arrangements from Mumbai to Varanasi and Ayodhya including flights and guided tours.',
-  keywords: ['kashi yatra package from mumbai', 'varanasi tour from mumbai', 'ayodhya tour package from mumbai'],
-};
+export const metadata: Metadata = buildSeo({
+  title: 'Kashi Yatra Package from Mumbai 2026 | Mumbai to Varanasi Ayodhya Tour',
+  description: 'Premium Kashi Yatra Package from Mumbai 2026 — flights from Mumbai to Varanasi, VIP Kashi Vishwanath Sugam Darshan, Ram Mandir Ayodhya darshan, Ganga Aarti at Dashashwamedh and Triveni Sangam in Prayagraj. Hotel + cab + meals + 24×7 concierge. Book at best price.',
+  path: '/kashi-yatra-package-from-mumbai',
+  keywords: [
+    'kashi yatra package from mumbai',
+    'ayodhya tour package from mumbai',
+    'varanasi tour package from mumbai',
+    'mumbai to varanasi tour package',
+    'mumbai to ayodhya tour package',
+    'kashi ayodhya tour package from mumbai',
+    'mumbai to kashi vishwanath flight package',
+    'spiritual tour from mumbai',
+  ],
+});
 
 export default function MumbaiLocationLanding() {
   const localPackages = packages.filter(p => 
