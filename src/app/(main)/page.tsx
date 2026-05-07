@@ -1362,7 +1362,8 @@ export default function Home() {
           position: absolute;
           inset: 0;
           opacity: 0;
-          transition: opacity 1.6s ease;
+          /* Short crossfade so first paint never looks like a ~2s "blank" window */
+          transition: opacity 0.45s ease;
           z-index: 0;
         }
         .hero-slide.active {
@@ -1403,7 +1404,7 @@ export default function Home() {
           color: var(--brand-gold-light);
           margin-bottom: 18px;
           opacity: 0;
-          animation: fadeInUp 0.9s var(--ease-out-expo) 0.2s forwards;
+          animation: fadeInUp 0.45s var(--ease-out-expo) 0.04s forwards;
         }
         .hero-title {
           font-size: clamp(2.4rem, 5.5vw, 4.4rem);
@@ -1411,7 +1412,7 @@ export default function Home() {
           color: #fff;
           margin-bottom: 18px;
           opacity: 0;
-          animation: fadeInUp 0.9s var(--ease-out-expo) 0.4s forwards;
+          animation: fadeInUp 0.45s var(--ease-out-expo) 0.08s forwards;
           text-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
         }
         .hero-sub {
@@ -1420,7 +1421,7 @@ export default function Home() {
           max-width: 700px;
           margin: 0 auto 36px;
           opacity: 0;
-          animation: fadeInUp 0.9s var(--ease-out-expo) 0.7s forwards;
+          animation: fadeInUp 0.45s var(--ease-out-expo) 0.12s forwards;
         }
         .hero-actions {
           display: flex;
@@ -1428,7 +1429,7 @@ export default function Home() {
           justify-content: center;
           flex-wrap: wrap;
           opacity: 0;
-          animation: fadeInUp 0.9s var(--ease-out-expo) 0.9s forwards;
+          animation: fadeInUp 0.45s var(--ease-out-expo) 0.16s forwards;
         }
         .hero-trust {
           margin-top: 60px;
@@ -1437,7 +1438,7 @@ export default function Home() {
           justify-content: center;
           flex-wrap: wrap;
           opacity: 0;
-          animation: fadeInUp 0.9s var(--ease-out-expo) 1.1s forwards;
+          animation: fadeInUp 0.45s var(--ease-out-expo) 0.2s forwards;
         }
         .trust-item {
           display: flex;
