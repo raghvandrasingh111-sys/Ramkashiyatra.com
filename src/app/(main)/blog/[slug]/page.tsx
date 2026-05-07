@@ -6,6 +6,7 @@ import { blogs, BlogPost } from '@/data/blogs';
 import { packages, TourPackage } from '@/data/packages';
 import Breadcrumbs from '@/app/components/Breadcrumbs';
 import PackageCard from '@/app/components/PackageCard';
+import { buildSeo } from '@/lib/seo';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -22,12 +23,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = blogs.find((p: BlogPost) => p.slug === slug);
   
   if (!post) return { title: 'Post Not Found' };
-  
-  return {
-    title: `${post.title} | Ram Kashi Yatra Blog`,
+
+  return buildSeo({
+    title: post.title,
     description: post.excerpt,
-    keywords: post.tags,
-  };
+    path: `/blog/${post.slug}`,
+    image: post.image,
+    keywords: [
+      ...post.tags,
+      "kashi yatra",
+      "varanasi package",
+      "ayodhya tour",
+      "banaras tour package",
+      "spiritual travel blog",
+      "ai seo geo",
+    ],
+  });
 }
 
 const BlogPostPage = async ({ params }: Props) => {
