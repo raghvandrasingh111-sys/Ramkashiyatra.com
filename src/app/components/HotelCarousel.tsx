@@ -1,56 +1,35 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 /**
- * Premium hotel partner strip.
- * Logos are sourced via Wikipedia/Wikimedia Commons FilePath
- * (auto-redirects to the latest canonical asset).
+ * Premium hotel partner strip — official logos sourced from
+ * Wikimedia Commons (verified Special:FilePath URLs).
  */
 const partners = [
-  {
-    name: "Taj Hotels",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Taj_Hotels_logo.svg/640px-Taj_Hotels_logo.svg.png",
-  },
-  {
-    name: "Hyatt",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Hyatt_Logo.svg/640px-Hyatt_Logo.svg.png",
-  },
-  {
-    name: "Marriott Hotels",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Marriott_hotels_logo14.svg/640px-Marriott_hotels_logo14.svg.png",
-  },
-  {
-    name: "Hilton",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Hilton_Hotels_%26_Resorts_logo.svg/640px-Hilton_Hotels_%26_Resorts_logo.svg.png",
-  },
-  {
-    name: "Radisson",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Radisson_Hotels_Logo.svg/640px-Radisson_Hotels_Logo.svg.png",
-  },
-  {
-    name: "Novotel",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Novotel-Logo.svg/640px-Novotel-Logo.svg.png",
-  },
-  {
-    name: "ITC Hotels",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/5/52/ITC_Hotels_logo.svg/640px-ITC_Hotels_logo.svg.png",
-  },
-  {
-    name: "Ramada",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ramada_logo.svg/640px-Ramada_logo.svg.png",
-  },
-  {
-    name: "Lemon Tree Hotels",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Lemon_Tree_Hotels_logo.svg/640px-Lemon_Tree_Hotels_logo.svg.png",
-  },
-  {
-    name: "DoubleTree by Hilton",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/DoubleTree_logo.svg/640px-DoubleTree_logo.svg.png",
-  },
+  { name: "Taj Hotels", file: "Taj_Hotels_logo.svg" },
+  { name: "Hyatt", file: "Hyatt_Logo.svg" },
+  { name: "Marriott", file: "Marriott_hotels_logo14.svg" },
+  { name: "Hilton Worldwide", file: "Hilton_Worldwide_logo.svg" },
+  { name: "Hampton by Hilton", file: "Hampton_by_Hilton_logo.svg" },
+  { name: "Westin", file: "Westin_Hotels_%26_Resorts_logo.svg" },
+  { name: "W Hotels", file: "W_Hotels_logo.svg" },
+  { name: "Radisson", file: "Radisson_Hotels_logo.svg" },
+  { name: "Novotel", file: "Novotel_logo_%282016%29.svg" },
+  { name: "Crowne Plaza", file: "Crowne_Plaza_logo.svg" },
+  { name: "ITC Hotels", file: "ITC_Hotels_logo.svg" },
+  { name: "Best Western", file: "Best_Western_logo.svg" },
 ];
 
+const wiki = (file: string) =>
+  `https://commons.wikimedia.org/wiki/Special:FilePath/${file}?width=400`;
+
 export default function HotelCarousel() {
+  // Track failed images so we can hide them gracefully
+  const [failed, setFailed] = useState<Record<string, boolean>>({});
+
+  const visible = partners.filter((p) => !failed[p.file]);
+
   return (
     <section className="hotel-strip">
       <div className="container">
@@ -63,14 +42,16 @@ export default function HotelCarousel() {
 
         <div className="viewport">
           <div className="track">
-            {[...partners, ...partners].map((p, index) => (
-              <div key={index} className="logo-card" title={p.name}>
-                {/* Plain img keeps SVG-from-PNG conversions crisp + tolerant of CDN redirects */}
+            {[...visible, ...visible].map((p, index) => (
+              <div key={`${p.file}-${index}`} className="logo-card" title={p.name}>
                 <img
-                  src={p.logo}
-                  alt={`${p.name} logo`}
+                  src={wiki(p.file)}
+                  alt={`${p.name} official logo`}
                   loading="lazy"
                   decoding="async"
+                  onError={() =>
+                    setFailed((prev) => ({ ...prev, [p.file]: true }))
+                  }
                 />
               </div>
             ))}
@@ -119,18 +100,18 @@ export default function HotelCarousel() {
           display: flex;
           gap: 56px;
           width: max-content;
-          animation: marquee 36s linear infinite;
+          animation: marquee 38s linear infinite;
           align-items: center;
         }
         .track:hover { animation-play-state: paused; }
         .logo-card {
           flex: 0 0 auto;
-          width: 160px;
-          height: 80px;
+          width: 170px;
+          height: 90px;
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 14px 18px;
+          padding: 16px 22px;
           background: #fff;
           border: 1px solid var(--border-light);
           border-radius: var(--radius-md);
@@ -144,7 +125,9 @@ export default function HotelCarousel() {
         }
         .logo-card img {
           max-width: 100%;
-          max-height: 48px;
+          max-height: 56px;
+          width: auto;
+          height: auto;
           object-fit: contain;
           filter: grayscale(0.6) opacity(0.85);
           transition: filter 0.4s ease;
@@ -154,8 +137,8 @@ export default function HotelCarousel() {
         }
         @media (max-width: 768px) {
           .track { gap: 28px; }
-          .logo-card { width: 130px; height: 70px; }
-          .logo-card img { max-height: 38px; }
+          .logo-card { width: 140px; height: 76px; padding: 12px 16px; }
+          .logo-card img { max-height: 44px; }
         }
       `}</style>
     </section>
