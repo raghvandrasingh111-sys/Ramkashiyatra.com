@@ -597,32 +597,37 @@ export default function Home() {
           </div>
           <div className="destinations-grid">
             {destinations.map((item, index) => (
-              <Link
-                href="/tour-packages"
+              <div
                 key={index}
-                ref={addToRefs as unknown as React.RefObject<HTMLAnchorElement>}
+                ref={addToRefs}
                 className={`fade-in-up stagger-${index + 1} destination-card`}
               >
-                <div className="destination-img">
-                  <NextImage
-                    src={item.img}
-                    alt={`${item.label} Tours`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    style={{ objectFit: "cover" }}
-                    className="zoom-hover"
-                  />
-                </div>
-                <div className="destination-overlay" />
-                <div className="destination-content">
-                  <span className="destination-tag">{item.tag}</span>
-                  <h3>{item.label}</h3>
-                  <p>{item.experiences}</p>
-                  <span className="destination-cta">
-                    Discover Tours <i className="fas fa-arrow-right" />
-                  </span>
-                </div>
-              </Link>
+                <Link
+                  href="/tour-packages"
+                  className="destination-link"
+                  aria-label={`Explore tours in ${item.label}`}
+                >
+                  <div className="destination-img">
+                    <NextImage
+                      src={item.img}
+                      alt={`${item.label} Tours`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      style={{ objectFit: "cover" }}
+                      className="zoom-hover"
+                    />
+                  </div>
+                  <div className="destination-overlay" />
+                  <div className="destination-content">
+                    <span className="destination-tag">{item.tag}</span>
+                    <h3>{item.label}</h3>
+                    <p>{item.experiences}</p>
+                    <span className="destination-cta">
+                      Discover Tours <i className="fas fa-arrow-right" />
+                    </span>
+                  </div>
+                </Link>
+              </div>
             ))}
           </div>
         </div>
@@ -1294,21 +1299,31 @@ export default function Home() {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
           gap: 24px;
+          align-items: stretch;
         }
         .destination-card {
           position: relative;
-          height: 460px;
+          aspect-ratio: 4 / 5;
+          min-height: 380px;
           border-radius: var(--radius-lg);
           overflow: hidden;
-          display: block;
           color: #fff;
-          text-decoration: none;
+          background: var(--brand-ink);
           box-shadow: var(--shadow-md);
-          transition: all 0.5s var(--ease-out-expo);
+          transition: transform 0.5s var(--ease-out-expo),
+            box-shadow 0.5s var(--ease-out-expo);
+          will-change: transform;
         }
         .destination-card:hover {
           transform: translateY(-8px);
           box-shadow: var(--shadow-xl);
+        }
+        .destination-link {
+          position: absolute;
+          inset: 0;
+          display: block;
+          color: inherit;
+          text-decoration: none;
         }
         .destination-img { position: absolute; inset: 0; }
         .destination-overlay {
@@ -1323,7 +1338,8 @@ export default function Home() {
           z-index: 1;
           transition: background 0.5s ease;
         }
-        .destination-card:hover .destination-overlay {
+        .destination-card:hover .destination-overlay,
+        .destination-link:hover .destination-overlay {
           background: linear-gradient(
             180deg,
             rgba(14, 20, 36, 0.2) 0%,
@@ -1373,11 +1389,13 @@ export default function Home() {
           transition: all 0.4s var(--ease-out-expo);
         }
         .destination-cta i { transition: transform 0.3s ease; }
-        .destination-card:hover .destination-cta {
+        .destination-card:hover .destination-cta,
+        .destination-link:hover .destination-cta {
           opacity: 1;
           transform: translateY(0);
         }
-        .destination-card:hover .destination-cta i {
+        .destination-card:hover .destination-cta i,
+        .destination-link:hover .destination-cta i {
           transform: translateX(4px);
         }
 
@@ -1457,7 +1475,7 @@ export default function Home() {
           .hero-dots { bottom: 60px; }
           .hero-trust { display: none; }
           .stat-number { font-size: 2.4rem; }
-          .destination-card { height: 380px; }
+          .destination-card { aspect-ratio: 4 / 4.5; min-height: 320px; }
         }
       `}</style>
     </main>
