@@ -53,7 +53,7 @@ export default function TourPackages() {
         <div className="tp-hero-overlay" />
         <div className="container tp-hero-content">
           <p className="eyebrow center" style={{ color: "var(--brand-gold-light)" }}>
-            <i className="fas fa-suitcase-rolling" /> Curated Yatras for 2026
+            <i className="fas fa-suitcase-rolling" /> Curated Yatras for 
           </p>
           <h1>
             Best Kashi Ayodhya &amp; Varanasi{" "}

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   return {
     title: `Kashi Yatra Package from ${cityName} Price | Ram Mandir Ayodhya Tour Booking`,
-    description: `Get the best price for Kashi Yatra and Ayodhya Ram Mandir tour packages from ${cityName}. 2026 spiritual booking including Kashi Vishwanath VIP access and stay.`,
+    description: `Get the best price for Kashi Yatra and Ayodhya Ram Mandir tour packages from ${cityName}.  spiritual booking including Kashi Vishwanath VIP access and stay.`,
     keywords: [`Kashi Yatra from ${cityName} price`, `Ayodhya tour from ${cityName} booking`, `Varanasi tour package from ${cityName} cost`],
   };
 }

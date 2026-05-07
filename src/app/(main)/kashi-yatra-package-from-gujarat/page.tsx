@@ -5,8 +5,8 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 import { buildSeo } from '@/lib/seo';
 
 export const metadata: Metadata = buildSeo({
-  title: 'Kashi Yatra Package from Gujarat 2026 | Ahmedabad Surat Vadodara to Varanasi Ayodhya',
-  description: 'Best Kashi Yatra Package from Gujarat 2026 — Ahmedabad, Surat, Vadodara, Rajkot to Varanasi & Ayodhya with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti and Triveni Sangam Snan. Sattvic meals, hotel + AC cab + spiritual guide included.',
+  title: 'Kashi Yatra Package from Gujarat  | Ahmedabad Surat Vadodara to Varanasi Ayodhya',
+  description: 'Best Kashi Yatra Package from Gujarat  — Ahmedabad, Surat, Vadodara, Rajkot to Varanasi & Ayodhya with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti and Triveni Sangam Snan. Sattvic meals, hotel + AC cab + spiritual guide included.',
   path: '/kashi-yatra-package-from-gujarat',
   keywords: [
     'kashi yatra package from gujarat',

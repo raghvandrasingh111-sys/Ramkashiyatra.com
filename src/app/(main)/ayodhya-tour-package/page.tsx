@@ -5,12 +5,12 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 import { buildSeo } from '@/lib/seo';
 
 export const metadata: Metadata = buildSeo({
-  title: 'Ayodhya Tour Package 2026 | Shri Ram Mandir Darshan Package · Best Price',
-  description: 'Best Ayodhya Tour Package 2026 with priority Shri Ram Janmabhoomi Mandir darshan, Hanuman Garhi, Kanak Bhawan and evening Sarayu Aarti. Hotel + cab + meals + expert spiritual guide. Book Ayodhya Ram Mandir tour from Lucknow, Varanasi or any city in India.',
+  title: 'Ayodhya Tour Package  | Shri Ram Mandir Darshan Package · Best Price',
+  description: 'Best Ayodhya Tour Package  with priority Shri Ram Janmabhoomi Mandir darshan, Hanuman Garhi, Kanak Bhawan and evening Sarayu Aarti. Hotel + cab + meals + expert spiritual guide. Book Ayodhya Ram Mandir tour from Lucknow, Varanasi or any city in India.',
   path: '/ayodhya-tour-package',
   keywords: [
     'ayodhya tour package',
-    'ayodhya tour package 2026',
+    'ayodhya tour package ',
     'ayodhya ram mandir tour package price',
     'ram mandir darshan tour package',
     'ayodhya ram janmabhoomi tour',

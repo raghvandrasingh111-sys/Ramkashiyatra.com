@@ -41,11 +41,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      "Kashi Yatra Package 2026 | Ayodhya Varanasi Tour Packages | Ram Kashi Yatra",
+      "Kashi Yatra Package  | Ayodhya Varanasi Tour Packages | Ram Kashi Yatra",
     template: "%s | Ram Kashi Yatra",
   },
   description:
-    "Book best Kashi Yatra package & Ayodhya Varanasi tour packages 2026 at lowest price. VIP Ram Mandir Darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti & Triveni Sangam Snan included. Hotel + Cab + Meals. Customised Varanasi Ayodhya Prayagraj tours from Delhi, Mumbai, Gujarat, Punjab, Bihar. Govt. approved · 4.9★ · 1000+ pilgrims served.",
+    "Book best Kashi Yatra package & Ayodhya Varanasi tour packages  at lowest price. VIP Ram Mandir Darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti & Triveni Sangam Snan included. Hotel + Cab + Meals. Customised Varanasi Ayodhya Prayagraj tours from Delhi, Mumbai, Gujarat, Punjab, Bihar. Govt. approved · 4.9★ · 1000+ pilgrims served.",
   applicationName: BRAND,
   referrer: "origin-when-cross-origin",
   authors: [{ name: BRAND, url: SITE_URL }],
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     "bodhgaya kashi tour package",
     "varanasi gaya tour package",
     "varanasi sarnath tour package",
-    "varanasi ayodhya tour package 2026",
+    "varanasi ayodhya tour package ",
     "best kashi yatra tour operator",
     "luxury kashi ayodhya tour",
     "spiritual tour packages india",
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Kashi Yatra Package 2026 | Ayodhya Varanasi Tour Packages | Ram Kashi Yatra",
+      "Kashi Yatra Package  | Ayodhya Varanasi Tour Packages | Ram Kashi Yatra",
     description:
       "Premium Kashi (Varanasi), Ayodhya, Prayagraj & Lucknow tour packages with VIP darshan, luxury hotels and 24×7 concierge. Book your divine journey today.",
     url: `${SITE_URL}/`,
@@ -127,7 +127,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Kashi Yatra Package 2026 | Ayodhya Varanasi Tour Packages | Ram Kashi Yatra",
+      "Kashi Yatra Package  | Ayodhya Varanasi Tour Packages | Ram Kashi Yatra",
     description:
       "Book premium Kashi Yatra & Ayodhya Varanasi tour packages with VIP darshan, luxury stays and 24×7 concierge.",
     images: ["/logo-luxury.png"],

@@ -5,8 +5,8 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 import { buildSeo } from '@/lib/seo';
 
 export const metadata: Metadata = buildSeo({
-  title: 'Kashi Yatra Package 2026 | Varanasi Tour Package with VIP Ganga Aarti & Sugam Darshan',
-  description: 'Book the best Kashi Yatra package 2026 at lowest price. Includes Kashi Vishwanath VIP Sugam Darshan, evening Ganga Aarti at Dashashwamedh Ghat, boat ride, Sarnath sightseeing, hotel + cab + meals. 1000+ pilgrims served · 4.9★ rating · Govt. approved.',
+  title: 'Kashi Yatra Package  | Varanasi Tour Package with VIP Ganga Aarti & Sugam Darshan',
+  description: 'Book the best Kashi Yatra package  at lowest price. Includes Kashi Vishwanath VIP Sugam Darshan, evening Ganga Aarti at Dashashwamedh Ghat, boat ride, Sarnath sightseeing, hotel + cab + meals. 1000+ pilgrims served · 4.9★ rating · Govt. approved.',
   path: '/kashi-yatra-package',
   keywords: [
     'kashi yatra package',

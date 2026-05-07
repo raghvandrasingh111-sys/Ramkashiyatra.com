@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!pkg) return {};
 
   return buildSeo({
-    title: `${pkg.name} | ${pkg.duration} Tour Package 2026 · Best Price`,
+    title: `${pkg.name} | ${pkg.duration} Tour Package  · Best Price`,
     description: `${pkg.description} Book this ${pkg.duration} spiritual journey covering ${pkg.location} with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti and luxury hotel + AC cab + meals. Best price guaranteed.`,
     path: `/tour-packages/${slug}`,
     image: pkg.image,

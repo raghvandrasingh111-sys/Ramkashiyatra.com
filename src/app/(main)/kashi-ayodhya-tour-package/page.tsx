@@ -5,8 +5,8 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 import { buildSeo } from '@/lib/seo';
 
 export const metadata: Metadata = buildSeo({
-  title: 'Kashi Ayodhya Tour Package 2026 | 3-5 Day Spiritual Pilgrimage · Best Price',
-  description: 'Book the best Kashi Ayodhya tour package 2026 — 3 to 5 day combined Varanasi + Ayodhya itineraries with Shri Ram Mandir darshan, Kashi Vishwanath VIP Sugam Darshan, Ganga Aarti and luxury hotels. Perfect for families, seniors and group travel. Best price guaranteed.',
+  title: 'Kashi Ayodhya Tour Package  | 3-5 Day Spiritual Pilgrimage · Best Price',
+  description: 'Book the best Kashi Ayodhya tour package  — 3 to 5 day combined Varanasi + Ayodhya itineraries with Shri Ram Mandir darshan, Kashi Vishwanath VIP Sugam Darshan, Ganga Aarti and luxury hotels. Perfect for families, seniors and group travel. Best price guaranteed.',
   path: '/kashi-ayodhya-tour-package',
   keywords: [
     'kashi ayodhya tour package',

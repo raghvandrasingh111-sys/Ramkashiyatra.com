@@ -864,7 +864,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header" ref={addToRefs}>
             <p className="eyebrow center">
-              <i className="fas fa-book-open" /> Complete 2026 Guide
+              <i className="fas fa-book-open" /> Complete  Guide
             </p>
             <h2>
               Kashi Yatra · Ayodhya · Varanasi —{" "}
@@ -930,7 +930,7 @@ export default function Home() {
               </li>
             </ul>
 
-            <h3>Most popular Varanasi Ayodhya tour packages 2026</h3>
+            <h3>Most popular Varanasi Ayodhya tour packages </h3>
             <p>
               Our most-booked itineraries combine{" "}
               <strong>Varanasi · Ayodhya · Prayagraj</strong> — the holy
@@ -1019,7 +1019,7 @@ export default function Home() {
               <strong>Varanasi family package</strong>, our editorial team mapped every major
               cluster into one citability-friendly guide —{" "}
               <Link href="/banaras-kashi-ayodhya-travel-guide">
-                open the 2026 Banaras · Kashi · Ayodhya travel keyword guide
+                open the  Banaras · Kashi · Ayodhya travel keyword guide
               </Link>{" "}
               for long-tail coverage, hotel intent and booking phrases in plain language.
             </p>
@@ -1049,7 +1049,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header" ref={addToRefs}>
             <p className="eyebrow center">
-              <i className="fas fa-layer-group" /> Master SEO Content Plan
+              <i className="fas fa-layer-group" /> Spiritual Travel Guide
             </p>
             <h2>
               Best Varanasi Tour &amp; Banaras Tour Packages —{" "}

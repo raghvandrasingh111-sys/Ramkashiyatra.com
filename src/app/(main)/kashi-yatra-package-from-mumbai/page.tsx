@@ -5,8 +5,8 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 import { buildSeo } from '@/lib/seo';
 
 export const metadata: Metadata = buildSeo({
-  title: 'Kashi Yatra Package from Mumbai 2026 | Mumbai to Varanasi Ayodhya Tour',
-  description: 'Premium Kashi Yatra Package from Mumbai 2026 — flights from Mumbai to Varanasi, VIP Kashi Vishwanath Sugam Darshan, Ram Mandir Ayodhya darshan, Ganga Aarti at Dashashwamedh and Triveni Sangam in Prayagraj. Hotel + cab + meals + 24×7 concierge. Book at best price.',
+  title: 'Kashi Yatra Package from Mumbai  | Mumbai to Varanasi Ayodhya Tour',
+  description: 'Premium Kashi Yatra Package from Mumbai  — flights from Mumbai to Varanasi, VIP Kashi Vishwanath Sugam Darshan, Ram Mandir Ayodhya darshan, Ganga Aarti at Dashashwamedh and Triveni Sangam in Prayagraj. Hotel + cab + meals + 24×7 concierge. Book at best price.',
   path: '/kashi-yatra-package-from-mumbai',
   keywords: [
     'kashi yatra package from mumbai',

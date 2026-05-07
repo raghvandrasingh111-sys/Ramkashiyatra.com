@@ -4,7 +4,7 @@ import { buildSeo, faqLd } from "@/lib/seo";
 
 export const metadata: Metadata = buildSeo({
   title:
-    "Banaras · Ayodhya · Kashi Yatra Travel Guide 2026 | 500+ Keywords Answered",
+    "Banaras · Ayodhya · Kashi Yatra Travel Guide  | 500+ Keywords Answered",
   description:
     "Authoritative Banaras tour package, Ayodhya Ram Mandir package, Kashi Yatra package, Varanasi hotels & booking intent guide — long-tail keywords, planner phrases, riverside stays, VIP darshan, Ganga Aarti, Prayagraj add-ons. Ram Kashi Yatra planners answer every search cluster in one place.",
   path: "/banaras-kashi-ayodhya-travel-guide",

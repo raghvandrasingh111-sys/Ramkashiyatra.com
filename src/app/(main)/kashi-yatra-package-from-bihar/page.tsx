@@ -5,8 +5,8 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 import { buildSeo } from '@/lib/seo';
 
 export const metadata: Metadata = buildSeo({
-  title: 'Kashi Yatra Package from Bihar 2026 | Patna Gaya Bodhgaya to Varanasi Ayodhya Tour',
-  description: 'Best Kashi Yatra Package from Bihar 2026 — Patna, Gaya, Bodhgaya to Varanasi & Ayodhya with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti, Pind Daan in Gaya and Mahabodhi Temple Bodhgaya. Hotel + AC cab + meals + spiritual guide.',
+  title: 'Kashi Yatra Package from Bihar  | Patna Gaya Bodhgaya to Varanasi Ayodhya Tour',
+  description: 'Best Kashi Yatra Package from Bihar  — Patna, Gaya, Bodhgaya to Varanasi & Ayodhya with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan, Ganga Aarti, Pind Daan in Gaya and Mahabodhi Temple Bodhgaya. Hotel + AC cab + meals + spiritual guide.',
   path: '/kashi-yatra-package-from-bihar',
   keywords: [
     'kashi yatra package from bihar',

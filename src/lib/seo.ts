@@ -10,7 +10,7 @@ export const SHARED_KEYWORDS = [
   "ayodhya ram mandir tour package",
   "varanasi tour package",
   "kashi ayodhya tour package",
-  "varanasi ayodhya tour package 2026",
+  "varanasi ayodhya tour package ",
   "ram mandir darshan tour package",
   "kashi vishwanath vip darshan",
   "ganga aarti package varanasi",

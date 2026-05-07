@@ -36,11 +36,11 @@ type Topic = {
 };
 
 const seoTopics: Topic[] = [
-  { slug: "kashi-yatra-package-cost-breakdown-2026", title: "Kashi Yatra Package Cost Breakdown 2026: Budget to Luxury", excerpt: "Compare real Kashi Yatra package pricing with hotels, cab, darshan, and meal inclusions so you can book the right plan confidently.", category: "Cost Guide", primaryKeyword: "kashi yatra package", tags: ["Kashi Yatra", "Package Cost", "Varanasi Package", "Budget", "Luxury", "Booking"], relatedPackages: packagePairA },
+  { slug: "kashi-yatra-package-cost-breakdown-", title: "Kashi Yatra Package Cost Breakdown : Budget to Luxury", excerpt: "Compare real Kashi Yatra package pricing with hotels, cab, darshan, and meal inclusions so you can book the right plan confidently.", category: "Cost Guide", primaryKeyword: "kashi yatra package", tags: ["Kashi Yatra", "Package Cost", "Varanasi Package", "Budget", "Luxury", "Booking"], relatedPackages: packagePairA },
   { slug: "varanasi-tour-package-2n-3d-itinerary", title: "Varanasi Tour Package 2N/3D: Perfect Itinerary with Ganga Aarti", excerpt: "Step-by-step Varanasi package plan for 2 nights and 3 days covering Kashi Vishwanath, Assi Ghat, Dashashwamedh, and boat ride timings.", category: "Itinerary", primaryKeyword: "varanasi package", tags: ["Varanasi Tour", "2N3D", "Ganga Aarti", "Temple Tour", "Boat Ride", "Kashi"], relatedPackages: packagePairC },
-  { slug: "ayodhya-tour-package-with-ram-mandir-darshan", title: "Ayodhya Tour Package with Ram Mandir Darshan: Complete 2026 Planner", excerpt: "Everything you need before booking an Ayodhya tour package including Ram Mandir darshan slots, local transport, hotels, and ideal travel windows.", category: "Travel Guide", primaryKeyword: "ayodhya tour", tags: ["Ayodhya Tour", "Ram Mandir", "Darshan", "Temple Visit", "Pilgrimage", "2026"], relatedPackages: packagePairB },
-  { slug: "best-time-for-kashi-ayodhya-varanasi-trip", title: "Best Time for Kashi, Ayodhya & Varanasi Trip in 2026", excerpt: "Month-wise weather, crowd pattern, festival calendar, and booking strategy for Kashi Yatra, Varanasi package, and Ayodhya tour combinations.", category: "Seasonal Guide", primaryKeyword: "kashi yatra", tags: ["Best Time", "Kashi Yatra", "Ayodhya Tour", "Varanasi", "Festivals", "Planning"], relatedPackages: packagePairD },
-  { slug: "kashi-vishwanath-vip-darshan-booking-process", title: "Kashi Vishwanath VIP Darshan Booking Process: Practical 2026 Guide", excerpt: "Learn official options, expected wait times, document tips, and how to align VIP darshan with your Varanasi package without rushing rituals.", category: "Temple Guide", primaryKeyword: "kashi vishwanath vip darshan", tags: ["VIP Darshan", "Kashi Vishwanath", "Booking", "Temple Guide", "Varanasi Tour", "Pilgrimage"], relatedPackages: packagePairC },
+  { slug: "ayodhya-tour-package-with-ram-mandir-darshan", title: "Ayodhya Tour Package with Ram Mandir Darshan: Complete  Planner", excerpt: "Everything you need before booking an Ayodhya tour package including Ram Mandir darshan slots, local transport, hotels, and ideal travel windows.", category: "Travel Guide", primaryKeyword: "ayodhya tour", tags: ["Ayodhya Tour", "Ram Mandir", "Darshan", "Temple Visit", "Pilgrimage", ""], relatedPackages: packagePairB },
+  { slug: "best-time-for-kashi-ayodhya-varanasi-trip", title: "Best Time for Kashi, Ayodhya & Varanasi Trip in ", excerpt: "Month-wise weather, crowd pattern, festival calendar, and booking strategy for Kashi Yatra, Varanasi package, and Ayodhya tour combinations.", category: "Seasonal Guide", primaryKeyword: "kashi yatra", tags: ["Best Time", "Kashi Yatra", "Ayodhya Tour", "Varanasi", "Festivals", "Planning"], relatedPackages: packagePairD },
+  { slug: "kashi-vishwanath-vip-darshan-booking-process", title: "Kashi Vishwanath VIP Darshan Booking Process: Practical  Guide", excerpt: "Learn official options, expected wait times, document tips, and how to align VIP darshan with your Varanasi package without rushing rituals.", category: "Temple Guide", primaryKeyword: "kashi vishwanath vip darshan", tags: ["VIP Darshan", "Kashi Vishwanath", "Booking", "Temple Guide", "Varanasi Tour", "Pilgrimage"], relatedPackages: packagePairC },
   { slug: "banaras-ganga-aarti-best-viewing-spots", title: "Banaras Ganga Aarti: Best Viewing Spots, Boat Seats & Timings", excerpt: "Find the best way to experience evening Ganga Aarti in Banaras with practical advice on ghat zones, cruise options, and family-safe planning.", category: "Experience", primaryKeyword: "banaras ganga aarti package", tags: ["Banaras", "Ganga Aarti", "Boat Ride", "Varanasi Package", "Evening Tour", "Family Trip"], relatedPackages: packagePairA },
   { slug: "banaras-tour-package-from-delhi-train-vs-flight", title: "Banaras Tour Package from Delhi: Train vs Flight Comparison", excerpt: "Decide the fastest and most economical way to book a Banaras package from Delhi with route, transfer, hotel check-in, and darshan timing insights.", category: "From City", primaryKeyword: "banaras package from delhi", tags: ["Delhi to Banaras", "Banaras Tour", "Train Package", "Flight Package", "Travel Cost", "Itinerary"], relatedPackages: packagePairA },
   { slug: "ayodhya-package-from-varanasi-road-guide", title: "Ayodhya Package from Varanasi: Best Road Route and Stop Plan", excerpt: "Route map, travel time, pit stops, and temple order for pilgrims booking Ayodhya package from Varanasi after Kashi Vishwanath darshan.", category: "Route Guide", primaryKeyword: "ayodhya package from varanasi", tags: ["Ayodhya Package", "Varanasi to Ayodhya", "Road Trip", "Darshan", "Temple Circuit", "Cab"], relatedPackages: packagePairB },
@@ -63,15 +63,15 @@ const seoTopics: Topic[] = [
   { slug: "banaras-luxury-stay-vs-budget-hotel-guide", title: "Banaras Luxury Stay vs Budget Hotel: Which One Should You Book?", excerpt: "A clear Banaras stay comparison for pilgrims choosing between heritage luxury and budget hotels near ghats, station, and temple corridors.", category: "Hotel Guide", primaryKeyword: "banaras luxury stay", tags: ["Luxury Hotels", "Budget Hotels", "Banaras Stay", "Varanasi Accommodation", "Travel Cost", "Hotel Booking"], relatedPackages: packagePairA },
   { slug: "varanasi-ayodhya-tour-package-for-first-time-visitors", title: "Varanasi Ayodhya Tour Package for First-Time Visitors", excerpt: "First-time guide to booking Varanasi Ayodhya tour package with realistic day plans, crowd strategy, and comfortable temple darshan sequencing.", category: "First Timer Guide", primaryKeyword: "varanasi and ayodhya package", tags: ["First Time", "Varanasi", "Ayodhya", "Tour Package", "Itinerary", "Pilgrimage"], relatedPackages: packagePairA },
   { slug: "banaras-ganga-tour-and-ghat-walk-plan", title: "Banaras Ganga Tour and Ghat Walk Plan: Sunrise to Night Aarti", excerpt: "Create a full-day Banaras Ganga tour plan blending ghat walk, temple entries, heritage lanes, and evening aarti viewing for deeper experience.", category: "Experience", primaryKeyword: "banaras ganga tour", tags: ["Banaras Ganga Tour", "Ghat Walk", "Aarti", "Varanasi Tour", "Heritage", "Spiritual Travel"], relatedPackages: packagePairC },
-  { slug: "kashi-tour-package-from-bangalore-booking-guide", title: "Kashi Tour Package from Bangalore: Booking Guide and Route Options", excerpt: "Plan Kashi Yatra from Bangalore with flight and train options, arrival logistics, package pricing bands, and best booking windows in 2026.", category: "From City", primaryKeyword: "kashi yatra from bangalore", tags: ["Bangalore to Kashi", "Kashi Tour", "Booking", "Travel Cost", "Varanasi Package", "Pilgrimage"], relatedPackages: packagePairA },
+  { slug: "kashi-tour-package-from-bangalore-booking-guide", title: "Kashi Tour Package from Bangalore: Booking Guide and Route Options", excerpt: "Plan Kashi Yatra from Bangalore with flight and train options, arrival logistics, package pricing bands, and best booking windows in .", category: "From City", primaryKeyword: "kashi yatra from bangalore", tags: ["Bangalore to Kashi", "Kashi Tour", "Booking", "Travel Cost", "Varanasi Package", "Pilgrimage"], relatedPackages: packagePairA },
   { slug: "ayodhya-tour-operator-checklist-before-payment", title: "Ayodhya Tour Operator Checklist Before You Pay Advance", excerpt: "Use this verification checklist to choose a trusted Ayodhya tour operator and avoid hidden charges in hotel, cab, and darshan coordination.", category: "Buyer Guide", primaryKeyword: "ayodhya tour operator", tags: ["Ayodhya Operator", "Travel Agency", "Booking Safety", "Package Price", "Ram Mandir Tour", "Checklist"], relatedPackages: packagePairB },
   { slug: "banaras-travel-agency-near-me-online-vs-local", title: "Banaras Travel Agency Near Me: Online vs Local Booking Choice", excerpt: "Compare local shop booking and online travel agency models for Banaras package planning, support quality, and after-booking accountability.", category: "Buyer Guide", primaryKeyword: "banaras travel agency near me", tags: ["Banaras Travel Agency", "Online Booking", "Local Agent", "Varanasi Package", "Travel Support", "Pilgrimage"], relatedPackages: packagePairA },
   { slug: "kashi-yatra-by-train-package-practical-tips", title: "Kashi Yatra by Train Package: Practical Tips for Smooth Travel", excerpt: "Train-first Kashi Yatra planning with berth strategy, station pickup flow, darshan timing alignment, and ideal hotel check-in patterns.", category: "Transport Guide", primaryKeyword: "kashi yatra by train package", tags: ["Kashi by Train", "Travel Tips", "Station Pickup", "Varanasi", "Pilgrimage", "Package"], relatedPackages: packagePairC },
-  { slug: "ram-mandir-ayodhya-package-price-guide-2026", title: "Ram Mandir Ayodhya Package Price Guide 2026", excerpt: "Understand real Ayodhya package price ranges by hotel type, transport model, and darshan assistance so your booking stays transparent.", category: "Cost Guide", primaryKeyword: "ayodhya package price", tags: ["Ayodhya Price", "Ram Mandir Package", "Cost Guide", "Tour Booking", "Darshan", "Pilgrimage"], relatedPackages: packagePairB },
+  { slug: "ram-mandir-ayodhya-package-price-guide-", title: "Ram Mandir Ayodhya Package Price Guide ", excerpt: "Understand real Ayodhya package price ranges by hotel type, transport model, and darshan assistance so your booking stays transparent.", category: "Cost Guide", primaryKeyword: "ayodhya package price", tags: ["Ayodhya Price", "Ram Mandir Package", "Cost Guide", "Tour Booking", "Darshan", "Pilgrimage"], relatedPackages: packagePairB },
   { slug: "book-kashi-yatra-online-safe-booking-framework", title: "Book Kashi Yatra Online Safely: Verification Framework", excerpt: "Use this secure booking framework for Kashi Yatra online plans: payment safety, itinerary clarity, cancellation terms, and support proof.", category: "Booking Guide", primaryKeyword: "book kashi yatra online", tags: ["Online Booking", "Kashi Yatra", "Travel Safety", "Payment", "Package Terms", "Tour Operator"], relatedPackages: packagePairA },
-  { slug: "book-ayodhya-package-online-step-by-step", title: "Book Ayodhya Package Online: Step-by-Step 2026 Process", excerpt: "A practical online booking workflow for Ayodhya package seekers covering quote validation, hotel confirmation, and darshan-ready arrival plans.", category: "Booking Guide", primaryKeyword: "book ayodhya package online", tags: ["Ayodhya Booking", "Online Tour", "Ram Mandir", "Travel Planning", "Package", "Checklist"], relatedPackages: packagePairB },
-  { slug: "best-hotels-in-banaras-near-ghats-and-temples", title: "Best Hotels in Banaras Near Ghats and Temples: 2026 Selection Guide", excerpt: "Find best hotels in Banaras by temple proximity, ghat access, cleanliness, family suitability, and transfer convenience for spiritual travel.", category: "Hotel Guide", primaryKeyword: "best hotels in banaras", tags: ["Best Hotels", "Banaras Stay", "Ghats", "Temple Proximity", "Family Hotels", "Varanasi"], relatedPackages: packagePairC },
-  { slug: "budget-hotels-in-banaras-near-ghats-realistic-guide", title: "Budget Hotels in Banaras Near Ghats: Realistic 2026 Guide", excerpt: "Pick budget hotels in Banaras near ghats without compromising safety, hygiene, and darshan access using this practical booking matrix.", category: "Hotel Guide", primaryKeyword: "budget hotels in banaras near ghats", tags: ["Budget Hotels", "Banaras", "Ghats", "Accommodation", "Travel Budget", "Booking"], relatedPackages: packagePairC },
+  { slug: "book-ayodhya-package-online-step-by-step", title: "Book Ayodhya Package Online: Step-by-Step  Process", excerpt: "A practical online booking workflow for Ayodhya package seekers covering quote validation, hotel confirmation, and darshan-ready arrival plans.", category: "Booking Guide", primaryKeyword: "book ayodhya package online", tags: ["Ayodhya Booking", "Online Tour", "Ram Mandir", "Travel Planning", "Package", "Checklist"], relatedPackages: packagePairB },
+  { slug: "best-hotels-in-banaras-near-ghats-and-temples", title: "Best Hotels in Banaras Near Ghats and Temples:  Selection Guide", excerpt: "Find best hotels in Banaras by temple proximity, ghat access, cleanliness, family suitability, and transfer convenience for spiritual travel.", category: "Hotel Guide", primaryKeyword: "best hotels in banaras", tags: ["Best Hotels", "Banaras Stay", "Ghats", "Temple Proximity", "Family Hotels", "Varanasi"], relatedPackages: packagePairC },
+  { slug: "budget-hotels-in-banaras-near-ghats-realistic-guide", title: "Budget Hotels in Banaras Near Ghats: Realistic  Guide", excerpt: "Pick budget hotels in Banaras near ghats without compromising safety, hygiene, and darshan access using this practical booking matrix.", category: "Hotel Guide", primaryKeyword: "budget hotels in banaras near ghats", tags: ["Budget Hotels", "Banaras", "Ghats", "Accommodation", "Travel Budget", "Booking"], relatedPackages: packagePairC },
   { slug: "kashi-tour-planner-how-to-build-a-custom-yatra", title: "Kashi Tour Planner: How to Build a Custom Yatra Itinerary", excerpt: "Design a custom Kashi yatra with flexible temple slots, Sarnath add-on, boat timings, and hotel options matched to your travel rhythm.", category: "Planning", primaryKeyword: "kashi tour planner", tags: ["Kashi Planner", "Custom Package", "Varanasi Itinerary", "Temple Tour", "Spiritual Travel", "Booking"], relatedPackages: packagePairA },
   { slug: "banaras-tour-package-with-hotel-and-cab", title: "Banaras Tour Package with Hotel and Cab: Inclusion Checklist", excerpt: "Know exactly what should be included in Banaras package with hotel and cab so you avoid hidden charges and improve pilgrimage comfort.", category: "Buyer Guide", primaryKeyword: "banaras tour package with hotel", tags: ["Banaras Package", "Hotel", "Cab", "Inclusions", "Travel Guide", "Booking"], relatedPackages: packagePairA },
   { slug: "banaras-honeymoon-tour-package-spiritual-romance", title: "Banaras Honeymoon Tour Package: Spiritual Romance Itinerary", excerpt: "A tasteful honeymoon route through Banaras with riverfront stays, sunrise boat rides, and curated heritage moments beyond standard tours.", category: "Couple Travel", primaryKeyword: "banaras honeymoon tour package", tags: ["Honeymoon", "Banaras", "Couple Tour", "Luxury Stay", "Boat Ride", "Varanasi"], relatedPackages: packagePairD },
@@ -90,7 +90,7 @@ const seoTopics: Topic[] = [
 
 function buildAutoContent(topic: Topic): string {
   return `
-      <p><strong>${topic.primaryKeyword}</strong> is one of the most searched travel intents for pilgrims planning Banaras, Varanasi and Ayodhya journeys in 2026. This guide is built to answer practical booking, darshan and hotel decisions in clear language.</p>
+      <p><strong>${topic.primaryKeyword}</strong> is one of the most searched travel intents for pilgrims planning Banaras, Varanasi and Ayodhya journeys in . This guide is built to answer practical booking, darshan and hotel decisions in clear language.</p>
       <h3>How to plan this route with better SEO intent match</h3>
       <p>Travelers searching ${topic.tags[0]}, ${topic.tags[1]} and ${topic.tags[2]} usually need three things: transparent package inclusions, realistic temple timing, and dependable on-ground support. Focus on route order first, then lock accommodation near the darshan cluster to avoid wasted transit time.</p>
       <h3>GEO + AI search checklist for better decision making</h3>
@@ -108,7 +108,7 @@ const generatedBlogs: BlogPost[] = seoTopics.map((topic, index) => ({
   slug: topic.slug,
   title: topic.title,
   excerpt: topic.excerpt,
-  date: `April ${30 - (index % 20)}, 2026`,
+  date: `April ${30 - (index % 20)}, `,
   author: "Ram Kashi Yatra Editorial Team",
   image: blogImages[index % blogImages.length],
   category: topic.category,
@@ -120,9 +120,9 @@ const generatedBlogs: BlogPost[] = seoTopics.map((topic, index) => ({
 export const blogs: BlogPost[] = [
   {
     slug: 'best-time-to-visit-kashi-and-ayodhya',
-    title: 'Best Time to Visit Kashi and Ayodhya: A 2026 Seasonal Guide',
+    title: 'Best Time to Visit Kashi and Ayodhya: A  Seasonal Guide',
     excerpt: 'Plan your spiritual journey with our comprehensive guide on weather, festivals, and the best months to experience the divinity of Varanasi and Ayodhya.',
-    date: 'March 22, 2026',
+    date: 'March 22, ',
     author: 'Luxury Trip India Editorial',
     image: '/images/destinations/varanasi.webp',
     category: 'Travel Guide',
@@ -145,9 +145,9 @@ export const blogs: BlogPost[] = [
   },
   {
     slug: 'vip-darshan-kashi-vishwanath-complete-guide',
-    title: 'VIP Darshan in Kashi Vishwanath: Complete 2026 Booking & Entry Guide',
+    title: 'VIP Darshan in Kashi Vishwanath: Complete  Booking & Entry Guide',
     excerpt: 'Navigating the crowds at Kashi Vishwanath can be daunting. Learn how to book VIP Suprabhatam Aarti and Sugam Darshan for a seamless spiritual experience.',
-    date: 'March 20, 2026',
+    date: 'March 20, ',
     author: 'Spiritual Guide Team',
     image: '/images/destinations/uttar-pradesh.webp',
     category: 'Temple Guide',
@@ -164,17 +164,17 @@ export const blogs: BlogPost[] = [
     `
   },
   {
-    slug: 'ayodhya-ram-mandir-travel-guide-2026',
-    title: 'Ayodhya Ram Mandir Travel Guide 2026: Everything You Need to Know',
+    slug: 'ayodhya-ram-mandir-travel-guide-',
+    title: 'Ayodhya Ram Mandir Travel Guide : Everything You Need to Know',
     excerpt: 'Stay updated with the latest Darshan timings, entry rules, and must-visit spots in the newly transformed city of Ayodhya.',
-    date: 'March 18, 2026',
+    date: 'March 18, ',
     author: 'Ayodhya Expert',
     image: '/images/destinations/ayodhya.webp',
     category: 'Spiritual News',
-    tags: ['Ram Mandir', 'Ayodhya', 'Guide', '2026'],
+    tags: ['Ram Mandir', 'Ayodhya', 'Guide', ''],
     relatedPackages: ['ayodhya-ram-janmabhoomi-tour-package-2n-3d', 'lucknow-ayodhya-tour-package-2n-3d'],
     content: `
-      <p>The Shri Ram Janmabhoomi Mandir has transformed <strong>Ayodhya</strong> into a global spiritual beacon. Planning a visit in 2026 requires an understanding of the new site layout and security protocols.</p>
+      <p>The Shri Ram Janmabhoomi Mandir has transformed <strong>Ayodhya</strong> into a global spiritual beacon. Planning a visit in  requires an understanding of the new site layout and security protocols.</p>
       
       <h3>Darshan Timings and Slots</h3>
       <p>General Darshan is open from 6:30 AM to 9:30 PM. We recommend reaching the entry point by 7:00 AM for the smoothest experience. Electronic items, including mobile phones, are strictly prohibited inside the main complex but secure lockers are provided.</p>

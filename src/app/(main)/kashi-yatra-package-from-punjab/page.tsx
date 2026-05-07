@@ -5,8 +5,8 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 import { buildSeo } from '@/lib/seo';
 
 export const metadata: Metadata = buildSeo({
-  title: 'Kashi Yatra Package from Punjab 2026 | Amritsar Ludhiana Chandigarh to Varanasi Ayodhya',
-  description: 'Premium Kashi Yatra Package from Punjab 2026 — Amritsar, Ludhiana, Chandigarh, Jalandhar to Varanasi & Ayodhya with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan and Ganga Aarti. Train + flight options, hotel + cab + sattvic meals. Best price guaranteed.',
+  title: 'Kashi Yatra Package from Punjab  | Amritsar Ludhiana Chandigarh to Varanasi Ayodhya',
+  description: 'Premium Kashi Yatra Package from Punjab  — Amritsar, Ludhiana, Chandigarh, Jalandhar to Varanasi & Ayodhya with VIP Ram Mandir darshan, Kashi Vishwanath Sugam Darshan and Ganga Aarti. Train + flight options, hotel + cab + sattvic meals. Best price guaranteed.',
   path: '/kashi-yatra-package-from-punjab',
   keywords: [
     'kashi yatra package from punjab',

@@ -8,7 +8,7 @@ export default function PilgrimageKeywordGuideContent() {
   return (
     <article className="keyword-guide-article">
       <header className="kg-header">
-        <p className="kg-eyebrow">Updated for 2026 · India spiritual tourism</p>
+        <p className="kg-eyebrow">Updated for  · India spiritual tourism</p>
         <h1>
           Banaras, Ayodhya &amp; Kashi Yatra — Complete Travel &amp; Hotel
           Planner
@@ -259,7 +259,7 @@ export default function PilgrimageKeywordGuideContent() {
       </section>
 
       <section aria-labelledby="longtail-heading">
-        <h2 id="longtail-heading">Long-tail itineraries travellers ask in 2026</h2>
+        <h2 id="longtail-heading">Long-tail itineraries travellers ask in </h2>
         <p>
           Intent-rich combinations — <strong>best Banaras tour package for family</strong>,{" "}
           <strong>affordable Ayodhya Ram Mandir package</strong>,{" "}

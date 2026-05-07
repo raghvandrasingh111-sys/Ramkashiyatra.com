@@ -6,12 +6,12 @@ import { blogs } from '@/data/blogs';
 import { buildSeo } from '@/lib/seo';
 
 export const metadata: Metadata = buildSeo({
-  title: 'Spiritual Travel Blog | Kashi, Ayodhya, Varanasi Tour Guides 2026',
-  description: 'Expert spiritual travel guides, Kashi Yatra tips, Ayodhya Ram Mandir Darshan timings, Varanasi Ganga Aarti schedule, Triveni Sangam Snan dates, Pind Daan information and 2026 itineraries from Ram Kashi Yatra — India\u2019s premium luxury pilgrimage agency.',
+  title: 'Spiritual Travel Blog | Kashi, Ayodhya, Varanasi Tour Guides ',
+  description: 'Expert spiritual travel guides, Kashi Yatra tips, Ayodhya Ram Mandir Darshan timings, Varanasi Ganga Aarti schedule, Triveni Sangam Snan dates, Pind Daan information and  itineraries from Ram Kashi Yatra — India\u2019s premium luxury pilgrimage agency.',
   path: '/blog',
   keywords: [
     'kashi yatra travel guide',
-    'ayodhya travel guide 2026',
+    'ayodhya travel guide ',
     'varanasi travel guide',
     'ram mandir darshan timings',
     'kashi vishwanath darshan timings',

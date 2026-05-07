@@ -205,7 +205,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="container bottom-inner">
-          <p>© 2026 Ram Kashi Yatra · Luxury Trip India · All Rights Reserved.</p>
+          <p>©  Ram Kashi Yatra · Luxury Trip India · All Rights Reserved.</p>
           <div className="bottom-links">
             <Link href="/privacy-policy">Privacy</Link>
             <span>·</span>

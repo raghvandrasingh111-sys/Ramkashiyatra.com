@@ -5,13 +5,13 @@ import Breadcrumbs from '@/app/components/Breadcrumbs';
 import { buildSeo } from '@/lib/seo';
 
 export const metadata: Metadata = buildSeo({
-  title: 'Varanasi Tour Package 2026 | 3 Days Kashi Itinerary · Best Price',
-  description: 'Book Varanasi tour package 2026 from ₹5,975 onwards. 2N/3D and 3N/4D Kashi itineraries with Kashi Vishwanath VIP darshan, evening Ganga Aarti, Sarnath, Manikarnika & Dashashwamedh Ghats. Premium hotel + AC cab + breakfast + spiritual guide. Best price guaranteed.',
+  title: 'Varanasi Tour Package  | 3 Days Kashi Itinerary · Best Price',
+  description: 'Book Varanasi tour package  from ₹5,975 onwards. 2N/3D and 3N/4D Kashi itineraries with Kashi Vishwanath VIP darshan, evening Ganga Aarti, Sarnath, Manikarnika & Dashashwamedh Ghats. Premium hotel + AC cab + breakfast + spiritual guide. Best price guaranteed.',
   path: '/varanasi-tour-package',
   keywords: [
     'varanasi tour package',
     'varanasi tour package cost',
-    'varanasi tour package 2026',
+    'varanasi tour package ',
     'varanasi 3 days itinerary',
     'kashi tour package price',
     'kashi trip cost per person',
@@ -42,7 +42,7 @@ export default function VaranasiTourLanding() {
         color: 'white',
         textAlign: 'center'
       }}>
-        <h1 style={{ fontSize: '3.5rem', marginBottom: '10px' }}>Varanasi Tour Package Cost 2026</h1>
+        <h1 style={{ fontSize: '3.5rem', marginBottom: '10px' }}>Varanasi Tour Package Cost </h1>
         <p style={{ fontSize: '1.2rem' }}>Discover the spiritual heart of India along the sacred Ganges</p>
       </section>
 
