@@ -53,10 +53,12 @@ const BlogIndex = () => {
                 transition: 'transform 0.3s ease'
               }}>
                 <div style={{ position: 'relative', height: '240px' }}>
-                  <img
+                  <Image
                     src={post.image}
                     alt={post.title}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 350px"
+                    style={{ objectFit: 'cover' }}
                   />
                   <div style={{
                     position: 'absolute',

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 /**
  * Premium hotel partner strip — official logos sourced from
@@ -44,11 +45,15 @@ export default function HotelCarousel() {
           <div className="track">
             {[...visible, ...visible].map((p, index) => (
               <div key={`${p.file}-${index}`} className="logo-card" title={p.name}>
-                <img
+                <Image
                   src={wiki(p.file)}
                   alt={`${p.name} official logo`}
+                  width={140}
+                  height={56}
+                  sizes="140px"
                   loading="lazy"
-                  decoding="async"
+                  className="partner-logo"
+                  unoptimized
                   onError={() =>
                     setFailed((prev) => ({ ...prev, [p.file]: true }))
                   }
@@ -123,7 +128,7 @@ export default function HotelCarousel() {
           box-shadow: var(--shadow-md);
           border-color: rgba(var(--brand-saffron-rgb), 0.4);
         }
-        .logo-card img {
+        .partner-logo {
           max-width: 100%;
           max-height: 56px;
           width: auto;
@@ -132,13 +137,13 @@ export default function HotelCarousel() {
           filter: grayscale(0.6) opacity(0.85);
           transition: filter 0.4s ease;
         }
-        .logo-card:hover img {
+        .logo-card:hover .partner-logo {
           filter: grayscale(0) opacity(1);
         }
         @media (max-width: 768px) {
           .track { gap: 28px; }
           .logo-card { width: 140px; height: 76px; padding: 12px 16px; }
-          .logo-card img { max-height: 44px; }
+          .partner-logo { max-height: 44px; }
         }
       `}</style>
     </section>

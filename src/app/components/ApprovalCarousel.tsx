@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from "next/image";
 
 const approvalLogos = [
   { src: "/images/ministry-of-tourism.png", alt: "Ministry of Tourism India" },
@@ -20,7 +21,15 @@ export default function ApprovalCarousel() {
             {/* Double the logos for seamless loop */}
             {[...approvalLogos, ...approvalLogos].map((logo, index) => (
               <div key={index} className="carousel-item">
-                <img src={logo.src} alt={logo.alt} title={logo.alt} />
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  title={logo.alt}
+                  width={220}
+                  height={110}
+                  sizes="(max-width: 768px) 160px, 220px"
+                  className="approval-logo"
+                />
               </div>
             ))}
           </div>
@@ -66,7 +75,7 @@ export default function ApprovalCarousel() {
           box-shadow: 0 10px 30px rgba(0,0,0,0.06);
           transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
-        .carousel-item img {
+        .approval-logo {
           max-width: 100%;
           height: auto;
           max-height: 110px;
@@ -81,7 +90,7 @@ export default function ApprovalCarousel() {
           transform: translateY(-10px) scale(1.05);
           box-shadow: 0 20px 40px rgba(0,0,0,0.12);
         }
-        .carousel-item:hover img {
+        .carousel-item:hover .approval-logo {
           filter: grayscale(0);
           opacity: 1;
         }
@@ -97,7 +106,7 @@ export default function ApprovalCarousel() {
             width: 220px;
             height: 120px;
           }
-          .carousel-item img {
+          .approval-logo {
             max-height: 80px;
           }
         }

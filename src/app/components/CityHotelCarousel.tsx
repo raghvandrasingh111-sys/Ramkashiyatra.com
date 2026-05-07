@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 interface Hotel {
   name: string;
@@ -88,12 +89,12 @@ export default function CityHotelCarousel({
               >
                 <div className="card-inner">
                   <div className="card-img-wrap">
-                    {/* Plain img tolerates Wikipedia FilePath redirects */}
-                    <img
+                    <Image
                       src={hotel.image}
                       alt={hotel.name}
-                      loading="lazy"
-                      decoding="async"
+                      fill
+                      sizes="(max-width: 640px) 88vw, (max-width: 1024px) 45vw, 25vw"
+                      className="hotel-image"
                       onError={(e) => {
                         (e.currentTarget as HTMLImageElement).src =
                           "/images/destinations/varanasi.webp";
@@ -203,13 +204,13 @@ export default function CityHotelCarousel({
           aspect-ratio: 4 / 3;
           overflow: hidden;
         }
-        .card-img-wrap img {
+        .hotel-image {
           width: 100%;
           height: 100%;
           object-fit: cover;
           transition: transform 0.7s var(--ease-out-expo);
         }
-        .card-inner:hover .card-img-wrap img { transform: scale(1.08); }
+        .card-inner:hover .hotel-image { transform: scale(1.08); }
         .card-overlay {
           position: absolute;
           inset: 0;

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -130,10 +131,13 @@ export default function Testimonials() {
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <img
+              <Image
                 src={testimonials[activeIndex].image}
                 alt={testimonials[activeIndex].name}
-                style={{ width: '80px', height: '80px', borderRadius: '50%', objectFit: 'cover', marginBottom: '15px', border: '3px solid #fff', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}
+                width={80}
+                height={80}
+                sizes="80px"
+                style={{ borderRadius: '50%', objectFit: 'cover', marginBottom: '15px', border: '3px solid #fff', boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}
               />
               <h4 style={{ margin: 0, fontSize: '1.2rem' }}>{testimonials[activeIndex].name}</h4>
               <span style={{ color: '#888', fontSize: '0.9rem' }}>{testimonials[activeIndex].location}</span>

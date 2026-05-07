@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins, Plus_Jakarta_Sans, Dancing_Script } from "next/font/google";
+import Script from "next/script";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./globals.css";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
@@ -36,6 +38,7 @@ export const viewport: Viewport = {
 
 const SITE_URL = "https://www.ramkashiyatra.com";
 const BRAND = "Ram Kashi Yatra";
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -373,13 +376,6 @@ export default function RootLayout({
       className={`${poppins.variable} ${plusJakartaSans.variable} ${dancingScript.variable}`}
     >
       <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-        />
         <link rel="preconnect" href="https://upload.wikimedia.org" />
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://commons.wikimedia.org" />
@@ -389,6 +385,20 @@ export default function RootLayout({
         <meta name="ICBM" content="25.3331, 82.9772" />
       </head>
       <body>
+        {GA_MEASUREMENT_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga-init" strategy="afterInteractive">{`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}');
+            `}</Script>
+          </>
+        ) : null}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

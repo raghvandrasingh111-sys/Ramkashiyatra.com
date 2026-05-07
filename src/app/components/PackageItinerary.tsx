@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Image from "next/image";
 import { ItineraryDay } from '@/data/packages';
 
 interface ItineraryProps {
@@ -33,7 +34,14 @@ export default function PackageItinerary({ itinerary }: ItineraryProps) {
               <div className="itinerary-inner">
                 {day.image && (
                   <div className="day-image-container">
-                    <img src={day.image} alt={day.imageAlt || day.title} />
+                    <Image
+                      src={day.image}
+                      alt={day.imageAlt || day.title}
+                      width={1200}
+                      height={500}
+                      sizes="(max-width: 768px) 100vw, 760px"
+                      className="day-image"
+                    />
                   </div>
                 )}
                 <ul>
@@ -142,7 +150,7 @@ export default function PackageItinerary({ itinerary }: ItineraryProps) {
           overflow: hidden;
           box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        .day-image-container img {
+        .day-image {
           width: 100%;
           height: 250px;
           object-fit: cover;
@@ -152,7 +160,7 @@ export default function PackageItinerary({ itinerary }: ItineraryProps) {
           .itinerary-inner {
             padding: 0 20px 20px 20px;
           }
-           .day-image-container img {
+           .day-image {
             height: 200px;
           }
         }
