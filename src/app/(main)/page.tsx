@@ -2021,13 +2021,60 @@ export default function Home() {
           .intro-visual { height: 460px; }
           .hero-trust { gap: 18px; }
           .trust-divider { display: none; }
+          .section-header { margin-bottom: 44px; }
+          .stats-band { padding: 64px 5%; }
+          .cta-band { padding: 76px 5%; }
         }
         @media (max-width: 720px) {
-          .hero { min-height: 92vh; padding-top: 110px; }
-          .hero-dots { bottom: 60px; }
+          .hero { min-height: 90vh; padding: 104px 5% 72px; }
+          .hero-content { max-width: 100%; }
+          .hero-sub {
+            margin-bottom: 24px;
+            font-size: 0.98rem;
+            line-height: 1.6;
+          }
+          .hero-dots { bottom: 34px; }
           .hero-trust { display: none; }
+
+          .hero-actions,
+          .intro-actions,
+          .cta-actions,
+          .seo-cta {
+            width: 100%;
+            flex-direction: column;
+            align-items: stretch;
+          }
+          .hero-actions :global(a),
+          .intro-actions :global(a),
+          .cta-actions :global(a),
+          .seo-cta :global(a) {
+            width: 100%;
+            min-height: 48px;
+            justify-content: center;
+          }
+
+          .quote-band { padding: 56px 5%; }
+          .section-header h2 { margin-bottom: 10px; }
+          .section-sub { font-size: 0.98rem; }
+          .packages-grid { grid-template-columns: 1fr; gap: 22px; }
+
           .stat-number { font-size: 2.4rem; }
           .destination-card { aspect-ratio: 4 / 4.5; min-height: 320px; }
+          .destination-content { padding: 24px 18px; }
+        }
+        @media (max-width: 560px) {
+          .hero { min-height: 86vh; padding-top: 96px; }
+          .hero-title { letter-spacing: 0.1px; }
+          .hero-dots button { width: 30px; }
+          .intro-visual { height: 390px; }
+          .intro-stats {
+            gap: 14px;
+            padding: 14px 16px;
+          }
+          .intro-stat strong { font-size: 1.3rem; }
+          .stats-grid { gap: 18px; }
+          .service-card { padding: 26px 20px; }
+          .destination-card { min-height: 292px; }
         }
       `}</style>
     </main>
