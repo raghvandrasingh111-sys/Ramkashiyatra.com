@@ -26,14 +26,35 @@ export default function TourPackages() {
 
   const filtered = useMemo(() => {
     return allPackages.filter((p) => {
+      const isMpPackage = [
+        "malwa-bhopal-heritage-yatra-6d",
+        "grand-madhya-pradesh-heritage-tour-7d",
+        "quick-ujjain-omkareshwar-indore-yatra-3d",
+        "wild-satpura-khajuraho-heritage-trail-9d",
+        "forts-temples-bundelkhand-gwalior-orchha-khajuraho-6d",
+        "madhya-pradesh-tiger-safari-special-6d",
+        "pachmarhi-wildlife-nature-special-5d",
+        "kanha-wildlife-jabalpur-tour-5d",
+        "madhya-pradesh-pilgrimage-ujjain-omkareshwar-maheshwar-5d",
+        "heart-of-heritage-gwalior-jhansi-orchha-4d",
+        "wild-tiger-trail-bandhavgarh-panna-khajuraho-6d"
+      ].includes(p.slug);
+
       const matchSearch =
         !search ||
         p.title.toLowerCase().includes(search.toLowerCase()) ||
-        p.location.toLowerCase().includes(search.toLowerCase());
+        p.location.toLowerCase().includes(search.toLowerCase()) ||
+        (search.toLowerCase() === "madhya pradesh" && isMpPackage) ||
+        (search.toLowerCase() === "mp" && isMpPackage);
+
       const matchFilter =
         activeFilter === "All" ||
-        p.location.toLowerCase().includes(activeFilter.toLowerCase()) ||
-        p.title.toLowerCase().includes(activeFilter.toLowerCase());
+        (activeFilter === "Madhya Pradesh" && isMpPackage) ||
+        (activeFilter !== "Madhya Pradesh" && (
+          p.location.toLowerCase().includes(activeFilter.toLowerCase()) ||
+          p.title.toLowerCase().includes(activeFilter.toLowerCase())
+        ));
+
       return matchSearch && matchFilter;
     });
   }, [allPackages, search, activeFilter]);
