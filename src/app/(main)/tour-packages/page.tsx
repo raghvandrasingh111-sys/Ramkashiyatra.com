@@ -5,7 +5,7 @@ import { packages } from "@/data/packages";
 import PackageCard from "@/app/components/PackageCard";
 import Image from "next/image";
 
-const filters = ["All", "Varanasi", "Ayodhya", "Prayagraj", "Lucknow", "Mathura"];
+const filters = ["All", "Varanasi", "Ayodhya", "Prayagraj", "Lucknow", "Mathura", "Madhya Pradesh"];
 
 export default function TourPackages() {
   const [activeFilter, setActiveFilter] = useState("All");

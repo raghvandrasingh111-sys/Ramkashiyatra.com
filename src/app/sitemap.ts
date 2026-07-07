@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     make("/ayodhya-tour-package", 0.95, "weekly"),
     make("/varanasi-tour-package", 0.95, "weekly"),
     make("/kashi-ayodhya-tour-package", 0.95, "weekly"),
+    make("/madhya-pradesh-tour-package", 0.95, "weekly"),
     make("/banaras-kashi-ayodhya-travel-guide", 0.92, "weekly"),
 
     /* From-city packages (programmatic SEO) */

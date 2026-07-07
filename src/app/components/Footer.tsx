@@ -86,6 +86,11 @@ export default function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/madhya-pradesh-tour-package">
+                Madhya Pradesh Packages
+              </Link>
+            </li>
+            <li>
               <Link href="/tour-packages" className="footer-cta">
                 View All Packages →
               </Link>

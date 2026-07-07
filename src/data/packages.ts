@@ -468,7 +468,267 @@ export const packages: TourPackage[] = [
       { day: 5, title: "Ayodhya Full Day Sightseeing", activities: ["Visit Ram Janmabhoomi, Kanak Bhawan, Hanuman Garhi, and Saryu River Aarti. Overnight stay at Ayodhya."], image: "https://images.unsplash.com/photo-1706169599121-4182eb12fbef?auto=format&fit=crop&q=80&w=1200" },
       { day: 6, title: "Ayodhya/Lucknow Departure", activities: ["Check out and drop at Ayodhya/Lucknow Airport or Railway station for departure."], image: "https://images.unsplash.com/photo-1541013445585-5df7ca741270?auto=format&fit=crop&q=80&w=1200" }
     ]
+  },
+  {
+    slug: "malwa-bhopal-heritage-yatra-6d",
+    name: "Malwa & Bhopal Heritage Yatra",
+    duration: "5 Nights / 6 Days",
+    location: "Ujjain - Mandu - Omkareshwar - Indore - Bhopal - Sanchi",
+    price: "14,500",
+    originalPrice: "19,500",
+    description: "Explore the heart of Madhya Pradesh with visits to Mahakaleshwar & Omkareshwar Jyotirlingas, Mandu ruins, Bhimbetka caves, and Sanchi Stupa.",
+    image: "/images/destinations/ujjain.png",
+    imageAlt: "Mahakaleshwar Jyotirlinga Temple Ujjain Madhya Pradesh",
+    images: [
+      "/images/destinations/ujjain.png",
+      "/images/destinations/madhya-pradesh.png",
+      "/images/destinations/gwalior.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Arrival at Indore – Ujjain", activities: ["Arrival at Indore airport/ railway station. Pick up the guest and proceed to Ujjain (City of Pilgrimage). On arrival, check in at the hotel and then leave to explore the beautiful Mahakal Lok Corridor. Overnight stay at Ujjain."], image: "/images/destinations/ujjain.png" },
+      { day: 2, title: "Ujjain – Mandu", activities: ["Early morning, go to take darshan at the Mahakaleshwar Temple (one of the 12 Jyotirlingas) and Harsiddhi Temple. Later, return back to the hotel for breakfast, check out, and proceed to Mandu. On arrival, check into the hotel & relax. Later, proceed for local sightseeing in Mandu. Visit Rani Roopmati Mahal, Jahaz Mahal, Jami Masjid, etc. Overnight stay in Mandu."], image: "/images/destinations/ujjain.png" },
+      { day: 3, title: "Mandu – Omkareshwar – Indore", activities: ["After breakfast, check out from the hotel and proceed to Omkareshwar. On arrival, take the darshan of Omkareshwar Temple (one of the 12 revered Jyotirlinga shrines of Shiva) and Mamleshwar Temple. Later, transfer to Indore for dinner and overnight stay."], image: "/images/destinations/omkareshwar.png" },
+      { day: 4, title: "Indore – Bhimbetka & Bhojpur – Bhopal", activities: ["After breakfast, check out from the hotel and proceed to Bhimbetka Rock shelters (UNESCO world heritage site, exhibiting the earliest traces of human life in India) and Bhojpur Shiva Temple (incomplete 11th-century architectural marvel commissioned by King Bhoja, known for its massive Shiva Lingam). Later, proceed to Bhopal for overnight stay."], image: "/images/destinations/madhya-pradesh.png" },
+      { day: 5, title: "Bhopal – Sanchi – Bhopal", activities: ["After breakfast, leave to visit Sanchi (UNESCO world heritage site, famous for its ancient Buddhist monuments, the Great Stupa, and Ashokan Pillar reflecting rich Maurya history). Checkout from the hotel and proceed to Bhopal via Sanchi. Later, return to Bhopal for overnight stay."], image: "/images/destinations/madhya-pradesh.png" },
+      { day: 6, title: "Bhopal – Drop", activities: ["After breakfast, leave to visit local sightseeing like Madhya Pradesh Tribal Museum and Bhopal Upper Lake (Bhojtaal). Later, proceed to the airport or railway station for your onward journey."], image: "/images/destinations/madhya-pradesh.png" }
+    ]
+  },
+  {
+    slug: "grand-madhya-pradesh-heritage-tour-7d",
+    name: "Grand Madhya Pradesh Heritage Tour",
+    duration: "6 Nights / 7 Days",
+    location: "Ujjain - Mandu - Omkareshwar - Indore - Bhopal - Sanchi - Khajuraho",
+    price: "18,900",
+    originalPrice: "24,500",
+    description: "A comprehensive yatra covering major Jyotirlingas, historical ruins, UNESCO caves and monuments, and the world-famous temples of Khajuraho.",
+    image: "/images/destinations/khajuraho.png",
+    imageAlt: "Khajuraho Group of Monuments Western Temples Madhya Pradesh",
+    images: [
+      "/images/destinations/khajuraho.png",
+      "/images/destinations/ujjain.png",
+      "/images/destinations/gwalior.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Arrival at Indore – Ujjain", activities: ["Arrival at Indore airport/ railway station. Pick up the guest and proceed to Ujjain (City of Pilgrimage). On arrival, check in at the hotel and relax. Later, go to take darshan at the Mahakaleshwar Temple (one of the 12 Jyotirlingas), followed by local sightseeing. Return back to the hotel for overnight stay. Meals: Dinner."], image: "/images/destinations/ujjain.png" },
+      { day: 2, title: "Ujjain – Mandu", activities: ["After breakfast, check out from the hotel and proceed to Mandu. On arrival, check into the hotel & relax. Later, proceed for local sightseeing in Mandu. Visit Rani Roopmati Mahal, Jahaz Mahal, Jami Masjid, etc. Overnight stay in Mandu. Meals: Breakfast + Lunch + Dinner."], image: "/images/destinations/ujjain.png" },
+      { day: 3, title: "Mandu – Omkareshwar – Indore", activities: ["After breakfast, check out from the hotel and proceed to Omkareshwar. On arrival, take the darshan of Omkareshwar Temple (one of the 12 revered Jyotirlinga shrines of Shiva) and local temples. Later, proceed to Indore for overnight stay. Meals: Breakfast + Lunch + Dinner."], image: "/images/destinations/omkareshwar.png" },
+      { day: 4, title: "Indore – Bhimbetka – Bhojpur – Bhopal", activities: ["Early morning after breakfast, check out from the hotel and proceed for Bhimbetka Rock shelter (UNESCO world heritage site) & Bhojpur Shiva Temple. Later, transfer to Bhopal. On arrival, check into the hotel and relax. Meals: Breakfast + Lunch + Dinner."], image: "/images/destinations/madhya-pradesh.png" },
+      { day: 5, title: "Bhopal – Sanchi – Khajuraho", activities: ["After breakfast, check out from the hotel and proceed to Sanchi (UNESCO world heritage site). Lunch at Sanchi, and then transfer to Khajuraho. Reach Khajuraho, dinner and overnight stay at the hotel. Meals: Breakfast + Lunch + Dinner."], image: "/images/destinations/madhya-pradesh.png" },
+      { day: 6, title: "Khajuraho Local Sightseeing", activities: ["Today after breakfast, proceed for the temple tour of the UNESCO World Heritage site - 'Khajuraho Group of Monuments' followed by local sightseeing. The temple complex is divided into Western and Eastern groups. Visit the Western group of temples. Return back to the hotel and relax. Evening enjoy the Sound & Light show (subject to operational). Overnight stay at Khajuraho. Meals: Breakfast + Lunch + Dinner."], image: "/images/destinations/khajuraho.png" },
+      { day: 7, title: "Khajuraho – Departure", activities: ["After breakfast, leave for shopping, check out and lunch at the hotel, and drop at Khajuraho Airport. Meals: Breakfast + Lunch."], image: "/images/destinations/khajuraho.png" }
+    ]
+  },
+  {
+    slug: "quick-ujjain-omkareshwar-indore-yatra-3d",
+    name: "Quick Jyotirlinga Darshan (Ujjain & Omkareshwar)",
+    duration: "2 Nights / 3 Days",
+    location: "Ujjain - Omkareshwar - Indore",
+    price: "7,500",
+    originalPrice: "9,990",
+    description: "Seek blessings at Mahakaleshwar & Omkareshwar, explore Indore's heritage, and savor street food at Sarafa Bazar on this quick 3-day spiritual escape.",
+    image: "/images/destinations/ujjain.png",
+    imageAlt: "Ujjain Mahakaleshwar Corridor Night View",
+    images: [
+      "/images/destinations/ujjain.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Arrival at Indore – Ujjain", activities: ["Arrival at Indore Airport/ Railway station. Pickup the guest and transfer to Ujjain. On arrival, check into the hotel and relax. Go to take darshan at the Mahakaleshwar Temple (one of the 12 Jyotirlingas) and local temples. In the evening, visit the beautiful Mahakal Lok corridor. Later, return back to the hotel. Overnight stay at Ujjain."], image: "/images/destinations/ujjain.png" },
+      { day: 2, title: "Ujjain – Omkareshwar – Indore", activities: ["After breakfast, proceed to Omkareshwar. On arrival, go to take the darshan of Omkareshwar Temple (one of the 12 revered Jyotirlinga shrines of Shiva) and local temples. Later, return back to Indore. In the evening, enjoy Sarafa Bazar. Return back to the hotel. Overnight stay at Indore. (Advised to start early today)."], image: "/images/destinations/omkareshwar.png" },
+      { day: 3, title: "Indore / Ujjain – Departure", activities: ["After breakfast, check out from the hotel and go for local sightseeing: Rajwada (Monday closed), Kaanch Mandir, Lal Bagh Palace, and the very famous Khajrana Ganesh Mandir. Or you can go for shopping. Later, you will drop at Ujjain railway station or Indore Airport/railway station."], image: "/images/destinations/madhya-pradesh.png" }
+    ]
+  },
+  {
+    slug: "wild-satpura-khajuraho-heritage-trail-9d",
+    name: "Wild Satpura & Khajuraho Heritage Trail",
+    duration: "8 Nights / 9 Days",
+    location: "Bhopal - Sanchi - Gyaraspur - Bhimbetka - Pachmarhi - Satpura - Khajuraho",
+    price: "26,500",
+    originalPrice: "34,900",
+    description: "A grand combination of heritage (Sanchi Stupas & Gyaraspur), hills (Pachmarhi), wildlife safari (Satpura Tiger Reserve), and iconic temple art at Khajuraho.",
+    image: "/images/destinations/jabalpur.png",
+    imageAlt: "Satpura National Park Wildlife Tiger Safari Madhya Pradesh",
+    images: [
+      "/images/destinations/jabalpur.png",
+      "/images/destinations/khajuraho.png",
+      "/images/destinations/pachmarhi.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Arrive Bhopal and Sightseeing", activities: ["Arrive at Bhopal Airport/Railway Station and check in to the hotel. After a restful halt, get ready for local sightseeing. Visit Gohar Mahal (a blend of Hindu and Mughal architecture), Shaukat Mahal (built as a royal wedding gift), Bharat Bhavan (multi-arts complex), the Mankind Museum showcasing India's cultural evolution, and the Tribal Museum highlighting tribal art and heritage. End your day with a serene evening at Upper Lake (Bhojtaal), adorned with a statue of Raja Bhoj."], image: "/images/destinations/madhya-pradesh.png" },
+      { day: 2, title: "Bhopal – Sanchi – Gyaraspur – Bhopal", activities: ["After breakfast, head to Sanchi to visit the iconic Sanchi Stupas (a UNESCO World Heritage Site commissioned by Emperor Ashoka in the 3rd century BCE) and wander the ancient Udayagiri Caves. Continue to Gyaraspur to explore its historical temples: the majestic Maladevi Temple, Hindola Torna with intricate Vishnu carvings, and Bajramath Temple with its unique triple shrine design. Return to Bhopal by evening. Tip: A guide is recommended for Sanchi. Guests can opt for an early morning heritage walk in Bhopal at an additional cost."], image: "/images/destinations/madhya-pradesh.png" },
+      { day: 3, title: "Bhopal – Bhimbetka – Pachmarhi", activities: ["After breakfast, depart for Pachmarhi. En route, visit Bhojpur Temple (an unfinished 11th-century marvel from the reign of King Bhoja, showcasing ancient temple construction techniques) and explore Bhimbetka (UNESCO World Heritage Site, home to over 750 rock shelters with prehistoric cave paintings dating back 10,000 years depicting Stone Age life). Arrive in Pachmarhi, check in to the hotel, and relax. Overnight stay in Pachmarhi."], image: "/images/destinations/pachmarhi.png" },
+      { day: 4, title: "Pachmarhi Sightseeing by Gypsy", activities: ["After breakfast, enjoy a gypsy tour of Pachmarhi's top attractions. Visit the Bison Museum, showcasing local wildlife through life-sized sculptures. Explore the ancient uphill Pandava Caves, believed to be carved over 1,000 years ago. Discover the lovely Bee Fall, named for the buzzing sound it makes, and Reechgarh, a large natural cave. Finally, head to Dhoopgarh, the highest point in the Satpura Range, perfect for a spectacular sunset view of your dreams. Tip: Book a local gypsy in advance to avoid walking. Note: Second half of sightseeing is closed on Wednesdays for maintenance."], image: "/images/destinations/pachmarhi.png" },
+      { day: 5, title: "Pachmarhi – Satpura", activities: ["After Breakfast, proceed to Satpura (approx. 5 to 6 hrs drive). Check in to the Hotel & relax. Overnight stay at Satpura Hotel."], image: "/images/destinations/jabalpur.png" },
+      { day: 6, title: "Satpura Safari", activities: ["Enjoy early morning and afternoon safaris in Satpura National Park, known for its rich biodiversity and stunning views. The park is home to leopards, tigers, bears, wild boar, and a variety of birds including hornbills and peafowl. The lush flora features sal, teak, and medicinal plants. Note: Afternoon safaris are not conducted on Wednesdays."], image: "/images/destinations/jabalpur.png" },
+      { day: 7, title: "Satpura – Khajuraho", activities: ["After an early breakfast, leave for Khajuraho (approx. 380 kms). Reach Khajuraho, check into the hotel, and in the evening attend the Sound and Light show. Overnight at Hotel."], image: "/images/destinations/khajuraho.png" },
+      { day: 8, title: "Khajuraho Sightseeing", activities: ["Morning: Visit the Western Group of Temples, the most famous and largest group, including the Kandariya Mahadeva, Lakshmana, and Devi Jagadambi Temples. Afternoon: Explore the less crowded Eastern Group of Temples, which features both Hindu and Jain temples like the Brahma and Parsvanath temples, showcasing architectural diversity. Overnight stay in Khajuraho."], image: "/images/destinations/khajuraho.png" },
+      { day: 9, title: "Departure", activities: ["Depending on your flight schedule, you can visit the local museum of Tribal and Folk Art or do some souvenir shopping in the market. Proceed to Khajuraho Civil Airport (HJR) for your onward journey."], image: "/images/destinations/khajuraho.png" }
+    ]
+  },
+  {
+    slug: "forts-temples-bundelkhand-gwalior-orchha-khajuraho-6d",
+    name: "Forts & Temples of Bundelkhand",
+    duration: "5 Nights / 6 Days",
+    location: "Gwalior - Orchha - Khajuraho",
+    price: "13,990",
+    originalPrice: "18,500",
+    description: "Explore the royal forts of Gwalior, the historic riverside temples of Orchha, and the legendary Khajuraho temples in Bundelkhand.",
+    image: "/images/destinations/gwalior.png",
+    imageAlt: "Gwalior Fort Madhya Pradesh Bundelkhand",
+    images: [
+      "/images/destinations/gwalior.png",
+      "/images/destinations/khajuraho.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Arrival in Gwalior", activities: ["Arrive at Gwalior Airport/Railway Station and transfer to hotel. Explore Gwalior Fort (Man Mandir Palace, Sas Bahu Temple, Teli Ka Mandir), Jai Vilas Palace & Museum, Gujari Mahal, and Tansen Tomb. In the evening, enjoy the Light and Sound Show at Gwalior Fort. Overnight stay in Gwalior."], image: "/images/destinations/gwalior.png" },
+      { day: 2, title: "Gwalior to Orchha", activities: ["Travel from Gwalior to Orchha (approx. 120 km). En route, you may opt to visit Pitambara Peeth at Datia or Jhansi Fort. Check into hotel at Orchha and spend a serene evening by the Betwa River banks. Overnight stay in Orchha."], image: "/images/destinations/gwalior.png" },
+      { day: 3, title: "Orchha Local Sightseeing", activities: ["Explore Orchha Fort Complex (Jahangir Mahal, Raj Mahal, Rai Parveen Mahal). Visit the towering Chaturbhuj Temple, Ram Raja Temple (where Rama is worshipped as a King), and the Royal Chhatris (cenotaphs) along the river. Overnight stay in Orchha."], image: "/images/destinations/gwalior.png" },
+      { day: 4, title: "Orchha to Khajuraho", activities: ["Depart for Khajuraho (approx. 170 km, 3.5 hrs). Check into your hotel and spend the afternoon at leisure or exploring the local markets. Overnight stay in Khajuraho."], image: "/images/destinations/khajuraho.png" },
+      { day: 5, title: "Khajuraho Temple Tour", activities: ["Dedicate the day to the UNESCO World Heritage Site of Khajuraho. Tour the Western Group of Temples (Kandariya Mahadeva, Lakshmana, Devi Jagadamba). In the evening, enjoy the Sound and Light show. Overnight stay in Khajuraho."], image: "/images/destinations/khajuraho.png" },
+      { day: 6, title: "Departure from Khajuraho", activities: ["After breakfast, visit the local museum of Tribal and Folk Art, do some souvenir shopping, and transfer to Khajuraho Civil Airport or Railway Station for departure."], image: "/images/destinations/khajuraho.png" }
+    ]
+  },
+  {
+    slug: "madhya-pradesh-tiger-safari-special-6d",
+    name: "Madhya Pradesh Tiger Safari Special",
+    duration: "5 Nights / 6 Days",
+    location: "Jabalpur - Bandhavgarh - Kanha",
+    price: "19,500",
+    originalPrice: "25,000",
+    description: "An unforgettable wildlife yatra to Kanha and Bandhavgarh National Parks, starting from Jabalpur with Bhedaghat Marble Rocks excursion.",
+    image: "/images/destinations/jabalpur.png",
+    imageAlt: "Bengal Tiger in Wildlife Sanctuary Madhya Pradesh",
+    images: [
+      "/images/destinations/jabalpur.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Jabalpur Arrival & Transfer to Bandhavgarh", activities: ["Pickup from Jabalpur Airport/Railway Station and proceed to Bandhavgarh National Park (approx. 190 km, 4 hours drive). Check into your resort and enjoy a peaceful evening. Overnight stay at Bandhavgarh."], image: "/images/destinations/jabalpur.png" },
+      { day: 2, title: "Bandhavgarh National Park Jungle Safari", activities: ["Embark on early morning and afternoon jungle safaris by open Gypsy to spot Royal Bengal Tigers, leopards, sambar deer, and diverse bird species. Enjoy the tranquil wilderness. Overnight stay at Bandhavgarh."], image: "/images/destinations/jabalpur.png" },
+      { day: 3, title: "Bandhavgarh to Kanha National Park", activities: ["After breakfast, check out from the resort and drive to Kanha National Park (approx. 240 km, 5.5 hours drive), famous as the setting for Rudyard Kipling's Jungle Book. Arrive and check into your wildlife lodge. Relax for the evening. Overnight stay at Kanha."], image: "/images/destinations/jabalpur.png" },
+      { day: 4, title: "Kanha National Park Jungle Safari", activities: ["Full day of wildlife exploration. Morning and evening jungle safaris in open Gypsies to spot leopards, wild dogs, gaurs, and the rare Barasingha (swamp deer). Overnight stay at Kanha."], image: "/images/destinations/jabalpur.png" },
+      { day: 5, title: "Kanha to Jabalpur – Bhedaghat Excursion", activities: ["Check out after breakfast and drive to Jabalpur. On arrival, visit Bhedaghat (20 km from Jabalpur) to see the soaring Marble Rocks canyon along the Narmada River and the magnificent Dhuandhar Falls. Take a scenic boat ride. Overnight stay in Jabalpur."], image: "/images/destinations/jabalpur.png" },
+      { day: 6, title: "Jabalpur Departure", activities: ["After breakfast, checkout from the hotel and transfer to Jabalpur Airport or Railway Station for your onward journey back home."], image: "/images/destinations/jabalpur.png" }
+    ]
+  },
+  {
+    slug: "pachmarhi-wildlife-nature-special-5d",
+    name: "Pachmarhi Wildlife & Nature Special",
+    duration: "4 Nights / 5 Days",
+    location: "Pachmarhi - Satpura Madhai",
+    price: "12,900",
+    originalPrice: "16,500",
+    description: "Explore the scenic viewpoints and cascading waterfalls of Pachmarhi hill station, combined with a peaceful wildlife retreat in Satpura.",
+    image: "/images/destinations/pachmarhi.png",
+    imageAlt: "Bee Falls Waterfall Pachmarhi Madhya Pradesh",
+    images: [
+      "/images/destinations/pachmarhi.png",
+      "/images/destinations/jabalpur.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Pipariya / Bhopal to Pachmarhi", activities: ["Arrive at Pipariya Railway station / Bhopal Airport, and proceed to Pachmarhi (the queen of Satpura). Check into your hotel and enjoy the sunset at Dhoopgarh, the highest point in central India. Overnight stay in Pachmarhi."], image: "/images/destinations/pachmarhi.png" },
+      { day: 2, title: "Pachmarhi Local Sightseeing", activities: ["After breakfast, enjoy a full day of sightseeing in Pachmarhi. Visit the ancient uphill Pandava Caves, explore the Bison Museum, discover the cascading Bee Fall, and wander Reechgarh natural caves. Overnight stay in Pachmarhi."], image: "/images/destinations/pachmarhi.png" },
+      { day: 3, title: "Jata Shankar & Scenic Canyons", activities: ["Visit the Jata Shankar Cave Temple, dedicated to Lord Shiva and tucked inside a natural limestone cave. Later, visit Handi Khoh (a deep, forested ravine) and explore the scenic trails leading to Duchess Fall. Overnight stay in Pachmarhi."], image: "/images/destinations/pachmarhi.png" },
+      { day: 4, title: "Pachmarhi to Satpura Tiger Reserve (Madhai)", activities: ["Check out and drive to Madhai, the entry gateway for Satpura Tiger Reserve. Check into your resort. Spend a serene afternoon enjoying a boat ride on the Denwa River or a nature walk in the buffer area. Overnight stay in Madhai."], image: "/images/destinations/jabalpur.png" },
+      { day: 5, title: "Morning Safari & Departure", activities: ["Embark on an early morning jungle safari to spot leopards, slot bears, and wild dogs. Return for checkout and transfer to Pipariya Railway Station or Bhopal Airport for departure."], image: "/images/destinations/jabalpur.png" }
+    ]
+  },
+  {
+    slug: "kanha-wildlife-jabalpur-tour-5d",
+    name: "Kanhaji Wildlife & Jabalpur Tour",
+    duration: "4 Nights / 5 Days",
+    location: "Jabalpur - Kanha - Bandhavgarh",
+    price: "17,800",
+    originalPrice: "23,000",
+    description: "Witness the majestic Royal Bengal Tiger at Kanha National Park and explore the breathtaking Marble Rocks of Bhedaghat in Jabalpur.",
+    image: "/images/destinations/jabalpur.png",
+    imageAlt: "Marble Rocks Bhedaghat Gorge Jabalpur Madhya Pradesh",
+    images: [
+      "/images/destinations/jabalpur.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Arrive Jabalpur & Bhedaghat", activities: ["Arrive at Jabalpur and transfer to Bhedaghat. Explore the breathtaking Marble Rocks canyon on Narmada River, witness Dhuandhar Falls, and visit the historic Chausath Yogini Temple. Overnight stay at Jabalpur."], image: "/images/destinations/jabalpur.png" },
+      { day: 2, title: "Jabalpur to Kanha National Park", activities: ["Checkout and drive to Kanha National Park (approx. 160 km, 4 hrs). Check into your safari lodge. Spend the evening enjoying nature walks or local tribal folk dances. Overnight stay at Kanha."], image: "/images/destinations/jabalpur.png" },
+      { day: 3, title: "Kanha Jungle Safaris", activities: ["Take morning and afternoon open-Gypsy safaris in Kanha Tiger Reserve to spot Royal Bengal Tigers, leopards, slot bears, and the rare hardground Barasingha. Overnight stay at Kanha."], image: "/images/destinations/jabalpur.png" },
+      { day: 4, title: "Kanha to Bandhavgarh Tiger Reserve", activities: ["After breakfast, check out and drive to Bandhavgarh National Park (approx. 220 km, 5.5 hrs). Check into your lodge. Spend a relaxed evening in the wilderness. Overnight stay at Bandhavgarh."], image: "/images/destinations/jabalpur.png" },
+      { day: 5, title: "Bandhavgarh Safari & Jabalpur Drop", activities: ["Enjoy a morning safari at Bandhavgarh to spot tigers and wildlife. Return to the lodge for check-out and transfer to Jabalpur Airport/Railway Station for departure."], image: "/images/destinations/jabalpur.png" }
+    ]
+  },
+  {
+    slug: "madhya-pradesh-pilgrimage-ujjain-omkareshwar-maheshwar-5d",
+    name: "Madhya Pradesh Pilgrimage Tour",
+    duration: "4 Nights / 5 Days",
+    location: "Ujjain - Omkareshwar - Maheshwar - Indore",
+    price: "11,500",
+    originalPrice: "15,500",
+    description: "Embark on a divine circuit covering Ujjain Mahakal Lok, Omkareshwar Jyotirlinga, the heritage Ghats of Maheshwar, and Indore.",
+    image: "/images/destinations/ujjain.png",
+    imageAlt: "Mahakaleshwar Temple Darshan Ujjain",
+    images: [
+      "/images/destinations/ujjain.png",
+      "/images/destinations/omkareshwar.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Indore to Ujjain Arrival", activities: ["Pickup from Indore Airport/Railway Station and transfer to Ujjain. Check into your hotel. Visit the holy Mahakaleshwar Temple (one of the 12 Jyotirlingas) and the newly built Mahakal Lok Corridor. Overnight stay at Ujjain."], image: "/images/destinations/ujjain.png" },
+      { day: 2, title: "Ujjain Sightseeing to Indore", activities: ["Explore local Ujjain temples: Harsiddhi Temple, Kal Bhairav, and Mangalnath. In the afternoon, transfer to Indore. Evening visit to the famous Sarafa Bazar street food market. Overnight stay at Indore."], image: "/images/destinations/ujjain.png" },
+      { day: 3, title: "Indore to Omkareshwar", activities: ["After breakfast, proceed to Omkareshwar. Check into your hotel. Take a holy boat ride on the Narmada River and attend Darshan at the Omkareshwar and Mamleshwar Jyotirlinga temples. Overnight stay at Omkareshwar."], image: "/images/destinations/omkareshwar.png" },
+      { day: 4, title: "Omkareshwar to Maheshwar", activities: ["Proceed to the heritage town of Maheshwar. Explore the magnificent Ahilya Fort, walk along the Narmada river ghats, and see the traditional Maheshwari handloom weavers at work. Overnight stay at Maheshwar."], image: "/images/destinations/omkareshwar.png" },
+      { day: 5, title: "Indore Departure Drop", activities: ["Check out after breakfast and drive back to Indore. Get assisted for transfer to Indore Airport or Railway Station for your onward journey."], image: "/images/destinations/ujjain.png" }
+    ]
+  },
+  {
+    slug: "heart-of-heritage-gwalior-jhansi-orchha-4d",
+    name: "Heart of Heritage (Gwalior, Jhansi & Orchha)",
+    duration: "3 Nights / 4 Days",
+    location: "Gwalior - Jhansi - Orchha",
+    price: "9,990",
+    originalPrice: "12,990",
+    description: "Relive the legendary tales of Bundelkhand by exploring Gwalior Fort, Rani Jhansi Fort, and the exquisite temples of Orchha by the Betwa River.",
+    image: "/images/destinations/gwalior.png",
+    imageAlt: "Jahangir Mahal Orchha Fort Madhya Pradesh",
+    images: [
+      "/images/destinations/gwalior.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Arrive Gwalior & Sightseeing", activities: ["Pickup on arrival and transfer to hotel. Explore the majestic Gwalior Fort (Sas Bahu Temple, Teli Ka Mandir), the grand Jai Vilas Palace Museum, and the historic Tansen Tomb. Overnight stay at Gwalior."], image: "/images/destinations/gwalior.png" },
+      { day: 2, title: "Gwalior to Jhansi & Orchha", activities: ["Checkout and drive to Jhansi to visit the Jhansi Fort of Rani Laxmibai. Continue to Orchha, check into the hotel, and spend a serene evening by the Betwa River. Overnight stay at Orchha."], image: "/images/destinations/gwalior.png" },
+      { day: 3, title: "Orchha Local Sightseeing", activities: ["Explore the Orchha Fort Complex containing Jahangir Mahal, Raj Mahal, and Rai Parveen Mahal. Later, visit the towering Chaturbhuj Temple and the Ram Raja Temple. Overnight stay at Orchha."], image: "/images/destinations/gwalior.png" },
+      { day: 4, title: "Orchha to Gwalior / Jhansi Drop", activities: ["Check out after breakfast. Drive to Gwalior Airport or Jhansi Railway Station for your departure back home."], image: "/images/destinations/gwalior.png" }
+    ]
+  },
+  {
+    slug: "wild-tiger-trail-bandhavgarh-panna-khajuraho-6d",
+    name: "Wild Tiger Trail & Khajuraho Heritage",
+    duration: "5 Nights / 6 Days",
+    location: "Bandhavgarh - Panna - Khajuraho",
+    price: "19,900",
+    originalPrice: "26,500",
+    description: "An amazing trip combining the dense tiger jungles of Bandhavgarh, Panna National Park safaris, and the erotic temple art of Khajuraho.",
+    image: "/images/destinations/khajuraho.png",
+    imageAlt: "Western Group of Temples Khajuraho",
+    images: [
+      "/images/destinations/khajuraho.png",
+      "/images/destinations/jabalpur.png"
+    ],
+    inclusions: ["Arrival/Departure Assistance", "Hotel Accommodation (Breakfast)", "Private AC Vehicle", "Toll, Parking, Driver Allowance"],
+    itinerary: [
+      { day: 1, title: "Jabalpur to Bandhavgarh Tiger Reserve", activities: ["Arrive at Jabalpur Airport/Railway Station and transfer to Bandhavgarh National Park. Check into your resort and enjoy a relaxing evening. Overnight stay at Bandhavgarh."], image: "/images/destinations/jabalpur.png" },
+      { day: 2, title: "Bandhavgarh Jungle Safaris", activities: ["Embark on morning and afternoon open-Gypsy safaris in the reserve to spot tigers, leopards, and rich birdlife. Explore the pristine forest. Overnight stay at Bandhavgarh."], image: "/images/destinations/jabalpur.png" },
+      { day: 3, title: "Bandhavgarh to Panna Tiger Reserve", activities: ["Checkout and drive to Panna Tiger Reserve (approx. 200 km, 4.5 hrs). Check into your wildlife lodge. Relax for the evening. Overnight stay at Panna."], image: "/images/destinations/jabalpur.png" },
+      { day: 4, title: "Panna Safari to Khajuraho", activities: ["Enjoy a morning safari inside Panna National Park. Later, check out and drive to Khajuraho (approx. 45 km). Check in and attend the evening Sound & Light show. Overnight stay at Khajuraho."], image: "/images/destinations/khajuraho.png" },
+      { day: 5, title: "Khajuraho Temple Tour", activities: ["Visit the UNESCO World Heritage Western Group of Temples (Kandariya Mahadeva, Lakshmana, Devi Jagadamba). Later, explore the Eastern Group. Overnight stay at Khajuraho."], image: "/images/destinations/khajuraho.png" },
+      { day: 6, title: "Departure from Khajuraho", activities: ["Check out after breakfast. Savor lunch at the hotel, visit the local museum, and transfer to Khajuraho Civil Airport or Railway Station for departure."], image: "/images/destinations/khajuraho.png" }
+    ]
   }
+
 ];
 
 export const CHILD_POLICY = [
