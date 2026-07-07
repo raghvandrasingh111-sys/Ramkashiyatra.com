@@ -31,7 +31,7 @@ export default function ScrollToTop() {
       <style jsx>{`
         .scroll-to-top-btn {
           position: fixed;
-          bottom: 110px;
+          bottom: 270px;
           right: 30px;
           z-index: 999;
           width: 48px;
@@ -62,7 +62,7 @@ export default function ScrollToTop() {
         }
         @media (max-width: 768px) {
           .scroll-to-top-btn {
-            bottom: 100px;
+            bottom: 260px;
             right: 20px;
             width: 42px;
             height: 42px;

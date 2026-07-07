@@ -108,6 +108,8 @@ export default function PackageItinerary({ itinerary }: ItineraryProps) {
           font-size: 1.1rem;
           font-weight: 600;
           color: #2B3036;
+          word-break: break-word;
+          overflow-wrap: break-word;
         }
         .icon {
           font-size: 1.5rem;
@@ -157,10 +159,14 @@ export default function PackageItinerary({ itinerary }: ItineraryProps) {
           display: block;
         }
         @media (max-width: 768px) {
-          .itinerary-inner {
-            padding: 0 20px 20px 20px;
+          .itinerary-header {
+            padding: 14px 16px;
+            gap: 10px;
           }
-           .day-image {
+          .itinerary-inner {
+            padding: 0 16px 16px 16px;
+          }
+          .day-image {
             height: 200px;
           }
         }

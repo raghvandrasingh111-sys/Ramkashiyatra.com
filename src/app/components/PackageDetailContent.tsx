@@ -281,6 +281,9 @@ export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
           gap: 40px;
           margin-top: 8px;
         }
+        .main-content {
+          min-width: 0;
+        }
 
         .content-block {
           margin-bottom: 50px;
