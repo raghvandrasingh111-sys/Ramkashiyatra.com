@@ -274,7 +274,7 @@ export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
           line-height: 1.7;
         }
 
-        .detail-layout { padding: 40px 0 80px; }
+        .detail-layout { padding-top: 40px; padding-bottom: 80px; }
         .main-grid {
           display: grid;
           grid-template-columns: 1fr 380px;

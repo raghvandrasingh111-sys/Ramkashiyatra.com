@@ -320,17 +320,24 @@ export default function Navbar() {
           font-family: var(--font-poppins);
           font-weight: 800;
           font-size: 1.05rem;
-          color: ${scrolled ? "var(--brand-ink)" : "#fff"};
+          color: #fff;
           letter-spacing: -0.01em;
-          text-shadow: ${scrolled ? "none" : "0 2px 8px rgba(0,0,0,0.4)"};
+          text-shadow: 0 2px 8px rgba(0,0,0,0.4);
           transition: color 0.4s ease;
+        }
+        .main-nav.scrolled .brand-name-top {
+          color: var(--brand-ink);
+          text-shadow: none;
         }
         .brand-name-sub {
           font-family: var(--font-dancing);
           font-size: 0.9rem;
           margin-top: 2px;
-          color: ${scrolled ? "var(--brand-saffron)" : "var(--brand-gold-light)"};
+          color: var(--brand-gold-light);
           font-weight: 600;
+        }
+        .main-nav.scrolled .brand-name-sub {
+          color: var(--brand-saffron);
         }
 
         /* ── Desktop nav links ───────────────────────── */
@@ -344,14 +351,18 @@ export default function Navbar() {
         }
         .nav-link {
           position: relative;
-          color: ${scrolled ? "var(--brand-ink)" : "#fff"};
+          color: #fff;
           font-family: var(--font-poppins);
           font-weight: 600;
           font-size: 0.95rem;
           text-decoration: none;
           transition: color 0.3s ease;
-          text-shadow: ${scrolled ? "none" : "0 2px 6px rgba(0,0,0,0.4)"};
+          text-shadow: 0 2px 6px rgba(0,0,0,0.4);
           padding: 6px 0;
+        }
+        .main-nav.scrolled .nav-link {
+          color: var(--brand-ink);
+          text-shadow: none;
         }
         .nav-link::after {
           content: "";
@@ -422,10 +433,8 @@ export default function Navbar() {
           align-items: center;
           width: 44px;
           height: 44px;
-          background: ${scrolled
-            ? "rgba(0,0,0,0.05)"
-            : "rgba(255,255,255,0.15)"};
-          border: 1.5px solid ${scrolled ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.3)"};
+          background: rgba(255, 255, 255, 0.15);
+          border: 1.5px solid rgba(255, 255, 255, 0.3);
           border-radius: 12px;
           cursor: pointer;
           gap: 5px;
@@ -433,13 +442,20 @@ export default function Navbar() {
           transition: all 0.3s ease;
           backdrop-filter: blur(8px);
         }
+        .main-nav.scrolled .hamburger {
+          background: rgba(0, 0, 0, 0.05);
+          border-color: rgba(0, 0, 0, 0.08);
+        }
         .bar {
           display: block;
           width: 22px;
           height: 2.5px;
-          background: ${scrolled ? "var(--brand-ink)" : "#fff"};
+          background: #fff;
           border-radius: 2px;
           transition: all 0.4s var(--ease-bounce);
+        }
+        .main-nav.scrolled .bar {
+          background: var(--brand-ink);
         }
         .hamburger.active .bar-1 {
           transform: translateY(7.5px) rotate(45deg);
