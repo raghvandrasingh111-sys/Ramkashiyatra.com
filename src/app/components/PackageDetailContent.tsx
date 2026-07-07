@@ -277,8 +277,8 @@ export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
         .detail-layout { padding-top: 40px; padding-bottom: 80px; }
         .main-grid {
           display: grid;
-          grid-template-columns: 1fr 380px;
-          gap: 50px;
+          grid-template-columns: 1fr 340px;
+          gap: 40px;
           margin-top: 8px;
         }
 
@@ -523,7 +523,7 @@ export default function PackageDetailContent({ pkg }: { pkg: TourPackage }) {
         .incl-list i { color: var(--brand-saffron); margin-top: 4px; }
         .excl-list i { color: var(--text-light); margin-top: 4px; }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1150px) {
           .main-grid { grid-template-columns: 1fr; gap: 30px; }
           .sidebar { order: 2; }
           .main-content { order: 1; }

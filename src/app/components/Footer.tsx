@@ -493,13 +493,13 @@ export default function Footer() {
         .bottom-links span:not(:has(i)) { opacity: 0.4; }
 
         /* ── Responsive ──────────────────────────── */
-        @media (max-width: 1180px) {
+        @media (max-width: 1280px) {
           .footer-grid {
             grid-template-columns: 1.6fr 1fr 1fr 1.4fr;
           }
           .office-list { display: none; }
         }
-        @media (max-width: 980px) {
+        @media (max-width: 1024px) {
           .newsletter-inner { grid-template-columns: 1fr; }
           .footer-grid {
             grid-template-columns: repeat(2, 1fr);
